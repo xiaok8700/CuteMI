@@ -1,0 +1,123 @@
+<extend name="Space/info"/>
+<block name="main-content">
+    <style type="text/css">
+        .shop{position:relative}
+        #fatie{
+            position:absolute;
+            top:150px;
+            left:300px;
+        }
+        .fa{width:50px;height:30px;position:absolute;left:300px;top:350px;text-align:center;line-height:30px}
+    </style>
+<script src="__PUBLIC__/home/js/jquery-1.7.2.js"></script>
+
+	<div class="span16 shop" style="display:block">
+    <div class="uc-box uc-main-box">
+        <div class="uc-content-box">
+            <div class="box-hd">
+                <h1 class="title">商品评价</h1>
+                <div class="more clearfix">
+                    <ul class="filter-list J_addrType">
+                        <li class="first"><a href="__MODULE__/space/dis">已评价商品</a></li>
+                        <li class="active"><a href="__MODULE__/space/udis">待评价商品</a></li>
+                        <li><a  href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="box-bd">
+                            <div class="xm-goods-list-wrap">
+                    <ul class="xm-goods-list clearfix">
+                        <foreach name="udis" item="res">
+                        <li class="xm-goods-item">
+                            <div class="figure figure-img"><a href="http://item.mi.com/1134900475.html" target="_blank"><img src="__PUBLIC__/Uploads/<{$res.pic}>"></a></div>
+                            <h3 class="title"><a onclick="_msq.push(['trackEvent', '815ce971591f749c-668211b64dda6653', '//item.mi.com/1134900475.html', 'pcpid']);" data-stat-id="668211b64dda6653" href="http://item.mi.com/1134900475.html"><{$res.gname}></a></h3>
+                                <p class="price"><{$res.price}>元</p>
+                                <p class="rank">31992人评价</p>
+                            <div class="actions">
+                                                            <span class="pj"><a  class="btn btn-primary btn-small"  href="#">去评价</a></span>
+                                                        </div>
+                        </li>
+                    </foreach>
+                    </ul>
+                </div>
+                        </div>
+        </div>
+    </div>
+</div>
+
+<div class="span16 " id="fatie" style="display:none">
+    <div  class="diss">
+            <form action="" method="post">
+                <table width="800px" height="500px" style="border:1px solid glay">
+                    <tr>
+                        <td>
+                            <textarea cols='50' rows="10"  name="comment" value="">
+                            </textarea>
+                            <div class="fa"  style="background:red">发帖</div>
+                        </td>
+                        
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                            <input type="hidden" name="gname" value="<{$res.gname}>">
+                            <input type="hidden" name="gid" value="<{$res.gid}>">
+
+                        </td>
+                        
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+</div>
+
+<script>
+   $(function(){
+    $('.pj').click(function(){
+        // alert('111');
+        $('.shop').css('display','none');
+        $('#fatie').css('display','block');
+
+        
+
+   })
+
+    $('.fa').click(function(){
+
+        $.ajax({
+                   url:'__MODULE__/space/pj',
+                   type:'post',
+                   data:$('form').serialize(),
+                   dataType:'json',
+                   async:false,
+                   success:function(data){
+                      if(data){
+                        // alert(data);
+                        // alert(data);
+                        // location.reload();
+                        // $('.fatie').css('display','none');
+                        // $('.shop').css('display','block');
+                        location.href="__MODULE__/space/dis";
+                      }else{
+                        alert(data);
+                      }           
+                     }                   
+                 })
+
+
+
+
+     })
+
+
+    })
+
+</script>
+
+
+    
+</block>
+<extend name="Space/infofooter" />

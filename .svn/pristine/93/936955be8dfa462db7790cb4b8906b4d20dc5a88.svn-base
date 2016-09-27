@@ -1,0 +1,412 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>购买小米手机</title>
+<meta name="description" content="小米官网">
+<meta name="keywords" content="小米官网">
+<meta name="viewport" content="width=1226">
+
+<link rel="stylesheet" href="/CuteMi/Public/home/css/base.css">
+<link rel="stylesheet" type="text/css" href="/CuteMi/Public/home/css/phone.css">
+<link rel="stylesheet" type="text/css" href="/CuteMi/Public/home/css/cart.min.css">
+<script src="/CuteMi/Public/home/js/jquery-1.7.2.js"></script>
+<!-- <link rel="stylesheet" href="/CuteMi/Public/home/css/my.css">-->
+<!-- <link rel="stylesheet" href="/CuteMi/Public/home/css/list.css"> -->
+<link rel="stylesheet" type="text/css" href="/CuteMi/Public/home/css/goods-detail.css">
+<link rel="stylesheet" type="text/css" href="/CuteMi/Public/home/css/overall.css">
+<link rel="stylesheet" type="text/css" href="/CuteMi/Public/home/css/product-minote-overall.css">
+
+<style type="text/css">
+    *{
+       margin:0;
+       padding:0;
+       list-style:none;
+    }
+    .nav-child1{
+        width:600px;
+        left:170px;
+        top:80px;
+        height:400px;
+        border-left:1px solid #ccc;
+        border-right:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        position:absolute;
+        background:white;
+        opacity:0.5;
+        display:none;
+    }
+    
+    .pro{
+        width:120px;
+        height:180px;
+        border:1px solid gray;
+        font-size:16px;
+        text-align:center;
+        margin-top:2;
+        float:left;
+        margin-left:5px;
+        margin-bottom:10px;
+     
+    }
+
+    .nav-item1 a{
+        height:5px;
+    }
+
+     .nav-item a{
+        height:5px;
+    }
+
+    .nav-item a:hover{
+        background:white;
+        color:red;
+
+    }
+
+    #nav a:hover{
+      color:red;
+    }
+
+     #nav1 a:hover{
+      color:red;
+    }
+
+     #nav2 a:hover{
+      color:red;
+    }
+
+    .category-item a:hover{
+       background:gray;
+       font-weight:bold;
+       color:black;
+    }
+    .user-menu li a:hover{
+        color:red;
+    }
+</style>
+</head>
+<body>
+
+<!-------------------------------- 顶部导航 ---------------------------------->
+<div class="site-topbar">
+    <div class="container">
+        <div class="topbar-nav">
+        <a href="/CuteMi/index.php/Home/index/index">小米网</a><span class="sep">|</span>
+            <a href="" target="_blank" >MIUI</a><span class="sep">|</span>
+            <a href="" target="_blank" >米聊</a><span class="sep">|</span>
+            <a href="" target="_blank">游戏</a><span class="sep">|</span>
+            <a href="" target="_blank" >多看阅读</a><span class="sep">|</span>
+            <a href="" target="_blank" >小米网移动版</a><span class="sep">|</span>
+            <a href="" target="_blank" >问题反馈</a><span class="sep">|</span>
+        </div>
+        <div class="topbar-cart" id="J_miniCartTrigger">
+            <a class="cart-mini" id="J_miniCartBtn" href="/CuteMi/index.php/Home/cart/index" >
+                <i class="iconfont"></i>购物车<span class="cart-mini-num J_cartNum">（0）</span>
+            </a>
+            <div class="cart-menu" id="J_miniCartMenu" style="background:blue">
+                <div class="loading"><div class="loader"></div></div>
+            </div>
+        </div>
+
+        <?php if($_SESSION['username']['islogin']== false): ?><div class="topbar-info" id="J_userInfo">
+            <a class="link" href="/CuteMi/index.php/Home/login/index">登录</a><span class="sep">|</span><a class="link" href="/CuteMi/index.php/Home/login/register">注册</a>        
+        </div>
+ <!------------------------------- 登陆后的导航栏 ------------------------>
+         <?php else: ?>
+         <div class="topbar-info" id="J_userInfo">
+            <span class="user">
+                <a class="user-name" href="http://my.mi.com/portal" target="_blank">
+                    <span class="name"><?php echo ($_SESSION['username']['uname']); ?></span>
+                    <i class="iconfont"></i>
+                </a>
+                <ul class="user-menu" style="display: none;">
+                    <li><a href="/CuteMi/index.php/Home/space/index" target="_blank">个人中心</a></li>
+                    <li><a href="/CuteMi/index.php/Home/space/dis" target="_blank">评价晒单</a></li>
+                    <li><a href="/CuteMi/index.php/Home/space/collect" target="_blank">我的喜欢</a></li>
+                    <li><a href="/CuteMi/index.php/Home/Personal/index" target="_blank">小米账户</a></li>
+                    <li><a href="/CuteMi/index.php/Home/login/logout">退出登录</a></li>
+                </ul>
+            </span>
+            <span class="sep">|</span>
+            <a class="link link-order" href="" target="_blank">我的订单</a>
+        </div><?php endif; ?>
+ <!------------------------------- 登陆后的导航栏结束 ------------------------>
+    </div>
+</div>
+
+
+<div class="site-header">
+    <div class="container">
+        <div class="header-logo">
+            <a  class="logo" href="/CuteMi/index.php/Home/index/index" title="小米官网">
+                <img src="/CuteMi/Public/home/images/logo.png">
+            </a>
+                    </div>
+        <div class="header-nav">
+<!------------------------------- 导航栏部分 -------------------------------------->
+            <ul class="nav-list J_navMainList clearfix">
+                <li id="J_navCategory" class="nav-category">
+                    <a href="" style="text-align:center;line-height:70px"><span class="text">全部商品分类</span>
+                    </a>
+                </li>
+  <!------------------------------------------- 导航栏部分 -------------------------------->
+                      <!-- 商品导航-->
+                      <?php if(is_array($nav1)): foreach($nav1 as $key=>$nav1): ?><li class="nav-item" id="nav">
+                           <a  class="link" href="/CuteMi/index.php/Home/product/index/typeid/<?php echo ($nav1["typeid"]); ?>">
+                            <span class="text"><?php echo ($nav1["tname"]); ?></span><span class="arrow"></span>
+                          </a>
+                       </li><?php endforeach; endif; ?>
+
+                      <!-- 附件商品导航 -->
+                      <?php if(is_array($nav2)): foreach($nav2 as $key=>$nav2): ?><li class="nav-item" id="nav1">
+                           <a  class="link" href="/CuteMi/index.php/Home/product/attproduct/attid/<?php echo ($nav2["attid"]); ?>">
+                            <span class="text"><?php echo ($nav2["attname"]); ?></span><span class="arrow"></span>
+                          </a>
+                       </li><?php endforeach; endif; ?>
+  <!------------------------------------------- 导航栏部分结束 -------------------------------->
+                   <li class="nav-item" id="nav2">
+                      <a class="link" href="/CuteMi/index.php/Home/coupun/index" target="_blank" ><span class="text">优惠券</span></a>
+                   </li>
+                </ul>
+        </div>
+
+<!--------------------------------------- 搜索功能 ------------------------------------------>
+        <div class="header-search">
+            <form id="J_searchForm" class="search-form clearfix" action="/CuteMi/index.php/Home/index/search" method="get">
+                <label for="search" class="hide">站内搜索</label>
+                <input class="search-text" id="search" name="gname"  type="search">
+                <input class="search-btn iconfont" value="" type="submit">
+               
+           </form>
+        </div>
+<!--------------------------------------- 搜索功能结束 ------------------------------------------>
+
+    </div>
+    <div id="J_navMenu" class="header-nav-menu" style="display: none;">
+        <div class="container"></div>
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+        $(function(){
+
+         //二级标题
+            //鼠标移入的时候
+             $(".nav-item1").mouseenter(function(){
+                 var typeid = $(this).attr("typeid");
+                 //console.log(typeid);
+                  $(this).children('div').eq(0).css("display","block").css("opacity","0.9");
+                  $(this).children('div').eq(0).load('/CuteMi/index.php/Home/Product/bianli/typeid/'+typeid);
+
+                   //鼠标移出的时候         
+                 $(this).mouseleave(function(){
+                 $(this).children('div').eq(0).css('display', 'none');
+             }); 
+             });   
+
+        
+
+
+        // 点击账号时候触发事件
+         $(".user-name").mouseover(function(){
+             $(".user-menu").css("display","block");
+             //移入子标题时触发事件
+             $(".user-menu").mouseover(function(){
+                $(this).css({display:"block"});
+             });
+
+             // 移出子标题时触发事件
+            $(".user-menu").mouseout(function(){
+                $(this).css("display","none");
+            })
+       });
+        
+
+        // 移出账号时触发事件
+          $(".user-name").mouseout(function(){
+              $(".user-menu").css("display","none"); 
+          });
+        });
+
+    </script>
+
+
+<div class="page-main channel buyphone-channel">
+    <div class="container breadcrumbs"> 
+        <a  href="/CuteMi/index.php/Home/index/index">首页</a><span class="sep"> 
+    <div class="container channel-nav">
+    <ul class="clearfix">
+  <!------------------------------ 该类下所有商品名称 -------------------------->
+    <?php if(is_array($res3)): foreach($res3 as $key=>$res3): ?><li>
+            <a  href="/CuteMi/index.php/Home/goodsdetail/index?id=<?php echo ($res3["gid"]); ?>" target="_blank"><?php echo ($res3["gname"]); ?></a>
+        </li><?php endforeach; endif; ?>
+  <!------------------------------ 该类下所有商品名称结束 --------------------------> 
+  </ul>
+  </div>
+    <div class="channel-focus"> 
+            <img src="/CuteMi/Public/Events/<?php echo ($pic0); ?>" height="460" width="1226" style="display:block">
+            <img src="/CuteMi/Public/Events/<?php echo ($pic1); ?>" height="460" width="1226" style="display:none">
+            <img src="/CuteMi/Public/Events/<?php echo ($pic2); ?>" height="460" width="1226" style="display:none">
+            <img src="/CuteMi/Public/Events/<?php echo ($pic3); ?>" height="460" width="1226" style="display:none">             
+    </div>
+    <div class="container channel-list">
+ <ul class="row clearfix">
+
+
+ <!----------------------------------------- 产品展示 ------------------------------------------>
+        <?php if(is_array($res2)): foreach($res2 as $key=>$goods): ?><li class="span10">
+                <div class="channel-list-img">
+                    <a href="/CuteMi/index.php/Home/goodsdetail?gid=<?php echo ($goods["gid"]); ?>" target="_blank">
+                        <img width="600" height="380" src="/CuteMi/Public/Uploads/<?php echo ($goods["pic"]); ?>" alt="小米手机5">
+                    </a>
+                </div>
+                <div class="channel-list-con clearfix">
+                    <dl class="channel-list-des">
+                        <dt>
+                            <?php echo ($goods["gname"]); ?> <b><?php echo ($goods["price"]); ?></b><span>元起</span>
+                        </dt>
+                        <dd>
+                           <?php echo ($goods["keywords"]); ?>                  
+                        </dd>
+                    </dl>
+                    <p class="channel-list-btn">
+                        <a href="/CuteMi/index.php/Home/goodsdetail/?gid=<?php echo ($goods["gid"]); ?>" class="btn btn-line-primary">立即购买</a>
+                    </p>
+                </div>
+            </li><?php endforeach; endif; ?>
+<!------------------------------------------- 产品展示结束 ------------------------------------------>               
+        </ul>
+    </div>
+    <div class="channel-tips">
+        <div class="section container">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-877bf67af7470716', '//www.mi.com/service/safe/', 'pcpid']);" data-stat-id="877bf67af7470716" href="http://www.mi.com/service/safe/" target="_blank">
+                <img src="/CuteMi/Public/home/images/phone-section-01.png">
+            </a>
+        </div>
+        <div class="section container">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-0661297565d05771', '//www.mi.com/mimobile/', 'pcpid']);" data-stat-id="0661297565d05771" href="http://www.mi.com/mimobile/" target="_blank">
+                <img src="/CuteMi/Public/home/images/mi-mobile.jpg" alt="" style="display:block">
+            </a>
+        </div>
+        <div class="section container"> 
+            <img src="/CuteMi/Public/home/images/phone-section-02.png">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-66243771d24bdec7', '//heyue.mi.com/', 'pcpid']);" data-stat-id="66243771d24bdec7" href="http://heyue.mi.com/" target="_blank" style="position:absolute;display:block;width:305px;height:350px;bottom:99px;left:274px;"></a>
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-7d6025c8e251baf8', '//www.mi.com/service/exchange#installment', 'pcpid']);" data-stat-id="7d6025c8e251baf8" href="http://www.mi.com/service/exchange#installment" target="_blank" style="position:absolute;display:block;width:305px;height:350px;bottom:99px;right:274px;"></a>
+        </div>
+        <div class="section container">
+            <img src="/CuteMi/Public/home/images/phone-section-04.jpg">
+        </div>
+        <div class="container channel-acces">
+            <dl class="channel-acces-des">
+                <dt>搭配更多智能硬件产品</dt>
+                <dd>
+                    以小米手机为中心，控制智能硬件产品，轻松享受智能生活带来的方便和舒适。<br>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-54b50a3a426a5f63', '//list.mi.com/26', 'pcpid']);" data-stat-id="54b50a3a426a5f63" href="http://list.mi.com/26" target="_blank">查看更多智能硬件产品 <i class="iconfont"></i></a>
+                </dd>
+            </dl>
+            <ul class="channel-acces-list clearfix">
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-9c9b01e5e4843825', '//item.mi.com/1161200006.html', 'pcpid']);" data-stat-id="9c9b01e5e4843825" href="http://item.mi.com/1161200006.html" target="_blank">
+                        <img src="/CuteMi/Public/home/images/T1obJvBghv1RXrhCrK220x220.jpg" alt="小米活塞耳机 基础版">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-b8a93380e5317b15', '//item.mi.com/1161200006.html', 'pcpid']);" data-stat-id="b8a93380e5317b15" href="http://item.mi.com/1161200006.html" target="_blank">小米活塞耳机 基础版</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-e872a9440cd383be', '//item.mi.com/1161200006.html', 'pcpid']);" data-stat-id="e872a9440cd383be" href="http://item.mi.com/1161200006.html" target="_blank">新鲜绽放，5 色可选</a></dd>
+                        <dd class="price">29元</dd>
+                    </dl>
+                </li>
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-5da5a84628b49d84', '//www.mi.com/huosai/', 'pcpid']);" data-stat-id="5da5a84628b49d84" href="http://www.mi.com/huosai/" target="_blank">
+                        <img src="/CuteMi/Public/home/images/T1o0h_B5VT1RXrhCrK220x220.jpg" alt="小米活塞耳机标准版">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3c9510d2abfb1338', '//www.mi.com/huosai/', 'pcpid']);" data-stat-id="3c9510d2abfb1338" href="http://www.mi.com/huosai/" target="_blank">小米活塞耳机标准版</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-0fc1a0a4fe5f9e9b', '//www.mi.com/huosai/', 'pcpid']);" data-stat-id="0fc1a0a4fe5f9e9b" href="http://www.mi.com/huosai/" target="_blank">音质优化专利，金属复合振膜技术</a></dd>
+                        <dd class="price">69元</dd>
+                    </dl>
+                </li>
+                                <li class="no-border">
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3dbb273e6e038825', '//www.mi.com/bluetooth-headset/', 'pcpid']);" data-stat-id="3dbb273e6e038825" href="http://www.mi.com/bluetooth-headset/" target="_blank">
+                        <img src="/CuteMi/Public/home/images/T190DvB4dv1RXrhCrK220x220.jpg" alt="小米蓝牙耳机">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-579cc1906e2989ef', '//www.mi.com/bluetooth-headset/', 'pcpid']);" data-stat-id="579cc1906e2989ef" href="http://www.mi.com/bluetooth-headset/" target="_blank">小米蓝牙耳机</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-be7f1a94a39e5a0d', '//www.mi.com/bluetooth-headset/', 'pcpid']);" data-stat-id="be7f1a94a39e5a0d" href="http://www.mi.com/bluetooth-headset/" target="_blank">6.5克轻巧，蓝牙4.1高清通话音质</a></dd>
+                        <dd class="price">79元</dd>
+                    </dl>
+                </li>
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-c2832b3faebd3d88', '//item.mi.com/1154300037.html', 'pcpid']);" data-stat-id="c2832b3faebd3d88" href="http://item.mi.com/1154300037.html" target="_blank">
+                        <img src="/CuteMi/Public/home/images/T1Tfd_BjAv1RXrhCrK220x220.jpg" alt="小钢炮蓝牙音箱2">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-1ebe14fec6365bfc', '//item.mi.com/1154300037.html', 'pcpid']);" data-stat-id="1ebe14fec6365bfc" href="http://item.mi.com/1154300037.html" target="_blank">小钢炮蓝牙音箱2</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-96081f1f28e9d134', '//item.mi.com/1154300037.html', 'pcpid']);" data-stat-id="96081f1f28e9d134" href="http://item.mi.com/1154300037.html" target="_blank">极简设计，声声动听的桌上艺术品</a></dd>
+                        <dd class="price">129元</dd>
+                    </dl>
+                </li>
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-292860b24c4642e2', '//item.mi.com/1161200012.html', 'pcpid']);" data-stat-id="292860b24c4642e2" href="http://item.mi.com/1161200012.html" target="_blank">
+                        <img src="/CuteMi/Public/home/images/T1vFEjBbWT1RXrhCrK220x220.jpg" alt="小米USB充电器（4口）">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-1f8e6bbf8b4ae2e8', '//item.mi.com/1161200012.html', 'pcpid']);" data-stat-id="1f8e6bbf8b4ae2e8" href="http://item.mi.com/1161200012.html" target="_blank">小米USB充电器（4口）</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-5e052e4274cc2259', '//item.mi.com/1161200012.html', 'pcpid']);" data-stat-id="5e052e4274cc2259" href="http://item.mi.com/1161200012.html" target="_blank">4个USB接口，2A快充，轻巧便携</a></dd>
+                        <dd class="price">69元</dd>
+                    </dl>
+                </li>
+                                <li class="no-border">
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-d8a683b32fdf20f4', '//www.mi.com/dianyuan10000/', 'pcpid']);" data-stat-id="d8a683b32fdf20f4" href="http://www.mi.com/dianyuan10000/" target="_blank">
+                        <img src="/CuteMi/Public/home/images/T1ggWQBybT1RXrhCrK220x220.jpg" alt="小米移动电源10000mAh">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-de7e719f6891f071', '//www.mi.com/dianyuan10000/', 'pcpid']);" data-stat-id="de7e719f6891f071" href="http://www.mi.com/dianyuan10000/" target="_blank">小米移动电源10000mAh</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-2b7e9477a7368800', '//www.mi.com/dianyuan10000/', 'pcpid']);" data-stat-id="2b7e9477a7368800" href="http://www.mi.com/dianyuan10000/" target="_blank">高密度进口电芯，仅名片大小</a></dd>
+                        <dd class="price">69元</dd>
+                    </dl>
+                </li>
+                 
+                
+            </ul>
+        </div>
+        <div class="container channel-mihone">
+            <div class="channel-mihone-des">
+                <dl>
+                    <dt>小米之家及官方授权维修网点</dt>
+                    <dd>
+                        欢迎来小米之家解决你遇到的问题，了解最新的小米官方产品最全面的产品信息，还有很多好玩的活动等你来访。<br>
+                        你还可以前往小米授权维修网点解决售后问题，520家网点让服务随时在身边。
+                    </dd>
+                </dl>
+                <p>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-92bb525974bcde0e', '//www.mi.com/c/xiaomizhijia/', 'pcpid']);" data-stat-id="92bb525974bcde0e" href="http://www.mi.com/c/xiaomizhijia/" class="btn btn-large btn-line-primary">小米之家</a>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-a684b74699138aae', '//www.mi.com/c/service/poststation/', 'pcpid']);" data-stat-id="a684b74699138aae" href="http://www.mi.com/c/service/poststation/" class="btn btn-large btn-line-primary">官方维修网点</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/JavaScript">
+      $(function(){
+
+
+        //轮播图
+        setInterval(fun,1000);
+        var num=0;
+        function fun(){
+           $(".channel-focus img").css("display","none").eq(num).css("display","block");
+           num++;
+           if(num>3){
+             num=0;
+           }
+       }
+     
+
+      });
+</script>
+</body></html>

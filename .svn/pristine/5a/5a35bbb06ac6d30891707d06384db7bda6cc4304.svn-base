@@ -1,0 +1,64 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+header('content-type:text/html;charset=utf-8');
+class EventController extends CommonController {
+    public function index(){
+        $this->display();
+       }
+
+    public function add(){
+        $add=M('Event');
+         // 判断轮播图是否超过5个
+        $lbt=$add->query("select count(*) from event");
+        // dump($lbt);
+        if ($lbt[0]['count(*)']>'4') { 
+            $this->success("轮播图数量不能大于5个",U("Event/index")); 
+        }else{
+            $this->display();
+        }
+
+        
+    	
+    }
+    
+    //图片的插入
+    public function insert(){
+        $upload=new \Think\Upload();
+      $upload->maxSize=1400000;//图片的大小
+      $upload->exts=array("jpg","jpeg","png","gif");//图片的大小
+      $upload->rootPath="./Public/Events/";//上传路径
+      $upload->autoSub=false;
+      $info=$upload->upload();
+      if(!$info){
+          $this->error($upload->getError());
+      }else{
+      // $_POST['imgs']="Public/lunbotu/".$info['uploads']['savename'];
+          $img = new \Think\Image(); //实例化图片类
+          foreach($info as $file){  
+            $img->open("./Public/Events/".$file['savename']); //打开图像
+            $imgs="s-".$file['savename']; //起别名
+            $img->thumb(1240,480,\Think\Image::IMAGE_THUMB_FIXED)->save("./Public/Events/".$imgs); //缩放
+            unlink("./Public/Events/".$file['savename']); //删除原有
+            $_POST['imgs']="/Public/Events/".$imgs;
+              
+          }
+        $mod=M("event");
+         $mod->create();
+        //执行添加
+        if($mod->add()){
+          $this->success("添加成功",U("event/index"));
+        }else{
+          $this->error("添加失败");
+        }        
+
+
+           
+    } 
+
+
+}
+
+
+
+}

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>	
+		<title>添加商品分类</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+		    body{
+               background:#f7f8f9;
+		    }
+		</style>
+	</head>
+	<body>
+		<form action="__CONTROLLER__/doadd" method="post">
+			<table  width="500" align="center">
+				<caption><h1>添加分类信息</h1></caption>
+				<input type="hidden" name="typeid" value="<{$typeid}>">
+				<tr>
+					<td >添加到:</td>
+					<td ><{$pname}>类</td>					
+				</tr>
+				<tr>
+					<td>类别名称: </td>
+					<td><input type="text" name="tname" value="" /></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit"  value="添加" /></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

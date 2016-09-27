@@ -1,0 +1,65 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class ProductController extends Controller {
+    // 显示首页
+    public function index(){
+        //头部导航栏部分
+       //一级分类
+       $type = M("type");
+       $nav1 = $type->where("pid = 0")->select();
+       $this->assign("nav1",$nav1);
+  
+       $attach_type = M("attach_type");
+       $nav2 = $attach_type->where("pid = 0")->select();
+       $this->assign("nav2",$nav2);
+
+
+
+
+
+       $typeid = I("get.typeid");
+       //dump($typeid);
+       $type = M("type");
+
+       // 二级类
+       $res1 = $type->where("pid = ".$typeid)->select();
+       // 获取二级类的分类ID
+       foreach($res1 as $v){
+           $arr[]=$v["typeid"];
+       }
+       
+       // 获取二级类下的所有商品
+       $goods = M("goods");
+       $res2 = $goods->where("typeid in"."(".implode(",",$arr).")")->select();
+       $this->assign("res2",$res2);
+       $this->assign("res3",$res2);
+
+       //dump($res2);
+
+
+       $this->display();
+  }
+
+
+  // 附件分类页
+  public function attproduct(){
+     
+       $attid = I("get.attid");
+       $attach_type = M("attach_type");
+
+       // 二级类
+       $res1 = $attach_type->where("pid = ".$attid)->select();
+       // 获取二级类的分类ID
+       foreach($res1 as $v){
+           $arr[]=$v["attid"];
+       }
+       
+       // 获取二级类下的所有商品
+       $goods = M("goods");
+       $res2 = $goods->where("typeid in"."(".implode(",",$arr).")")->select();
+       $this->assign("res2",$res2);
+     $this->display();
+  }
+
+}

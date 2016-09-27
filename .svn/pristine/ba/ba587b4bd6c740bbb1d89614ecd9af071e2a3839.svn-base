@@ -1,0 +1,11 @@
+ 
+<ul class="list1">
+                           <foreach name='res2' item='bian'>
+                             <li class="pro">
+                                <img width="100px" height="120px" src="__PUBLIC__/Uploads/<{$bian.pic}>">
+                                <{$bian.gname}><br/>
+                                <{$bian.price}>
+                            </li> 
+                            </foreach>
+ </ul>      
+

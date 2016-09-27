@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+	<head>	
+		<title>订单管理</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+		    *{
+		    	text-decoration:none;
+		    }
+		    body{
+               background:#f7f8f9;
+		    }
+		    table tr{
+		    	text-align:center;
+		    }
+		    a:hover{
+               color:red;
+               cursor:pointer;
+		    }
+		</style>
+	</head>
+		<body>		
+		     <table border="1" width="800" align="center">
+				<caption><h1>订单管理</h1></caption>
+				<tr>
+					<th>订单号</th>
+					<th>下单时间</th>
+					<th>收货人</th>				
+					<th>支付总金额</th>					
+					<th>订单状态</th>
+					<th>订单操作</th>
+				</tr>
+				<foreach name="res" item="order">
+				<tr>
+					<td><{$order.oid}></td>
+					<td><{$order.addtime}></td>
+					<td><{$order.consignee}></td>
+					<td><{$order.total}></td>
+
+                    <if condition="$order.orderstatus eq 1">
+                         <td>未支付</td>
+                     <elseif condition="$order.orderstatus eq 2"/>
+                         <td>已支付</td>
+                     <elseif condition="$order.orderstatus eq 3"/>
+                         <td>已发货</td>
+                     <else />
+                         <td>已收货</td>
+                    </if>
+
+					<td>
+						<a href="__CONTROLLER__/detail/oid/<{$order.oid}>">详情&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+						<a href="__CONTROLLER__/action/oid/<{$order.oid}>">执行&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+					</td>
+				</tr>
+				</foreach>
+				<tr>
+					<td colspan="6">
+						共有 : <{$total}>条数据&nbsp;&nbsp;&nbsp;&nbsp;<{$no}>/<{$maxpage}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="__CONTROLLER__/index/no/1">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="__CONTROLLER__/index/no/<{$no-1}>">上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="__CONTROLLER__/index/no/<{$no+1}>">下一页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<a href="__CONTROLLER__/index/no/<{$maxpage}>">尾页</a>
+					</td>					
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

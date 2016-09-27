@@ -1,0 +1,127 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+header('content-type:text/html;charset=utf-8');
+class GoodsdetailController extends CommonController {
+    public function index(){
+
+         //头部导航栏部分
+       //一级分类
+       $type = M("type");
+       $nav1 = $type->where("pid = 0")->select();
+       $this->assign("nav1",$nav1);
+  
+       $attach_type = M("attach_type");
+       $nav2 = $attach_type->where("pid = 0")->select();
+       $this->assign("nav2",$nav2);
+        $num=0;
+        foreach(I("session.shopcar") as $v){
+            $num++;
+        }
+        $this->assign("num",$num);
+
+
+        //商品表和商品详情表联查,查询所有商品信息
+        $goods=M('goods');
+        $detail=M('goods_detail');
+        $gid=$_GET['gid'];
+        // dump($gid);
+    
+        $res=$goods->where('mi_goods.gid='.$gid)
+                   ->field('mi_goods.*,mi_goods_detail.*')
+                   ->join("left join mi_goods_detail on mi_goods.gid = mi_goods_detail.gid")
+                   ->find();
+          // var_dump($res);
+        $this->assign('goods',$res);
+    
+      
+     
+
+        $this->display();
+       }
+
+   
+
+    //附件的查询
+    public function attdetail(){
+
+        
+         //头部导航栏部分
+       //一级分类
+       $type = M("type");
+       $nav1 = $type->where("pid = 0")->select();
+       $this->assign("nav1",$nav1);
+  
+       $attach_type = M("attach_type");
+       $nav2 = $attach_type->where("pid = 0")->select();
+       $this->assign("nav2",$nav2);
+        $num=0;
+        foreach(I("session.shopcar") as $v){
+            $num++;
+        }
+        $this->assign("num",$num);
+
+
+
+    
+
+        //实例化商品表
+        $uid=$_SESSION['usename']['uid'];
+        $att = M('goods');
+        $gid=I('get.gid');
+        $good = $att->where('gid='.$gid)->find();
+        // dump($good);
+        $this->assign('goods',$good);
+        $this->assign('uid',$uid);
+
+        
+        $res=M('discuss');
+        $b=$res->where('gid='.$gid)->select();
+      
+        $this->assign('pl',$b);
+       
+        
+         $result=M('discuss_replay');
+         foreach($b as $k=>$v){
+         //$a=rtrim(implode(',',$pll),',');
+          $b[$k]['hhf']=$result->where('id = '.$v['id'])->select();
+     }
+        //dump($b);
+        $this->assign('hf',$b);
+        $this->display();
+
+    }
+
+    //回复插入数据库
+    public function insert(){
+        $insert=M('discuss_replay');
+        $data=array(
+            'id'=>I('get.pid'),
+            'uid'=>I('get.uid'),
+            'rep'=>I('get.replay')
+
+            );
+        $res=$insert->data($data)->add();
+        // echo 1;
+        if($res){
+            echo 1;
+
+
+            
+
+        }
+
+    
+    }
+
+    
+
+
+
+
+
+
+
+    
+
+}

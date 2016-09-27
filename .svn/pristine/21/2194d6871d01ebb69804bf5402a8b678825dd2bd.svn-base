@@ -1,0 +1,66 @@
+<extend name="Space/info"/>
+<block name="main-content">
+
+    <style>
+        .info-notice a{
+            font-size:20px;
+        }
+    </style>
+
+
+    <div class="span16">
+        <div class="xm-box uc-box">
+            <div>
+                <p>我的收藏</p>
+            </div>
+            <div id="buyall" class="xm-line-box uc-home-box">
+                
+                <foreach name="res" item="collect">
+                <div  style="float:left;border:1px solid gray;width:258px;margin-left:30px;">
+                    <a href=""> 
+                        <img style="width:100%;height:300px;" src="__PUBLIC__/Uploads/<{$collect.pic}>" />
+                    </a>
+                    <p> 
+                        <a href=""> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<{$collect.gname}>
+                        </a>
+                    </p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="cancel" cid="<{$collect.cid}>" href=""> 取消收藏</a> 
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <a href="__MODULE__/goodsdetail/attdetail?gid=<{$collect.gid}>"> 购买</a> 
+                </div>
+                </foreach>
+
+            </div> 
+        </div>
+        
+    </div>
+    <script type="text/JavaScript">
+         $(function(){
+             //鼠标移入时候
+             $(".cancel").mouseover(function(){
+                $(this).html("点击取消收藏");
+             });
+
+              $(".cancel").click(function(){
+                 var cid = $(this).attr("cid");
+                  $.ajax({
+                        type:"get",
+                        data:"cid="+cid,
+                        url:"__CONTROLLER__/cancel",
+                        dataType:"text",
+                        success:function(data){
+                             window.location.reload();
+                        },
+                        async:false,
+             });
+             });
+              
+             //鼠标移出时候
+               $(".cancel").mouseout(function(){
+                $(this).html("取消收藏");
+             });
+         });
+    </script>
+    
+</block>
+<extend name="Space/infofooter" />

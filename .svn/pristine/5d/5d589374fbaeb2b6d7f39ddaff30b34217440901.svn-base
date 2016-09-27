@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+	<head>	
+		<title>修改友链操作</title>
+		<meta charset="utf-8" />
+		<style>
+			*{
+				list-style-type:none;
+			}
+			h1{
+				text-align:center;
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="__CONTROLLER__/update" method="post">
+			<table border="1" width="70%" align="center" bordercolor="blue">
+				<h1>修改友链列表</h1>
+				<tr>
+					<td width="20%">友链ID</td>
+					<td><input type="hidden" name="fid" value="<{$user.fid}>"><span><{$user.fid}></span></td>
+				</tr>
+				<tr>
+					<td width="20%">友链名</td>
+					<td><input type="text" name="name" value="<{$user.name}>"></td>
+				</tr>
+				<tr>
+					<td width="20%">友链地址</td>
+					<td><input type="text" name="href" value="<{$user.href}>"></td>
+				</tr>
+				<tr>
+					<td>链接状态</td>
+					<!-- <td>
+						<input type="radio" name="status" value="0" checked>已上链
+		                <input type="radio" name="status" value="1">未上链         
+		                <input type="radio" name="status" value="2">已下链
+					</td> -->
+					<td>
+						<select name="status" id="">
+					    <option value="0" >&nbsp;&nbsp;已上链</option>
+					    <option value="1" >&nbsp;&nbsp;未上链</option>
+					    <option value="2" >&nbsp;&nbsp;已下链</option>
+				        </select>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit"  value="保存修改"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

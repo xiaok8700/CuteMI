@@ -1,0 +1,410 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>购买小米手机</title>
+<meta name="description" content="小米官网">
+<meta name="keywords" content="小米官网">
+<meta name="viewport" content="width=1226">
+
+<link rel="stylesheet" href="/cuteMi/Public/home/css/base.css">
+<link rel="stylesheet" type="text/css" href="/cuteMi/Public/home/css/phone.css">
+<link rel="stylesheet" type="text/css" href="/cuteMi/Public/home/css/cart.min.css">
+<script src="/cuteMi/Public/home/js/jquery-1.7.2.js"></script>
+<!-- <link rel="stylesheet" href="/cuteMi/Public/home/css/my.css">-->
+<!-- <link rel="stylesheet" href="/cuteMi/Public/home/css/list.css"> -->
+<link rel="stylesheet" type="text/css" href="/cuteMi/Public/home/css/goods-detail.css">
+<link rel="stylesheet" type="text/css" href="/cuteMi/Public/home/css/overall.css">
+<link rel="stylesheet" type="text/css" href="/cuteMi/Public/home/css/product-minote-overall.css">
+
+<style type="text/css">
+    *{
+       margin:0;
+       padding:0;
+       list-style:none;
+    }
+    .nav-child1{
+        width:600px;
+        left:170px;
+        top:80px;
+        height:400px;
+        border-left:1px solid #ccc;
+        border-right:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        position:absolute;
+        background:white;
+        opacity:0.5;
+        display:none;
+    }
+    
+    .pro{
+        width:120px;
+        height:180px;
+        border:1px solid gray;
+        font-size:16px;
+        text-align:center;
+        margin-top:2;
+        float:left;
+        margin-left:5px;
+        margin-bottom:10px;
+     
+    }
+
+    .nav-item1 a{
+        height:5px;
+    }
+
+     .nav-item a{
+        height:5px;
+    }
+
+    .nav-item a:hover{
+        background:white;
+        color:red;
+
+    }
+
+    #nav a:hover{
+      color:red;
+    }
+
+     #nav1 a:hover{
+      color:red;
+    }
+
+     #nav2 a:hover{
+      color:red;
+    }
+
+    .category-item a:hover{
+       background:gray;
+       font-weight:bold;
+       color:black;
+    }
+    .user-menu li a:hover{
+        color:red;
+    }
+</style>
+</head>
+<body>
+
+<!-------------------------------- 顶部导航 ---------------------------------->
+<div class="site-topbar">
+    <div class="container">
+        <div class="topbar-nav">
+        <a href="/cuteMi/index.php/Home/index/index">小米网</a><span class="sep">|</span>
+            <a href="" target="_blank" >MIUI</a><span class="sep">|</span>
+            <a href="" target="_blank" >米聊</a><span class="sep">|</span>
+            <a href="" target="_blank">游戏</a><span class="sep">|</span>
+            <a href="" target="_blank" >多看阅读</a><span class="sep">|</span>
+            <a href="" target="_blank" >小米网移动版</a><span class="sep">|</span>
+            <a href="" target="_blank" >问题反馈</a><span class="sep">|</span>
+        </div>
+        <div class="topbar-cart" id="J_miniCartTrigger">
+            <a class="cart-mini" id="J_miniCartBtn" href="/cuteMi/index.php/Home/cart/index" >
+                <i class="iconfont"></i>购物车<span class="cart-mini-num J_cartNum">（<?php echo ($num?$num:"0"); ?>）</span>
+            </a>
+            <div class="cart-menu" id="J_miniCartMenu" >
+              <div class="loading">
+                   <?php if($_SESSION['shopcar']== null): ?><div class="loader" background="blue"></div>
+                   <?php else: ?>
+                       <table style="border:1px solid gray;">
+                      <?php if(is_array($_SESSION['shopcar'])): foreach($_SESSION['shopcar'] as $key=>$cart): ?><div  style="border:1px solid white;">
+                          <tr  style="border:1px solid gray;">
+                          <div>
+                            <td >
+                               <a href="/cuteMi/index.php/Home/cart/index">
+                               <img width="80px" height="80px" src="/cuteMi/Public/uploads/<?php echo ($cart["pic"]); ?>">
+                              </a>
+                            </td>
+                            <td> <?php echo ($cart["gname"]); ?> </td>
+                            <td> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<?php echo ($cart["price"]); ?> 元</td>
+                            <td >&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<?php echo ($cart["buynum"]); ?> 件&nbsp; &nbsp;</td>
+                          </div>
+                          <tr>
+                      </div><?php endforeach; endif; ?>
+                       </table><?php endif; ?>
+              </div>
+            </div>
+        </div>
+
+        <?php if($_SESSION['username']['islogin']== false): ?><div class="topbar-info" id="J_userInfo">
+            <a class="link" href="/cuteMi/index.php/Home/login/index">登录</a><span class="sep">|</span><a class="link" href="/cuteMi/index.php/Home/login/register">注册</a>        
+        </div>
+ <!------------------------------- 登陆后的导航栏 ------------------------>
+         <?php else: ?>
+         <div class="topbar-info" id="J_userInfo">
+            <span class="user">
+                <a class="user-name" href="http://my.mi.com/portal" target="_blank">
+                    <span class="name"><?php echo ($_SESSION['username']['uname']); ?></span>
+                    <i class="iconfont"></i>
+                </a>
+                <ul class="user-menu" style="display: none;">
+                    <li><a href="/cuteMi/index.php/Home/space/index" target="_blank">个人中心</a></li>
+                    <li><a href="/cuteMi/index.php/Home/space/dis" target="_blank">评价晒单</a></li>
+                    <li><a href="/cuteMi/index.php/Home/space/collect" target="_blank">我的喜欢</a></li>
+                    <li><a href="/cuteMi/index.php/Home/Personal/index" target="_blank">小米账户</a></li>
+                    <li><a href="/cuteMi/index.php/Home/login/logout">退出登录</a></li>
+                </ul>
+            </span>
+            <span class="sep">|</span>
+            <a class="link link-order" href="/cuteMi/index.php/Home/space/allbook" target="_blank">我的订单</a>
+        </div><?php endif; ?>
+ <!------------------------------- 登陆后的导航栏结束 ------------------------>
+    </div>
+</div>
+
+
+<div class="site-header">
+    <div class="container">
+        <div class="header-logo">
+            <a  class="logo" href="/cuteMi/index.php/Home/index/index" title="小米官网">
+                <img src="/cuteMi/Public/home/images/logo.png">
+            </a>
+                    </div>
+        <div class="header-nav">
+<!------------------------------- 导航栏部分 -------------------------------------->
+            <ul class="nav-list J_navMainList clearfix">
+                <li id="J_navCategory" class="nav-category">
+                    <a href="" style="text-align:center;line-height:70px"><span class="text">全部商品分类</span>
+                    </a>
+                </li>
+  <!------------------------------------------- 导航栏部分 -------------------------------->
+                      <!-- 商品导航-->
+                      <?php if(is_array($nav1)): foreach($nav1 as $key=>$nav1): ?><li class="nav-item" id="nav">
+                           <a  class="link" href="/cuteMi/index.php/Home/product/index/typeid/<?php echo ($nav1["typeid"]); ?>">
+                            <span class="text"><?php echo ($nav1["tname"]); ?></span><span class="arrow"></span>
+                          </a>
+                       </li><?php endforeach; endif; ?>
+
+                      <!-- 附件商品导航 -->
+                      <?php if(is_array($nav2)): foreach($nav2 as $key=>$nav2): ?><li class="nav-item" id="nav1">
+                           <a  class="link" href="/cuteMi/index.php/Home/product/attproduct/attid/<?php echo ($nav2["attid"]); ?>">
+                            <span class="text"><?php echo ($nav2["attname"]); ?></span><span class="arrow"></span>
+                          </a>
+                       </li><?php endforeach; endif; ?>
+  <!------------------------------------------- 导航栏部分结束 -------------------------------->
+                   <li class="nav-item" id="nav2">
+                      <a class="link" href="/cuteMi/index.php/Home/coupun/index" target="_blank" ><span class="text">优惠券</span></a>
+                   </li>
+                </ul>
+        </div>
+
+<!--------------------------------------- 搜索功能 ------------------------------------------>
+        <div class="header-search">
+            <form id="J_searchForm" class="search-form clearfix" action="/cuteMi/index.php/Home/index/search" method="get">
+                <label for="search" class="hide">站内搜索</label>
+                <input class="search-text" id="search" name="gname"  type="search">
+                <input class="search-btn iconfont" value="" type="submit">
+               
+           </form>
+        </div>
+<!--------------------------------------- 搜索功能结束 ------------------------------------------>
+
+    </div>
+    <div id="J_navMenu" class="header-nav-menu" style="display: none;">
+        <div class="container"></div>
+    </div>
+</div>
+
+
+    <script type="text/javascript">
+        $(function(){
+
+         //二级标题
+            //鼠标移入的时候
+             $(".nav-item1").mouseenter(function(){
+                 var typeid = $(this).attr("typeid");
+                 //console.log(typeid);
+                  $(this).children('div').eq(0).css("display","block").css("opacity","0.9");
+                  $(this).children('div').eq(0).load('/cuteMi/index.php/Home/Space/bianli/typeid/'+typeid);
+
+                   //鼠标移出的时候         
+                 $(this).mouseleave(function(){
+                 $(this).children('div').eq(0).css('display', 'none');
+             }); 
+             });   
+
+        
+
+
+        // 点击账号时候触发事件
+         $(".user-name").mouseover(function(){
+             $(".user-menu").css("display","block");
+             //移入子标题时触发事件
+             $(".user-menu").mouseover(function(){
+                $(this).css({display:"block"});
+             });
+
+             // 移出子标题时触发事件
+            $(".user-menu").mouseout(function(){
+                $(this).css("display","none");
+            })
+       });
+        
+
+        // 移出账号时触发事件
+          $(".user-name").mouseout(function(){
+              $(".user-menu").css("display","none"); 
+          });
+        });
+
+          //鼠标移入购物车时候
+          $("#J_miniCartTrigger").mouseover(function(){
+               $("#J_miniCartMenu").css("display","block");
+
+               //鼠标移出购物车时候
+          $(this).mouseout(function(){
+               $("#J_miniCartMenu").css("display","none");
+          })
+
+          });
+          
+
+    </script>
+
+
+
+
+<!-- saved from url=(0045)http://order.mi.com/portal?r=23414.1460031691 -->
+<html lang="zh-CN" xml:lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="/cuteMi/Public/home/js/unjcV2.js"></script><script type="text/javascript" async="" src="/cuteMi/Public/home/js/mstr.js"></script><script type="text/javascript" async="" src="/cuteMi/Public/home/js/jquery.statData.min.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>个人中心</title>
+<meta name="viewport" content="width=1226">
+<meta name="description" content="">
+<meta name="keywords" content="小米手机,小米手机官网">
+<link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/cuteMi/Public/home/css/base.min.css">
+<link rel="stylesheet" type="text/css" href="/cuteMi/Public/home/css/main.min.css">
+</head>
+<body>
+
+<div class="page-main user-main">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <div class="uc-box uc-sub-box">
+					<div class="uc-nav-box">
+                        <div class="box-hd">
+                            <h3 class="title">个人中心</h3>
+                        </div>
+                        <div class="box-bd">
+                            <ul class="uc-nav-list">
+                                <li class="active"><a href="/cuteMi/index.php/Home/Space/index">我的个人中心</a></li>
+                                
+                                
+                                <li><a href="/cuteMi/index.php/Home/Space/collect">我的收藏</a></li>
+                          
+                                <li><a href="/cuteMi/index.php/Home/Space/address">收货地址</a></li>
+                            </ul>
+                        </div>
+                    </div>
+				
+                    <div class="uc-nav-box">
+                        <div class="box-hd">
+                            <h3 class="title">订单中心</h3>
+                        </div>
+                        <div class="box-bd">
+                            <ul class="uc-nav-list">
+                                <li><a href="/cuteMi/index.php/Home/space/allbook" >我的订单</a></li>
+                               
+                                <li><a href="/cuteMi/index.php/Home/space/dis">评价晒单</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="uc-nav-box">
+                        <div class="box-hd">
+                            <h3 class="title">账户管理</h3>
+                        </div>
+                        <div class="box-bd">
+                            <ul class="uc-nav-list">
+								<li><a href="/cuteMi/index.php/Home/Space/yen">现金账户</a></li>
+                                <li><a href="/cuteMi/index.php/Home/Personal/index" target="_blank" >个人信息</a></li>
+                                <li><a href="/cuteMi/index.php/Home/Space/dpasswd" target="_blank">修改密码</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<script src="/cuteMi/Public/home/js/jquery-1.7.2.js"></script>
+<style type="text/css">
+    .got{background:red}
+
+</style>
+    <div class="span16">
+                <div class="uc-box uc-main-box">
+                    <div class="uc-content-box order-list-box">
+                        <div class="box-hd">
+                            <h1 class="title">我的订单<small>请谨防钓鱼链接或诈骗电话，<a href="" target="_blank" >了解更多&gt;</a></small></h1>
+                            <div class="more clearfix">
+                                <ul class="filter-list J_orderType">
+                                    <li class="first active"><a href="/cuteMi/index.php/Home/space/allbook" >全部有效订单</a></li>
+                                    <li class="nobuy" id="nobuy"><a id="J_unpaidTab" href="/cuteMi/index.php/Home/space/nobuy" >未付款</a></li>
+                                    <li class="buy"><a id="J_sendTab" href="/cuteMi/index.php/Home/space/buy" >已付款</a></li>
+                                    <li class="nogot"><a id="J_sendTab" href="/cuteMi/index.php/Home/space/nogot" >已发货</a></li>
+
+                                    <li class="got"><a href="/cuteMi/index.php/Home/space/got" >已收货</a></li>
+                                </ul>
+                                <form id="J_orderSearchForm" class="search-form clearfix" action="/cuteMi/index.php/Home/space/search" method="post">
+                                    <label for="search" class="hide">站内搜索</label>
+                                    <input class="search-text" type="search" id="J_orderSearchKeywords" name="keywords" autocomplete="off" placeholder="请输入订单号">
+                                    <input type="submit" class="search-btn iconfont" value="">
+                                </form>
+                            </div>
+                        </div>
+                        
+                       
+
+                        <div class="box-bd">
+                            <?php if(is_array($res)): foreach($res as $key=>$order): ?><div id="J_orderList" class="all" data="<?php echo ($order["orderstatus"]); ?>">    
+                            
+                                <ul class="order-list">
+                                    
+                                    <li class="uc-order-item uc-order-item-finish">   <div class="order-detail">
+                                            <div class="order-summary"> 
+                                                <div class="order-status">
+                                                
+
+                                                </div>     
+                                            </div> 
+                                            <table class="order-detail-table"> 
+                                                <thead> 
+                                                    <tr> <th class="col-main"> <p class="caption-info"><?php echo ($order["addtime"]); ?><span class="sep">|</span><?php echo ($order["consignee"]); ?><span class="sep">|</span>订单号：<a href="http://order.mi.com/user/orderView/1150604390119988"><?php echo ($order["oid"]); ?></a><span class="sep">|</span>小米钱包</p> </th> <th class="col-sub"> <p class="caption-price">订单金额：<span class="num"><?php echo ($order["total"]); ?></span>元</p> </th> 
+                                                    </tr> 
+                                                </thead> 
+                                                <tbody> 
+                                                    <tr> <td class="order-items"> <ul class="goods-list">  <li> <div class="figure figure-thumb">   <a href="#" target="_blank"> </a>   </div> <p class="name"> <a href="#" target="_blank"> </a>  </p> <p class="price"> </p> </li>  </ul> </td> <td class="order-actions">       <a class="detail btn btn-small btn-line-gray" href="/cuteMi/index.php/Home/space/detail?oid=<?php echo ($order["oid"]); ?>" >订单详情</a>       </td> 
+                                                    </tr> 
+                                                </tbody> 
+                                            </table> 
+                                        </div> 
+                                    </li>
+
+                                </ul>
+                            
+                            </div><?php endforeach; endif; ?>
+                            <div id="J_orderListPages">
+                                <div class="xm-pagenavi">  <span class="numbers first"><a href="/cuteMi/index.php/Home/Space/got/no/<?php echo ($no-1); ?>" class="numbers last" ><span class="iconfont"></span></span></a>     <a href="/cuteMi/index.php/Home/Space/got/no/1" class="numbers last" ><span class="numbers current">1</span></a>   <a href="/cuteMi/index.php/Home/Space/got/no/2" class="numbers" data-pager="2">2</a>   <a href="/cuteMi/index.php/Home/Space/allbook/no/3" class="numbers" >3</a>     <a href="/cuteMi/index.php/Home/Space/got/no/<?php echo ($no+1); ?>" class="numbers last" ><span class="iconfont"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    
+
+      </div>
+    </div>
+</div>
+
+<!-- .modal-globalSites END -->
+
+
+</body></html>

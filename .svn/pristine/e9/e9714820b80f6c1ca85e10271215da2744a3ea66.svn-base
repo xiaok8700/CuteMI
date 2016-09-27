@@ -1,0 +1,179 @@
+<extend name="Space/info"/>
+<block name="main-content">
+<script src="__PUBLIC__/home/js/jquery-1.7.2.js"></script>
+    
+    <div class="span16">
+    <div class="uc-box uc-main-box">
+        <div class="uc-content-box order-view-box">
+            <div class="box-hd">
+                <h1 class="title">订单详情<small>请谨防钓鱼链接或诈骗电话，
+                    <a  target="_blank">了解更多&gt;</a></small></h1>
+                <div class="more clearfix">
+                    <h2 class="subtitle">订单号：<{$data.oid}> 
+                        <span class="tag tag-subsidy"></span>
+                    </h2>
+                    <div class="actions">
+                    </div>
+                </div>
+            </div>
+            <div class="box-bd">
+                <div class="uc-order-item uc-order-item-finish">
+                             <div class="order-detail">
+                                <div class="order-summary">
+
+                                    
+                                    <div class="order-status">订单状态  :
+                                        <if condition="$data.orderstatus eq 1">
+                                            未支付
+                                        <elseif condition="$data.orderstatus eq 2" />
+                                            已支付
+                                        <elseif condition="$data.orderstatus eq 3" />
+                                            已发货
+                                        <elseif condition="$data.orderstatus eq 4" />
+                                            已收货
+                                        <else />
+                                            未支付
+                                        </if>  
+
+                                    </div>
+
+                                  
+                                        <div class="order-delivery order-delivery-detail">
+                                            <p class="delivery-num">
+                                                物流公司：<a href="#" target="_blank">顺丰(北京) 
+                                                            <i class="iconfont"></i>
+                                                        </a>
+                                                运单号：199593874929   
+                                            </p>
+                                        <div class="delivery-list-wrapper">
+                                                    <ul class="delivery-list" data-deliver-list="115060439011998801">
+                                                        <li class="loading">
+                                                            <div class="loader"></div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                     </div>
+                                       
+                                            </div>
+                                <table class="order-items-table">
+                                    <tbody>
+                                        <foreach name="detail" item="order">
+                                        <tr>
+                                                
+                                            <td class="col col-thumb">
+                                                <div class="figure figure-thumb">
+                                                     <a  href="#">
+                                                        <img src="__PUBLIC__/Uploads/<{$order.pic}>" alt="" height="80" width="80">
+                                                     </a>
+                                                 </div>
+                                            </td>
+                                            <td class="col col-name">
+                                                    <p class="name">
+                                             <a   href="#"><{$order.gname}></a>
+                                                                                                            
+                                                    </p>
+                                            </td>
+                                             <td class="col col-price">
+                                                    <p class="price"><{$order.price}>元  × <{$order.buynum}></p>
+                                            </td>
+                                                <td class="col col-actions">
+                                                                            
+                                                                            
+                                                </td>
+                                            </tr>
+                                        </foreach>
+                                    </tbody>
+                              </table>
+                            </div>
+                            <div id="editAddr" class="order-detail-info">
+
+                                                    <h3>收货信息</h3>
+                            <table class="info-table">
+                                <tbody><tr>
+                                    <th>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名：</th>
+                                    <td><{$data.consignee}></td>
+                                </tr>
+                                <tr>
+                                    <th>联系电话：</th>
+                                    <td><{$data.phone}></td>
+                                </tr>
+                                <tr>
+                                    <th>收货地址：</th>
+                                    <td><{$data.address}></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                            <div class="actions">
+                             </div>
+                        
+                    </div>
+
+
+                    <div id="editTime" class="order-detail-info">
+                        <h3>支付方式及送货时间</h3>
+                        <table class="info-table">
+                            <tbody><tr>
+                                <th>支付方式：</th>
+                                <td>小米钱包</td>
+                            </tr>
+                            <tr>
+                               <th>送货时间：</th>
+                               <td>工作日送货(适用于办公地址)</td>
+                            </tr>
+                    </tbody></table>
+                        <div class="actions">
+                        </div>
+                    </div>
+                    <div class="order-detail-info">
+                                <h3>发票信息</h3>
+                                <table class="info-table">
+                                    <tbody><tr>
+                                        <th>发票类型：</th>
+                                        <td>单位纸质发票</td>
+                                    </tr>
+                                    <tr>
+                                        <th>发票内容：</th>
+                                        <td>购买商品明细</td>
+                                    </tr>
+                                    <tr>
+                                        <th>发票抬头：</th>
+                                        <td>乐视网信息技术(北京)股份有限公司</td>
+                                    </tr>
+                                </tbody></table>
+                                <div class="actions">
+                                                                    </div>
+                            </div>
+                                                                <div class="order-detail-total">
+                        <table class="total-table">
+                            <tbody><tr>
+                                <th>商品总价：</th>
+                                <td><span class="num"><{$data.total}></span>元</td>
+                            </tr>
+                                                        <tr>
+                                <th>运&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费：
+                                </th>
+                                <td><span class="num">0</span>元</td>
+                            </tr>
+                            
+                            <tr>
+                                <th class="total">实付金额：</th>
+                                <td class="total"><span class="num"><{$data.total}></span>元</td>
+                            </tr>
+                         </tbody></table>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+</block>
+<extend name="Space/infofooter" />

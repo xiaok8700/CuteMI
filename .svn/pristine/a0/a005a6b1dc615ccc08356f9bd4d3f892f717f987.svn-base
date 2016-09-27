@@ -1,0 +1,32 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class BeforeCartController extends Controller {
+   //首页显示
+    public function index(){
+         
+        $gid = I("get.gid");
+
+    	$goods = M("goods");
+    	$res = $goods->where("gid = ".$gid)->find();
+    	$this -> assign("goods",$res);
+
+        $verson = $res["verson"];
+        $verson = explode(",",$verson);
+        $this->assign("verson",$verson);
+        
+         $color = $res["color"];
+         $color = explode(",",$color);
+         $this->assign("color",$color);
+         $this->display();
+  }
+
+
+    //附件显示
+    public function index2(){
+    	$this->display();
+    }
+
+
+ 
+}

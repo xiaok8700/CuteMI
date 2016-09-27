@@ -1,0 +1,397 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+header('content-type:text/html;charset=utf-8');
+class SpaceController extends Controller {
+    public function index(){
+        
+
+      //计算收藏商品数量
+      $collect = M("collect");
+      $uid = $_SESSION["username"]["uid"];
+      $num = $collect->where("state = '0' and uid = ".$uid)->count();
+      $this->assign("num",$num);
+      $this->display();
+    }
+    
+    
+    //待支付订单
+    public function nobuy(){
+//        $model = D('order');
+//        $where['order_state'] = '10';
+//        $where['buyer_id'] = $_SESSION['user']['id'];
+//    	$list = $model->where($where)->relation(true)->select();
+//       // dump($list);die();
+//    	$list ? $this->assign('nobuy',$list) : $this->assign('displa',5);
+//        $this->display();
+        
+        $model = D('order');
+        $where['order_state'] = '10';
+        $where['buyer_id'] = $_SESSION['user']['id'];
+        $count = $model->where($where)->relation(true)->count();
+        $p = getpage($count, 2);//调用分页函数
+        $list = $model->relation(true)->where($where)->limit($p->firstRow . ',' . $p->listRows)->select();
+        $this->assign('page', $p->show());
+    	$list ? $this->assign('nobuy',$list) : $this->assign('displa',5);
+        $this->display();
+    }
+    //待收获
+//     public function buynomoney(){
+// //        $model = D('order');
+// //        $where['order_state'] = '30';
+// //         $where['buyer_id'] = $_SESSION['user']['id'];
+// //    	$list = $model->where($where)->relation(true)->select();
+// //    	$list ? $this->assign('buynomoney',$list)  : $this->assign('displ',5);
+// //        $this->display();
+        
+//         $model = D('order');
+//         $where['order_state'] = '30';
+//         $where['buyer_id'] = $_SESSION['user']['id'];
+//         $count = $model->where($where)->relation(true)->count();
+//         $p = getpage($count, 2);//调用分页函数
+//         $list = $model->relation(true)->where($where)->limit($p->firstRow . ',' . $p->listRows)->select();
+//         $this->assign('page', $p->show());
+//     	$list ? $this->assign('buynomoney',$list) : $this->assign('displ',5);
+//         $this->display();
+//     }
+    
+//     public function buyclosed(){
+// //        $model = D('order');
+// //        $where['order_state'] = ['in','0,40'];
+// //         $where['buyer_id'] = $_SESSION['user']['id'];
+// //    	$list = $model->where($where)->relation(true)->select();
+// //    	$list ? $this->assign('buyclosed',$list)  : $this->assign('disp',5);
+// //       // dump($list);
+// //        $this->display();
+        
+//         $model = D('order');
+//         $where['order_state'] = ['in',"0,40"];
+//         $where['buyer_id'] = $_SESSION['user']['id'];
+//         $count = $model->where($where)->relation(true)->count();
+//         $p = getpage($count, 2);//调用分页函数
+//         $list = $model->relation(true)->where($where)->limit($p->firstRow . ',' . $p->listRows)->select();
+//         $this->assign('page', $p->show());
+//     	$list ? $this->assign('buyclosed',$list) : $this->assign('disp',5);
+//         $this->display();
+//     }
+    
+    public function dpasswd(){
+        $this->display("dpasswd");
+    }
+    public function dopass(){
+        $user = D('user');
+        $data['uid'] = $_SESSION['username']['uid'];
+        $data['upwd'] = md5(I('post.oldpassword'));
+       // $data['aa'] = md5('admin');
+        $uid['uid'] = $_SESSION['username']['uid'];
+        $add['upwd'] = md5(I('post.password'));
+//        dump($add);
+       //dump($data);
+        $res = $user->where($data)->find();
+        //dump($res);die();
+        if(!$res){
+            $this->error('原密码输入错误！');
+        }else{
+//            if(!$user->create()){
+//               $this->error($user->getError());
+//            }else{
+//                 $update = $user->where($id)->data($add)->save();
+//                 if($update){
+//                    $this->success("密码修改成功！",U("dpasswd"));
+//                }else{
+//                    $this->error("密码修改失败！");
+//            }
+//            }
+           if(!$_POST['password']){
+               $this->error("密码不能为空！");
+           }else if($_POST['password'] != $_POST['password2']){
+               $this->error("两次密码输入不一致！");
+           } else{
+               $update = $user->where($uid)->data($add)->save();
+                 if($update){
+                    $this->success("密码修改成功！",U("dpasswd"));
+                }else{
+                    $this->error("密码修改失败！");
+            }
+           }
+           
+        }
+    }
+    //退出
+    public function layout(){
+        unset($_SESSION['user']);
+       $this->success("exit",U("Space/index"));
+    }
+
+//////////////////////////////////用户收货地址部分////////////////    
+    
+
+
+    //显示所有地址
+    public function address(){
+        $user = M('address');
+        $uid=$_SESSION['username']['uid'];
+        $data=$user->where('uid='.$uid)->select();
+        $this->assign('data1',$data); 
+        $this->display("address");
+    }
+    
+    public function mod(){
+        // $id=$_POST['id'];
+        //   echo 1;
+         $id=$_GET['id'];
+         $up=M('address');
+         $res=$up->where('id='.$id)->find();
+         // dump($res);
+          $this->assign('data2',$res);
+        
+          $this->display();
+    }
+
+    //修改地址并保存
+    public function change(){
+
+      // $data=$_POST;
+      $id=$_POST['id'];
+
+
+      $res=M('address');
+      $res->create();
+      $a=$res->where('id='.$id)->save();
+      if($a){
+        $this->success('修改成功');  
+
+       }else{
+        $this->error('修改失败');
+
+       }
+
+
+    }
+    //删除多余地址
+    public function del(){
+        // $where['id'] = I("get.uid");
+        $user = M("address");
+        $id=$_POST['id'];
+        
+        $res = $user->where('id='.$id)->delete();
+        if($res){
+                echo 1;
+            }else{
+                $this->error("修改失败！");
+            }
+    }
+    //将新地址插入数据库
+    public function insert(){
+
+      $res = M('district');
+        foreach ($_POST['is_district'] as $v) {
+            $row = $res->find($v);
+            $str2[] = $row['name'];
+        }
+      $do=M('address');
+      $_POST['uid'] = $_SESSION['username']['uid'];
+      
+      $_POST['is_district'] = implode(' ', $str2);
+      // dump($_POST);
+      
+      $do->create();
+      $list=$do->add();
+      $list ? $this->ajaxReturn($list) : $this->ajaxReturn(0);
+
+    }
+
+
+///////////////////////////////////////订单部分开始//////////////////////
+    public function allbook(){
+        $model=M('order');
+        $uid=$_SESSION['username']['uid'];
+
+        // $total=$model->where('uid='.$uid)->count();
+        // $maxpage = ceil($total/2);
+
+       //  $total =  $goods->where('status=1')->count();
+       // $this->assign("total",$total);
+       // // 计算总页数
+       // $maxpage = ceil($total/10);
+       // $this->assign("maxpage",$maxpage);
+       // //计算当前页
+       // $no = I("get.no")?I("get.no"):1;
+      
+       // //检测当前页
+       // if($no<1){
+       //    $no = 1;
+       // }
+       // if($no > $maxpage){
+       //   $no = $maxpage;
+       // }
+       // $this->assign("no",$no);
+
+
+
+       // $result=$goods->where('status=1')->page($no,10)->select();
+        $res=$model->where('uid='.$uid)->select();
+        $this->assign('res',$res);
+        // dump($res);
+        // die;
+        
+
+        
+      // $model = D('order');
+     //    $where['order_state'] = ['not in',"0"];
+     //    $where['buyer_id'] = $_SESSION['user']['id'];
+     //    $count = $model->where($where)->relation(true)->count();
+     //    $p = getpage($count, 2);//调用分页函数
+     //    $list = $model->relation(true)->where($where)->order("order_state asc")->limit($p->firstRow . ',' . $p->listRows)->select();
+     //    $this->assign('page', $p->show());
+      // $list ? $this->assign('list',$list) : $this->assign('display',5);
+        $this->display();
+    }
+
+
+
+    public function detail(){
+
+
+      
+
+      $oid=$_GET['oid'];
+      $order=M('order');
+      $data=$order->where('oid='.$oid)->find();
+      // echo $oid;
+
+      $this->assign('data',$data);
+      $model=M('order_detail');
+      $res=$model->where('oid='.$oid)->select();
+                 // dump($res);
+      $this->assign('detail',$res);
+
+       $this->display();
+
+
+    }
+    //订单搜索
+    public function search(){
+      $uid=$_SESSION['username']['uid'];
+      $key=$_POST['keywords'];
+      $search=M('order');
+      $value=$search->where("oid=".$key." and uid=".$uid)->select();
+      
+      if(!$value){
+        $this->error('无查询结果',U('allbook'));
+      
+    }else{
+        $this->assign('res',$value);
+        $this->display('search');
+
+
+    }
+
+
+    }
+
+
+
+
+
+
+ ////////////////////////////////////////收藏开始///////////////////////   
+   
+    //收藏
+    public function collect(){
+       $uid = $_SESSION["username"]["uid"];
+       $collect = M("collect");
+       $res = $collect->where("state = '0' and uid = ".$uid)->select();
+       $this->assign("res",$res);
+       $this->display();
+
+    }
+    //取消收藏
+    public function cancel(){
+       $cid = I("get.cid");
+       $collect = M("collect");
+       $data["state"] = "1";
+       $collect->where("cid = ".$cid)->data($data)->save();
+
+       // 获取gid
+       $res = $collect->where("cid = ".$cid)->find();
+       $gid = $res["gid"];
+       //同时改变session中标识
+       $_SESSION["collect"][$gid]["iscollect"]=false;
+
+    }
+
+/////////////////////////////////////////////收藏结束/////////////
+   
+    //评价
+    // public function assess(){
+    //  
+    // }
+    
+    // public function assess2(){
+    //    
+    // }
+    
+   
+    // //订单详情
+    // public function orderdetail(){
+    //     //dump($_GET);
+    //     $res = M('address')->find($_GET['address_id']);
+    //     $model = D('order');
+    //     $list = $model->where("order_sn='{$_GET['order_sn']}'")->relation(true)->find();
+    //     //dump($list);
+    //     $this->assign('list',$list);
+    //     $this->assign('address',$res);
+    //     $this->display();
+    // }
+    
+    //现金账户
+    public function yen(){
+        $res = M('user_bank')->where("uid='{$_SESSION['user']['uid']}'");
+        $res ? $this->assign('res',$res) : $this->assign('res','您的账户还没有，请充值');
+        $this->display();
+    }
+    
+    public function recharge(){
+        $where['uid'] = $_SESSION['user']['uid'];
+        $res = M('user_bank')->where($where)->getField('count');
+       // dump($res);die();
+        $data['count'] = 10000 + $res;
+        M('user_bank')->where($where)->data($data)->save();
+        $this->success('充值成功！','yen');
+    }
+    
+    public function barter(){
+        $res = M('order')->where("refund_state=3 and buyer_id='{$_SESSION['user']['id']}'")->select();
+        $res ? $this->assign('res',$res) : $this->error('您还没有换货单');
+        $this->display();
+    }
+    
+    public function backmoney(){
+        $res = M('order')->where("refund_state=1 and buyer_id='{$_SESSION['user']['id']}'")->select();
+        $res ? $this->assign('res',$res) : $this->error('您还没有退款单');
+        $this->display();
+    }
+    
+    public function return2(){
+         $res = M('order')->where("refund_state=2 and buyer_id='{$_SESSION['user']['id']}'")->select();
+        $res ? $this->assign('res',$res) : $this->error('您还没有退货单');
+        $this->display();
+    }
+    //取消订单
+    public function cancle(){
+        $where['order_sn'] = I('get.order_sn');
+        $data['order_state'] = 0;
+        M('order')->where($where)->data($data)->save() ? $this->success("取消成功",'allbook') :$this->error("取消失败！");
+    }
+    
+    //彻底删除订单
+    public function dodel(){
+        $model = D('order');
+        //$where['order_sn'] = I('get.order_sn');
+        $where['id'] = I('get.id');
+    	$list = $model->where($where)->relation(true)->delete();
+        //dump($list);
+        $this->success('删除成功!',"buyclosed");
+    }
+}

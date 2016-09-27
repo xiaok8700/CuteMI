@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>	
+		<title>修改用户操作</title>
+		<meta charset="utf-8" />
+		<style>
+			*{
+				list-style-type:none;
+			}
+			h1{
+				text-align:center;
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="__CONTROLLER__/update" method="post">
+			<table border="1" width="70%" align="center" bordercolor="blue">
+				<h1>修改管理员列表</h1>
+				<tr>
+					<td width="20%">用户ID</td>
+					<td><input type="hidden" name="ad_id" value="<{$user.ad_id}>"><span><{$user.ad_id}></span></td>
+				</tr>
+				<tr>
+					<td width="20%">用户名</td>
+					<td><input type="text" name="ad_name" value="<{$user.ad_name}>"></td>
+				</tr>
+				<tr>
+					<td>权限</td>
+					<td><select name="ad_ur" id="">
+					    <option value="1" >&nbsp;&nbsp;用户管理员</option>
+					    <option value="2" >&nbsp;&nbsp;商品管理员</option>
+					    <option value="3" >&nbsp;&nbsp;订单管理员</option>
+					    <option value="4" >&nbsp;&nbsp;超级管理员</option>
+				        </select></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit"  value="保存修改"></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

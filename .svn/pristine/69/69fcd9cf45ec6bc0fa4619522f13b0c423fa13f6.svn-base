@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>购买小米手机</title>
+<meta name="description" content="小米官网">
+<meta name="keywords" content="小米官网">
+<meta name="viewport" content="width=1226">
+<link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/phone.css">
+<style type="text/css">
+      *{
+       margin:0;
+       padding:0;
+       list-style:none;
+    }
+      .nav-item a{
+        height:5px;
+        background:gray;
+    }
+     .nav-item a:hover{
+        background:#ccc;
+        opacity:0.7;
+    }
+    .nav-category{
+        text-align:center;
+        background:#ccc;
+    }
+</style>
+</head>
+<body>
+<div class="site-topbar">
+    <div class="container">
+        <div class="topbar-nav">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-d8d76cec44d9d69a', '//www.mi.com/index.html', 'pcpid']);" data-stat-id="d8d76cec44d9d69a" href="http://www.mi.com/index.html">小米网</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-984415c52166fcfe', 'http://www.miui.com/', 'pcpid']);" data-stat-id="984415c52166fcfe" href="http://www.miui.com/" target="_blank">MIUI</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-e410441a5e1ca6be', 'http://www.miliao.com/', 'pcpid']);" data-stat-id="e410441a5e1ca6be" href="http://www.miliao.com/" target="_blank">米聊</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-64da11583a8f5aa4', 'http://game.xiaomi.com/', 'pcpid']);" data-stat-id="64da11583a8f5aa4" href="http://game.xiaomi.com/" target="_blank">游戏</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-5b2b825f6e9aefc2', 'http://www.duokan.com/', 'pcpid']);" data-stat-id="5b2b825f6e9aefc2" href="http://www.duokan.com/" target="_blank">多看阅读</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-5486ff78dab46903', 'https://i.mi.com/', 'pcpid']);" data-stat-id="5486ff78dab46903" href="https://i.mi.com/" target="_blank">云服务</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-2b5f5ebe7d9ad289', '//www.mi.com/c/appdownload/', 'pcpid']);" data-stat-id="2b5f5ebe7d9ad289" href="http://www.mi.com/c/appdownload/" target="_blank">小米网移动版</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-690537f5005b8ead', '//static.mi.com/feedback/', 'pcpid']);" data-stat-id="690537f5005b8ead" href="http://static.mi.com/feedback/" target="_blank">问题反馈</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-37f0c0ecc5cd1c51', '#J_modal-globalSites', 'pcpid']);" data-stat-id="37f0c0ecc5cd1c51" href="#J_modal-globalSites" data-toggle="modal">Select Region</a>
+        </div>
+        <div class="topbar-cart" id="J_miniCartTrigger">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-6df4db48a644b407', '//static.mi.com/cart/', 'pcpid']);" data-stat-id="6df4db48a644b407" class="cart-mini" id="J_miniCartBtn" href="http://static.mi.com/cart/"><i class="iconfont"></i>购物车<span class="cart-mini-num J_cartNum">（0）</span></a>
+            <div class="cart-menu" id="J_miniCartMenu">
+                <div class="loading"><div class="loader"></div></div>
+            </div>
+        </div>
+        <div class="topbar-info" id="J_userInfo">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-bf3aa4c80c0ac789', '//order.mi.com/site/login', 'pcpid']);" data-stat-id="bf3aa4c80c0ac789" class="link" href="http://order.mi.com/site/login?redirectUrl=http://www.mi.com/buyphone/" data-needlogin="true">登录</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-749b1369201c13fb', 'https://account.xiaomi.com/pass/register', 'pcpid']);" data-stat-id="749b1369201c13fb" class="link" href="https://account.xiaomi.com/pass/register">注册</a>        </div>
+    </div>
+</div>
+<div class="site-header">
+    <div class="container">
+        <div class="header-logo">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-f4006c1551f77f22', '//www.mi.com/index.html', 'pcpid']);" data-stat-id="f4006c1551f77f22" class="logo ir" href="http://www.mi.com/index.html" title="小米官网">小米官网</a>
+                    </div>
+        <div class="header-nav">
+<!------------------------------- 导航栏部分 -------------------------------------->
+            <ul class="nav-list J_navMainList clearfix">
+                <li id="J_navCategory" class="nav-category">
+                    <a href="" style="text-align:center;line-height:70px"><span class="text">全部商品分类</span>
+                    </a>
+                </li>
+  <!------------------------------------------- 导航栏部分 -------------------------------->
+                      <!-- 商品导航-->
+                      <foreach name="nav1" item="nav1">
+                       <li class="nav-item">
+                           <a  class="link" href="__CONTROLLER__/index/typeid/<{$nav1.typeid}>">
+                            <span class="text"><{$nav1.tname}></span><span class="arrow"></span>
+                          </a>
+                       </li>
+                      </foreach>
+
+                      <!-- 附件商品导航 -->
+                      <foreach name="nav2" item="nav2">
+                       <li class="nav-item">
+                           <a  class="link" href="__CONTROLLER__/attproduct/attid/<{$nav2.attid}>">
+                            <span class="text"><{$nav2.attname}></span><span class="arrow"></span>
+                          </a>
+                       </li>
+                      </foreach>
+  <!------------------------------------------- 导航栏部分结束 -------------------------------->
+
+                                 <li class="nav-item">
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-359ee71e873842fd', 'http://www.xiaomi.cn', 'pcpid']);" data-stat-id="359ee71e873842fd" class="link" href="http://www.xiaomi.cn/" target="_blank"><span class="text">社区</span></a>
+                </li>
+                            </ul>
+        </div>
+
+<!--------------------------------------- 搜索功能 ------------------------------------------>
+        <div class="header-search">
+            <form id="J_searchForm" class="search-form clearfix" action="__MODULE__/index/search" method="get">
+                <label for="search" class="hide">站内搜索</label>
+                <input class="search-text" id="search" name="gname"  type="search">
+                <input class="search-btn iconfont" value="" type="submit">
+               
+           </form>
+        </div>
+<!--------------------------------------- 搜索功能结束 ------------------------------------------>
+
+    </div>
+<div id="J_navMenu" class="header-nav-menu" style="display: none;"><div class="container"></div></div></div>
+<div class="page-main channel buyphone-channel">
+    <div class="container breadcrumbs"> 
+        <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-dc02150fd0701f93', '//www.mi.com/index.html', 'pcpid']);" data-stat-id="dc02150fd0701f93" href="http://www.mi.com/index.html">首页</a><span class="sep">/</span>选购手机 · 平板
+    </div>  
+    <div class="container channel-nav">
+    <ul class="clearfix">
+        <li class="current">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-37221d8e391cd561', '', 'pcpid']);" data-stat-id="37221d8e391cd561">选购手机 · 平板</a>
+        </li>
+  <!------------------------------ 该类下所有商品名称 -------------------------->
+        <foreach name = "res3" item = "res3">
+        <li>
+            <a  href="__MODULE__/goods/index?id=<{$res3.gid}>" target="_blank"><{$res3.gname}></a>
+        </li>
+    </foreach>
+  <!------------------------------ 该类下所有商品名称结束 --------------------------> 
+  </ul>
+  </div>
+    <div class="channel-focus">
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-20ebbd45cfc14991', '//www.mi.com/note3/pro/', 'pcpid']);" data-stat-id="20ebbd45cfc14991" href="http://www.mi.com/note3/pro/">
+            <img src="__PUBLIC__/home/images/T1qNDQBvCT1RXrhCrK.jpg" height="460" width="1226">
+        </a>
+                
+    </div>
+    <div class="container channel-list">
+ <ul class="row clearfix">
+
+ <!----------------------------------------- 产品展示 ------------------------------------------>
+            <foreach name = "res2" item = "goods">
+            <li class="span10">
+                <div class="channel-list-img">
+                    <a href="__MODULE__/goodsdetail/gid/<{$goods.gid}>" target="_blank">
+                        <img width="600" height="380" src="__PUBLIC__/Uploads/<{$goods.pic}>" alt="小米手机5">
+                    </a>
+                </div>
+                <div class="channel-list-con clearfix">
+                    <dl class="channel-list-des">
+                        <dt>
+                            <{$goods.gname}> <b><{$goods.price}></b><span>元起</span>
+                        </dt>
+                        <dd>
+                           <{$goods.keywords}>                      </dd>
+                    </dl>
+                    <p class="channel-list-btn">
+                        <a href="" class="btn btn-line-primary">立即购买</a>
+                    </p>
+                </div>
+            </li>
+        </foreach>
+<!------------------------------------------- 产品展示结束 ------------------------------------------>               
+        </ul>
+    </div>
+    <div class="channel-tips">
+        <div class="section container">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-877bf67af7470716', '//www.mi.com/service/safe/', 'pcpid']);" data-stat-id="877bf67af7470716" href="http://www.mi.com/service/safe/" target="_blank">
+                <img src="__PUBLIC__/home/images/phone-section-01.png">
+            </a>
+        </div>
+        <div class="section container">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-0661297565d05771', '//www.mi.com/mimobile/', 'pcpid']);" data-stat-id="0661297565d05771" href="http://www.mi.com/mimobile/" target="_blank">
+                <img src="__PUBLIC__/home/images/mi-mobile.jpg" alt="" style="display:block">
+            </a>
+        </div>
+        <div class="section container"> 
+            <img src="__PUBLIC__/home/images/phone-section-02.png">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-66243771d24bdec7', '//heyue.mi.com/', 'pcpid']);" data-stat-id="66243771d24bdec7" href="http://heyue.mi.com/" target="_blank" style="position:absolute;display:block;width:305px;height:350px;bottom:99px;left:274px;"></a>
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-7d6025c8e251baf8', '//www.mi.com/service/exchange#installment', 'pcpid']);" data-stat-id="7d6025c8e251baf8" href="http://www.mi.com/service/exchange#installment" target="_blank" style="position:absolute;display:block;width:305px;height:350px;bottom:99px;right:274px;"></a>
+        </div>
+        <div class="section container">
+            <img src="__PUBLIC__/home/images/phone-section-04.jpg">
+        </div>
+        <div class="container channel-acces">
+            <dl class="channel-acces-des">
+                <dt>搭配更多智能硬件产品</dt>
+                <dd>
+                    以小米手机为中心，控制智能硬件产品，轻松享受智能生活带来的方便和舒适。<br>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-54b50a3a426a5f63', '//list.mi.com/26', 'pcpid']);" data-stat-id="54b50a3a426a5f63" href="http://list.mi.com/26" target="_blank">查看更多智能硬件产品 <i class="iconfont"></i></a>
+                </dd>
+            </dl>
+            <ul class="channel-acces-list clearfix">
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-9c9b01e5e4843825', '//item.mi.com/1161200006.html', 'pcpid']);" data-stat-id="9c9b01e5e4843825" href="http://item.mi.com/1161200006.html" target="_blank">
+                        <img src="__PUBLIC__/home/images/T1obJvBghv1RXrhCrK220x220.jpg" alt="小米活塞耳机 基础版">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-b8a93380e5317b15', '//item.mi.com/1161200006.html', 'pcpid']);" data-stat-id="b8a93380e5317b15" href="http://item.mi.com/1161200006.html" target="_blank">小米活塞耳机 基础版</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-e872a9440cd383be', '//item.mi.com/1161200006.html', 'pcpid']);" data-stat-id="e872a9440cd383be" href="http://item.mi.com/1161200006.html" target="_blank">新鲜绽放，5 色可选</a></dd>
+                        <dd class="price">29元</dd>
+                    </dl>
+                </li>
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-5da5a84628b49d84', '//www.mi.com/huosai/', 'pcpid']);" data-stat-id="5da5a84628b49d84" href="http://www.mi.com/huosai/" target="_blank">
+                        <img src="__PUBLIC__/home/images/T1o0h_B5VT1RXrhCrK220x220.jpg" alt="小米活塞耳机标准版">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3c9510d2abfb1338', '//www.mi.com/huosai/', 'pcpid']);" data-stat-id="3c9510d2abfb1338" href="http://www.mi.com/huosai/" target="_blank">小米活塞耳机标准版</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-0fc1a0a4fe5f9e9b', '//www.mi.com/huosai/', 'pcpid']);" data-stat-id="0fc1a0a4fe5f9e9b" href="http://www.mi.com/huosai/" target="_blank">音质优化专利，金属复合振膜技术</a></dd>
+                        <dd class="price">69元</dd>
+                    </dl>
+                </li>
+                                <li class="no-border">
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3dbb273e6e038825', '//www.mi.com/bluetooth-headset/', 'pcpid']);" data-stat-id="3dbb273e6e038825" href="http://www.mi.com/bluetooth-headset/" target="_blank">
+                        <img src="__PUBLIC__/home/images/T190DvB4dv1RXrhCrK220x220.jpg" alt="小米蓝牙耳机">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-579cc1906e2989ef', '//www.mi.com/bluetooth-headset/', 'pcpid']);" data-stat-id="579cc1906e2989ef" href="http://www.mi.com/bluetooth-headset/" target="_blank">小米蓝牙耳机</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-be7f1a94a39e5a0d', '//www.mi.com/bluetooth-headset/', 'pcpid']);" data-stat-id="be7f1a94a39e5a0d" href="http://www.mi.com/bluetooth-headset/" target="_blank">6.5克轻巧，蓝牙4.1高清通话音质</a></dd>
+                        <dd class="price">79元</dd>
+                    </dl>
+                </li>
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-c2832b3faebd3d88', '//item.mi.com/1154300037.html', 'pcpid']);" data-stat-id="c2832b3faebd3d88" href="http://item.mi.com/1154300037.html" target="_blank">
+                        <img src="__PUBLIC__/home/images/T1Tfd_BjAv1RXrhCrK220x220.jpg" alt="小钢炮蓝牙音箱2">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-1ebe14fec6365bfc', '//item.mi.com/1154300037.html', 'pcpid']);" data-stat-id="1ebe14fec6365bfc" href="http://item.mi.com/1154300037.html" target="_blank">小钢炮蓝牙音箱2</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-96081f1f28e9d134', '//item.mi.com/1154300037.html', 'pcpid']);" data-stat-id="96081f1f28e9d134" href="http://item.mi.com/1154300037.html" target="_blank">极简设计，声声动听的桌上艺术品</a></dd>
+                        <dd class="price">129元</dd>
+                    </dl>
+                </li>
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-292860b24c4642e2', '//item.mi.com/1161200012.html', 'pcpid']);" data-stat-id="292860b24c4642e2" href="http://item.mi.com/1161200012.html" target="_blank">
+                        <img src="__PUBLIC__/home/images/T1vFEjBbWT1RXrhCrK220x220.jpg" alt="小米USB充电器（4口）">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-1f8e6bbf8b4ae2e8', '//item.mi.com/1161200012.html', 'pcpid']);" data-stat-id="1f8e6bbf8b4ae2e8" href="http://item.mi.com/1161200012.html" target="_blank">小米USB充电器（4口）</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-5e052e4274cc2259', '//item.mi.com/1161200012.html', 'pcpid']);" data-stat-id="5e052e4274cc2259" href="http://item.mi.com/1161200012.html" target="_blank">4个USB接口，2A快充，轻巧便携</a></dd>
+                        <dd class="price">69元</dd>
+                    </dl>
+                </li>
+                                <li class="no-border">
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-d8a683b32fdf20f4', '//www.mi.com/dianyuan10000/', 'pcpid']);" data-stat-id="d8a683b32fdf20f4" href="http://www.mi.com/dianyuan10000/" target="_blank">
+                        <img src="__PUBLIC__/home/images/T1ggWQBybT1RXrhCrK220x220.jpg" alt="小米移动电源10000mAh">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-de7e719f6891f071', '//www.mi.com/dianyuan10000/', 'pcpid']);" data-stat-id="de7e719f6891f071" href="http://www.mi.com/dianyuan10000/" target="_blank">小米移动电源10000mAh</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-2b7e9477a7368800', '//www.mi.com/dianyuan10000/', 'pcpid']);" data-stat-id="2b7e9477a7368800" href="http://www.mi.com/dianyuan10000/" target="_blank">高密度进口电芯，仅名片大小</a></dd>
+                        <dd class="price">69元</dd>
+                    </dl>
+                </li>
+                 
+                
+            </ul>
+        </div>
+        <div class="container channel-mihone">
+            <div class="channel-mihone-des">
+                <dl>
+                    <dt>小米之家及官方授权维修网点</dt>
+                    <dd>
+                        欢迎来小米之家解决你遇到的问题，了解最新的小米官方产品最全面的产品信息，还有很多好玩的活动等你来访。<br>
+                        你还可以前往小米授权维修网点解决售后问题，520家网点让服务随时在身边。
+                    </dd>
+                </dl>
+                <p>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-92bb525974bcde0e', '//www.mi.com/c/xiaomizhijia/', 'pcpid']);" data-stat-id="92bb525974bcde0e" href="http://www.mi.com/c/xiaomizhijia/" class="btn btn-large btn-line-primary">小米之家</a>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-a684b74699138aae', '//www.mi.com/c/service/poststation/', 'pcpid']);" data-stat-id="a684b74699138aae" href="http://www.mi.com/c/service/poststation/" class="btn btn-large btn-line-primary">官方维修网点</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="site-footer">
+    <div class="container">
+        <div class="footer-service">
+            <ul class="list-service clearfix">
+                            <li><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-da46b3d5586757a4', '//www.mi.com/service/exchange#repaire', 'pcpid']);" data-stat-id="da46b3d5586757a4" rel="nofollow" href="http://www.mi.com/service/exchange#repaire" target="_blank"><i class="iconfont"></i>1小时快修服务</a></li>
+                            <li><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-78babcae8a619e26', '//www.mi.com/service/exchange#back', 'pcpid']);" data-stat-id="78babcae8a619e26" rel="nofollow" href="http://www.mi.com/service/exchange#back" target="_blank"><i class="iconfont"></i>7天无理由退货</a></li>
+                            <li><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-d1745f68f8d2dad7', '//www.mi.com/service/exchange#free', 'pcpid']);" data-stat-id="d1745f68f8d2dad7" rel="nofollow" href="http://www.mi.com/service/exchange#free" target="_blank"><i class="iconfont"></i>15天免费换货</a></li>
+                            <li><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-2b5586f1346ce37a', '//www.mi.com/service/exchange#mail', 'pcpid']);" data-stat-id="2b5586f1346ce37a" rel="nofollow" href="http://www.mi.com/service/exchange#mail" target="_blank"><i class="iconfont"></i>满99元包邮</a></li>
+                            <li><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-caf836ab93cdfd31', '//www.mi.com/c/service/poststation/', 'pcpid']);" data-stat-id="caf836ab93cdfd31" rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank"><i class="iconfont"></i>520余家售后网点</a></li>
+                        </ul>
+        </div>
+        <div class="footer-links clearfix">
+            
+            <dl class="col-links col-links-first">
+                <dt>帮助中心</dt>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-2458d0d93e3f7386', '//www.mi.com/service/help_center/guide/', 'pcpid']);" data-stat-id="2458d0d93e3f7386" rel="nofollow" href="http://www.mi.com/service/help_center/guide/" target="_blank">购物指南</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-2109aae4f55e7716', '//www.mi.com/service/help_center/pay/', 'pcpid']);" data-stat-id="2109aae4f55e7716" rel="nofollow" href="http://www.mi.com/service/help_center/pay/" target="_blank">支付方式</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-fdf4464071458ade', '//www.mi.com/service/help_center/delivery/', 'pcpid']);" data-stat-id="fdf4464071458ade" rel="nofollow" href="http://www.mi.com/service/help_center/delivery/" target="_blank">配送方式</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>服务支持</dt>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-8e282b6f669ba990', '//www.mi.com/service/exchange', 'pcpid']);" data-stat-id="8e282b6f669ba990" rel="nofollow" href="http://www.mi.com/service/exchange" target="_blank">售后政策</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-5f2408ab3c808aa2', 'http://fuwu.mi.com/', 'pcpid']);" data-stat-id="5f2408ab3c808aa2" rel="nofollow" href="http://fuwu.mi.com/" target="_blank">自助服务</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-18c340c920a278a1', 'http://xiazai.mi.com/', 'pcpid']);" data-stat-id="18c340c920a278a1" rel="nofollow" href="http://xiazai.mi.com/" target="_blank">相关下载</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>小米之家</dt>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-b27b566974e4aa67', '//www.mi.com/c/xiaomizhijia/', 'pcpid']);" data-stat-id="b27b566974e4aa67" rel="nofollow" href="http://www.mi.com/c/xiaomizhijia/" target="_blank">小米之家</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-bdb16d6645c388ac', '//www.mi.com/c/service/poststation/', 'pcpid']);" data-stat-id="bdb16d6645c388ac" rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank">服务网点</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-443642eacd664bd9', 'http://service.order.mi.com/mihome/index', 'pcpid']);" data-stat-id="443642eacd664bd9" rel="nofollow" href="http://service.order.mi.com/mihome/index" target="_blank">预约服务</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>关于小米</dt>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-f6d386c65b1f4132', '//www.mi.com/about', 'pcpid']);" data-stat-id="f6d386c65b1f4132" rel="nofollow" href="http://www.mi.com/about" target="_blank">了解小米</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-4307a445f5592adb', 'http://hr.xiaomi.com/', 'pcpid']);" data-stat-id="4307a445f5592adb" rel="nofollow" href="http://hr.xiaomi.com/" target="_blank">加入小米</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-6842e821365ee45d', '//www.mi.com/about/contact', 'pcpid']);" data-stat-id="6842e821365ee45d" rel="nofollow" href="http://www.mi.com/about/contact" target="_blank">联系我们</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>关注我们</dt>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-464883aa6e799290', 'http://e.weibo.com/xiaomishouji', 'pcpid']);" data-stat-id="464883aa6e799290" rel="nofollow" href="http://e.weibo.com/xiaomishouji" target="_blank">新浪微博</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-78fdefa9dee561b5', 'http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat', 'pcpid']);" data-stat-id="78fdefa9dee561b5" rel="nofollow" href="http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat" target="_blank">小米部落</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-47539f6570f0da90', '#J_modalWeixin', 'pcpid']);" data-stat-id="47539f6570f0da90" rel="nofollow" href="#J_modalWeixin" data-toggle="modal">官方微信</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>特色服务</dt>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-fdc16dd51892a164', '//order.mi.com/queue/f2code', 'pcpid']);" data-stat-id="fdc16dd51892a164" rel="nofollow" href="http://order.mi.com/queue/f2code" target="_blank">F 码通道</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-99876c8aaf8ef0a4', '//www.mi.com/mimobile/', 'pcpid']);" data-stat-id="99876c8aaf8ef0a4" rel="nofollow" href="http://www.mi.com/mimobile/" target="_blank">小米移动</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-b08be6bd51351e1a', '//order.mi.com/misc/checkitem', 'pcpid']);" data-stat-id="b08be6bd51351e1a" rel="nofollow" href="http://order.mi.com/misc/checkitem" target="_blank">防伪查询</a></dd>
+                
+            </dl>
+                
+            <div class="col-contact">
+                <p class="phone">400-100-5678</p>
+<p><span class="J_serviceTime-normal" style="
+">周一至周日 8:00-18:00</span>
+<span class="J_serviceTime-holiday" style="display:none;">2月7日至13日服务时间 9:00-18:00</span><br>（仅收市话费）</p>
+<a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-a7642f0a3475d686', '//www.mi.com/service/contact', 'pcpid']);" data-stat-id="a7642f0a3475d686" rel="nofollow" class="btn btn-line-primary btn-small" href="http://www.mi.com/service/contact" target="_blank"><i class="iconfont"></i> 24小时在线客服</a>            </div>
+        </div>
+    </div>
+</div>
+<div class="site-info">
+    <div class="container">
+        <div class="logo ir">小米官网</div>
+        <div class="info-text">
+            <p class="sites"><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-4fb589dbb54f257a', '//www.mi.com/index.html', 'pcpid']);" data-stat-id="4fb589dbb54f257a" href="http://www.mi.com/index.html" target="_blank">小米网</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-ed2a0e25c8b0ca2f', 'http://www.miui.com/', 'pcpid']);" data-stat-id="ed2a0e25c8b0ca2f" href="http://www.miui.com/" target="_blank">MIUI</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-826b32c1478a98d5', 'http://www.miliao.com/', 'pcpid']);" data-stat-id="826b32c1478a98d5" href="http://www.miliao.com/" target="_blank">米聊</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-c9d2af1ad828a834', 'http://www.duokan.com/', 'pcpid']);" data-stat-id="c9d2af1ad828a834" href="http://www.duokan.com/" target="_blank">多看书城</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-96f1a8cecc909af2', 'http://www.miwifi.com/', 'pcpid']);" data-stat-id="96f1a8cecc909af2" href="http://www.miwifi.com/" target="_blank">小米路由器</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-347f6dd0d8d9fda3', 'http://call.mi.com/', 'pcpid']);" data-stat-id="347f6dd0d8d9fda3" href="http://call.mi.com/" target="_blank">视频电话</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-4ad42379062eda19', 'http://blog.xiaomi.com/', 'pcpid']);" data-stat-id="4ad42379062eda19" href="http://blog.xiaomi.com/" target="_blank">小米后院</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-dfe0fac59cfb15d9', 'http://xiaomi.tmall.com/', 'pcpid']);" data-stat-id="dfe0fac59cfb15d9" href="http://xiaomi.tmall.com/" target="_blank">小米天猫店</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-c2613d0d3b77ddff', 'http://shop115048570.taobao.com', 'pcpid']);" data-stat-id="c2613d0d3b77ddff" href="http://shop115048570.taobao.com/" target="_blank">小米淘宝直营店</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-2f48f953961c637d', 'http://union.mi.com/', 'pcpid']);" data-stat-id="2f48f953961c637d" href="http://union.mi.com/" target="_blank">小米网盟</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-6479cd2d041bcf04', '//static.mi.com/feedback/', 'pcpid']);" data-stat-id="6479cd2d041bcf04" href="http://static.mi.com/feedback/" target="_blank">问题反馈</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-9db137a8e0d5b3dd', '#J_modal-globalSites', 'pcpid']);" data-stat-id="9db137a8e0d5b3dd" href="#J_modal-globalSites" data-toggle="modal">Select Region</a>            </p>
+            <p>©<a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-836cacd9ca5b75dd', '//www.mi.com/', 'pcpid']);" data-stat-id="836cacd9ca5b75dd" href="http://www.mi.com/" target="_blank" title="mi.com">mi.com</a> 京ICP证110507号 京ICP备10046444号 <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-57efc92272d4336b', 'http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134', 'pcpid']);" data-stat-id="57efc92272d4336b" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134" target="_blank">京公网安备11010802020134号 </a><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-c5f81675b79eb130', '//c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg', 'pcpid']);" data-stat-id="c5f81675b79eb130" href="http://c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg" target="_blank">京网文[2014]0059-0009号</a>
+ 违法和不良信息举报电话：185-0130-1238</p>
+        </div>
+        <div class="info-links">
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-9e1604cd6612205c', 'https://search.szfw.org/cert/l/CX20120926001783002010', 'pcpid']);" data-stat-id="9e1604cd6612205c" href="https://search.szfw.org/cert/l/CX20120926001783002010" target="_blank"><img src="__PUBLIC__/home/images/v-logo-2.png" alt="诚信网站"></a>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3e1533699f264eac', 'https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&amp;ct=df&amp;pa=461082', 'pcpid']);" data-stat-id="3e1533699f264eac" href="https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&amp;ct=df&amp;pa=461082" target="_blank"><img src="__PUBLIC__/home/images/v-logo-1.png" alt="可信网站"></a>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-b085e50c7ec83104', 'http://www.315online.com.cn/member/315140007.html', 'pcpid']);" data-stat-id="b085e50c7ec83104" href="http://www.315online.com.cn/member/315140007.html" target="_blank"><img src="__PUBLIC__/home/images/v-logo-3.png" alt="网上交易保障中心"></a>
+                </div>
+    </div>
+    <div class="slogan ir">探索黑科技，小米为发烧而生</div>
+</div>
+<div id="J_modalWeixin" class="modal fade modal-hide modal-weixin" data-width="480" data-height="520">
+        <div class="modal-hd">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-cfd3189b8a874ba4', '', 'pcpid']);" data-stat-id="cfd3189b8a874ba4" class="close" data-dismiss="modal"><i class="iconfont"></i></a>
+            <h3>小米手机官方微信二维码</h3>
+        </div>
+        <div class="modal-bd">
+            <p style="margin: 0 0 10px;">打开微信，点击右上角的“+”，选择“扫一扫”功能，<br>对准下方二维码即可。</p>
+            <img alt="" src="__PUBLIC__/home/images/qr.png" height="375" width="375">
+        </div>
+    </div>
+<!-- .modal-weixin END -->
+<div class="modal modal-hide modal-bigtap-queue" id="J_bigtapQueue">
+    <div class="modal-body">
+        <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span>
+        <h3>正在排队，请稍候喔！</h3>
+        <p class="queue-tip">抱歉，目前排队人数较多，导致服务器压力山大，请您耐心排队等待，<br>我们将在稍后告诉您排队结果。</p>
+        <div class="queue-animate">
+            <div id="J_mituWalking" class="mitu-walk"> </div>
+            <div class="animate-mask animate-mask-left"></div>
+            <div class="animate-mask animate-mask-right"></div>
+        </div>
+    </div>
+</div>
+<!-- .xm-dm-queue END -->
+<div id="J_bigtapError" class="modal modal-hide modal-bigtap-error">
+    <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span>
+    <div class="modal-body">
+        <h3>抱歉，网络拥堵无法连接服务器</h3>
+        <p class="error-tip">由于访问人数太多导致服务器压力山大，请您稍后再重试。</p>
+        <p>
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-c148a4197491d5bd', '', 'pcpid']);" data-stat-id="c148a4197491d5bd" class="btn btn-primary" id="J_bigtapRetry">重试</a>
+        </p>
+    </div>
+</div>
+<!-- .xm-dm-error END -->
+<div id="J_modal-globalSites" class="modal fade modal-hide modal-globalSites" data-width="640">
+       <div class="modal-hd">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-d63900908fde14b1', '', 'pcpid']);" data-stat-id="d63900908fde14b1" class="close" data-dismiss="modal"><i class="iconfont"></i></a>
+            <h3>Select Region</h3>
+        </div>
+        <div class="modal-bd">
+            <h3>Welcome to Mi.com</h3>
+            <p class="modal-globalSites-tips">Please select your country or region</p>
+            <p class="modal-globalSites-links clearfix">
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-51fe807618ae85f4', '//www.mi.com/index.html', 'pcpid']);" data-stat-id="51fe807618ae85f4" href="http://www.mi.com/index.html">Mainland China</a>
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-d8e4264197de1747', 'http://www.mi.com/hk/', 'pcpid']);" data-stat-id="d8e4264197de1747" href="http://www.mi.com/hk/">Hong Kong</a>
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-e7bd0f4e372c0b29', 'http://www.mi.com/tw/', 'pcpid']);" data-stat-id="e7bd0f4e372c0b29" href="http://www.mi.com/tw/">TaiWan</a>
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-e9c0506f7e4e7161', 'http://www.mi.com/sg/', 'pcpid']);" data-stat-id="e9c0506f7e4e7161" href="http://www.mi.com/sg/">Singapore</a>
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-d6299ad30ec761a8', 'http://www.mi.com/my/', 'pcpid']);" data-stat-id="d6299ad30ec761a8" href="http://www.mi.com/my/">Malaysia</a>
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-22b601cf7b3ada84', 'http://www.mi.com/ph/', 'pcpid']);" data-stat-id="22b601cf7b3ada84" href="http://www.mi.com/ph/">Philippines</a>
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-441d26d4571e10dc', 'http://www.mi.com/in/', 'pcpid']);" data-stat-id="441d26d4571e10dc" href="http://www.mi.com/in/">India</a>
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-88ccf9755c488ec5', 'http://www.mi.com/id/', 'pcpid']);" data-stat-id="88ccf9755c488ec5" href="http://www.mi.com/id/">Indonesia</a>
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-c41d871bf5ddcd95', 'http://br.mi.com/', 'pcpid']);" data-stat-id="c41d871bf5ddcd95" href="http://br.mi.com/">Brasil</a>
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-4426c5dac474df5f', 'http://www.mi.com/en/', 'pcpid']);" data-stat-id="4426c5dac474df5f" href="http://www.mi.com/en/">Global Home</a>
+                <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-261bb8cf155fb56b', 'http://www.mi.com/mena/', 'pcpid']);" data-stat-id="261bb8cf155fb56b" href="http://www.mi.com/mena/"> MENA</a>
+            </p>
+        </div>
+    </div>
+<!-- .modal-globalSites END -->
+
+</body></html>

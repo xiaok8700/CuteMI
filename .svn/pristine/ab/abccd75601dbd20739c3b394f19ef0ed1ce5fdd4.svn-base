@@ -1,0 +1,242 @@
+<extend name="Space/info"/>
+<block name="main-content">
+    <script src="__PUBLIC__/home/js/jquery-1.7.2.js"></script>
+    <style type="text/css">
+        .father{
+            position:relative;
+
+        }
+        .flow{
+            position:absolute;
+
+            top:300px;
+            left:300px;
+        }
+        
+       
+    </style>
+
+<div class="father span16">
+    <div class="uc-box uc-main-box">
+        <div class="uc-content-box">
+            <div class="box-hd">
+                <h1 class="title">收货地址</h1>
+                <div class="more clearfix">
+                    <ul class="filter-list J_addrType">
+                        <li class="first active"><a href="#" >普通收货地址</a></li>
+                        <li class=""><a href="#" ></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-bd">
+                
+                <div class=" user-address-list J_addressList clearfix">
+                    <div class="add address-item address-item-new" data-type="" id="J_newAddress">
+                        <i class=" iconfont"></i>
+                        添加新地址
+                    </div>
+
+                    
+
+
+
+                        <foreach name="data1" item="data">
+                            <div class="address-item J_addressItem">
+                                <dl>
+                                    <dt>
+
+                                    <em class="uname"><{$data.name}></em>
+                                    </dt>
+                                    <dd class="utel"><{$data.mob_phone}></dd>
+                                    <dd class="uaddress"><{$data.is_district}>                                                        <br><{$data.address}></dd>
+                                </dl>
+                                <div class="id actions" data-id="<{$data.id}>">
+                                    <a class="mod modify J_addressModify"  href="__MODULE__/space/mod/id/<{$data.id}>"  >修改</a>
+                                    <a class="delete modify J_addressDel" >删除</a>
+                                </div>
+                             </div>
+                        </foreach>                             
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
+
+       <script>
+            $(function(){
+              //添加添加地址点击事件
+              $('.add').click(function(){ 
+              // alert('111'); 
+                            $(".flow").css("display","block");
+                            $(".father").css("display","none");
+
+                        })
+              //添加地址删除事件
+              $('.delete').click(function(){
+                var id=$(this).parent().attr('data-id');
+                // alert('id');
+                $.ajax({
+                   url:'__MODULE__/space/del',
+                   type:'post',
+                   data:{'id':id},
+                   dataType:'json',
+                  // async:true;
+                   success:function(data){
+                      if(data){
+                        location.reload();
+
+                      }           
+                     }                   
+                 })
+              })
+
+              
+
+              //城市级联
+                $("input[name='true_name']").blur(function(){
+                    var s = $("input[name='true_name']").val();
+                     if(s!=''){
+                       $(".box-main span").eq(0).css('display','none');
+                   }else{
+                        $(".box-main span").eq(0).css('display','block');
+                   }
+                });
+               $("input[name='tel_phone']").blur(function(){
+                   var re,r;
+                   var s = $("input[name='tel_phone']").val();
+                   re = /[0-9]{11}/;
+                   r = s.match(re);
+                   if(r){
+                       $(".box-main span").eq(1).css('display','none');
+                   }else{
+                        $(".box-main span").eq(1).css('display','block');
+                   }
+               });
+               $.ajax({
+                   url:'__MODULE__/Order/add',
+                   type:'post',
+                   data:{'upid':0},
+                   dataType:'json',
+                  // async:true;
+                   success:function(data){
+                               for(var i=0;i<data.length;i++){
+                                var info = '<option value="'+data[i].id+'">'+data[i].name+'</option>';
+                                $("#cid").append(info);
+                               // console.log(data);
+                           }
+                   },
+                   error:function($a,$b,$c){
+                       alert($c);
+                   }
+               });
+               
+               $("select").live("change",function(){
+                var ob = $(this);
+                //清除后面所有的select
+                ob.nextAll("select").remove();
+                //ajax加载子城市信息
+                $.ajax({
+                    url:"__MODULE__/Order/add",     //请求地址
+                    type:"post",             //发送方式
+                    data:{upid:ob.val()},//请求数据
+                    async:true,             //是否同步
+                    dataType:"json",        //响应数据格式
+                    success:function(data){ //成功回调函数
+                       // console.log(data);
+                       if(data.length>0){
+                           var select = $("<select name='is_district[]'></select>");
+                           for(var i=0;i<data.length;i++){
+                              var info = '<option value="'+data[i].id+'">'+data[i].name+'</option>';
+                              select.append(info);
+                           }
+                           ob.after(select);
+                       }
+                    },
+                    error:function(){   //失败回调函数
+                        alert("ajax请求失败！");
+                    }
+                 });
+             });
+            });
+                 //添加地址
+             function doAdd(){
+                     $.ajax({
+                     url:'__MODULE__/space/insert',
+                     type:'post',
+                     data:$("form").serialize(),
+                     dataType:'json',
+                     success:function(data){
+                         if(data){
+                          window.location.href='__MODULE__/space/address';
+                          $(".flow").css("display","none");
+                            $(".father").css("display","block");
+                      }else{
+                         $("box-main span").eq(2).css('display','block');
+                      }
+                     },
+                     // error:function($a,$b,$c){
+                     //     //alert($c);
+                     // }
+                 });
+             }    
+        </script>
+
+<div class="flow address-edit-box" style="width:800px ; margin:0 auto ; text-align:center ;display:none">
+            <form action="" method="post"> 
+                <div class="box-main">
+                  <div class="form-section form-section-active">
+                        <label for="user_zipcode" class="input-label">姓名</label>
+                        <input type="text" name="name" id="user_zipcode" class="input-text J_addressInput">
+                        <span style="display:none">姓名不能为空</span>
+                  </div>
+                      <div class="form-section form-section-active">
+                        <label for="tel_phone" class="input-label">手机号</label>
+                        <input type="text" name="mob_phone" id="user_zipcode" class="input-text J_addressInput">
+                        <span style="display: none">手机号码格式不正确</span>
+                    </div>
+                    <div class="form-section form-select-2 clearfix">
+                                <select id="cid" name="is_district">
+                                    <option>省份/自治区</option>
+                                <option value="1">北京市</option><option value="2">天津市</option><option value="3">河北省</option><option value="4">山西省</option><option value="5">内蒙古自治区</option><option value="6">辽宁省</option><option value="7">吉林省</option><option value="8">黑龙江省</option><option value="9">上海市</option><option value="10">江苏省</option><option value="11">浙江省</option><option value="12">安徽省</option><option value="13">福建省</option><option value="14">江西省</option><option value="15">山东省</option><option value="16">河南省</option><option value="17">湖北省</option><option value="18">湖南省</option><option value="19">广东省</option><option value="20">广西壮族自治区</option><option value="21">海南省</option><option value="22">重庆市</option><option value="23">四川省</option><option value="24">贵州省</option><option value="25">云南省</option><option value="26">西藏自治区</option><option value="27">陕西省</option><option value="28">甘肃省</option><option value="29">青海省</option><option value="30">宁夏回族自治区</option><option value="31">新疆维吾尔自治区</option><option value="32">台湾省</option><option value="33">香港特别行政区</option><option value="34">澳门特别行政区</option><option value="35">海外</option><option value="36">其他</option></select>
+                    </div>
+                    <div class="form-section form-section-active">
+                        <label for="user_zipcode" class="input-label">详细地址</label>
+                        <input type="text" name="address" id="user_zipcode" class="input-text J_addressInput">
+                    </div>
+                      <div class="form-section form-section-active">
+                        <label for="user_zipcode" class="input-label">邮政编码</label>
+                        <input type="text" name="code" id="user_zipcode" class="input-text J_addressInput">
+                     </div>
+                      <div class="form-section form-section-active">
+                        <label for="user_zipcode" class="input-label">固定电话</label>
+                        <input type="text" name="tel_phone" id="user_zipcode" class="input-text J_addressInput">
+                    </div>
+                    <div class="form-section form-section-active">
+                        <label for="user_zipcode">是否常用</label>
+                        <input type="radio" name="is_default" id="user_zipcode" value="0">是 
+                        <input type="radio" name="is_default" id="user_zipcode" value="1">否
+
+                    </div>
+                </div>
+                
+                <div class="form-confirm clearfix">
+                       <span style="display:none ">注册失败 请重新注册</span>
+                    <a id="J_save" class="btn btn-primary" href="javascript:void(0);" data-stat-id="12e61678358c83eb" onclick="doAdd()">保存</a>
+                    <a id="J_cancel" class="btn btn-gray" href='__CONTROLLER__/address'>取消</a>
+
+                </div>
+        
+        </form>
+      </div>
+
+      
+
+
+</block>
+<extend name="Space/infofooter" />

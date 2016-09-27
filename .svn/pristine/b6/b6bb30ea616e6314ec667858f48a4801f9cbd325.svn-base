@@ -1,0 +1,49 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class IndexController extends CommonController {
+
+	//显示首页
+    public function index(){
+
+     
+       $this->display();
+       }
+
+    
+    // 处理网站状态
+    public function is_open(){
+
+       $a=I("get.is_open");
+       $close =M("close");
+       if($a==1){
+       	    //开启网站
+            $data1["status"]=1;
+            $close->where("close_id=1")->data($data1)->save();
+            echo 1;
+    	}else{
+            //关闭网站   
+            $data2["status"]=2;
+            $close->where("close_id=1")->data($data2)->save();        
+    		     echo 2;       
+    	}
+
+    }
+    
+    //显示右侧主页面
+    public function right(){
+      // dump($_SESSION["admin_user"]);
+
+       $close =M("close");
+       $res = $close->where("close_id=1")->find();
+       $this->assign("status",$res["status"]);
+ 
+        $ip=get_client_ip();
+         
+      // $ip = long2ip($_SERVER["REMOTE_ADDR"]);
+
+       $this->assign("ip",$ip);
+       $this->display();
+    }
+
+}

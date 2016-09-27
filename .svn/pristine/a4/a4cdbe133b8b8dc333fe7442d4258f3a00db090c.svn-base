@@ -1,0 +1,54 @@
+<extend name="Space/info"/>
+<block name="main-content">
+
+    <style>
+        .info-notice a{
+            font-size:20px;
+        }
+    </style>
+
+
+    <div class="span16">
+        <div class="xm-box uc-box">
+            <div id="allbook" class="xm-line-box uc-info-box">
+                <div class="box-bd clearfix">
+                    <div class="uc-info">
+                        <h1 class="uc-welcome"><span class="user-name" style="font-size:30px">我的收藏</span><a style="font-size:10px" href="#">请谨防钓鱼连接或诈骗电话,了解更多>></a></h1>
+                        <div class="uc-info-detail">
+                            <div id="all" class="info-notice">
+<!--                                <a href="__URL__/coupon" >有效</a>
+                                <span class="sep">|</span>
+                                <a id="anobuy" href="__URL__/coupon2" >无效</a>
+                                <span class="sep"></span>
+                                <a id="abuynomoney" href="__URL__/buynomoney" >已使小</a>
+                                <span class="sep"></span>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- .uc-info-box END -->
+
+            <div id="buyall" class="xm-line-box uc-home-box">
+                <div class="box-hd" >
+                     
+
+                </div>
+                 <foreach name="res" item="val" key="k">
+            <div   style="float:left;border:1px solid gray;width:258px;margin-left:30px;">
+                <a href="__MODULE__/Midetail/index?id=<{$val.gid}>"> <img style="width:100%;height:300px;" src="__ROOT__/Public/Admin/uploads/<{$val.pic}>" /></a>
+                            <p> <a href="__MODULE__/Midetail/index?id=<{$val.gid}>"><{$val.name}></a></p>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a  href="__URL__/collectiondel?id=<{$val.id}>"> 取消收藏</a> 
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                            <a href="__MODULE__/Midetail/index?id=<{$val.gid}>"> 购买</a> 
+                </div>
+            </foreach>
+            </div> 
+        </div>
+        
+    </div>
+    
+    
+</block>
+<extend name="Space/infofooter" />

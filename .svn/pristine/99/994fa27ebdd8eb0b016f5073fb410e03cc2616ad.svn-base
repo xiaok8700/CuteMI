@@ -1,0 +1,130 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+header('content-type:text/html;charset=utf-8');
+class GoodsdetailController extends Controller {
+    public function index(){
+        
+        $goods=M('goods');
+        $detail=M('goods_detail');
+        $gid=$_GET['gid'];
+        // dump($gid);
+        //  die;
+        
+
+
+        $res=$goods->where('mi_goods.gid='.$gid)
+                    ->field('mi_goods.*,mi_goods_detail.*')
+                   ->join("left join mi_goods_detail on mi_goods.gid = mi_goods_detail.gid")
+                   ->find();
+          // var_dump($res);
+         // die;
+        $this->assign('goods',$res);
+    
+        //头部导航栏
+        $islogin = $_SESSION["username"]["islogin"];
+        $uname = $_SESSION["username"]["uname"];
+
+        $this->assign("islogin",$islogin);
+        $this->assign("uname",$uname);
+
+      
+        
+       //一级分类
+       $type = M("type");
+       $nav1 = $type->where("pid = 0")->select();
+       $this->assign("nav1",$nav1);
+  
+       $attach_type = M("attach_type");
+       $nav2 = $attach_type->where("pid = 0")->select();
+       $this->assign("nav2",$nav2);
+
+
+
+
+        $this->display();
+       }
+
+   
+
+    //附件的查询
+    public function attdetail(){
+
+         //头部导航栏部分
+       //一级分类
+       $type = M("type");
+       $nav1 = $type->where("pid = 0")->select();
+       $this->assign("nav1",$nav1);
+  
+       $attach_type = M("attach_type");
+       $nav2 = $attach_type->where("pid = 0")->select();
+       $this->assign("nav2",$nav2);
+
+
+         //头部导航
+        $islogin = $_SESSION["username"]["islogin"];
+        $uname = $_SESSION["username"]["uname"];
+
+        $this->assign("islogin",$islogin);
+        $this->assign("uname",$uname);
+
+        //实例化商品表
+        $att = M('goods');
+        $gid=I('get.gid');
+        $good = $att->where('gid='.$gid)->find();
+        // dump($good);
+        $this->assign('goods',$good);
+
+        
+        $res=M('discuss');
+        $b=$res->select();
+        
+        $this->assign('pl',$b);
+          // dump($pll);
+
+    //     $hff=array();
+        
+         $result=M('discuss_replay');
+         foreach($b as $k=>$v){
+         //$a=rtrim(implode(',',$pll),',');
+          $b[$k]['hhf']=$result->where('id = '.$v['id'])->select();
+     }
+        //dump($b);
+        $this->assign('hf',$b);
+        $this->display();
+
+    }
+
+    //评论插入数据库
+    public function insert(){
+        $insert=M('discuss_replay');
+        $data=array(
+            'id'=>I('get.pid'),
+            'uid'=>I('get.uid'),
+            'rep'=>I('get.replay')
+
+            );
+        $res=$insert->data($data)->add();
+        // echo 1;
+        if($res){
+            echo 1;
+
+
+            
+
+        }
+
+    
+    }
+
+    
+
+
+
+
+
+
+
+    
+
+}

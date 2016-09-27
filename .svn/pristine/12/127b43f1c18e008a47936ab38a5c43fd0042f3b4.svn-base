@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://localhost/mishop/index.php/Home/Orders/index.html -->
+<html lang="zh-CN" xml:lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        <title>填写订单信息</title>
+        <link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/base.min.css">
+
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/checkout.min.css">
+        
+
+        <style>
+            #lean_overlay {
+                position: fixed;
+                z-index:100;
+                top: 0px;
+                left: 0px;
+                height:100%;
+                width:100%;
+                background: #000;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="site-header site-mini-header">
+            <div class="container">
+                <div class="header-logo">
+                    <a class="logo " href="http://localhost/mishop/index.php" title="小米官网" data-stat-id="1781d41b6b733f86" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - 1781d41b6b733f86 &amp; #39; , &amp; #39; http://www.mi.com/index.html&#39;, &#39;pcpid&#39;]);"></a>
+                </div>
+          
+                <div class="topbar-info" id="J_userInfo">   <span>欢迎您：1439967198</span>  <span class="user"><a class="user-name" href="http://localhost/mishop/index.php/Home/Space/index.html">个人中心</a></span></div>
+            </div>
+        </div>
+        <!-- .site-mini-header END -->
+
+        <script type="text/javascript" async="" src="__PUBLIC__/home/js/unjcV2.js"></script>
+        <script type="text/javascript" async="" src="__PUBLIC__/home/js/mstr.js"></script>
+        <script type="text/javascript" async="" src="__PUBLIC__/home/js/jquery.statData.min.js"></script>
+        <script type="text/javascript" async="" src="__PUBLIC__/home/js/xmst.js"></script>     
+        <script type="text/javascript" async="" src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+     
+        <script>
+                                                         //处理地址信息
+                                                             function update(oid){
+                                                             $("input[name='oid']").val(oid);
+                                                                // $("input[name='address_id']").val();
+                                                            }
+        </script>
+        <div class="page-main">
+            <div class="container">
+                <div class="checkout-box">
+                    <div class="section section-address">
+                        <div class="section-header clearfix">
+                            <h3 class="title">收货地址</h3>
+                            <div class="more">
+                            </div>
+                        </div>
+                        <div class="section-body clearfix" id="J_addressList">
+ <!-----------------------------遍历已有地址开始------------------------------------>                           
+                            <foreach name="add" item="address">
+                            <div class="checked address-item J_addressItem ">
+                                    <!--遍历地址信息-->
+                                    <dl>
+                                        <dt>
+                                        <span class="tag"><{$address.address}></span><br>
+                                        <em class="uname"><{$address.name}></em>
+                                        </dt>
+                                        <dd class="utel">
+                                                        <{$address.mob_phone}> 
+                                        </dd>
+                                        <dd class="uaddress">
+                                            <{$address.is_district}>
+
+                                        </dd>
+                                    </dl>
+
+                                    <div class="actions">
+                                        <input type="radio" name="id" class="xiaomi" value="<{$address.id}>" onclick="update(<{$address.id}>)"> 
+                                    </div>
+                                </div>
+                            </foreach>   
+                           <!-- <script>    
+                                $(function(){
+                                    $('.checked').click(function(){
+                                        $(this).attr('border','red')
+
+
+
+                                    })
+
+
+                                })
+
+                            </script>--> 
+ <!-----------------------------遍历已有地址结束------------------------------------>                           
+                                
+ <!-----------------------------跳转添加新地址页面------------------------------------>                           
+                                   
+                            <div class="address-item J_addressItem ">
+                                <!--遍历地址信息-->
+                                <dl>
+
+                                    <dd>
+                                        <a href="__MODULE__/Order/address">添加新地址</a>           
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section section-options section-payment clearfix">
+                        <div class="section-header">
+                            <h3 class="title">支付方式</h3>
+                        </div>
+                        <div class="section-body clearfix">
+                            <ul class="J_optionList options ">
+                                <li data-type="pay" class="J_option selected" data-value="1">
+                                    在线支付                            <span>
+                                        （支持支付宝、银联、财付通、小米支付等）                            </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="section section-options section-shipment clearfix">
+                        <div class="section-header">
+                            <h3 class="title">配送方式</h3>
+                        </div>
+                        <div class="section-body clearfix">
+                            <ul class="J_optionList options ">
+                                <li data-type="shipment" class="J_option selected" data-amount="0" data-value="1">
+                                    快递配送（免运费）                        </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section section-options section-time clearfix">
+                        <div class="section-header">
+                            <h3 class="title">配送时间</h3>
+                        </div>
+                        <div class="section-body clearfix">
+                            <ul class="J_optionList options options-list clearfix">
+                                <!-- besttime start -->
+                                <li data-type="time" class="J_option selected" data-value="1">
+                                    不限送货时间：<span>周一至周日</span>
+                                </li>
+                                <li data-type="time" class="J_option " data-value="2">
+                                    工作日送货：<span>周一至周五</span>
+                                </li>
+                                <li data-type="time" class="J_option " data-value="3">
+                                    双休日、假日送货：<span>周六至周日</span>
+                                </li>
+                                <!-- besttime end -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="section section-options section-invoice clearfix">
+                        <div class="section-header">
+                            <h3 class="title">发票</h3>
+                        </div>
+                        <div class="section-body clearfix">
+                            <ul class="J_optionList options options-list  J_tabSwitch clearfix">
+                                <li data-type="invoice" data-invoice-type="electron" class="hide J_option">
+                                    电子发票（非纸质）
+                                </li>
+                                <li class="J_option tab-active selected" id="J_paperInvoice">
+                                    普通发票（纸质）
+                                </li>
+                            </ul>
+
+                            <div class="tab-container">
+                                <div class="tab-content hide e-invoice-detail" style="display: none;">
+                                    电子发票目前仅对个人用户开具，不可用于单位报销 ，不随商品寄送。<a href="javascript:void(0);" id="J_showEinvoiceDetail" data-stat-id="b762af4a94c60517" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - b762af4a94c60517 &amp; #39; , &amp; #39; javascript:void(0); &amp; #39; , &amp; #39; pcpid &amp; #39; ]);">什么是电子发票 <i class="icon-qa">?</i></a>
+                                    <div class="e-invoice-qa hide" id="J_einvoiceDetail">
+                                        <ul>
+                                            <li>电子发票是纸质发票的映像，是税务局认可的有效凭证，与传统纸质发票具有同等法律效力，可作为售后维权凭据。</li>
+                                            <li>开具电子服务于个人，开票后不可更换纸质发票，不可用于单位报销。</li>
+                                            <li>您在订单详情的"发票信息"栏可查看、下载您的电子发票。</li>
+                                        </ul>
+                                        <a href="http://bbs.xiaomi.cn/thread/index/tid/9385999" target="_blank" data-stat-id="b4ee22b881bbe13f" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - b4ee22b881bbe13f &amp; #39; , &amp; #39; http://bbs.xiaomi.cn/thread/index/tid/9385999&#39;, &#39;pcpid&#39;]);">了解详情&gt;</a>
+                                    </div>
+                                </div>
+
+                                <div class="tab-content paper-invoice-detail" style="">
+                                    <ul class="J_optionList options options-list J_tabSwitch clearfix">
+                                        <li data-type="invoice" data-invoice-type="personal" class="J_option tab-active selected" data-value="1">
+                                            个人
+                                        </li>
+                                        <li data-type="invoice" data-invoice-type="company" class="J_option" data-value="2">
+                                            单位
+                                        </li>
+                                    </ul>
+                                    <div class="tab-container">
+                                        <div class="tab-content paper-invoice-person" style="">
+                                            发票抬头：个人<br>
+                                            发票内容：购买商品明细
+                                        </div>
+                                        <div class="tab-content hide paper-invoice-company" style="display: none;">
+                                            <div class="form-section">
+                                                <label class="input-label" for="invoice_title">请输入发票抬头</label>
+                                                <input class="input-text" type="text" id="invoice_title" name="invoice_title">
+                                            </div>
+                                            <p>发票内容：购买商品明细</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section section-goods">
+                        <div class="section-header clearfix">
+                            <h3 class="title">商品及优惠券</h3>
+                            <div class="more">
+                                <a href="http://localhost/mishop/index.php/Home/Cart/index.html">返回购物车<i class="iconfont"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="section-body">
+ <!-----------------------------商品具体参数------------------------------------>                           
+
+                            <foreach name="shop" item="car">
+                            <ul class="goods-list" id="J_goodsList">
+                                    <li class="clearfix">
+                                        <div class="col col-img">
+                                            <img src="__PUBLIC__/Uploads/<{$car.pic}>" width="30" height="30">
+                                        </div>
+                                        <div class="col col-name">
+                                            <a href="http://item.mi.com/1151100011.html" target="_blank" data-stat-id="35c1cafdce82fa11" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - 35c1cafdce82fa11 &amp; #39; , &amp; #39; http://item.mi.com/1151100011.html&#39;, &#39;pcpid&#39;]);">
+                                                <{$car.gname}> <{$car.verson}>    <{$car.storage}>  
+                                            </a>
+                                        </div>
+                                        <div class="col col-price">
+                                            <{$car.price}>            
+                                        </div>
+                                        <div class="col col-status">
+
+                                            <{$car.color}> 
+                                        </div>
+                                        <div class="col col-total">
+
+                                            <{$car.buynum}>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </foreach>
+                              
+                        </div>
+                    </div>
+                    <form action="__MODULE__/Order/addorder" method="post">
+                        <div class="section section-count clearfix">
+                            <div class="count-actions">
+                                <div class="coupon-trigger" id="J_useCoupon"><i class="iconfont icon-plus"></i>使用优惠券
+                                    <select  id="discount">
+                                        <option value="">——请使用优惠卷——</option>
+                                        <option value="9">领优惠卷 疯狂购物街</option><option value="11">点击领取优惠卷还等什么</option><option value="10">米粉大狂欢</option><option value="13">223424</option>  
+                                    </select>
+                                </div>
+                                <div class="raise-buy-box">
+                                    <ul id="J_raiseBuyList">
+                                        <li class="item  J_raiseBuyItem" data-info="{
+                                            isBatch:&#39;false&#39;,
+                                            productId:&#39;2134900285&#39;,
+                                            goodsId:&#39;2134900285-0-1-1391&#39;,
+                                            actId:&#39;1391&#39;,
+                                            itemid:&#39;8888888_0_bargain_1391_total_1_sale&#39;,
+                                            type:&#39;1&#39;
+                                            }" data-del-itemid="">
+                                            <div class="inner">
+                                                <i class="iconfont icon-plus"></i>+1元得小米礼品袋                                </div>
+
+                                            <div class="add-cart-result">
+                                                <a href="javascript:void(0);" class="J_del del" data-stat-id="d3ba084970df94ce" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - d3ba084970df94ce &amp; #39; , &amp; #39; javascript:void(0); &amp; #39; , &amp; #39; pcpid &amp; #39; ]);">
+                                                    <i class="iconfont">×</i>
+                                                </a>
+                                                <i class="iconfont icon-selected"></i>已选购：<span class="J_goodsName">+1元得小米礼品袋</span>
+                                            </div>
+                                        </li>
+                                        <!--S 保障计划 产品选择弹框 -->
+                                        <li class="J_showBaoxian " data-parent_itemid="2151100001_0_buy" data-goodsid="2150300017" data-itemid="" data-price="199" data-count="1" data-agreementurl="http://cart.mi.com/static/insuranceAgreement.php?type=mi_note">
+                                            <div class="inner">
+                                                <i class="iconfont icon-plus"></i>意外保障服务 小米Note 小米Note 双网通版 天然竹 16GB                                    </div>
+                                            <div class="add-cart-result">
+                                                <a href="javascript:void(0);" class="J_del del" data-stat-id="fc38649045b0a672" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - fc38649045b0a672 &amp; #39; , &amp; #39; javascript:void(0); &amp; #39; , &amp; #39; pcpid &amp; #39; ]);"><i class="iconfont">×</i></a>
+                                                <i class="iconfont icon-selected"></i>已选购：<span>意外保障服务 小米Note 小米Note 双网通版 天然竹 16GB</span>
+                                            </div>
+                                        </li>
+                                        <!--E 保障计划 产品选择弹框 -->
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="money-box" id="J_moneyBox">
+                                <ul>
+                                    <li class="clearfix">
+                                        <label>商品件数：</label>
+                                        <span class="val">2件</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <label>金额合计：</label>
+                                        <span class="val"></span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <label>运费：</label>
+                                        <span class="val"><i id="J_postageVal">0</i>元</span>
+                                    </li>
+                                    <li class="clearfix total-price">
+                                        <label>应付总额：</label>
+                                        <span class="val"><em id="J_totalPrice"><{$total}></em>元</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="section-bar clearfix">
+                            <div class="fl">
+                                <div class="seleced-address hide" id="J_confirmAddress">
+                                </div>
+                                <div class="big-pro-tip hide J_confirmBigProTip"></div>
+                            </div>
+                            <div class="fr">
+                                <input type="hidden" name="oid" value="">
+                                <!-- <input type="hidden" name="total" value="<{$total}>">          -->
+                                <!-- <input type="hidden" name="order_amount" value="5066"> -->
+                                <!-- <input type="hidden" name="shipping_fee" value="0"> -->
+                                <!-- <input type="hidden" name="address_id" value=""> -->
+                                <button class="btn btn-primary" id="J_checkoutToPay" data-stat-id="4773f7ffc10003b8" onclick="">去结算</button>
+                                
+                                <div class="captcha-box hide cleafix" id="J_captchaBox">
+                                    <div class="form-section">
+                                        <label class="input-label" for="captcha_code">请输入验证码</label>
+                                        <input class="input-text" type="text" id="captcha_code" data-authurl="http://captcha.hd.mi.com/captcha/auth?answer={answer}&amp;service=order.mi.com&amp;_ov=1">
+                                    </div>
+                                    <div class="captcha-img">
+                                        <img src="./index_files/captcha" alt="" id="J_captchaImg">
+                                        <a href="javascript:void(0);" id="J_captchaChange" data-stat-id="74dcd026f6a4c5bb" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - 74dcd026f6a4c5bb &amp; #39; , &amp; #39; javascript:void(0); &amp; #39; , &amp; #39; pcpid &amp; #39; ]);"><i class="iconfont"></i></a>
+                                    </div>
+                                    <input type="hidden" id="J_captchaToken">
+                                </div>
+                            </div>
+                        </div>
+                </form></div>
+            </div>
+        </div>
+
+        <!-- 大家点缺货提示 -->
+        <div class="big-pro-tip-pop hide" id="J_popBigProTip">
+
+        </div>
+        <!-- 禮品卡提示 S-->
+        <div class="modal fade modal-hide modal-lipin" id="J_lipinTip">
+            <div class="modal-header">
+                <h3 class="title">温馨提示</h3>
+            </div>
+            <div class="modal-body">
+                <p>
+                    为保障您的利益与安全，下单后礼品卡将会被使用，<br>
+                    且订单信息将不可修改。请确认收货信息：
+                </p>
+                <ul>
+                    <li class="clearfix">
+                        <strong>收&nbsp;&nbsp;货&nbsp;&nbsp;人：</strong>
+                        <span id="J_lipinUserName"></span>
+                    </li>
+                    <li class="clearfix">
+                        <strong>联系电话：</strong>
+                        <span id="J_lipinUserPhone"></span>
+                    </li>
+                    <li class="clearfix">
+                        <strong>收货地址：</strong>
+                        <span id="J_lipinUserAddress"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0);" class="btn btn-primary" id="J_lipinSubmit" data-stat-id="8e19401adef46ba2" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - 8e19401adef46ba2 &amp; #39; , &amp; #39; javascript:void(0); &amp; #39; , &amp; #39; pcpid &amp; #39; ]);">确认下单</a>
+                <a href="javascript:void(0);" class="btn btn-gray" data-dismiss="modal" data-stat-id="28800888dda4eee0" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - 28800888dda4eee0 &amp; #39; , &amp; #39; javascript:void(0); &amp; #39; , &amp; #39; pcpid &amp; #39; ]);">返回修改</a>
+            </div>
+        </div>
+        <!--  禮品卡提示 E-->
+
+        <!-- 预售提示 S-->
+        <div class="modal fade modal-hide modal-yushou" id="J_yushouTip">
+            <div class="modal-header">
+                <h3 class="title">请确认收货地址及发货时间</h3>
+            </div>
+            <div class="modal-body">
+                <ul class="content">
+                    <li>
+                        <h3>请确认配送地址，提交后不可变更：</h3>
+                        <p id="J_yushouAddress"> </p>
+                        <span class="icon icon-1"></span>
+                    </li>
+                    <li>
+                        <h3>支付后发货</h3>
+                        <p>如您随预售商品一起购买的商品，将与预售商品一起发货</p>
+                        <span class="icon icon-2"></span>
+                    </li>
+                    <li>
+                        <h3>以支付价格为准</h3>
+                        <p>如预售产品发生调价，已支付订单价格将不受影响。</p>
+                        <span class="icon icon-3"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:void(0);" class="btn btn-gray" data-dismiss="modal" data-stat-id="adbbe3abff3f506a" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - adbbe3abff3f506a &amp; #39; , &amp; #39; javascript:void(0); &amp; #39; , &amp; #39; pcpid &amp; #39; ]);">返回修改地址</a>
+                <a href="javascript:void(0);" class="btn btn-primary" id="J_yushouSubmit" data-stat-id="49b440ef95b2b913" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - 49b440ef95b2b913 &amp; #39; , &amp; #39; javascript:void(0); &amp; #39; , &amp; #39; pcpid &amp; #39; ]);">确认并继续下单</a>
+            </div>
+        </div>
+        <!--  预售提示 E-->
+
+        <div class="modal fade modal-hide modal-edit-address" id="J_modalEditAddress">
+            <div class="modal-body">
+                <iframe height="100%" width="100%" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+
+        <div class="modal fade modal-hide fade modal-alert" id="J_modalAlert">
+            <div class="modal-bd">
+                <div class="text">
+                    <h3 id="J_alertMsg"></h3>
+                </div>
+                <div class="actions">
+                    <button class="btn btn-primary" data-dismiss="modal">确定</button>
+                </div>
+                <a class="close" data-dismiss="modal" href="javascript: void(0);" data-stat-id="b718c74de11bb9a0" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - b718c74de11bb9a0 &amp; #39; , &amp; #39; javascript:void(0); &amp; #39; , &amp; #39; pcpid &amp; #39; ]);"><i class="iconfont"></i></a>
+            </div>
+        </div>
+
+        <div class="address-top-bar" id="J_addressTopBar">
+            <div class="container">
+                <a href="javascript:void(0);" class="btn btn-primary" id="J_addressTopBarBtn" data-stat-id="0263b2497800ada5" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - 0263b2497800ada5 &amp; #39; , &amp; #39; javascript:void(0); &amp; #39; , &amp; #39; pcpid &amp; #39; ]);">选择该收货地址</a>
+                <div class="content" id="J_addressTopCon"><span class="uname">裴帅坡</span><span class="utel">185****1927</span> 北京 北京市 昌平区 育荣教育园区</div>
+            </div>
+        </div>
+
+
+        <!-- 保险弹窗 -->
+        <!-- 保险弹窗 -->
+
+        <div class="modal in hide modal-baoxian" id="J_baoxian">
+            <div class="modal-header">
+                <h3>小米手机意外保障服务</h3>
+                <span class="close" data-dismiss="modal"><i class="iconfont"></i></span>
+            </div>
+            <div class="modal-body">
+                <div class="con-1">
+                    <h4>购买保购障服务的手机在意外受损时可获得免费维修</h4>
+                    <ul class="icon-list clearfix">
+                        <li>
+                            <span class="icon icon-1"></span>
+                            屏幕碎裂免费换新屏
+                        </li>
+                        <li>
+                            <span class="icon icon-2"></span>
+                            进水、摔落免费修
+                        </li>
+                        <li>
+                            <span class="icon icon-3"></span>
+                            修好为止
+                        </li>
+                    </ul>
+                    <dl class="xuzhi">
+                        <dt>为保障您的权益，购买前请仔细阅读：</dt>
+                        <dd>· 本保障服务目前仅适用于小米手机用户，仅可随手机一起在线购买。</dd>
+                        <dd>· 本保障服务自您收到手机起生效，有效期为一年，若您在收到手机7日内需要取消保障服务，请连同手机一起申请退货。</dd>
+                        <dd>· 故意行为导致的手机损坏以及盗窃、抢劫、遗失手机等不在服务保障范围内（具体以小米手机意外保障服务条款为准）。<br>
+                            <a href="http://www.mi.com/service/safe" target="_blank" class="J_baoxianMore" data-stat-id="62aa60c199655c1d" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - 62aa60c199655c1d &amp; #39; , &amp; #39; http://www.mi.com/service/safe&#39;, &#39;pcpid&#39;]);">了解《小米手机意外保障服务》详细条款&gt;</a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="modal-footer clearfix">
+                <p>
+                    <span class="J_baoxianAgree"><i class="iconfont icon-checkbox">√</i> 我已经阅读并同意</span>《<a href="" target="_blank" class="J_baoxianMore" data-stat-id="3706bb90ed1d19aa" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - 3706bb90ed1d19aa &amp; #39; , &amp; #39; &amp; #39; , &amp; #39; pcpid &amp; #39; ]);">小米手机意外保障服务条款</a>》
+                </p>
+                <a class="btn btn-primary J_buyBaoxian" data-stat-id="c26631409e7d95f9" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - c26631409e7d95f9 &amp; #39; , &amp; #39; &amp; #39; , &amp; #39; pcpid &amp; #39; ]);">确认并购买服务</a>
+                <a class="btn btn-gray" data-dismiss="modal" aria-hidden="true" data-stat-id="821a98207fa653c1" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - 821a98207fa653c1 &amp; #39; , &amp; #39; &amp; #39; , &amp; #39; pcpid &amp; #39; ]);">取消</a>
+            </div>
+        </div>
+        <script type="text/javascript" src="./index_files/checkout.min.js"></script>
+    	<!--<div id="footer">
+		<div class="header">
+			<div class="header1"><img src="/mishop/Public/Home/images/footer_header.png"></div>
+			<div class="header2"><img src="/mishop/Public/Home/images/fuwu-header-2.jpg"></div>
+		</div>
+		<div class="buttom">
+			<div><img src="/mishop/Public/Home/images/2015-08-11_170038.png"></div>
+
+		</div>
+	</div> -->
+        
+       <!-- <div>
+            <img src="/mishop/Public/Home/images/buttom.png"/>
+        </div>-->
+       
+       <div class="site-footer">
+		<div class="container">
+			<div class="footer-service">
+				<ul class="list-service clearfix">
+					<li>
+						<a rel="nofollow" href="" target="_blank">
+						<i class="iconfont"></i>
+						<strong>1小时快修服务</strong>
+						</a>
+					</li>
+					<li>
+						<a rel="nofollow" href="" target="_blank">
+						<i class="iconfont"></i>
+						<strong>七天无理由退货</strong>
+						</a>
+					</li>
+					<li>
+						<a rel="nofollow" href="" target="_blank">
+						<i class="iconfont"></i>
+						<strong>15天免费换货</strong>
+						</a>
+					</li>
+					<li>
+						<a rel="nofollow" href="" target="_blank">
+						<i class="iconfont"></i>
+						<strong>满150元包邮</strong>
+						</a>
+					</li>
+					<li>
+						<a rel="nofollow" href="" target="_blank">
+						<i class="iconfont"></i>
+						<strong>520余家售后网点</strong>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-links clearfix">
+				<dl class="col-links col-links-first">
+					<dt>帮助中心</dt>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">购物指南</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">支付方式</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">配送方式</a>
+					</dd>
+				</dl>
+				<dl class="col-links">
+					<dt>服务支持</dt>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">售后政策</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">自助服务</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">相关下载</a>
+					</dd>
+				</dl>
+				<dl class="col-links">
+					<dt>小米之家</dt>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">小米之家</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">服务网点</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">预约亲临到店服务</a>
+					</dd>
+				</dl>
+				<dl class="col-links">
+					<dt>关于小米</dt>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">了解小米</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">加入小米</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">联系我们</a>
+					</dd>
+				</dl>
+				<dl class="col-links">
+					<dt>关注我们</dt>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">新浪微博</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">小米部落</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">官方微信</a>
+					</dd>
+				</dl>
+				<div class="col-contact">
+					<p class="phone">400-100-5678</p>
+					<p>
+					周一至周日 8:00-18:00
+					<br>
+					（仅收市话费）
+					</p>
+					<a rel="nofollow" href="" target="_blank" class="btn btn-primary btn-small">24小时在线客服</a>
+				</div>
+			</div>
+			<div class="footer-info clearfix">
+				<div class="info-text">
+					<p>
+						小米旗下网站：
+						<a href="" target="_blank">小米网</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">MIUI</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">米聊</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">多看书城</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">小米路由器</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">繁體香港</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">繁體台灣</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">English</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">小米后院</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">小米天猫店</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">小米淘宝直营店</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">小米网盟</a>
+					</p>
+					<p>
+						©
+						<a href="" target="_blank" title="mi.com">mi.com</a>
+						京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号
+						<a href="" target="_blank">京网文[2014]0059-0009号</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<div id="think_page_trace" style="position: fixed;bottom:0;right:0;font-size:14px;width:100%;z-index: 999999;color: #000;text-align:left;font-family:&#39;微软雅黑&#39;;">
+<div id="think_page_trace_tab" style="display: none;background:white;margin:0;height: 250px;">
+<div id="think_page_trace_tab_tit" style="height:30px;padding: 6px 12px 0;border-bottom:1px solid #ececec;border-top:1px solid #ececec;font-size:16px">
+	    <span style="color: rgb(0, 0, 0); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">基本</span>
+        <span style="color: rgb(153, 153, 153); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">文件</span>
+        <span style="color: rgb(153, 153, 153); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">流程</span>
+        <span style="color: rgb(153, 153, 153); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">错误</span>
+        <span style="color: rgb(153, 153, 153); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">SQL</span>
+        <span style="color: rgb(153, 153, 153); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">调试</span>
+    </div>
+<div id="think_page_trace_tab_cont" style="overflow:auto;height:212px;padding: 0; line-height: 24px">
+		    <div style="display: block;">
+    <ol style="padding: 0; margin:0">
+	<li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">请求信息 : 2016-04-10 14:20:09 HTTP/1.1 POST : /mishop/index.php/Home/Orders/index.html</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">运行时间 : 0.1094s ( Load:0.0156s Init:0.0156s Exec:0.0469s Template:0.0313s )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">吞吐率 : 9.14req/s</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">内存开销 : 2,087.16 kb</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">查询信息 : 5 queries 0 writes </li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">文件加载 : 36</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">缓存信息 : 0 gets 0 writes </li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">配置加载 : 124</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">会话信息 : SESSION_ID=vu9dj968fd9sp76iemtm7nl093</li>    </ol>
+    </div>
+        <div style="display: none;">
+    <ol style="padding: 0; margin:0">
+	<li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\index.php ( 1.19 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\ThinkPHP.php ( 4.71 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Think.class.php ( 12.32 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Storage.class.php ( 1.38 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Storage\Driver\File.class.php ( 3.56 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Mode\common.php ( 2.82 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Common\functions.php ( 52.60 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\App\Common\Common\function.php ( 2.33 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Hook.class.php ( 4.02 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\App.class.php ( 13.46 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Dispatcher.class.php ( 15.08 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Route.class.php ( 13.38 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Controller.class.php ( 10.95 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\View.class.php ( 7.96 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\BuildLiteBehavior.class.php ( 3.69 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\ParseTemplateBehavior.class.php ( 3.89 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\ContentReplaceBehavior.class.php ( 1.91 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Conf\convention.php ( 11.18 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\App\Common\Conf\config.php ( 1.59 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Lang\zh-cn.php ( 2.57 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Conf\debug.php ( 1.51 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\App\Home\Conf\config.php ( 0.33 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php ( 5.62 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\App\Home\Controller\OrdersController.class.php ( 9.41 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\App\Home\Model\AddressModel.class.php ( 0.31 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Model\RelationModel.class.php ( 22.53 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Model.class.php ( 66.78 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Db.class.php ( 5.69 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ( 6.96 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Db\Driver.class.php ( 41.26 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Template.class.php ( 28.35 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php ( 22.62 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Template\TagLib.class.php ( 9.19 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\App\Runtime\Cache\Home\7c3092abdead99f730e4ea7c43347cbb.php ( 34.99 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\WriteHtmlCacheBehavior.class.php ( 1.43 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\ShowPageTraceBehavior.class.php ( 5.27 KB )</li>    </ol>
+    </div>
+        <div style="display: none;">
+    <ol style="padding: 0; margin:0">
+	<li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ app_init ] --START--</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ app_init ] --END-- [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ app_begin ] --START--</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ app_begin ] --END-- [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ view_parse ] --START--</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ template_filter ] --START--</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ template_filter ] --END-- [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ view_parse ] --END-- [ RunTime:0.031250s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ view_filter ] --START--</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ view_filter ] --END-- [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ app_end ] --START--</li>    </ol>
+    </div>
+        <div style="display: none;">
+    <ol style="padding: 0; margin:0">
+	<li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[8] Undefined variable: kCount C:\wamp\www\mishop\App\Home\Controller\OrdersController.class.php 第 47 行.</li>    </ol>
+    </div>
+        <div style="display: none;">
+    <ol style="padding: 0; margin:0">
+	<li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">SHOW COLUMNS FROM `mi_address` [ RunTime:0.0000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">SELECT * FROM `mi_address` WHERE `user_id` = 3  [ RunTime:0.0000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">SHOW COLUMNS FROM `mi_goods` [ RunTime:0.0000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">SHOW COLUMNS FROM `mi_user_discount` [ RunTime:0.0000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">SELECT * FROM mi_user_discount ud,mi_discount d WHERE ( ud.dis_id=d.dis_id AND ud.dis_state=1 AND ud.user_id=3 )  [ RunTime:0.0156s ]</li>    </ol>
+    </div>
+        <div style="display: none;">
+    <ol style="padding: 0; margin:0">
+	    </ol>
+    </div>
+    </div>
+</div>
+<div id="think_page_trace_close" style="display:none;text-align:right;height:15px;position:absolute;top:10px;right:12px;cursor: pointer;"><img style="vertical-align:top;" src="data:image/gif;base64,R0lGODlhDwAPAJEAAAAAAAMDA////wAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUQxMjc1MUJCQUJDMTFFMTk0OUVGRjc3QzU4RURFNkEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MUQxMjc1MUNCQUJDMTFFMTk0OUVGRjc3QzU4RURFNkEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxRDEyNzUxOUJBQkMxMUUxOTQ5RUZGNzdDNThFREU2QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxRDEyNzUxQUJBQkMxMUUxOTQ5RUZGNzdDNThFREU2QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAAAAAAALAAAAAAPAA8AAAIdjI6JZqotoJPR1fnsgRR3C2jZl3Ai9aWZZooV+RQAOw=="></div>
+</div>
+<div id="think_page_trace_open" style="height:30px;float:right;text-align: right;overflow:hidden;position:fixed;bottom:0;right:0;color:#000;line-height:30px;cursor:pointer;"><div style="background:#232323;color:#FFF;padding:0 6px;float:right;line-height:30px;font-size:14px">0.1094s </div><img width="30" style="" title="ShowPageTrace" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVERDVENkZGQjkyNDExRTE5REY3RDQ5RTQ2RTRDQUJCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVERDVENzAwQjkyNDExRTE5REY3RDQ5RTQ2RTRDQUJCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NURENUQ2RkRCOTI0MTFFMTlERjdENDlFNDZFNENBQkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NURENUQ2RkVCOTI0MTFFMTlERjdENDlFNDZFNENBQkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5fx6IRAAAMCElEQVR42sxae3BU1Rk/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"></div>
+<script type="text/javascript">
+(function(){
+var tab_tit  = document.getElementById('think_page_trace_tab_tit').getElementsByTagName('span');
+var tab_cont = document.getElementById('think_page_trace_tab_cont').getElementsByTagName('div');
+var open     = document.getElementById('think_page_trace_open');
+var close    = document.getElementById('think_page_trace_close').childNodes[0];
+var trace    = document.getElementById('think_page_trace_tab');
+var cookie   = document.cookie.match(/thinkphp_show_page_trace=(\d\|\d)/);
+var history  = (cookie && typeof cookie[1] != 'undefined' && cookie[1].split('|')) || [0,0];
+open.onclick = function(){
+	trace.style.display = 'block';
+	this.style.display = 'none';
+	close.parentNode.style.display = 'block';
+	history[0] = 1;
+	document.cookie = 'thinkphp_show_page_trace='+history.join('|')
+}
+close.onclick = function(){
+	trace.style.display = 'none';
+this.parentNode.style.display = 'none';
+	open.style.display = 'block';
+	history[0] = 0;
+	document.cookie = 'thinkphp_show_page_trace='+history.join('|')
+}
+for(var i = 0; i < tab_tit.length; i++){
+	tab_tit[i].onclick = (function(i){
+		return function(){
+			for(var j = 0; j < tab_cont.length; j++){
+				tab_cont[j].style.display = 'none';
+				tab_tit[j].style.color = '#999';
+			}
+			tab_cont[i].style.display = 'block';
+			tab_tit[i].style.color = '#000';
+			history[1] = i;
+			document.cookie = 'thinkphp_show_page_trace='+history.join('|')
+		}
+	})(i)
+}
+parseInt(history[0]) && open.click();
+(tab_tit[history[1]] || tab_tit[0]).click();
+})();
+</script>
+</body></html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>	
+	<head>
+		<title>商城用户列表</title>
+		<meta charset="utf-8">
+		<style>
+			*{
+				list-style-type:none;
+			}
+			h1{
+				text-align:center;
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<table border="1" width="70%" align="center" bordercolor="blue">
+		
+				<h1>商城用户列表</h1>
+			
+			<tr>
+				<td>ID</td>
+				<td>账号</td>
+				<td>密码</td>
+				<td>状态</td>
+				<td>登陆时间</td>
+				<td>登陆IP</td>
+				<td>操作</td>
+			</tr>
+			<!--foreach遍历-->
+			<foreach name="user" item="us" >    
+			<tr>
+				<td><{$us.uid}></td>
+				<td><{$us.uname}></td>
+				<td><{$us.upwd}></td>
+				<td><eq name='us.state' value='1'>普通用户<else/>会员用户</eq></td>
+				<td><{$us.logintime}></td>
+				<td><{$us.loginip}></td>
+				<td>
+					<a href="__CONTROLLER__/mod/uid/<{$us.uid}>">修改</a>  
+					<a href="__CONTROLLER__/delete/uid/<{$us.uid}>" onclick="return confirm('你真的确定删除吗？')">删除</a>
+					<a href="__CONTROLLER__/add/uid/<{$us.uid}>">添加</a>
+				</td>
+			</tr>
+			</foreach>
+			</table>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class CollectController extends CommonController {
+
+ 	 //显示首页
+    public function index(){
+
+        //显示分类信息
+       $user = M("Collect");  
+       $sql=$user->where('status=0')->select();
+       $this->assign('sql',$sql);  
+        //分页显示
+        //计算总数据条数'
+       $total =  $user->count();
+       $this->assign("total",$total);
+       // 计算总页数
+       $maxpage = ceil($total/10);
+       $this->assign("maxpage",$maxpage);
+       //计算当前页
+       $no = I("get.no")?I("get.no"):1;
+      
+       //检测当前页
+       if($no<1){
+          $no = 1;
+       }
+       if($no > $maxpage){
+         $no = $maxpage;
+       }
+       $this->assign("no",$no);
+       $res = $user->field("cid,gid,pic,gname,price,color,concat(cid) as newpath")->order('newpath')->page($no,10)->select();
+       $this->assign("collect",$res);
+       $this->display();
+    }
+ //添加收藏页面
+    public function add(){
+      $type=M('Collect');
+      $arr=$type->order('path')->select();
+      $this->assign('type',$arr);
+      $this->display();
+    }
+
+    //添加收藏数据操作
+    public function insert(){
+        $upload = new \Think\Upload();// 实例化上传类  
+        $upload->maxSize   =  2*1024*1024 ;// 设置附件上传大小  
+        $upload->exts      =  array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型    
+        $upload->autoSub  =false;
+        $upload->rootPath  =  './Public/Uploads/'; // 设置附件上传目录  
+        //声明命名规范
+        // $upload->saveName = '';
+          // 上传文件  
+          // dump($_FILES['pic']); 
+        $info   =   $upload->upload(); 
+
+        // dump($info);
+        // die;  
+         if(!$info) {// 上传错误提示错误信息     
+            $this->error($upload->getError());  
+              }else{// 上传成功 获取上传文件信息   
+               foreach($info as $file){
+            $pic = $file['savepath'].$file['savename']; 
+
+               }
+           }
+        //将获取的收藏表单中的数据插入数据库
+        //实例化Model类
+        $user=M('Collect');
+        //创建对象
+        //$user->create();
+        $data["gid"] = I("post.gid");
+        $data["pic"] = $pic;
+        $data["gname"] = I("post.gname");
+        $data["price"] = I("post.price");
+        $data["color"] = I("post.color");
+        $data["keywords"] = I("post.keywords");
+       // dump($data);
+        if($user->data($data)->add()){
+            //添加成功，跳转到收藏列表
+            $this->success('添加收藏成功！','index');
+        }else{
+                //添加失败//跳转回注册页面即可   
+            $this->error('添加收藏失败！','add');  
+            }
+        }
+    
+    public function delete(){
+      
+      //接受收藏传入的ID进行删除操作
+      $user=M('Collect');
+      
+      $result=$user->delete(I('get.cid'));
+      
+      if($result){
+        //删除成功
+        $this->success('删除成功',U('Collect/index'),3);
+      }else{
+        //删除失败
+        $this->error('删除失败',U('Collect/index'));
+      }
+    }
+  }

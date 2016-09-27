@@ -1,0 +1,125 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="/cuteMi/Public/home/js/jquery-1.7.2.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="shortcut icon" href="https://static.pay.xiaomi.com/images/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="/cuteMi/Public/home/Back/main.css">
+<title>小米钱包</title>
+</head>
+<body>
+    <div style="position: absolute; bottom: 0px;">
+        <object type="application/x-shockwave-flash" wmode="transparent" data="https://static.fraudmetrix.cn/clear.swf?v1=2" width="1" height="1" id="fmFlash">
+            <param name="movie" value="https://static.fraudmetrix.cn/clear.swf?v1=2">
+            <param name="allowScriptAccess" value="always">
+            <param name="flashVars" value="sessionId=aaapXdTrsBkp7g-sCSrpv&amp;partnerCode=xiaomi&amp;serviceUrl=fpflash.fraudmetrix.cn">
+        </object>
+    </div>
+
+
+<div class="center-wrap common-bg-wrap">
+    <div class="order-detail">
+        <p class="order-num">银行卡支付</p>
+    </div>
+</div>
+<div class="center-wrap">
+    <form action="" method="post" id="J_bindCard_wrap">
+        <div class="form-wrap">        
+                    <div class="control-group">
+                        <label class="control-label">真实姓名</label>
+                        <div class="controls">
+                            <input type="text" id="J_name" value="" class="input-txt"  name="uname">
+                        </div>
+                        <div class="control-msg"></div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">身份证号</label>
+                        <div class="controls">
+                            <input type="text"  id="J_idNumber" value="" class="input-txt" name="idNumber">
+                        </div>
+                        <div class="control-msg"></div>
+                    </div>
+                
+            <div class="control-group">
+                <label class="control-label">银行卡号</label>
+                <div class="controls bank-card-wrap">
+                    <input type="text" id="J_cardNumber" value="" class="input-txt"  name="account" placeholder="">
+                    <input type="hidden" value="<?php echo ($oid); ?>" name="oid" id="oid">
+                    <div class="bank-tip" id="J_bank_tip" style="display:none;"></div>
+                </div>
+                <div class="control-msg" id="J_limit_msg"></div>
+            </div>
+         
+            <div class="control-group">
+                <label class="control-label">手机号</label>
+                <div class="controls">
+                    <input type="text" class="input-txt"  id="J_phoneNumber" value="" name="phoneNumber" placeholder="办卡时在银行预留的手机号码">
+                </div>
+                <div class="control-msg"></div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <div class="checkbox-wrap">
+                        <div class="checkbox checkbox-checked" id="J_checkox">
+                        </div>
+                    </div>
+                <span class="mi-agreement">
+                    我同意<a href="" id="J_agreement_mi" style="">《小米快捷支付用户协议》</a>
+                    和<a href="" id="J_agreement_steal">《盗刷险用户协议》</a><a href="" id="J_agreement_cmb" style="display:none;">《招商银行信用卡快捷支付线上服务协议》</a>
+                </span>
+                </div>
+                <div class="control-msg"></div>
+            </div>
+            <div class="line"></div>
+            <div class="control-btn-wrap">
+                <div class="control-group control-left">
+                    <a href="JavaScript:void(0)" class="mipay-btn dopay-btn" id="J_dobindCard">下一步</a>
+                </div>
+                <div class="control-group control-right">
+                    <p><a href="" class="goto-bank">使用网银支付</a></p>
+                    <p class="bank-text">需开通网上银行，并跳转到银行页面填写信息</p>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script type="text/javascript">
+      $(function(){
+
+          //点击下一步时候触发事件
+          $("#J_dobindCard").click(function(){
+            
+              var account = $("#J_cardNumber").val();
+              var oid = $("#oid").val();
+              
+               $.ajax({
+                        type:"post",
+                        data:"account="+account+"&oid="+oid,
+                        url:"/cuteMi/index.php/Home/Pay/pay",
+                        dataType:"text",
+                        success:function(data){
+                            if(data=="1"){
+                                 alert("余额不足!");                                 
+                            }else if(data=="2"){
+                                alert("付款成功!");
+                                window.location.assign("/cuteMi/index.php/Home/space/allbook");
+                            }else{
+                                alert("银行卡错误!");
+                            }
+                        },
+                     });
+
+          });
+
+      });
+</script>
+
+<div class="center-wrap footer-wrap">
+    <p>©mipay.com 京ICP证140772号 京ICP备14041161号-1 京公网安备11010802020135号</p>
+</div>
+
+
+</body>
+</html>

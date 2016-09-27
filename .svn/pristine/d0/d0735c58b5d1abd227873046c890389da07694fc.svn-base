@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>	
+		<title>添加商品分类</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+		    body{
+               background:#f7f8f9;
+		    }
+		</style>
+	</head>
+	<body>
+		<form action="__CONTROLLER__/domod" method="post">
+			<table  width="500" align="center">
+				<caption><h1>修改分类信息</h1></caption>
+				<tr>
+					<td>ID</td>
+					<td>
+				       <input type="hidden" name="typeid" value="<{$data['typeid']}>"><span><{$data["typeid"]}></span>	
+				    </td>
+				<tr>
+					<td >类别名称</td>
+					<td ><input type="text" name="tname" value="<{$data['tname']}>"></td>					
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="submit"  value="确认修改" /></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

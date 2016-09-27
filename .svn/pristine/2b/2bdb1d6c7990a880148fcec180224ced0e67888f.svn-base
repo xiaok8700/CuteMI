@@ -1,0 +1,54 @@
+<extend name="Block:index" />
+<block name="main-content">
+	<div class="main-content">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="icon-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- #nav-search -->
+
+				<div class="page-content">
+						<div class="page-header">
+							<h1>
+								商品分类
+								<small>
+									<i class="icon-double-angle-right"></i>
+									添加分类
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+			</div>
+	</div>
+
+	<center>
+			<h3>添加分类信息</h3>
+			 <form action="__URL__/create" method="POST">
+				<table width="340" border="0">
+					<input type="hidden" name="pid" value="<{$id}>"/>
+					<input type="hidden" name="path" value="<{$path}>">
+					<tr>
+						<td align="right">父类别:</td>
+						<td><{$name}></td>
+					</tr>
+					<tr>
+						<td align="right">类别名称:</td>
+						<td><input type="text" name="name" value=""></td>
+					</tr>
+					<tr>
+						<td align="right">&nbsp;</td>
+						<td>
+							<input type="submit" value="添加"/><input type="reset" value="重置"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+	</center>
+</block>

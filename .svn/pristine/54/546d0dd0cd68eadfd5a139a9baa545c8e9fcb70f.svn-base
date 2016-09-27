@@ -1,0 +1,113 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!-- saved from url=(0040)https://account.xiaomi.com/pass/register -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+<title>小米帐号 - 注册</title>
+
+	<link type="text/css" rel="stylesheet" href="/CuteMi/Public/home/css/reset.css">
+	<link type="text/css" rel="stylesheet" href="/CuteMi/Public/home/css/layout.css">
+	<link type="text/css" rel="stylesheet" href="/CuteMi/Public/home/css/registerpwd.css">
+
+<style>
+.facebook_area{
+  display:none!important;
+}
+.btn332 { 
+	width: 330px; 
+	height: 42px; 
+	margin: 0 auto; 
+	line-height: 42px; 
+	text-align: center; 
+	font-size: 14px;
+	color:#fff;
+	display: block; 
+	cursor: pointer; 
+	border: 1px solid #e8e8e8; 
+	-webkit-border-radius: 4px; 
+	-moz-border-radius: 4px; 
+	-o-border-radius: 4px; 
+	border-radius: 4px; 
+	background:#ff6f3d;}
+</style>
+</head>
+
+
+<body class="zh_CN">
+<div class="layout bugfix_ie6 dis_none">
+  <div class="n-logo-area clearfix">
+    <a href="#" class="fl-l">
+          <img src="/CuteMi/Public/home/images/logo.png">
+    </a>
+  </div>
+</div>
+<div class="wrapper">
+<div class="wrap">
+<div class="layout">
+  <div class="n-frame device-frame reg_frame" id="main_container">
+    <div class="external_logo_area"><a class="milogo" href="javascript:void(0)"></a></div>
+     <div class="title-item dis_bot35 t_c">
+      <h4 class="title-big">注册小米帐号</h4>
+    </div>  
+  <div><div class="regbox">
+    <form action="/CuteMi/index.php/Home/Login/doregister" method="post">
+    <div class="inputbg">
+      <label class="labelbox" for="">
+        <input type="tel" name="uname" data-type="PH" placeholder="请输入用户名">
+      </label>
+    </div>
+    <div class="inputbg">
+      <label class="labelbox" for="">
+	  <input name="upwd" data-type="PH" placeholder="请输入密码" type="password">
+        <!-- <input type="tel" name="upwd" data-type="PH" placeholder="请输入密码"> -->
+      </label>
+    </div>
+    <div class="inputbg">
+      <label class="labelbox" for="">
+	  <input name="repwd" data-type="PH" placeholder="确认密码" type="password">
+        <!-- <input type="tel" name="repwd" data-type="PH" placeholder="确认密码"> -->
+      </label>
+    </div>
+    <div class="err_tip">
+      <div class="dis_box"><em class="icon_error"></em><span></span></div>
+    </div>
+    <div class="inputbg inputcode dis_box">
+      <label class="labelbox" for="">
+        <input class="code" type="text" name="code" autocomplete="off" placeholder="图片验证码">
+      </label>
+      <img alt="图片验证码" title="看不清换一张" class="icode_image code-image chkcode_img" src="/CuteMi/index.php/Home/Login/getCode" onclick=this.src='/CuteMi/index.php/Home/Login/getCode?d='+Math.random();>
+    </div>
+    <div class="err_tip">
+      <div class="dis_box"><em class="icon_error"></em><span></span></div>
+    </div>
+    <div class="err_tip send-left-times">
+    </div>
+    <div class="fixed_bot mar_phone_dis1">
+    <input class="btn332 btn_reg_1 submit-step" data-to="phone-step2" type="submit" value="立即注册">
+    </form>
+      <img style="display:none;" src="./tick">
+      <p class="msg">
+      <a href="/CuteMi/index.php/Home/Login/index" target="_blank" title="用户协议">已有账号,点击登录</a>
+      </p>
+    </div>
+  </div>
+</div></div></div>
+</div>
+</div>
+</div>
+<div class="n-footer">
+  <div class="nf-link-area clearfix">
+  <ul class="lang-select-list">
+    <li><a class="lang-select-li current" href="javascript:void(0)" data-lang="zh_CN">简体</a>|</li>
+    <li><a class="lang-select-li" href="javascript:void(0)" data-lang="zh_TW">繁体</a>|</li>
+    <li><a class="lang-select-li" href="javascript:void(0)" data-lang="en">English</a></li>
+    
+      |<li><a class="a_critical" href="http://static.account.xiaomi.com/html/faq/faqList.html" target="_blank"><em></em>常见问题</a></li>
+    
+  </ul>
+  </div>
+  <p class="nf-intro"><span>小米公司版权所有-京ICP备10046444-<a class="beianlink beian-record-link" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134"><span><img src="/CuteMi/Public/home/images/ghs.png"></span>京公网安备11010802020134号</a>-京ICP证110507号</span></p>
+</div>
+<script src="./js/jquery-1.8.3.min.js"></script>
+<script src="./js/placeholder.js"></script>
+</body></html>

@@ -1,0 +1,955 @@
+[ 2016-04-16T00:00:55+08:00 ] ::1 /CuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,65,66) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:00:55+08:00 ] ::1 /CuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(59,60,61,62,63) )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:00:55+08:00 ] ::1 /CuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,65,66) )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:00:55+08:00 ] ::1 /CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:00:55+08:00 ] ::1 /CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:01:51+08:00 ] ::1 /CuteMi/index.php/Home/BeforeCart/doindex?verson=%E6%A0%87%E5%87%86%E7%89%88&color=%E9%BB%91%E8%89%B2&gid=1
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, string given D:\wamp\www\CuteMi\CuteMi\Home\Controller\BeforeCartController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-16T00:01:56+08:00 ] ::1 /CuteMi/index.php/Home/Cart/total?total=2499
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:02:03+08:00 ] ::1 /CuteMi/index.php/Home/Order/coupun?id=8
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_coupun_detail` WHERE ( id = 8 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:02:15+08:00 ] ::1 /CuteMi/index.php/Home/Order/money?money=2399
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:02:36+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.003000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:02:38+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.005001s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:02:38+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:02:38+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.016600s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.004000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:02:38+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:02:38+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:02:39+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.004000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:03:22+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:03:24+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:03:24+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.003001s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:03:25+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.016600s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.037200s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:03:25+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.004000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:03:26+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:03:26+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:04:01+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.004000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:04:02+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:04:02+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:04:02+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.004000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:04:02+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.004000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:04:03+08:00 ] ::1 /CuteMi/index.php/Home/Pay/pay
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_user_bank` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `mi_user_bank` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_coupun_detail` [ RunTime:0.004000s ]
+ERR: 非法数据对象！:[count=>127601]
+
+[ 2016-04-16T00:06:59+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(59,60,61,62,63) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:06:59+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,65,66) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:07:00+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:07:00+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:07:03+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(59,60,61,62,63) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:07:03+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.015600s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,65,66) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:07:04+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-04-16T00:07:04+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.046800s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015600s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015600s ]
+
+[ 2016-04-16T00:07:05+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:07:31+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(59,60,61,62,63) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:07:32+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,65,66) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:07:32+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:07:32+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:07:33+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:07:34+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:07:34+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:07:35+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:07:35+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,65,66) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:07:50+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/BeforeCart/doattindex?gid=31
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, string given D:\wamp\www\CuteMi\CuteMi\Home\Controller\BeforeCartController.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.044002s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid = 31 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-04-16T00:08:00+08:00 ] 127.0.0.1 /CuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(59,60,61,62,63) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:08:17+08:00 ] ::1 /CuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(59,60,61,62,63) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:08:20+08:00 ] ::1 /CuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(59,60,61,62,63) )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:08:20+08:00 ] ::1 /CuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,65,66) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:08:30+08:00 ] ::1 /CuteMi/index.php/Home/BeforeCart/doindex?verson=%E6%A0%87%E5%87%86%E7%89%88&color=%E9%BB%91%E8%89%B2&gid=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, string given D:\wamp\www\CuteMi\CuteMi\Home\Controller\BeforeCartController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid = 4 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:08:34+08:00 ] ::1 /CuteMi/index.php/Home/Cart/total?total=699
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:08:36+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:08:53+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 1 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:08:56+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 49 )  [ RunTime:0.060003s ]
+
+[ 2016-04-16T00:09:01+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 786 )  [ RunTime:0.032200s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:09:31+08:00 ] ::1 /CuteMi/index.php/Home/Order/doaddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `id` = 49 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `id` = 786 ) LIMIT 1   [ RunTime:0.409023s ]
+SQL: SHOW COLUMNS FROM `mi_address` [ RunTime:0.004000s ]
+NOTIC: [8] Undefined index: username D:\wamp\www\CuteMi\CuteMi\Home\Controller\OrderController.class.php 第 64 行.
+SQL: INSERT INTO `mi_address` (`name`,`mob_phone`,`is_district`,`address`,`code`,`tel_phone`,`is_default`,`uid`) VALUES ('苏美玲','183325654102','昌平区 回龙观地区','河北大街西段360号',253800,'253800','0',0) [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:09:45+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:09:49+08:00 ] ::1 /CuteMi/index.php/Home/Order/doaddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004001s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\CuteMi\CuteMi\Home\Controller\OrderController.class.php 第 59 行.
+SQL: SHOW COLUMNS FROM `mi_address` [ RunTime:0.013000s ]
+NOTIC: [8] Undefined index: username D:\wamp\www\CuteMi\CuteMi\Home\Controller\OrderController.class.php 第 64 行.
+NOTIC: [8] Undefined variable: str2 D:\wamp\www\CuteMi\CuteMi\Home\Controller\OrderController.class.php 第 66 行.
+NOTIC: [2] implode(): Invalid arguments passed D:\wamp\www\CuteMi\CuteMi\Home\Controller\OrderController.class.php 第 66 行.
+SQL: INSERT INTO `mi_address` (`name`,`mob_phone`,`is_district`,`address`,`code`,`tel_phone`,`is_default`,`uid`) VALUES ('苏美玲','183325654102','','河北大街西段360号',253800,'253800','0',0) [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:09:55+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:09:58+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 10 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:10:10+08:00 ] ::1 /CuteMi/index.php/Home/BeforeCart/doindex?verson=%E6%A0%87%E5%87%86%E7%89%88&color=%E9%BB%91%E8%89%B2&gid=4
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-04-16T00:10:13+08:00 ] ::1 /CuteMi/index.php/Home/Cart/total?total=1398
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:10:15+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:10:22+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 14 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:10:26+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 215 )  [ RunTime:0.031201s ]
+
+[ 2016-04-16T00:10:28+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 2433 )  [ RunTime:0.092005s ]
+
+[ 2016-04-16T00:10:29+08:00 ] ::1 /CuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 19726 )  [ RunTime:0.032002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:10:43+08:00 ] ::1 /CuteMi/index.php/Home/Order/doaddress
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `id` = 215 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `id` = 2433 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `id` = 19726 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_address` [ RunTime:0.004001s ]
+NOTIC: [8] Undefined index: username D:\wamp\www\CuteMi\CuteMi\Home\Controller\OrderController.class.php 第 64 行.
+SQL: INSERT INTO `mi_address` (`name`,`mob_phone`,`is_district`,`address`,`code`,`tel_phone`,`is_default`,`uid`) VALUES ('苏美玲','1234','九江市 修水县 庙岭乡','ahiofwef ',12123,'1213','0',0) [ RunTime:0.001000s ]
+

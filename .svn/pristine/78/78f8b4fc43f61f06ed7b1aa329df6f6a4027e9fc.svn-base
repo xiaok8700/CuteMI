@@ -1,0 +1,372 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta charset="UTF-8">
+    <title>选择在线支付方式</title>
+
+    <link rel="stylesheet" type="text/css" href="/CuteMi/Public/home/Pay/base.min.css">
+
+    <link rel="stylesheet" type="text/css" href="/CuteMi/Public/home/Pay/pay-confirm.min.css">
+
+</head>
+<body>
+<div class="site-header site-mini-header">
+    <div class="container">
+        <div class="header-logo">
+            <a class="logo " href="/CuteMi/index.php" title="小米官网" >
+                <img src="/CuteMi/Public/home/images/logo.png">
+            </a>
+        </div>
+        <div class="header-title" id="J_miniHeaderTitle"><h2>支付订单</h2></div>
+        <div class="topbar-info" id="J_userInfo"><span class="user"><a class="user-name" href="#" target="_blank" >
+            <span class="name">         
+               <?php echo ($_SESSION['username']['uname']); ?>
+            </span>
+        <i class="iconfont"></i></a><ul class="user-menu"><li><a href="http://my.mi.com/portal" target="_blank" >个人中心</a></li><li><a href="" target="_blank" >评价晒单</a></li><li><a href="" target="_blank" data-stat-id="8660c1b13ab1c56b" >我的喜欢</a></li><li><a href="http://account.xiaomi.com/" target="_blank" >小米账户</a></li><li><a href="http://order.mi.com/site/logout" >退出登录</a></li></ul></span><span class="sep">|</span><a class="link link-order" href="/CuteMi/index.php/Home/space/allbook">我的订单</a></div>
+    </div>
+</div>
+
+
+<div class="page-main">
+    <div class="container confirm-box">
+        <form target="_blank" action="" id="J_payForm" method="post">
+            <div class="section section-order">
+                <div class="order-info clearfix">
+                    <div class="fl">
+                        <h2 class="title">您的订单已提交成功！付款咯～成功付款后，7天发货</h2>
+                        <p class="order-time"></p>
+                        <p class="post-info post-info-hide" id="J_postInfo">
+                                                        收货信息：<?php echo ($address["name"]); ?> <?php echo ($address["mob_phone"]); ?>&nbsp;&nbsp;
+                            <?php echo ($address["is_district"]); ?>;<?php echo ($address["address"]); ?>                                                    </p>
+                    </div>
+                    <div class="fr">
+                        <p class="total">
+                            <span class="money"><em></em></span>
+                        </p>
+                        <a href="javascript:void(0);" class="show-detail" id="J_showDetail" >订单详情<i class="iconfont"></i></a>
+                    </div>
+                </div>
+                <i class="iconfont icon-right">√</i>
+                <div class="order-detail" style="display: block;">
+                    <ul>
+                        <li class="clearfix">
+                            <div class="label">订单号：</div>
+                            <div class="content">
+                                <span class="order-num">
+                                   <?php echo ($or["oid"]); ?>                       
+                                </span>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                                                        <div class="label">收货信息:</div>
+                            <div class="content">
+                                <?php echo ($or["address"]); ?>             收货电话:<?php echo ($or["phone"]); ?>
+                            </div>
+                                                    </li>
+                        <li class="clearfix">
+                            <?php if(is_array($gname)): foreach($gname as $key=>$name): ?><div class="label">商品名称：</div>         
+                                <div class="content">
+                                    <?php echo ($name); ?>                       
+                                </div><br><?php endforeach; endif; ?>
+                        </li>
+                        
+                        <li class="clearfix">
+                            <div class="label">配送时间：</div>
+                            <div class="content">
+                                不限送货时间                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="label">发票信息：</div>
+                            <div class="content">
+                                个人                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <div class="section section-payment">
+                <div class="cash-title" id="J_cashTitle">
+                                        选择以下支付方式付款
+                                    </div>
+
+                
+
+                <div class="payment-box ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">支付平台</h3>
+                        <span class="desc">（大额支付推荐使用支付宝）</span>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list J_paymentList">
+                           
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="alipay" value="">
+                                <img src="/CuteMi/Public/home/Pay/payOnline_zfb.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="unionpay" value="">
+                                <img src="/CuteMi/Public/home/Pay/unionpay.png" alt=""></li>
+                            <li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="cft" value="">
+                                <img src="/CuteMi/Public/home/Pay/cft.png" alt=""></li><li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="micash" value=""> 
+                                <img src="/CuteMi/Public/home/Pay/micash.png" alt=""></li>          
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="payment-box ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">银行借记卡及信用卡</h3>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list payment-list-much J_paymentList">
+                           
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CMB" value="CMB">
+                       
+                            <img src="/CuteMi/Public/home/Pay/payOnline_zsyh.png" alt="">
+                          <form>
+                            </li><li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="ICBCB2C" value="ICBCB2C"> 
+                                <img src="/CuteMi/Public/home/Pay/payOnline_gsyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CCB" value="CCB"> 
+                                <img src="/CuteMi/Public/home/Pay/payOnline_jsyh.png" alt=""></li>
+                            <li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="BOCB2C" value="BOCB2C"> 
+                                <img src="/CuteMi/Public/home/Pay/payOnline_zgyh.png" alt=""></li>
+                            <li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="COMM" value="COMM">
+                                <img src="/CuteMi/Public/home/Pay/payOnline_jtyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="PSBC-DEBIT" value="PSBC-DEBIT">
+                                <img src="/CuteMi/Public/home/Pay/payOnline_youzheng.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="GDB" value="GDB"> 
+                                <img src="/CuteMi/Public/home/Pay/payOnline_gfyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="SPDB" value="SPDB">
+                                <img src="/CuteMi/Public/home/Pay/payOnline_pufa.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CEBBANK" value="CEBBANK">
+                                <img src="/CuteMi/Public/home/Pay/payOnline_gdyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="SPABANK" value="SPABANK">
+                                <img src="/CuteMi/Public/home/Pay/payOnline_payh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CIB" value="CIB"> 
+                                <img src="/CuteMi/Public/home/Pay/payOnline_xyyh.png" alt=""></li>
+                            <li class="J_bank hide"><input type="radio" name="payOnlineBank" id="CMBC" value="CMBC"> 
+                                <img src="/CuteMi/Public/home/Pay/payOnline_msyh.png" alt=""></li><li class="J_bank hide">
+                                <input type="radio" name="payOnlineBank" id="BOB" value="BOB"> <img src="/CuteMi/Public/home/Pay/payOnline_bjyh.png" alt=""></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="payment-box payment-box-last ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">快捷支付</h3>
+                        <span class="desc">（支持以下各银行信用卡以及部分银行借记卡）</span>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list  J_paymentList">
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CMB-KQ" value="CMB-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_zsyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="SPABANK-KQ" value="SPABANK-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_payh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CCB-KQ" value="CCB-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_jsyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="ICBCB2C-KQ" value="ICBCB2C-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_gsyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CITIC-KQ" value="CITIC-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_zxyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CEBBANK-KQ" value="CEBBANK-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_gdyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="BOCB2C-KQ" value="BOCB2C-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_zgyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="SRCB-KQ" value="SRCB-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_shncsyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="JSB-KQ" value="JSB-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_jiangsshuyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CMBC-KQ" value="CMBC-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_msyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CIB-KQ" value="CIB-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_xyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="ABC-KQ" value="ABC-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_nyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="SDB-KQ" value="SDB-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_sfyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="HXB-KQ" value="HXB-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_hyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="GDB-KQ" value="GDB-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_gfyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="BOB-KQ" value="BOB-KQ"> <img src="/CuteMi/Public/home/Pay/payOnline_bjyh.png" alt=""></li>                        </ul>
+                    </div>
+                </div>
+            </div>
+       </form>
+    </div>
+</div>
+       <form action="/CuteMi/index.php/Home/Pay/bank" method="post">   
+            <input type="hidden" name="oid" value="<?php echo ($or["oid"]); ?>"/> 
+          <button>虚拟支付入口</button>
+       <form>
+<div class="modal modal-hide fade modal-alert" id="J_modalAlert">
+    <div class="modal-bd">
+        <div class="text">
+            <h3 id="J_alertMsg"></h3>
+        </div>
+        <div class="actions">
+            <button class="btn btn-primary" data-dismiss="modal">确定</button>
+        </div>
+        <a class="close"  href="javascript: void(0);" ><i class="iconfont"></i></a>
+    </div>
+</div>        
+<!DOCTYPE html>
+<!-- saved from url=(0045)http://order.mi.com/portal?r=23414.1460031691 -->
+<html lang="zh-CN" xml:lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="/CuteMi/Public/home/js/unjcV2.js"></script><script type="text/javascript" async="" src="/CuteMi/Public/home/js/mstr.js"></script><script type="text/javascript" async="" src="/CuteMi/Public/home/js/jquery.statData.min.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>个人中心</title>
+<meta name="viewport" content="width=1226">
+<meta name="description" content="">
+<meta name="keywords" content="小米手机,小米手机官网">
+<link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="/CuteMi/Public/home/css/base.min.css">
+<link rel="stylesheet" type="text/css" href="/CuteMi/Public/home/css/main.min.css">
+</head>
+<body>
+
+<div class="site-footer">
+    <div class="container">
+        <div class="footer-service">
+            <ul class="list-service clearfix">
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#repaire" target="_blank" data-stat-id="da46b3d5586757a4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-da46b3d5586757a4&#39;, &#39;//www.mi.com/service/exchange#repaire&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>1小时快修服务</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#back" target="_blank" data-stat-id="78babcae8a619e26" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-78babcae8a619e26&#39;, &#39;//www.mi.com/service/exchange#back&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>7天无理由退货</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#free" target="_blank" data-stat-id="d1745f68f8d2dad7" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-d1745f68f8d2dad7&#39;, &#39;//www.mi.com/service/exchange#free&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>15天免费换货</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#mail" target="_blank" data-stat-id="f1b5c2451cf73123" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-f1b5c2451cf73123&#39;, &#39;//www.mi.com/service/exchange#mail&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>满150元包邮</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank" data-stat-id="caf836ab93cdfd31" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-caf836ab93cdfd31&#39;, &#39;//www.mi.com/c/service/poststation/&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>520余家售后网点</a></li>
+                        </ul>
+        </div>
+        <div class="footer-links clearfix">
+            
+            <dl class="col-links col-links-first">
+                <dt>帮助中心</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/help_center/guide/" target="_blank" data-stat-id="2458d0d93e3f7386" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-2458d0d93e3f7386&#39;, &#39;//www.mi.com/service/help_center/guide/&#39;, &#39;pcpid&#39;]);">购物指南</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/help_center/pay/" target="_blank" data-stat-id="2109aae4f55e7716" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-2109aae4f55e7716&#39;, &#39;//www.mi.com/service/help_center/pay/&#39;, &#39;pcpid&#39;]);">支付方式</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/help_center/delivery/" target="_blank" data-stat-id="fdf4464071458ade" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-fdf4464071458ade&#39;, &#39;//www.mi.com/service/help_center/delivery/&#39;, &#39;pcpid&#39;]);">配送方式</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>服务支持</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/exchange" target="_blank" data-stat-id="8e282b6f669ba990" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-8e282b6f669ba990&#39;, &#39;//www.mi.com/service/exchange&#39;, &#39;pcpid&#39;]);">售后政策</a></dd>
+                
+                <dd><a rel="nofollow" href="http://fuwu.mi.com/" target="_blank" data-stat-id="5f2408ab3c808aa2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-5f2408ab3c808aa2&#39;, &#39;http://fuwu.mi.com/&#39;, &#39;pcpid&#39;]);">自助服务</a></dd>
+                
+                <dd><a rel="nofollow" href="http://xiazai.mi.com/" target="_blank" data-stat-id="18c340c920a278a1" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-18c340c920a278a1&#39;, &#39;http://xiazai.mi.com/&#39;, &#39;pcpid&#39;]);">相关下载</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>小米之家</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/c/xiaomizhijia/" target="_blank" data-stat-id="b27b566974e4aa67" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-b27b566974e4aa67&#39;, &#39;//www.mi.com/c/xiaomizhijia/&#39;, &#39;pcpid&#39;]);">小米之家</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank" data-stat-id="bdb16d6645c388ac" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-bdb16d6645c388ac&#39;, &#39;//www.mi.com/c/service/poststation/&#39;, &#39;pcpid&#39;]);">服务网点</a></dd>
+                
+                <dd><a rel="nofollow" href="http://service.order.mi.com/mihome/index" target="_blank" data-stat-id="443642eacd664bd9" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-443642eacd664bd9&#39;, &#39;http://service.order.mi.com/mihome/index&#39;, &#39;pcpid&#39;]);">预约服务</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>关于小米</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/about" target="_blank" data-stat-id="f6d386c65b1f4132" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-f6d386c65b1f4132&#39;, &#39;//www.mi.com/about&#39;, &#39;pcpid&#39;]);">了解小米</a></dd>
+                
+                <dd><a rel="nofollow" href="http://hr.xiaomi.com/" target="_blank" data-stat-id="4307a445f5592adb" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-4307a445f5592adb&#39;, &#39;http://hr.xiaomi.com/&#39;, &#39;pcpid&#39;]);">加入小米</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/about/contact" target="_blank" data-stat-id="6842e821365ee45d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-6842e821365ee45d&#39;, &#39;//www.mi.com/about/contact&#39;, &#39;pcpid&#39;]);">联系我们</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>关注我们</dt>
+                
+                <dd><a rel="nofollow" href="http://e.weibo.com/xiaomishouji" target="_blank" data-stat-id="464883aa6e799290" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-464883aa6e799290&#39;, &#39;http://e.weibo.com/xiaomishouji&#39;, &#39;pcpid&#39;]);">新浪微博</a></dd>
+                
+                <dd><a rel="nofollow" href="http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat" target="_blank" data-stat-id="78fdefa9dee561b5" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-78fdefa9dee561b5&#39;, &#39;http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat&#39;, &#39;pcpid&#39;]);">小米部落</a></dd>
+                
+                <dd><a rel="nofollow" href="http://order.mi.com/portal?r=23414.1460031691#J_modalWeixin" data-toggle="modal" data-stat-id="47539f6570f0da90" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-47539f6570f0da90&#39;, &#39;#J_modalWeixin&#39;, &#39;pcpid&#39;]);">官方微信</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>特色服务</dt>
+                
+                <dd><a rel="nofollow" href="http://order.mi.com/queue/f2code" target="_blank" data-stat-id="fdc16dd51892a164" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-fdc16dd51892a164&#39;, &#39;//order.mi.com/queue/f2code&#39;, &#39;pcpid&#39;]);">F 码通道</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/mimobile/" target="_blank" data-stat-id="99876c8aaf8ef0a4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-99876c8aaf8ef0a4&#39;, &#39;//www.mi.com/mimobile/&#39;, &#39;pcpid&#39;]);">小米移动</a></dd>
+                
+                <dd><a rel="nofollow" href="http://order.mi.com/misc/checkitem" target="_blank" data-stat-id="b08be6bd51351e1a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-b08be6bd51351e1a&#39;, &#39;//order.mi.com/misc/checkitem&#39;, &#39;pcpid&#39;]);">防伪查询</a></dd>
+                
+            </dl>
+                
+            <div class="col-contact">
+                <p class="phone">400-100-5678</p>
+<p><span class="J_serviceTime-normal" style="
+">周一至周日 8:00-18:00</span>
+<span class="J_serviceTime-holiday" style="display:none;">2月7日至13日服务时间 9:00-18:00</span><br>（仅收市话费）</p>
+<a rel="nofollow" class="btn btn-line-primary btn-small" href="http://www.mi.com/service/contact" target="_blank" data-stat-id="a7642f0a3475d686" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-a7642f0a3475d686&#39;, &#39;//www.mi.com/service/contact&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i> 24小时在线客服</a>            </div>
+        </div>
+    </div>
+</div>
+<div class="site-info">
+    <div class="container">
+        <div class="logo ir">小米官网</div>
+        <div class="info-text">
+            <p>小米旗下网站：<a href="http://www.mi.com/index.html" target="_blank" data-stat-id="4fb589dbb54f257a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-4fb589dbb54f257a&#39;, &#39;//www.mi.com/index.html&#39;, &#39;pcpid&#39;]);">小米网</a><span class="sep">|</span><a href="http://www.miui.com/" target="_blank" data-stat-id="ed2a0e25c8b0ca2f" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-ed2a0e25c8b0ca2f&#39;, &#39;http://www.miui.com/&#39;, &#39;pcpid&#39;]);">MIUI</a><span class="sep">|</span><a href="http://www.miliao.com/" target="_blank" data-stat-id="826b32c1478a98d5" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-826b32c1478a98d5&#39;, &#39;http://www.miliao.com/&#39;, &#39;pcpid&#39;]);">米聊</a><span class="sep">|</span><a href="http://www.duokan.com/" target="_blank" data-stat-id="c9d2af1ad828a834" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-c9d2af1ad828a834&#39;, &#39;http://www.duokan.com/&#39;, &#39;pcpid&#39;]);">多看书城</a><span class="sep">|</span><a href="http://www.miwifi.com/" target="_blank" data-stat-id="96f1a8cecc909af2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-96f1a8cecc909af2&#39;, &#39;http://www.miwifi.com/&#39;, &#39;pcpid&#39;]);">小米路由器</a><span class="sep">|</span><a href="http://call.mi.com/" target="_blank" data-stat-id="347f6dd0d8d9fda3" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-347f6dd0d8d9fda3&#39;, &#39;http://call.mi.com/&#39;, &#39;pcpid&#39;]);">视频电话</a><span class="sep">|</span><a href="http://blog.xiaomi.com/" target="_blank" data-stat-id="4ad42379062eda19" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-4ad42379062eda19&#39;, &#39;http://blog.xiaomi.com/&#39;, &#39;pcpid&#39;]);">小米后院</a><span class="sep">|</span><a href="http://xiaomi.tmall.com/" target="_blank" data-stat-id="dfe0fac59cfb15d9" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-dfe0fac59cfb15d9&#39;, &#39;http://xiaomi.tmall.com/&#39;, &#39;pcpid&#39;]);">小米天猫店</a><span class="sep">|</span><a href="http://shop115048570.taobao.com/" target="_blank" data-stat-id="c2613d0d3b77ddff" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-c2613d0d3b77ddff&#39;, &#39;http://shop115048570.taobao.com&#39;, &#39;pcpid&#39;]);">小米淘宝直营店</a><span class="sep">|</span><a href="http://union.mi.com/" target="_blank" data-stat-id="2f48f953961c637d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-2f48f953961c637d&#39;, &#39;http://union.mi.com/&#39;, &#39;pcpid&#39;]);">小米网盟</a><span class="sep">|</span><a href="http://static.mi.com/feedback/" target="_blank" data-stat-id="6479cd2d041bcf04" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-6479cd2d041bcf04&#39;, &#39;//static.mi.com/feedback/&#39;, &#39;pcpid&#39;]);">问题反馈</a><span class="sep">|</span><a href="http://order.mi.com/portal?r=23414.1460031691#J_modal-globalSites" data-toggle="modal" target="_blank" data-stat-id="9db137a8e0d5b3dd" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-9db137a8e0d5b3dd&#39;, &#39;#J_modal-globalSites&#39;, &#39;pcpid&#39;]);">Select Region</a>            </p>
+            <p>©<a href="http://www.mi.com/" target="_blank" title="mi.com" data-stat-id="836cacd9ca5b75dd" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-836cacd9ca5b75dd&#39;, &#39;//www.mi.com/&#39;, &#39;pcpid&#39;]);">mi.com</a> 京ICP证110507号 京ICP备10046444号 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134" target="_blank" data-stat-id="57efc92272d4336b" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-57efc92272d4336b&#39;, &#39;http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134&#39;, &#39;pcpid&#39;]);">京公网安备11010802020134号 </a><a href="http://c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg" target="_blank" data-stat-id="c5f81675b79eb130" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-c5f81675b79eb130&#39;, &#39;//c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg&#39;, &#39;pcpid&#39;]);">京网文[2014]0059-0009号</a>
+ 违法和不良信息举报电话：185-0130-1238</p>
+        </div>
+        <div class="info-links">
+                    <a href="https://search.szfw.org/cert/l/CX20120926001783002010" target="_blank" data-stat-id="9e1604cd6612205c" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-9e1604cd6612205c&#39;, &#39;https://search.szfw.org/cert/l/CX20120926001783002010&#39;, &#39;pcpid&#39;]);"><img src="/CuteMi/Public/home/images/v-logo-2.png" alt="诚信网站"></a>
+                    <a href="https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&ct=df&pa=461082" target="_blank" data-stat-id="3e1533699f264eac" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-3e1533699f264eac&#39;, &#39;https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&amp;ct=df&amp;pa=461082&#39;, &#39;pcpid&#39;]);"><img src="/CuteMi/Public/home/images/v-logo-1.png" alt="可信网站"></a>
+                    <a href="http://www.315online.com.cn/member/315140007.html" target="_blank" data-stat-id="b085e50c7ec83104" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-b085e50c7ec83104&#39;, &#39;http://www.315online.com.cn/member/315140007.html&#39;, &#39;pcpid&#39;]);"><img src="/CuteMi/Public/home/images/v-logo-3.png" alt="网上交易保障中心"></a>
+        
+        </div>
+    </div>
+<div class="slogan ir">探索黑科技，小米为发烧而生</div></div>
+
+<div id="J_modalWeixin" class="modal fade modal-hide modal-weixin" data-width="480" data-height="520">
+        <div class="modal-hd">
+            <a class="close" data-dismiss="modal" data-stat-id="cfd3189b8a874ba4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-cfd3189b8a874ba4&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i></a>
+            <h3>小米手机官方微信二维码</h3>
+        </div>
+        <div class="modal-bd">
+            <p style="margin: 0 0 10px;">打开微信，点击右上角的“+”，选择“扫一扫”功能，<br>对准下方二维码即可。</p>
+            <img alt="" src="/CuteMi/Public/home/images/qr.png" width="375" height="375">
+        </div>
+    </div>
+<!-- .modal-weixin END -->
+<div class="modal modal-hide modal-bigtap-queue" id="J_bigtapQueue">
+    <div class="modal-body">
+        <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span>
+        <h3>正在排队，请稍候喔！</h3>
+        <p class="queue-tip">抱歉，目前排队人数较多，导致服务器压力山大，请您耐心排队等待，<br>我们将在稍后告诉您排队结果。</p>
+        <div class="queue-animate">
+            <div id="J_mituWalking" class="mitu-walk"> </div>
+            <div class="animate-mask animate-mask-left"></div>
+            <div class="animate-mask animate-mask-right"></div>
+        </div>
+    </div>
+</div>
+<!-- .xm-dm-queue END -->
+<div id="J_bigtapError" class="modal modal-hide modal-bigtap-error">
+    <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span>
+    <div class="modal-body">
+        <h3>抱歉，网络拥堵无法连接服务器</h3>
+        <p class="error-tip">由于访问人数太多导致服务器压力山大，请您稍后再重试。</p>
+        <p>
+            <a class="btn btn-primary" id="J_bigtapRetry" data-stat-id="c148a4197491d5bd" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-c148a4197491d5bd&#39;, &#39;&#39;, &#39;pcpid&#39;]);">重试</a>
+        </p>
+    </div>
+</div>
+<!-- .xm-dm-error END -->
+<div id="J_modal-globalSites" class="modal fade modal-hide modal-globalSites" data-width="640">
+       <div class="modal-hd">
+            <a class="close" data-dismiss="modal" data-stat-id="d63900908fde14b1" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-d63900908fde14b1&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i></a>
+            <h3>Select Region</h3>
+        </div>
+        <div class="modal-bd">
+            <h3>Welcome to Mi.com</h3>
+            <p class="modal-globalSites-tips">Please select your country or region</p>
+            <p class="modal-globalSites-links clearfix">
+                <a href="http://www.mi.com/index.html" data-stat-id="51fe807618ae85f4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-51fe807618ae85f4&#39;, &#39;//www.mi.com/index.html&#39;, &#39;pcpid&#39;]);">Mainland China</a>
+                <a href="http://www.mi.com/hk/" data-stat-id="d8e4264197de1747" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-d8e4264197de1747&#39;, &#39;http://www.mi.com/hk/&#39;, &#39;pcpid&#39;]);">Hong Kong</a>
+                <a href="http://www.mi.com/tw/" data-stat-id="e7bd0f4e372c0b29" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-e7bd0f4e372c0b29&#39;, &#39;http://www.mi.com/tw/&#39;, &#39;pcpid&#39;]);">TaiWan</a>
+                <a href="http://www.mi.com/sg/" data-stat-id="e9c0506f7e4e7161" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-e9c0506f7e4e7161&#39;, &#39;http://www.mi.com/sg/&#39;, &#39;pcpid&#39;]);">Singapore</a>
+                <a href="http://www.mi.com/my/" data-stat-id="d6299ad30ec761a8" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-d6299ad30ec761a8&#39;, &#39;http://www.mi.com/my/&#39;, &#39;pcpid&#39;]);">Malaysia</a>
+                <a href="http://www.mi.com/ph/" data-stat-id="22b601cf7b3ada84" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-22b601cf7b3ada84&#39;, &#39;http://www.mi.com/ph/&#39;, &#39;pcpid&#39;]);">Philippines</a>
+                <a href="http://www.mi.com/in/" data-stat-id="441d26d4571e10dc" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-441d26d4571e10dc&#39;, &#39;http://www.mi.com/in/&#39;, &#39;pcpid&#39;]);">India</a>
+                <a href="http://www.mi.com/id/" data-stat-id="88ccf9755c488ec5" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-88ccf9755c488ec5&#39;, &#39;http://www.mi.com/id/&#39;, &#39;pcpid&#39;]);">Indonesia</a>
+                <a href="http://br.mi.com/" data-stat-id="c41d871bf5ddcd95" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-c41d871bf5ddcd95&#39;, &#39;http://br.mi.com/&#39;, &#39;pcpid&#39;]);">Brasil</a>
+                <a href="http://www.mi.com/en/" data-stat-id="4426c5dac474df5f" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-4426c5dac474df5f&#39;, &#39;http://www.mi.com/en/&#39;, &#39;pcpid&#39;]);">Global Home</a>
+                <a href="http://www.mi.com/mena/" data-stat-id="261bb8cf155fb56b" onclick="_msq.push([&#39;trackEvent&#39;, &#39;45a270e10b1f8e93-261bb8cf155fb56b&#39;, &#39;http://www.mi.com/mena/&#39;, &#39;pcpid&#39;]);"> MENA</a>
+            </p>
+        </div>
+    </div>
+<!-- .modal-globalSites END -->
+
+</body></html>
+</body>
+</html>

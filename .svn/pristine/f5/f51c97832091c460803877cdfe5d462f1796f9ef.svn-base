@@ -1,0 +1,13 @@
+ 
+                   <ul class="list1">
+                           <foreach name='res2' item='bian'>
+                             <li class="pro">
+                                <a href="__MODULE__/goodsdetail/index?gid=<{$bian.gid}>">
+                                <img width="100px" height="120px" src="__PUBLIC__/Uploads/<{$bian.pic}>">
+                                </a>
+                                <{$bian.gname}><br/>
+                                <{$bian.price}>
+                            </li> 
+                            </foreach>
+                    </ul>      
+

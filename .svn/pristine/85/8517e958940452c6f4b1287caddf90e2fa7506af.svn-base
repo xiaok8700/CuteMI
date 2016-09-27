@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://bbs.xiaomi.cn/f-385 -->
+<html lang="zh-CN" xml:lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		
+		<meta name="viewport" content="width=device-width">
+		<title>小米Note - 小米社区官方论坛</title>
+		<!--<link rel="stylesheet" type="text/css" href="./css/index.css">-->
+		<link rel="stylesheet" type="text/css" href="./css/index.css">
+						<!--<link rel="stylesheet" type="text/css" href="http://s1.bbs.xiaomi.cn/statics/css/zh-cn/">-->
+			<link rel="stylesheet" type="text/css" href="./css/plate.css">
+						<!--<link rel="stylesheet" type="text/css" href="http://s1.bbs.xiaomi.cn/statics/css/zh-cn/">-->
+			<link rel="stylesheet" type="text/css" href="./css/datePicker.css">
+				<!--[if lt IE 9]>
+			<link rel="stylesheet" type="text/css" href="http://s1.bbs.xiaomi.cn/statics/css/zh-cn/ie8-header.css">
+		<![endif]-->
+		<script type="text/javascript" async="" src="./js/mstr.js"></script><script src="./js/hm.js"></script><script type="text/javascript" async="" src="./js/xmst.js"></script><script type="text/javascript" src="./js/zh-cn.js"></script>
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+		<script type="text/javascript" src="./js/base.js"></script>
+		<!--小米社区寻找android、iOS工程师，亲们简历砸过来 jiangming@xiaomi.com-->
+	<script type="text/javascript" async="" src="./js/sign.js" charset="UTF-8"></script><link rel="stylesheet" href="./css/sign.css"></head>
+	<body class="xmbbs_desktop" style="">
+		<script>switchMobile.init()</script>
+
+		<div class="main">
+
+			<style>
+    .xmcomm_header_wrap{position:relative;height:50px;min-width:990px;background:#5b5a5a;background:rgba(0,0,0,0.67);-webkit-font-smoothing:antialiased}.xmcomm_header{position:relative;height:50px;margin:0 auto}.xmcomm_header .logo{width:150px;height:50px;margin-left:5px;text-indent:-99999px;display:inline-block;position:absolute;left:0;background:url("http://s1.bbs.xiaomi.cn/statics/images/logo_cn.png") 0 center no-repeat}.xmcomm_header .mobile_qr{position:absolute;left:162px;top:0;width:70px;margin-left:5px;font-size:14px;z-index:100}.xmcomm_header .mobile_qr .mobile{display:block;line-height:50px;padding-left:14px;background:url("http://s1.bbs.xiaomi.cn/statics/images/header_mobile.png") 0 center no-repeat;color:#ff7e3e}.xmcomm_header .mobile_qr .qr{display:none;width:151px;padding:16px 16px 10px;border:1px solid #e6e6e6;background:#fff}.xmcomm_header .mobile_qr .qr span{display:block;height:151px;background:url("http://s1.bbs.xiaomi.cn/statics/images/header_qr.png") center no-repeat}.xmcomm_header .mobile_qr .qr strong{display:block;line-height:24px;color:#454545;text-align:center}.xmcomm_header .mobile_qr:hover .qr{display:block}.xmcomm_header .header_icon{width:16px;vertical-align:middle;text-indent:-9999px;display:inline-block;background:url("http://s1.bbs.xiaomi.cn/statics/images/header_icon.png") no-repeat}.xmcomm_header .header_icon.header_revise{height:16px;margin-top:-3px;background-position:0 -13px}.xmcomm_header .header_icon.header_search{height:16px;margin-right:5px;background-position:0 -31px}.xmcomm_header .header_menu{position:absolute;left:50%;line-height:50px;margin:0 0 0 -243px;z-index:100}.xmcomm_header .header_menu li{float:left;padding:0 8px;color:#fff;font-size:16px;z-index:20}.xmcomm_header .header_menu li:last-child{padding:0}.xmcomm_header .header_menu li:last-child:after{content:".";width:0;opacity:0}.xmcomm_header .header_menu li a,.xmcomm_header .header_menu li span{color:#fff;cursor:pointer}.xmcomm_header .header_menu li a:hover,.xmcomm_header .header_menu li span:hover{color:#ff8b3d}.xmcomm_header .header_menu li span{*float:left;*padding-right:20px}.xmcomm_header .header_menu li span i{width:10px;height:10px;background-position:0 -49px;display:inline-block;margin:6px 0 0 5px}.xmcomm_header .header_menu li .header_menu_list,.xmcomm_header .header_menu li .header_more_list{top:-100px;height:0;max-height:0;opacity:0;z-index:-1}.xmcomm_header .header_menu li:hover .header_menu_list,.xmcomm_header .header_menu li:hover .header_more_list{top:50px;height:auto;max-height:none;opacity:1}.xmcomm_header .header_menu_list{position:absolute;left:8px;width:728px;padding-top:10px;padding-bottom:35px;border:1px solid #e6e6e6;background:#fff;z-index:11;overflow:hidden}.xmcomm_header .header_menu_list h4{line-height:40px;margin-left:32px;font-weight:normal;color:#ff8b3d;font-size:16px}.xmcomm_header .header_menu_list ul{margin:0 0 6px 1px;width:729px;overflow:auto}.xmcomm_header .header_menu_list ul li{float:left;padding:0;margin:0 0 0 48px;width:133px;height:30px;line-height:30px;list-style-type:disc;text-align:left;color:#6d6d6d;font-size:14px;border-right:1px solid #dfdfdf}.xmcomm_header .header_menu_list ul li a{color:#6d6d6d;line-height:30px}.xmcomm_header .header_menu_list ul li a:hover{color:#ff7519}.xmcomm_header .header_more_list{position:absolute;left:554px;width:182px;padding:35px 0;background:#fff;border:1px solid #e6e6e6;z-index:11;overflow:hidden}.xmcomm_header .header_more_list ul{margin:-6px 0 0 1px;width:182px}.xmcomm_header .header_more_list ul li{float:left;padding:0;margin:0 0 0 48px;width:133px;height:30px;line-height:30px;list-style-type:disc;border-right:1px solid #dfdfdf;color:#6d6d6d;font-size:14px;text-align:left}.xmcomm_header .header_more_list ul li a{color:#6d6d6d;line-height:30px}.xmcomm_header .header_more_list ul li a:hover{color:#ff7519}.xmcomm_header .header_more_list ul li.hide{display:none}@media screen and (max-width:1500px){.xmcomm_header{width:990px}.xmcomm_header .logo,.xmcomm_header .mobile_qr{margin-left:0}.xmcomm_header .header_menu{left:-10px;margin:0 0 0 250px}.xmcomm_header .header_menu .hidden{display:none}.xmcomm_header .header_menu_list{left:20px}.xmcomm_header .header_more_list{width:364px;left:384px}.xmcomm_header .header_more_list ul{width:364px}.xmcomm_header .header_more_list ul li.hide{display:list-item}}@media \0screen\0{.xmcomm_header .header_menu{left:-10px;margin:0 0 0 250px}.xmcomm_header .header_menu .hidden{display:none}.xmcomm_header .header_menu_list{left:20px}.xmcomm_header .header_more_list{width:364px;left:384px}.xmcomm_header .header_more_list ul{width:364px}.xmcomm_header .header_more_list ul li.hide{display:list-item}.xmcomm_header .header_icon.header_revise{margin-top:16px}}
+</style>
+<div class="xmcomm_header_wrap">
+    <div class="xmcomm_header">
+        <a href="http://www.xiaomi.cn/index.html" class="logo">小米社区</a>
+        <div class="mobile_qr">
+	<a href="http://bbs.xiaomi.cn/app/download" target="_blank" class="mobile">客户端</a>
+	<div class="qr">
+		<span></span>
+		<strong>扫码下载小米社区APP</strong>
+	</div>
+        </div>
+        <ul class="header_menu">
+            <li><a href="http://www.xiaomi.cn/index.html">资讯</a></li>
+            <li><a href="http://bbs.xiaomi.cn/">论坛</a></li>
+            <li>
+                <span>版块</span>
+                <div class="header_menu_list">
+                    <h4>产品版块</h4>
+                    <ul>
+                        <li><a href="http://bbs.xiaomi.cn/f-451" target="_blank">小米5</a></li>
+                        <li><a href="./images/小米Note - 小米社区官方论坛.htm" target="_blank">小米Note</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-353" target="_blank">小米4/4c/4S</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-359" target="_blank">小米手机3</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-360" target="_blank">红米Note3</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-361" target="_blank">红米手机</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-358" target="_blank">小米平板1/2</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-9" target="_blank">小米电视3S</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-364" target="_blank">小米盒子3</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-354" target="_blank">小米路由器</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-439" target="_blank">九号平衡车</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-362" target="_blank">小米手环</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-368" target="_blank">移动电源</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-10" target="_blank">空气净化器</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-431" target="_blank">净水器</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-363" target="_blank">智能家庭</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-380" target="_blank">小蚁运动相机</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-379" target="_blank">小蚁智能摄像机</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-367" target="_blank">活塞耳机</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-417" target="_blank">体重秤</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-446" target="_blank">车载蓝牙播放器</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/forum/detail/fid/426" target="_blank">Windows 10</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-452" target="_blank">小米出行方式</a></li>
+                    </ul>
+                    <h4>综合版块</h4>
+                    <ul>
+                        <li><a href="http://bbs.xiaomi.cn/f-392" target="_blank">酷玩帮</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-393" target="_blank">小米随手拍</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-390" target="_blank">MIUI功能与讨论</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-391" target="_blank">刷机天地</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-389" target="_blank">米粉杂谈</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-394" target="_blank">软件/游戏/壁纸</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-397" target="_blank">米粉达人</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-17" target="_blank">问题反馈</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-6" target="_blank">小米动态</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-382" target="_blank">小米爆米花</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-410" target="_blank">校园俱乐部</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-419" target="_blank">积分商城</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/f-400" target="_blank">申请特殊组</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="http://wan.xiaomi.cn/" target="_blank" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs导航&#39;,&#39;酷玩帮&#39;]);">酷玩帮</a></li>
+            <li><a href="http://pai.xiaomi.cn/" target="_blank" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs导航&#39;,&#39;随手拍&#39;]);">随手拍</a></li>
+            <li><a href="http://down.xiaomi.cn/" target="_blank" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs导航&#39;,&#39;应用&#39;]);">应用</a></li>
+            <li><a href="http://mipop.xiaomi.cn/" target="_blank" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs导航&#39;,&#39;爆米花&#39;]);">爆米花</a></li>
+            <li><a href="http://city.xiaomi.cn/" target="_blank" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs导航&#39;,&#39;同城会&#39;]);">同城会</a></li>
+            <li class="hidden"><a href="http://bbs.xiaomi.cn/task/list" target="_blank" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs导航&#39;,&#39;任务&#39;]);">任务</a></li>
+            <li class="hidden"><a href="http://rom.xiaomi.cn/" target="_blank" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs导航&#39;,&#39;ROM&#39;]);">ROM</a></li>
+            <li><a href="http://www.mi.com/" target="_blank" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs导航&#39;,&#39;商城&#39;]);">官网</a></li>
+            <li>
+                <span>更多<i class="header_icon"></i></span>
+                <div class="header_more_list">
+                    <ul>
+                        <li class="hide"><a href="http://bbs.xiaomi.cn/f-410" target="_blank">校园俱乐部</a></li>
+                        <li class="hide"><a href="http://bbs.xiaomi.cn/task/list" target="_blank">任务</a></li>
+                        <li class="hide"><a href="http://rom.xiaomi.cn/" target="_blank">ROM</a></li>
+                         <li><a href="http://so.bbs.xiaomi.cn/" target="_blank" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs导航&#39;,&#39;搜索&#39;]);">搜索</a></li>
+                        <li><a href="http://www.xiaomi.cn/html/special/zhuanti/" target="_blank">专题</a></li>
+                        <li><a href="http://uvip.xiaomi.cn/" target="_blank">VIP认证</a></li>
+                        <li><a href="http://xue.xiaomi.cn/" target="_blank">学院</a></li>
+                        <li><a href="http://www.xiaomi.cn/list-171-1.html" target="_blank">创意摄影</a></li>
+                        <li><a href="http://www.xiaomi.cn/list-170-1.html" target="_blank">60秒小米秀</a></li>
+                        <li><a href="http://www.xiaomi.cn/list-19-1.html" target="_blank">刷机频道</a></li>
+                        <li><a href="http://bbs.xiaomi.cn/forum/detail/fid/364" target="_blank">小米盒子</a></li>
+                        <li><a href="http://www.xiaomi.cn/list-204-1.html" target="_blank">米兔大本营</a></li>
+                        <li><a href="http://www.xiaomi.cn/html/special/wangzhandaohang/?pc_hash=YaB1OV" target="_blank">网站导航</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <a href="http://so.bbs.xiaomi.cn/" target="_blank" class="hidden header_icon header_search" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs导航&#39;,&#39;搜索&#39;]);">搜索</a>
+                <a href="http://bbs.xiaomi.cn/thread/add" target="_blank" class="header_icon header_revise">发帖</a>
+            </li>
+        </ul>
+    </div>
+</div>
+			<div class="head_wrap">
+				<div class="header wrap_990">
+					<div class="user_wrap">
+						<div class="topbar-info J_userInfo " id="login">
+															<a class="loginbtn" href="http://bbs.xiaomi.cn/site/login">登录</a>
+								<a href="http://account.xiaomi.com/pass/register" class="registerbtn">注册</a>
+													</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container_wrap wrap_990 clearfix contain_plate">
+				<div class="contain_header">
+					<img src="./images/T1fKCgBmLT1R4cSCrK.png">
+					<div class="contain_header_con">
+						<div>
+							<a href="./images/小米Note - 小米社区官方论坛.htm">
+								<h2 f-id="385">小米Note</h2></a>
+															<span class="attention">＋关注</span>
+														已有<span class="num">9291</span>人关注
+
+						</div>
+						<div>
+							<span class="intro">大屏旗舰 HiFi 双卡双待</span>
+						</div>
+					</div>
+					<a href="http://bbs.xiaomi.cn/thread/add/fid/385/type/forum" class="btn">+发表新主题</a>
+					<span class="gearedto">所属 : <span>手机/平板</span></span>
+				</div>
+									<div class="contain_left fr">
+				<div class="left_wrap ">
+			<div class="con">
+				<div class="hotspot">
+					<h3>公告</h3>
+					<ul class="announcement clearfix">
+						<li style="list-style:none;">小米Note强大性能，集顶尖科技于一身。<br>
+<br>
+<a href="http://www.mi.com/minote/" target="_blank"><img src="./images/20141210114355326.jpg"></a></li>
+					</ul>
+					<h4>版主:</h4>
+					<ul class="moderator_wrap">
+													<li>
+								<a href="http://bbs.xiaomi.cn/u-detail-155043096">
+									<img src="./images/avatar.jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;" class="head">
+									秋叶pass									<i class="vip_icon vip_icon_s7"></i>
+								</a>
+							</li>
+													<li>
+								<a href="http://bbs.xiaomi.cn/u-detail-144327456">
+									<img src="./images/avatar(1).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;" class="head">
+									_茶烟。尚绿									<i class="vip_icon vip_icon_s7"></i>
+								</a>
+							</li>
+													<li>
+								<a href="http://bbs.xiaomi.cn/u-detail-175858190">
+									<img src="./images/avatar(2).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;" class="head">
+									G-force.q									<i class="vip_icon vip_icon_s7"></i>
+								</a>
+							</li>
+													<li>
+								<a href="http://bbs.xiaomi.cn/u-detail-179526422">
+									<img src="./images/avatar(3).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;" class="head">
+									平顶山野草									<i class="vip_icon vip_icon_s7"></i>
+								</a>
+							</li>
+													<li>
+								<a href="http://bbs.xiaomi.cn/u-detail-2960575">
+									<img src="./images/avatar(4).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;" class="head">
+									幸福婴儿									<i class="vip_icon vip_icon_s6"></i>
+								</a>
+							</li>
+													<li>
+								<a href="http://bbs.xiaomi.cn/u-detail-27009159">
+									<img src="./images/avatar(5).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;" class="head">
+									穆乃伊									<i class="vip_icon vip_icon_s7"></i>
+								</a>
+							</li>
+											</ul>
+				</div>
+			</div>
+		</div>
+		<div id="mibbs_sign" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs首页&#39;,&#39;侧边栏&#39;, &#39;签到&#39;]);"><div class="mibbs_con" style="margin-bottom:10px;"><span class="mibbs_signpanel JD_sign " id="JD_sign"><div class="font">签到</div><span class="nums">连续0天</span><div class="fblock"><div class="all">44378人</div><div class="line"><span style="font-size:12px;">签到看排名</span></div></div></span><div id="JD_win" class="mibbs_win JD_win" style="display: none;"><img src="./images/20151127045012395.png"><div><h5>扫码下载App</h5><span>一键签到 升级加速</span></div><div class="angleA"></div><div class="angleB"></div></div></div>
+			</div>
+<script>
+   //快速签到
+   var packIdName="mibbs_sign";
+   var pageFlag = "2";
+   (function() {
+       var ds = document.createElement('script');
+       ds.type = 'text/javascript';ds.async = true;
+       ds.src = 'http://s1.bbs.xiaomi.cn/statics/js/base/sign.js';
+       ds.charset = 'UTF-8';
+       (document.getElementsByTagName('head')[0] 
+       || document.getElementsByTagName('body')[0]).appendChild(ds);
+   })();
+</script>		<div class="left_wrap">
+					<div class="sidebarplate" onclick="_hmt.push([&#39;_trackEvent&#39;,&#39;bbs首页&#39;,&#39;侧边栏&#39;, &#39;版块推荐&#39;]);">
+
+						<div class="sidebarplate_tab">
+							<div class="tab">
+								<span class="on">版块推荐</span>
+								<span>百宝箱</span>
+							</div>
+						</div>
+						<div>
+							<ul class="on">
+								<li><a href="http://bbs.xiaomi.cn/f-451" target="_blank"><span style="color:#ff0000;">小米5</span></a></li>
+                                                                <li><a href="./images/小米Note - 小米社区官方论坛.htm" target="_blank">小米Note</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-9" target="_blank"><span style="color:#ff0000;">小米电视3S</span></a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-358" target="_blank">小米平板</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-364" target="_blank">小米盒子</a></li>
+                                                                <li><a href="http://bbs.xiaomi.cn/f-353" target="_blank">小米手机4</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-359" target="_blank">小米手机3</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-354" target="_blank">小米路由</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-360" target="_blank">红米Note</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-361" target="_blank">红米手机</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-362" target="_blank">小米手环</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-439" target="_blank"><span style="color:#ff0000;">九号平衡车</span></a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-10" target="_blank">小米空气净化器</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-417" target="_blank">小米体重秤</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-418" target="_blank">小米插线板</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-367" target="_blank">小米活塞耳机</a></li>
+								
+							</ul>
+
+
+							<ul>
+								
+								<li><a href="http://bbs.xiaomi.cn/task/list" target="_blank">论坛任务</a></li>
+<li><a href="http://so.bbs.xiaomi.cn/" target="_blank">搜索</a></li>
+								<li><a href="http://bbs.xiaomi.cn/message/private" target="_blank">我的消息</a></li>
+								<li><a href="http://rom.xiaomi.cn/" target="_blank">ROM下载</a></li>
+                                                                <li><a href="http://uvip.xiaomi.cn/" target="_blank">VIP认证</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-400" target="_blank">申请特殊组</a></li>
+								<li><a href="http://down.xiaomi.cn/" target="_blank">应用中心</a></li>
+								<li><a href="http://wiki.xiaomi.cn/" target="_blank">小米百科</a></li>
+								<li><a href="http://www.xiaomi.cn/html/special/zhuanti/" target="_blank">专题汇总</a></li>
+								<li><a href="http://mipop.xiaomi.cn/" target="_blank">小米爆米花</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-17" target="_blank">办事大厅</a></li>
+								<li><a href="http://bbs.xiaomi.cn/f-394" target="_blank">热门软件</a></li>
+								<li><a href="http://www.xiaomi.cn/html/special/wangzhandaohang/?pc_hash=YaB1OV" target="_blank">网站导航</a></li>
+								<li><a href="http://old.bbs.xiaomi.cn/portal.php?mod=topic&topicid=38" target="_blank">小米大事记</a></li>
+								<li><a href="http://www.mi.com/" target="_blank">小米网</a></li>
+								<li><a href="http://xiaomi.tmall.com/" target="_blank">天猫旗舰店</a></li>
+							
+							</ul>
+						</div>	
+					</div>
+				</div> 					<div class="left_wrap">
+				<div class="con">
+										<div class="shareActive">
+
+<a href="http://bbs.xiaomi.cn/t-12611071" target="_blank" class="shareActive_img"><img src="./images/20160304112513497.jpg"></a>                <span class="shareActive_txt">厨下式小米净水器发布</span>
+</div>									</div>
+			</div>
+		
+					</div>
+	<div class="contain_right fl">
+		<div class="theme">
+			<div class="filtrate" date-value="0">
+				<ul class="clearfix">
+											<li>
+							<a href="javascript:void(0)" data-value="965"><img src="./images/T1qth_BmhT1R4cSCrK.png">官方公告							</a></li>
+											<li>
+							<a href="javascript:void(0)" data-value="966"><img src="./images/T1ZtJ_ByWv1R4cSCrK.png">晒机评测							</a></li>
+											<li>
+							<a href="javascript:void(0)" data-value="967"><img src="./images/T1NFW_Bydv1R4cSCrK.png">求助讨论							</a></li>
+											<li>
+							<a href="javascript:void(0)" data-value="968"><img src="./images/T1qtd_B5xT1R4cSCrK.png">玩机教程							</a></li>
+											<li>
+							<a href="javascript:void(0)" data-value="969"><img src="./images/T1HzY_BbbT1R4cSCrK.png">软件游戏							</a></li>
+									</ul>
+			</div>
+			<div class="theme_con">
+				<div class="screen clearfix">
+					<div class="dropdown_text_middle alltheme"><span data-value="0">全部主题</span><i></i>
+						<ul class="selectlist">
+							<li><a href="javascript:void(0);" data-value="0">全部主题</a></li>
+							<li><a href="javascript:void(0);" data-value="1">普通</a></li>
+							<li><a href="javascript:void(0);" data-value="2">活动</a></li>
+						</ul>
+
+					</div>
+					<div class="dropdown_text_middle alltime"><span data-value="0">全部时间</span><i></i>
+						<ul class="selectlist">
+							<li><a href="javascript:void(0);" data-value="0">全部时间</a></li>
+							<li><a href="javascript:void(0);" data-value="86400">一天</a></li>
+							<li><a href="javascript:void(0);" data-value="172800">两天</a></li>
+							<li><a href="javascript:void(0);" data-value="604800">一周</a></li>
+							<li><a href="javascript:void(0);" data-value="2592000">一个月</a></li>
+							<li><a href="javascript:void(0);" data-value="7948800">三个月</a></li>
+						</ul>
+					</div>
+					<div class="dropdown_text_middle lastpublish"><span data-value="0">默认排序</span><i></i>
+						<ul class="selectlist">
+							<li><a href="javascript:void(0);" data-value="send">发贴时间</a></li>
+							<li><a href="javascript:void(0);" data-value="replies">回复数</a></li>
+							<li><a href="javascript:void(0);" data-value="views">查看数</a></li>
+							<li><a href="javascript:void(0);" data-value="lastpost">最后发表</a></li>
+							<li><a href="javascript:void(0);" data-value="0">默认排序</a></li>
+						</ul>
+					</div>
+					<a href="javascript:void(0);" data-value="0" class="essence screen_btn ">精华</a>
+					<a href="http://bbs.xiaomi.cn/f-385-0-0-send-0-0-0-1" class="screen_btn ">最新</a>
+				</div>
+				<ul class="themelistcon">
+																									<li u-id="48442438" t-id="12686820">
+								<div class="theme_list_img"><a href="http://bbs.xiaomi.cn/u-detail-48442438" class="headportrait" target="_blank">
+																																<img class="user_head" src="./images/avatar(6).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+									</a>
+																	</div>
+								<div class="theme_list_con">
+																		<div class="title">
+										<a href="http://bbs.xiaomi.cn/t-12686820" class="title_name " style="color:#488eee" target="_blank">也许小米Note才是最美的小米手机！谈谈一个大学生的深入使用体验</a>
+										<img class="stamp" src="./images/T1LSCvBKE_1R4cSCrK.png"><img class="stamp" src="./images/T1NWxvBQJT1R4cSCrK.png">									</div>
+									<div class="auth_msg clearfix">
+										<a href="http://bbs.xiaomi.cn/u-detail-48442438" class="user_name" target="_blank">爱强地带</a>
+										<i class="vip_icon 											   vip_icon_m6										   "></i>
+										<span class="vipnum vipnum_1"></span>
+										<span class="time txt">
+											9小时前										</span>
+																					<a href="http://bbs.xiaomi.cn/f-385-0-0-0-966" class="time txt">晒机评测</a>
+																				<span class="comefrom txt">·来自PC</span>
+																					<span class="stick txt">·置顶</span>
+																																																												<span class="numb msg"><i></i>566</span>
+										<span class="numb view"><i></i>36544</span>
+									</div>
+								</div>
+							</li>
+																				<li u-id="155043096" t-id="12409132">
+								<div class="theme_list_img"><a href="http://bbs.xiaomi.cn/u-detail-155043096" class="headportrait" target="_blank">
+																																<img class="user_head" src="./images/avatar(7).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+									</a>
+																	</div>
+								<div class="theme_list_con">
+																		<div class="title">
+										<a href="http://bbs.xiaomi.cn/t-12409132" class="title_name " style="color:#ef5350" target="_blank">【科普】正确使用手机电池的姿势</a>
+										<img class="stamp" src="./images/T1LSCvBKE_1R4cSCrK.png"><img class="stamp" src="./images/T1JWZvBbKT1R4cSCrK.png">									</div>
+									<div class="auth_msg clearfix">
+										<a href="http://bbs.xiaomi.cn/u-detail-155043096" class="user_name" target="_blank">秋叶pass</a>
+										<i class="vip_icon 											   vip_icon_m7										   "></i>
+										<span class="vipnum vipnum_1"></span>
+										<span class="time txt">
+											12小时前										</span>
+																					<a href="http://bbs.xiaomi.cn/f-385-0-0-0-965" class="time txt">官方公告</a>
+																				<span class="comefrom txt">·来自PC</span>
+																					<span class="stick txt">·置顶</span>
+																																																												<span class="numb msg"><i></i>1209</span>
+										<span class="numb view"><i></i>62848</span>
+									</div>
+								</div>
+							</li>
+																				<li u-id="144327456" t-id="11645959">
+								<div class="theme_list_img"><a href="http://bbs.xiaomi.cn/u-detail-144327456" class="headportrait" target="_blank">
+																																<img class="user_head" src="./images/avatar(8).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+									</a>
+																	</div>
+								<div class="theme_list_con">
+																		<div class="title">
+										<a href="http://bbs.xiaomi.cn/t-11645959" class="title_name title_bold " style="color:#ff0000" target="_blank">小米各类官方信息平台及反馈渠道索引（更新）</a>
+										<img class="stamp" src="./images/T1byx_BKJT1R4cSCrK.png">									</div>
+									<div class="auth_msg clearfix">
+										<a href="http://bbs.xiaomi.cn/u-detail-144327456" class="user_name" target="_blank">_茶烟。尚绿</a>
+										<i class="vip_icon 											   vip_icon_m7										   "></i>
+										<span class="vipnum vipnum_1"></span>
+										<span class="time txt">
+											19小时前										</span>
+																					<a href="http://bbs.xiaomi.cn/f-385-0-0-0-965" class="time txt">官方公告</a>
+																				<span class="comefrom txt">·来自PC</span>
+																					<span class="stick txt">·置顶</span>
+																																																																								<span class="status txt"></span>
+																				<span class="numb msg"><i></i>815</span>
+										<span class="numb view"><i></i>47980</span>
+									</div>
+								</div>
+							</li>
+																				<li u-id="155043096" t-id="12600348">
+								<div class="theme_list_img"><a href="http://bbs.xiaomi.cn/u-detail-155043096" class="headportrait" target="_blank">
+																																<img class="user_head" src="./images/avatar(7).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+									</a>
+																	</div>
+								<div class="theme_list_con">
+																		<div class="title">
+										<a href="http://bbs.xiaomi.cn/t-12600348" class="title_name " style="color:#6ea930" target="_blank">【小米Note】每周精华汇总●第32期</a>
+										<img class="stamp" src="./images/T1byx_BKJT1R4cSCrK.png">									</div>
+									<div class="auth_msg clearfix">
+										<a href="http://bbs.xiaomi.cn/u-detail-155043096" class="user_name" target="_blank">秋叶pass</a>
+										<i class="vip_icon 											   vip_icon_m7										   "></i>
+										<span class="vipnum vipnum_1"></span>
+										<span class="time txt">
+											2天前										</span>
+																					<a href="http://bbs.xiaomi.cn/f-385-0-0-0-965" class="time txt">官方公告</a>
+																				<span class="comefrom txt">·来自PC</span>
+																					<span class="stick txt">·置顶</span>
+																																																												<span class="numb msg"><i></i>105</span>
+										<span class="numb view"><i></i>11571</span>
+									</div>
+								</div>
+							</li>
+																																					<li u-id="133959139" t-id="12746942">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-133959139" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(9).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746942" class="title_name " target="_blank">小米note顶配换屏幕玻璃。</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-133959139" class="user_name" target="_blank">Mi_133959139</a>
+											<i class="vip_icon 												   vip_icon_m1											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												2分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-968" class="time txt">玩机教程</a>											<span class="comefrom txt">·来自小米Note 顶配版</span>
+																																																							<span class="numb msg"><i></i>6</span>
+											<span class="numb view"><i></i>96</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="141820600" t-id="12747291">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-141820600" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(10).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12747291" class="title_name " target="_blank">小米note高配版经常无故重启或关机</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-141820600" class="user_name" target="_blank">安德烈波夫</a>
+											<i class="vip_icon 												   vip_icon_m0											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												5分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>1</span>
+											<span class="numb view"><i></i>14</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="125730402" t-id="12746826">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-125730402" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(11).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746826" class="title_name " target="_blank">我想找个女朋友</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-125730402" class="user_name" target="_blank">梁柱</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												6分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note 顶配版</span>
+																																																							<span class="numb msg"><i></i>1</span>
+											<span class="numb view"><i></i>27</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="333679948" t-id="12740559">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-333679948" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(12).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12740559" class="title_name " target="_blank">小米note全网通是2.0吗</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-333679948" class="user_name" target="_blank">阜平小米儿</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												6分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米手机4c</span>
+																																																							<span class="numb msg"><i></i>4</span>
+											<span class="numb view"><i></i>133</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="892378126" t-id="12746625">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-892378126" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(13).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746625" class="title_name " target="_blank">受不了了</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-892378126" class="user_name" target="_blank">忘我的梦i</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												7分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note</span>
+																																																							<span class="numb msg"><i></i>2</span>
+											<span class="numb view"><i></i>136</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="35111333" t-id="12747303">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-35111333" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(14).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12747303" class="title_name " target="_blank">不敢开2k</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-35111333" class="user_name" target="_blank">心地宝藏</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												9分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-968" class="time txt">玩机教程</a>											<span class="comefrom txt">·来自小米Note 顶配版</span>
+																																																							<span class="numb msg"><i></i>1</span>
+											<span class="numb view"><i></i>16</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="24024975" t-id="12389652">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-24024975" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(15).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12389652" class="title_name " style="color:#488eee" target="_blank">小米Note顶配 MIUI7.1稳定版V7.1.4.0 Xposed+破解限制+主题XX</a>
+											<img class="stamp" src="./images/T1LSCvBKE_1R4cSCrK.png"><img class="stamp" src="./images/T1NpZ_B_dT1R4cSCrK.png">										</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-24024975" class="user_name" target="_blank">一笑而过3</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												11分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-968" class="time txt">玩机教程</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>683</span>
+											<span class="numb view"><i></i>19061</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="751576779" t-id="12747071">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-751576779" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(16).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12747071" class="title_name " target="_blank">小米note</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-751576779" class="user_name" target="_blank">洪凯哥哥</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												12分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-966" class="time txt">晒机评测</a>											<span class="comefrom txt">·来自小米Note</span>
+																																																							<span class="numb msg"><i></i>2</span>
+											<span class="numb view"><i></i>30</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="286852655" t-id="12746847">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-286852655" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(17).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746847" class="title_name " target="_blank">淘宝聚划算公然卖假货啦！</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-286852655" class="user_name" target="_blank">Mi_286852655</a>
+											<i class="vip_icon 												   vip_icon_m1											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												22分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note 顶配版</span>
+																																																							<span class="numb msg"><i></i>5</span>
+											<span class="numb view"><i></i>144</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="851986656" t-id="12747139">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-851986656" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(18).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12747139" class="title_name " target="_blank">神秘模式</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-851986656" class="user_name" target="_blank">你不孤单66</a>
+											<i class="vip_icon 												   vip_icon_m0											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												26分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note</span>
+																																																							<span class="numb msg"><i></i>1</span>
+											<span class="numb view"><i></i>26</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="24024975" t-id="12710532">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-24024975" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(15).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12710532" class="title_name " target="_blank">【ROM汇总】MIUI7波兰版6.3.21 小米Note顶配版、小米Note全系</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-24024975" class="user_name" target="_blank">一笑而过3</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												30分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-968" class="time txt">玩机教程</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>364</span>
+											<span class="numb view"><i></i>3980</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="2016067" t-id="12746600">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-2016067" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(19).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746600" class="title_name " target="_blank">小米note使用感悟</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-2016067" class="user_name" target="_blank">q702191820</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												30分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-966" class="time txt">晒机评测</a>											<span class="comefrom txt">·来自小米Note</span>
+																																																							<span class="numb msg"><i></i>3</span>
+											<span class="numb view"><i></i>163</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="157704326" t-id="12746882">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-157704326" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(20).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746882" class="title_name " target="_blank">同步关闭了自动打开</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-157704326" class="user_name" target="_blank">liguibobo</a>
+											<i class="vip_icon 												   vip_icon_m1											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												33分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note</span>
+																																																							<span class="numb msg"><i></i>1</span>
+											<span class="numb view"><i></i>32</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="24024975" t-id="12678948">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-24024975" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(15).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12678948" class="title_name " target="_blank">小米Note 安卓6.0.1 MIUI7波兰版6.3.21 去广告+Xposed+分辨率/布局切换+主题</a>
+											<img class="stamp" src="./images/T1NpZ_B_dT1R4cSCrK.png">										</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-24024975" class="user_name" target="_blank">一笑而过3</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												34分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-968" class="time txt">玩机教程</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>253</span>
+											<span class="numb view"><i></i>4943</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="801825849" t-id="12332800">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-801825849" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(21).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12332800" class="title_name " target="_blank">提高系统运行速度方法4.4和 6.6    通用</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-801825849" class="user_name" target="_blank">Mi_801825849</a>
+											<i class="vip_icon 												   											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												38分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-968" class="time txt">玩机教程</a>											<span class="comefrom txt">·来自小米Note</span>
+																																																							<span class="numb msg"><i></i>1193</span>
+											<span class="numb view"><i></i>15391</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="169204259" t-id="12747186">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-169204259" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(22).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12747186" class="title_name " target="_blank">如何做好好防尘保护？</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-169204259" class="user_name" target="_blank">wencheng0355</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												38分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note</span>
+																																																							<span class="numb msg"><i></i>2</span>
+											<span class="numb view"><i></i>30</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="108767252" t-id="12746613">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-108767252" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(23).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746613" class="title_name " target="_blank">1</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-108767252" class="user_name" target="_blank">用户108767252</a>
+											<i class="vip_icon 												   vip_icon_m0											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												41分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note 顶配版</span>
+																																																							<span class="numb msg"><i></i>3</span>
+											<span class="numb view"><i></i>52</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="604786970" t-id="12746361">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-604786970" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(24).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746361" class="title_name " target="_blank">小米note升到安卓6以后bug好多</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-604786970" class="user_name" target="_blank">王豫东</a>
+											<i class="vip_icon 												   vip_icon_m1											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												43分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note</span>
+																																																							<span class="numb msg"><i></i>3</span>
+											<span class="numb view"><i></i>118</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="146215562" t-id="12745803">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-146215562" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(25).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12745803" class="title_name " target="_blank">标配双网通</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-146215562" class="user_name" target="_blank">六祸沧龙</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												46分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note</span>
+																																																							<span class="numb msg"><i></i>4</span>
+											<span class="numb view"><i></i>102</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="80994687" t-id="12743992">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-80994687" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(26).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12743992" class="title_name " target="_blank">小米note顶配只有官网还卖2499</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-80994687" class="user_name" target="_blank">lilylikeAPPLE4</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												48分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自红米Note 3</span>
+																																																							<span class="numb msg"><i></i>10</span>
+											<span class="numb view"><i></i>271</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="24024975" t-id="12745881">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-24024975" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(15).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12745881" class="title_name " target="_blank">【ROM汇总】MIUI7开发版6.3.28 小米Note顶配版、小米Note全系</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-24024975" class="user_name" target="_blank">一笑而过3</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												57分钟前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-968" class="time txt">玩机教程</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>76</span>
+											<span class="numb view"><i></i>755</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="137131223" t-id="12746137">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-137131223" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(27).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746137" class="title_name " target="_blank">小米note睡了一觉就变黑砖了，人在新加坡求助</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-137131223" class="user_name" target="_blank">胡Fox</a>
+											<i class="vip_icon 												   vip_icon_m1											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-966" class="time txt">晒机评测</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>5</span>
+											<span class="numb view"><i></i>155</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="108767252" t-id="12746633">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-108767252" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(23).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746633" class="title_name " target="_blank">（求助大神）小米note顶配版稳定版7.2.4降级问题</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-108767252" class="user_name" target="_blank">用户108767252</a>
+											<i class="vip_icon 												   vip_icon_m0											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note 顶配版</span>
+																																																							<span class="numb msg"><i></i>7</span>
+											<span class="numb view"><i></i>133</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="162688823" t-id="12746718">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-162688823" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(28).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746718" class="title_name " target="_blank">小米note顶配版就一烂货</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-162688823" class="user_name" target="_blank">Mi_162688823</a>
+											<i class="vip_icon 												   vip_icon_m1											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-966" class="time txt">晒机评测</a>											<span class="comefrom txt">·来自小米Note 顶配版</span>
+																																																							<span class="numb msg"><i></i>5</span>
+											<span class="numb view"><i></i>129</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="2295181" t-id="12746886">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-2295181" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(29).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746886" class="title_name " target="_blank">小米note顶配7.2.40升了吗？</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-2295181" class="user_name" target="_blank">Mi_2295181</a>
+											<i class="vip_icon 												   											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>5</span>
+											<span class="numb view"><i></i>132</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="1607402" t-id="12746186">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-1607402" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(30).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746186" class="title_name " target="_blank">小米note升级开发版6.3.24后，移动数据有断线现象</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-1607402" class="user_name" target="_blank">comegetsome1982</a>
+											<i class="vip_icon 												   vip_icon_m1											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note</span>
+																																																							<span class="numb msg"><i></i>2</span>
+											<span class="numb view"><i></i>84</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="24046962" t-id="12363039">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-24046962" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(31).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12363039" class="title_name " target="_blank">小米note可以开双微信双qq了……</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-24046962" class="user_name" target="_blank">我心VS飞扬</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-968" class="time txt">玩机教程</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>2064</span>
+											<span class="numb view"><i></i>43414</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="67598050" t-id="12335106">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-67598050" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(32).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12335106" class="title_name " target="_blank">WIFI万能钥匙3.2.10去广告+显密码</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-67598050" class="user_name" target="_blank">azzyme</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-969" class="time txt">软件游戏</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>1148</span>
+											<span class="numb view"><i></i>13755</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="11069909" t-id="12746342">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-11069909" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(33).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746342" class="title_name " target="_blank">车展漂亮美眉</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-11069909" class="user_name" target="_blank">zeyu0</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-966" class="time txt">晒机评测</a>											<span class="comefrom txt">·来自小米Note</span>
+																																																							<span class="numb msg"><i></i>5</span>
+											<span class="numb view"><i></i>236</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="192567882" t-id="12746439">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-192567882" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(34).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746439" class="title_name " target="_blank">急求助</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-192567882" class="user_name" target="_blank">糖衮蛋</a>
+											<i class="vip_icon 												   vip_icon_m											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-966" class="time txt">晒机评测</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>4</span>
+											<span class="numb view"><i></i>76</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="56383046" t-id="12746753">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-56383046" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(35).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12746753" class="title_name " target="_blank">升级7.2.4问题………</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-56383046" class="user_name" target="_blank">NiceshiCAO</a>
+											<i class="vip_icon 												   vip_icon_m1											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自小米Note 顶配版</span>
+																																																							<span class="numb msg"><i></i>2</span>
+											<span class="numb view"><i></i>83</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="163079552" t-id="12300227">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-163079552" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(36).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12300227" class="title_name " target="_blank">适配MIUI7的模块，新增追书神器、PPTV+vip插件。附小米note框架卡刷包</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-163079552" class="user_name" target="_blank">LiMly</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-968" class="time txt">玩机教程</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>2216</span>
+											<span class="numb view"><i></i>47736</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="24024975" t-id="12664694">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-24024975" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(15).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12664694" class="title_name " target="_blank">小米Note顶配 MIUI7开发版6.3.28 双击锁屏+小米悬浮球+破解限制/主题+XP</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-24024975" class="user_name" target="_blank">一笑而过3</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-968" class="time txt">玩机教程</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>442</span>
+											<span class="numb view"><i></i>6901</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="6917453" t-id="12744603">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-6917453" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(37).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12744603" class="title_name " target="_blank">【bug反馈】小米noteOTA更新7.2.4.0版本后，手机从4G回落到3G</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-6917453" class="user_name" target="_blank">贰大爷</a>
+											<i class="vip_icon 												   vip_icon_m1											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-967" class="time txt">求助讨论</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>6</span>
+											<span class="numb view"><i></i>245</span>
+										</div>
+									</div>
+								</li>
+																												<li u-id="70795498" t-id="12366668">
+																		<div class="theme_list_img">
+										<a href="http://bbs.xiaomi.cn/u-detail-70795498" class="headportrait" target="_blank">
+											<img class="user_head" src="./images/avatar(38).jpg" onerror="javascript:this.src=&#39;http://s1.bbs.xiaomi.cn/statics/images/noavatar_small.gif&#39;;">
+										</a>
+																			</div>
+									<div class="theme_list_con">
+																				<div class="title">
+											<a href="http://bbs.xiaomi.cn/t-12366668" class="title_name " target="_blank">小米NOTEwifi问题已经解决请看！！！！绝对不是水贴</a>
+																					</div>
+										<div class="auth_msg clearfix">
+											<a href="http://bbs.xiaomi.cn/u-detail-70795498" class="user_name" target="_blank">金硕科技</a>
+											<i class="vip_icon 												   vip_icon_m2											   "></i>
+											<span class="vipnum vipnum_1"></span>
+											<span class="time txt">
+												1小时前											</span>
+											<a href="http://bbs.xiaomi.cn/f-385-0-0-0-966" class="time txt">晒机评测</a>											<span class="comefrom txt">·来自PC</span>
+																																																							<span class="numb msg"><i></i>3245</span>
+											<span class="numb view"><i></i>51442</span>
+										</div>
+									</div>
+								</li>
+																						</ul><div class="flotation" style="width: 248px;">
+                            <h4>选中<span class="themenum">0</span>篇<span class="closebtn"></span>
+                                <span class="allcheck_txt">全选</span>
+                                <input type="checkbox" name="allcheck">
+                            </h4>
+                            <p style="margin: 20px 0px 15px 18px;">
+                                <span id="J_theme_delete">删除</span>
+                                <span id="J_theme_openclose">关闭打开</span>
+                                <span id="J_theme_fiseFall">提升下沉</span>
+                                <span id="J_theme_highlight">高亮</span>
+                                <span id="J_theme_move">移动</span>
+                            </p>
+                        </div>
+				<div class="base_widget_paging">
+					<div class="paging_widget_2">
+						<ul>
+							<li class="page selected "><a>1</a></li> <li class="page"><a href="http://bbs.xiaomi.cn/f-385-2">2</a></li> <li class="page"><a href="http://bbs.xiaomi.cn/f-385-3">3</a></li> <li class="page"><a href="http://bbs.xiaomi.cn/f-385-4">4</a></li> <li class="page"><a href="http://bbs.xiaomi.cn/f-385-5">5</a></li> <li class="page"><a href="http://bbs.xiaomi.cn/f-385-6">6</a></li> <li class="page"><a href="http://bbs.xiaomi.cn/f-385-7">7</a></li> <li class="page"><a href="http://bbs.xiaomi.cn/f-385-8">8</a></li> <li class="page"><a href="http://bbs.xiaomi.cn/f-385-9">9</a></li> <li class="page"><a href="http://bbs.xiaomi.cn/f-385-10">10</a></li> <li class="next"><a href="http://bbs.xiaomi.cn/f-385-2">&gt;</a></li> <li class="last"><a href="http://bbs.xiaomi.cn/f-385-1000">末页&gt;&gt;</a><!--</li--> 						</li></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+				storetype = 2;
+		</script>
+	<script type="text/javascript" src="./images/jquery.datePicker-min.js"></script>
+	<script type="text/javascript" src="./images/xmdatepicker.js"></script>
+	<script type="text/javascript" src="./images/slide.js"></script>
+	<script type="text/javascript" src="./images/plate.js"></script>
+	<script type="text/javascript" src="./images/personLayer.js"></script>
+	<script type="text/javascript" src="./images/platecontrol.js"></script>
+					<div class="bannerBottom">
+					<a href="http://bbs.xiaomi.cn/app/download" target="_blank" class="download_m"><img src="./images/banner_bottom_m.png"></a>
+				</div>
+			</div>
+		</div>
+		<div class="footer brief">
+			<div class="mobile_switch">
+				<a class="switch_desktop disable" id="J_switchDesktop" href="http://bbs.xiaomi.cn/f-385#">电脑版</a>
+				<a class="switch_mobile" id="J_switchMobile" href="http://bbs.xiaomi.cn/f-385#">手机版</a>
+				<a class="switch_app download_m" href="http://bbs.xiaomi.cn/f-385#">客户端<i>new</i></a>
+			</div>
+			<div class="wrap_990">
+				<a href="http://bbs.xiaomi.cn/" class="link">bbs.xiaomi.cn</a>
+				<span>京ICP证110507号 京ICP备10046444号 <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134" style="cursor:pointer;color: white;">京公网安备11010802020134号</a></span>
+			</div>
+		</div>
+	
+	<!-- 统计代码 -->
+<script>
+	var _msq = _msq || [];
+	_msq.push(['setDomainId', 112]);
+	_msq.push(['trackPageView']);
+	(function() {
+		var ms = document.createElement('script');
+		ms.type = 'text/javascript';
+		ms.async = true;
+		ms.src = ' http://s1.mi.com/js/xmst.js ';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ms, s);
+	})();
+</script>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "//hm.baidu.com/hm.js?71558e7b4aa822e282e758f8dc0b88b0";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+	})();
+</script>
+</body></html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>	
+		<title>添加管理员</title>
+		<meta charset="utf-8">
+		<style>
+			*{
+				list-style-type:none;
+			}
+			h1{
+				text-align:center;
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="__CONTROLLER__/insert" method="post">
+			<table border="1" width="500" align="center" bordercolor="blue">
+				<h1>添加管理员</h1>
+				<tr>
+					<td>用户名:</td>
+					<td><input type="text" name="ad_name" value="" /></td>
+				</tr>
+				<tr>
+					<td>密码:</td>
+					<td><input type="password" name="ad_pwd" value="" /></td>
+				</tr>
+				<tr>
+					<td>确认密码:</td>
+					<td><input type="password" name="ad_reupwd" value="" /></td>
+				</tr>
+				<tr>
+					<td>状态</td>
+					<td><select name="ad_status" id="">
+					    <option value="1" >&nbsp;&nbsp;普通用户</option>
+					    <option value="2" >&nbsp;&nbsp;会员用户</option>
+				        </select></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					 <input name="" type="submit" value="提交">
+       				 <input name="" type="reset" value="重置">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,16 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class IndexController extends Controller {
+    public function index(){
+       $type = M("type");
+       $nav1 = $type->where("pid = 0")->select();
+       $this->assign("nav1",$nav1);
+
+       $attach_type = M("attach_type");
+       $nav2 = $attach_type->where("pid = 0")->select();
+       $this->assign("nav2",$nav2);
+
+       $this->display();
+  }
+}

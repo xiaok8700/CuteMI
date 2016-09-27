@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>	
+		<title>订单管理</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+		    *{
+		    	text-decoration:none;
+		    }
+		    body{
+               background:#f7f8f9;
+		    }
+		    table tr{
+		    	text-align:center;
+		    }
+		    a:hover{
+               color:red;
+               cursor:pointer;
+		    }
+		</style>
+	</head>
+	<body>	
+		<form action="__CONTROLLER__/mod/oid/<{$res.oid}>" method="get">
+		<table border="1" width="800" align="center">
+				<caption><h1>订单详情</h1></caption>
+				<tr>
+					<td>
+						订单编号 : <{$res.oid}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						状态 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="status" value="1" <{$res["orderstatus"]==1?"checked":""}>>未付款
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="status" value="2" <{$res["orderstatus"]==2?"checked":""}>>已付款
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="status" value="3" <{$res["orderstatus"]==3?"checked":""}>>已发货
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="radio" name="status" value="4" <{$res["orderstatus"]==4?"checked":""}>>已收货
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input type="submit" value="修改">
+					</td>					
+				</tr>
+		</table>
+        </form>
+
+		<table border="1" width="800" align="center">
+				<caption><h1>订单明细</h1></caption>
+				<tr>
+					<th>ID</th>
+					<th>订单编号</th>
+					<th>商品编号</th>
+					<th>商品名称</th>
+					<th>单价</th>
+					<th>数量</th>			
+				</tr>
+				<tr>
+					<td><{$resdetail.id}></td>
+					<td><{$resdetail.oid}></td>					
+					<td><{$resdetail.gid}></td>
+					<td><{$resdetail.gname}></td>
+					<td><{$resdetail.price}></td>
+					<td><{$resdetail.buynum}></td>
+				</tr>
+		</table>
+	
+
+	   <table border="1" width="800" align="center">
+				<caption><h1>收货人信息</h1></caption>
+				<tr>
+					<td>收货人姓名</td>
+					<td><{$res.consignee}></td>		
+				</tr>
+				<tr>
+					<td>详细地址</td>
+					<td><{$res.address}></td>
+				</tr>
+				<tr>
+					<td>邮编</td>
+					<td><{$res.postcode}></td>
+				</tr>
+				<tr>
+					<td>手机</td>
+					<td><{$res.phone}></td>
+				</tr>
+		</table>
+
+
+	</body>
+</html>	

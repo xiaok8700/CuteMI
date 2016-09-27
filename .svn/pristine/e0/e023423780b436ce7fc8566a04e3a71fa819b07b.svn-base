@@ -1,0 +1,55 @@
+<!doctype html>
+<html>	
+	<head>
+		<title>收藏列表</title>
+		<meta charset="utf-8">
+		<style>
+			*{
+				list-style-type:none;
+			}
+			h1{
+				text-align:center;
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<table border="1" width="70%" align="center" bordercolor="blue">
+		
+				<h1>收藏列表</h1>
+			
+			<tr>
+				<td>ID</td>
+				<td>商品gid</td>
+				<td>商品图片</td>
+				<td>商品名称</td>
+				<td>商品单价</td>
+				<td>颜色</td>
+				<td>操作</td>
+			</tr>
+			<!--foreach遍历-->
+			 <foreach name="collect" item="user">
+			<tr>
+				<td><{$user.cid}></td>
+				<td><{$user.gid}></td>
+				<td><img src='__ROOT__/Public/Uploads/<{$user['pic']}>' style="height:50px;width:50px" /></td>
+				<td><{$user.gname}></td>
+				<td><{$user.price}></td>
+				<td><{$user.color}></td>
+				<td>
+					<a href="__CONTROLLER__/delete/cid/<{$user.cid}>" onclick="return confirm('你真的确定删除吗？')">删除</a>
+				</td>
+			</tr>
+		</foreach>
+		<tr>
+			<td colspan="7">
+				共有 : <{$total}>条数据&nbsp;&nbsp;&nbsp;&nbsp;<{$no}>/<{$maxpage}>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="__CONTROLLER__/index/no/1">首页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="__CONTROLLER__/index/no/<{$no-1}>">上一页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="__CONTROLLER__/index/no/<{$no+1}>">下一页</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a href="__CONTROLLER__/index/no/<{$maxpage}>">尾页</a>
+			</td>					
+		</tr>
+	</table>
+	</body>
+</html>

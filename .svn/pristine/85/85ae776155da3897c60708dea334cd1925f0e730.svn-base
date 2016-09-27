@@ -1,0 +1,124 @@
+<include file="product/header" />
+<link rel="stylesheet" href="__PUBLIC__/home/css/list.css">
+
+
+
+<div class="content">
+    <div class="container">
+        <div class="goods-list-box">
+            <div class="goods-list clearfix">
+            <p>优惠券</p>
+<!-------------------------------------------- 优惠券列表 ------------------------------------>
+            <foreach name="coupun" item="coupun">
+                <div class="goods-item">
+                    <h2 class="title"><{$coupun.title}></h2>
+                    <div class="figure figure-img">
+                        <img src="__PUBLIC__/Uploads/<{$coupun.pic}>" alt="" height="200" width="200">
+                    </div>
+                    <p class="desc"><{$coupun.des}></p>                    
+                    <p class="price">代金券 : <{$coupun.num}>  元</p>
+
+                     <in name="coupun.id" value="$arr">  
+                        <button class="btn" data="<{$coupun.id}>">已领取</button> 
+                     <else/>
+                        <button class="btn" data="<{$coupun.id}>">领取</button>
+                     </in>
+                </div>
+            </foreach>
+<!-------------------------------------------- 优惠券列表结束 ------------------------------------>
+            </div>
+            <script type="text/JavaScript">
+                 $(function(){
+                     
+                      //点击领取事件
+                      $(".btn").click(function(){
+                           var id = $(this).attr("data");
+
+                     //将数据提交给PHP
+                      $.ajax({
+                            type:"get",
+                            data:"id="+id,
+                            url:"__MODULE__/coupun/gain",
+                            dataType:"text",
+                            success:function(data){
+                                 if(data=="1"){
+                                     alert("您已经领取过!");
+                                 }else if(data=="2"){
+                                     alert("领取成功!");
+                                 }else{
+                                     alert("领取失败!");
+                                 }
+                            },
+                         });
+                        $(this).html("已领取");
+                      });
+             
+                 });
+            </script>
+             <div class="xm-pagenavi">
+                <span class="numbers first iconfont"></span><span class="numbers current">1</span><a href="http://list.mi.com/7-0-0-0-0-0-0-0-2">2</a><a class="numbers" href="http://list.mi.com/7-0-0-0-0-0-0-0-3">3</a><a onclick="_msq.push(['trackEvent', '3ea1f8727e005282-5aafea6d92f7e7b5', '//list.mi.com/7-0-0-0-0-0-0-0-4', 'pcpid']);" data-stat-id="5aafea6d92f7e7b5" class="numbers" href="http://list.mi.com/7-0-0-0-0-0-0-0-4">4</a><a onclick="_msq.push(['trackEvent', '3ea1f8727e005282-836b5a28f7cfa63b', '//list.mi.com/7-0-0-0-0-0-0-0-2', 'pcpid']);" data-stat-id="836b5a28f7cfa63b" class="numbers last iconfont" href="http://list.mi.com/7-0-0-0-0-0-0-0-2"></a>            
+            </div>
+         </div>
+      </div>
+</div>
+<include file="http://localhost/CuteMi/index.php/home/product/footer.html" />
+
+
+
+<!-- .modal-globalSites END -->
+<script type="text/JavaScript">
+      $(function(){
+
+        // 点击账号时候触发事件
+         $(".user-name").mouseover(function(){
+             $(".user-menu").css("display","block");
+             //移入子标题时触发事件
+             $(".user-menu").mouseover(function(){
+                $(this).css({display:"block"});
+             });
+
+             // 移出子标题时触发事件
+            $(".user-menu").mouseout(function(){
+                $(this).css("display","none");
+            })
+       });
+        
+
+        // 移出账号时触发事件
+          $(".user-name").mouseout(function(){
+              $(".user-menu").css("display","none"); 
+          });
+
+
+          //点击加入收藏            
+          $(".collect").click(function(){                           
+            //alert(gid);
+             gid = $(this).attr("gid");
+             var collect = $('#collect');
+             var collected = $('#collected');
+             //将数据提交给PHP
+              $.ajax({
+                    type:"get",
+                    data:"gid="+gid,
+                    url:"__CONTROLLER__/collect",
+                    dataType:"text",
+                    success:function(data){
+                      // alert(data);
+                       if(data=="1"){
+                          alert("加入收藏成功!");
+                          
+                       }else{
+                          alert("该商品已收藏过");
+              
+                       }
+                    },
+                 });
+
+              $(this).html("已收藏");                            
+          });  
+         
+           
+      });
+</script>
+
+</body></html>

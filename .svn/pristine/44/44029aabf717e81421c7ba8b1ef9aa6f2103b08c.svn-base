@@ -1,0 +1,80 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+header("content-type:text/html;charset=utf-8");
+class LoginController extends Controller {
+
+    //登陆主页面
+    public function index(){
+       $this->display();
+    }
+    
+    //检查登陆
+    public function checkLogin(){
+        $ad_name = I("post.ad_name");
+        $ad_pwd5 = I("post.ad_pwd");
+        $ad_pwd = md5($ad_pwd5);
+        $ad_code = I("post.code");
+        
+        $data["ad_name"] = $ad_name;
+        $data["ad_pwd"] = $ad_pwd;      
+        //$data["ad_code"] = $ad_code;
+        $admin_user = M("admin_user");
+        $res = $admin_user->where($data)->find();
+        if($res){
+        
+           $this->success("登陆成功",U("index/index"),3);
+           
+           $ad_id = $res["ad_id"];
+           $ad_logintime = $res["ad_logintime"];
+           $ad_num = $res["ad_num"];
+           $ad_loginip = $res["ad_loginip"];
+
+           $_SESSION["islogin"]=true;
+           $_SESSION["ad_name"]=$res["ad_name"];
+           $_SESSION["ad_pwd"]=$res["ad_pwd"];
+           $_SESSION["ad_id"]=$ad_id;
+           $_SESSION["ad_logintime"]=$ad_logintime;
+           $_SESSION["ad_num"]=$ad_num;
+           $_SESSION["ad_loginip"]=$ad_loginip;
+        }else{
+           $this->success("登录失败","index",3);
+        }
+
+    }
+
+    //注册主页面
+    public function register(){
+      $this->display();
+    }
+
+    //执行注册
+    public function doregister(){
+     
+      if(I("post.ad_pwd")!=I("post.re_pwd")){
+         $this->error("两次输入密码不一致!","register");
+      }else{
+        $admin_user = M("admin_user");
+        $data["ad_name"] = I("ad_name");
+        $data["ad_pwd"] = md5(I("ad_pwd"));
+        $data["ad_logintime"] = time();
+        $data["ad_num"] = 0;
+        $data["ad_loginip"] = $_SERVER["REMOTE_ADDR"];
+        //dump($data);
+        
+        $res = $admin_user->data($data)->add();
+        if($res){
+           $this->success("注册成功!","index",3);
+        }else{
+           $this->error("注册失败!","register",3);
+        }
+      }
+      
+
+    }
+
+    public function showCode(){
+        
+    }
+        
+}

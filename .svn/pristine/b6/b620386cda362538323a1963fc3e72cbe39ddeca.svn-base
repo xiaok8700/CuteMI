@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+	<head>	
+		<title>友链添加列表</title>
+		<meta charset="utf-8">
+		<style>
+			*{
+				list-style-type:none;
+			}
+			h1{
+				text-align:center;
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<form action="__CONTROLLER__/insert" method="post">
+			<table border="1" width="500" align="center" bordercolor="blue">
+				<h1>友链添加列表</h1>
+				<tr>
+					<td>链接名:</td>
+					<td><input type="text" name="name" value="" /></td>
+				</tr>
+				<tr>
+					<td>链接地址</td>
+					<td><input type="text" name="href" value="" /></td>
+				</tr>
+				<tr>
+					<td>链接状态</td>
+					<td>
+						<input type="radio" name="status" value="0" checked>未上链
+		                <input type="radio" name="status" value="1">已上链         
+		                <input type="radio" name="status" value="2">已下链
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+					 <input name="" type="submit" value="提交">
+       				 <input name="" type="reset" value="重置">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

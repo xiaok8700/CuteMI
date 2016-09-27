@@ -1,0 +1,15 @@
+<html>
+<head>
+<title>商家信息管理中心模板演示 带登录界面</title>
+<meta charset="utf-8">
+</head>
+<frameset rows="64,*"  frameborder="NO" border="0" framespacing="0">
+	<frame src="__CONTROLLER__/admin_top" noresize="noresize" frameborder="NO" name="topFrame" scrolling="no" marginwidth="0" marginheight="0" target="main" />
+  <frameset cols="200,*"  rows="560,*" id="frame">
+	<frame src="__CONTROLLER__/left" name="leftFrame" noresize="noresize" marginwidth="0" marginheight="0" frameborder="0" scrolling="no" target="main" />
+	<frame src="__CONTROLLER__/right" name="main" marginwidth="0" marginheight="0" frameborder="0" scrolling="auto" target="_self" />
+  </frameset>
+<noframes>
+  <body></body>
+    </noframes>
+</html>

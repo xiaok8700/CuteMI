@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://account.xiaomi.com/pass/changePassword?userId=909412682 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>小米帐号 - 修改密码</title>
+  <link href="__PUBLIC__/home/dopasswd/index.css" rel="stylesheet" type="text/css">
+<link href="__PUBLIC__/home/dopasswd/manfind.css" rel="stylesheet" type="text/css">
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/dopasswd/reset.css">
+<link type="text/css" rel="stylesheet" href="__PUBLIC__/home/dopasswd/layout.css">
+
+  <script src="__PUBLIC__/home/dopasswd/hm.js"></script><script src="__PUBLIC__/home/dopasswd/jquery-1.5.1.min.js"></script>
+<script src="__PUBLIC__/home/dopasswd/form.js"></script>
+<script src="__PUBLIC__/home/dopasswd/placeholder.js"></script>
+<script>
+    $(function(){
+        $("#txtPwd").blur(function(){
+            if($("#txtPwd").val()==''){
+                $("#emailCode").html("密码不能为空！");
+            }else{
+                $("#emailCode").html("");
+            }
+        });
+        $("#pwd").blur(function(){
+            if($("#pwd").val()==''){
+                $("#new").html("密码不能为空！");
+            }else{
+                $("#new").html("");
+            }
+        });
+        
+         $("#pwdq").blur(function(){
+            if($("#pwdq").val()==''){
+                $("#pwdq").html("两次密码输入不一致！");
+            }else{
+                $("#pwdq").html("");
+            }
+        });
+        
+    });
+</script>
+
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?c64922fe907004774c797344b7063851";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+  <style>
+    .dd_r{
+      height:auto!important;
+    }
+    .hei_444{
+      height:500px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="layout">
+  <div class="n-logo-area clearfix">
+	<a href="__URL__/index" class="fl-l">
+	
+			<img src="__PUBLIC__/home/dopasswd/n-logo.png">
+		
+	</a>
+
+  </div>
+</div>
+<div class="suc_content changP nojsp">
+  <div class="suc_kuang">
+    <div class="hei_444">
+      <div class="info">
+        <span class="left_name">
+          <span class="m_name"><a href="https://account.xiaomi.com/" class="color_33">小米帐号</a>&nbsp;&nbsp;&gt;</span>
+          <span class="m_func">重设帐号密码</span>
+        </span>
+        <span class="right"><a class="fl-r logout" href="__URL__/layout">退出</a>
+
+</span>
+      </div>
+      <form id="changePwdForm" method="post" action="__URL__/dopass">
+        <div class="changP_container">
+          <p class="account_tips">请重设您的帐号密码</p>
+	<dl class="clearfix"> 
+	  <dt class="dt_l">当前密码：</dt>
+	  <dd class="dd_r clearfix">
+	    <input id="txtPwd" class="input_kuang new_width item errortip" type="password"  name="oldpassword">
+            <p id="emailCode"></p>
+	  </dd>
+	  <dt class="dt_l clearfix">新密码：</dt>
+	  <dd class="dd_r clearfix dd_r_pos" id="pwdTd">
+	      <input class="input_kuang new_width item errortip" type="password"  id="pwd" name="password">
+	      <p id="new"></p>
+	      <span class="check_tips error_tip" id="tips_val"></span>
+      </dd>
+      <dt class="dt_l clearfix">再次确认新密码：</dt>
+      <dd class="dd_r clearfix">
+        <input  class="input_kuang new_width item errortip" type="password"  name="password2" >
+        <p id="pwdq"></p>
+        <span class="check_tips succ_tips"></span>
+      </dd>
+      <!--输出图片识别码-->
+      
+        <dt class="dt_l"></dt>
+        <dd class="dd_r clearfix">
+          <input type="hidden" name="userId" value="909412682">
+          <input type="hidden" name="qs" value="">
+          <input type="hidden" name="passToken" id="passToken" value="">
+          <input type="hidden" name="passport_ph" id="passport_ph" value="">
+          <div class="sub_bg">
+            <input class="no_bg" type="submit" value="提交">
+          </div>
+        </dd>
+        </dl>
+      </div>
+    </form>
+    </div>
+    <div class="suc_botm"></div><!--这部分是卷角效果-->
+  </div>
+</div>
+<div class="msgTips hide" id="msgTips" style="z-index:9"></div>
+<p class="msgInfo hide" id="msgInfo"></p>
+<div class="footer" style="width:auto;">
+  
+    <div class="faq_link"><a class="a_critical" href="http://static.account.xiaomi.com/html/faq/faqList.html" target="_blank"><em></em>常见问题</a></div>
+  
+  <ul class="links">
+    <li><a href="http://www.mi.com/" target="_blank">小米手机</a></li>
+    <li><a href="http://www.miui.com/" target="_blank">MIUI</a></li>
+    <li><a href="http://www.miliao.com/" target="_blank">米聊</a></li>
+    <li><a href="http://bbs.xiaomi.com/" target="_blank" class="hide-with-en">小米论坛</a></li>
+    <li class="copyright"><span>小米公司版权所有-京ICP备10046444-京公网安备1101080212535-京ICP证110507号</span></li>
+  </ul>
+</div>
+
+
+</body></html>

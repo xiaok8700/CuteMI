@@ -1,0 +1,101 @@
+<include file="product/top-nav" />
+<include file="http://localhost/CuteMi/index.php/Home/product/header.html" />
+
+<link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/goods-comment-detail.css">
+
+    <!-- S 面包屑 -->
+<div class="breadcrumbs">
+    <div class="container ">
+        <a onclick="_msq.push(['trackEvent', '40b921b0c32f9d1f-b0bcd814768c68cc', '//www.mi.com/index.html', 'pcpid']);" data-stat-id="b0bcd814768c68cc" href="http://www.mi.com/index.html">首页</a><span class="sep">&gt;</span><a onclick="_msq.push(['trackEvent', '40b921b0c32f9d1f-d507beb1e677c411', '//list.mi.com', 'pcpid']);" data-stat-id="d507beb1e677c411" href="http://list.mi.com/">配件</a><span class="sep">&gt;</span><a onclick="_msq.push(['trackEvent', '40b921b0c32f9d1f-4f92fd984fc9b87c', '//list.mi.com/2', 'pcpid']);" data-stat-id="4f92fd984fc9b87c" href="http://list.mi.com/2">后盖</a><span class="sep">&gt;</span><a onclick="_msq.push(['trackEvent', '40b921b0c32f9d1f-f696c8bde4c1fd68', '//item.mi.com/1134900475.html', 'pcpid']);" data-stat-id="f696c8bde4c1fd68" href="http://item.mi.com/1134900475.html">高光后盖 玫红</a>    </div>
+</div>
+<!-- E 面包屑 -->
+<div class="goods-comment-detail">
+
+    <div class="container">
+        <div class="row">
+            <div class="span14 goods-comment-detail-info-block">
+                
+<!-------------------------循环评论信息------------------------------>
+
+
+                 <foreach name="res" item="result">
+
+                <div class="goods-comment-detail-info" id="J_commentDetailBlock" data-id="125858">
+                    <div class="user-image"> 
+                        <img src="__PUBLIC__/Uploads/head_4.png" alt=""> 
+                    </div>
+                    <div class="user-emoj"> 
+                        超爱<i class="iconfont"></i> 
+                    </div>
+                    <div class="user-name-info"> 
+                        <span class="user-name"><a onclick="_msq.push(['trackEvent', '40b921b0c32f9d1f-646428c9dff3ddf9', 'https://me.mi.com/47535527', 'pcpid']);" data-stat-id="646428c9dff3ddf9" href="https://me.mi.com/47535527"></a></span> 
+                        <span class="user-time"><{$result.addtime}></span> 
+                        <span class="pro-info"></span> 
+                    </div>
+                    <div class="user-hand-block"> 
+                        <a onclick="_msq.push(['trackEvent', '40b921b0c32f9d1f-bc98d13119e85260', 'javascript:void(0);', 'pcpid']);" data-stat-id="bc98d13119e85260" href="javascript:void(0);" data-commentid="125858" class="J_hasHelp "> 
+                            <i class="iconfont"></i>&nbsp;
+                            <span class="amount"></span>
+                        </a> <span class="separate"></span>
+                        <a onclick="_msq.push(['trackEvent', '40b921b0c32f9d1f-c91ab401cab14563', 'javascript:void(0);', 'pcpid']);" data-stat-id="c91ab401cab14563" href="javascript:void(0);" data-commentid="125858" class="J_noHelp   "> 
+                            <i class="iconfont"></i>&nbsp;
+                            <span class="amount"></span>
+                        </a>
+                    </div>
+                    <dl class="user-comment"> 
+                        <dt class="user-comment-content J_commentContent"> 
+                            <p class="content-detail"> 
+                                    <{$result.comment}>                           </p>                              
+                                                    </dt>
+                        <dd class="user-comment-self-input">
+                            <div class="input-block">
+                                <input placeholder="回复楼主" class="J_commentAnswerInput" type="text"> 
+                                <a onclick="_msq.push(['trackEvent', '40b921b0c32f9d1f-b0aaed827acb5e65', 'javascript:void(0);', 'pcpid']);" data-stat-id="b0aaed827acb5e65" href="javascript:void(0);" class="btn  answer-btn J_commentAnswerBtn" data-commentid="125858">
+                                    回复
+                                </a> 
+                            </div>
+                        </dd>
+                     </dl>
+                </div>
+             </foreach>
+
+
+
+
+
+
+                                
+                            </div>
+            <div class="span6 goods-detail-info-block">
+                <div class="goods-detail-info">
+                   <div class="goods-img-block">
+                        <a onclick="_msq.push(['trackEvent', '40b921b0c32f9d1f-b23f9a77abe2e5fa', '//item.mi.com/1134900475.html', 'pcpid']);" data-stat-id="b23f9a77abe2e5fa" target="_blank" href="http://item.mi.com/1134900475.html">
+                            <img src="__PUBLIC__/UPLOADS/<{$goo.pic}>" class="J_cartBigImg" alt="">
+                        </a>
+                   </div>
+                   <div class="goods-name J_cartGoodsName">
+                       <{$goo.gname}>                  </div>
+                                                         <div class="goods-img-list-block">
+                       <div style="width: 0px;" class="goods-img-list-mass J_cartImgContainer J_imgScrollListBlock" data-liwid="46">
+                           <ul style="width: 0px;" class="goods-img-list J_cartImgList J_imgList">
+                                                                                           </ul>
+                       </div>
+                         
+                   </div>
+                                   </div>
+                <div class="goods-cart-btn-block " id="J_cartBtnBlock">
+                     
+                                             
+                            <a  href="__MODULE__/goodsdetail/attdetail?gid=<{$goo.gid}>" class="btn btn-primary goods-add-cart-btn" >查看回复</a>
+                                                 
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>
+
+
+
+    
+<include file="http://localhost/CuteMi/index.php/home/product/footer.html" />

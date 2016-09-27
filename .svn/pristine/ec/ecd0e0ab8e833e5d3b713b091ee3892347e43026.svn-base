@@ -1,0 +1,1341 @@
+[ 2016-04-16T00:19:52+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:19:56+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 3 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:19:58+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 77 )  [ RunTime:0.015625s ]
+
+[ 2016-04-16T00:20:00+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 1195 )  [ RunTime:0.031250s ]
+
+[ 2016-04-16T00:45:50+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:45:59+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:46:52+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:50:32+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:51:37+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:51:38+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:52:36+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:52:37+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:52:38+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:52:39+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:52:39+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:53:13+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:55:04+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:55:06+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:55:44+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:56:35+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T00:56:46+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:27:13+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.062500s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.015625s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031250s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:27:13+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-16T10:27:29+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:27:51+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:29:04+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:31:44+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:31:47+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:31:53+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:32:57+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:39:06+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:42:47+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:42:52+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:43:54+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/index_files/captcha
+ERR: 无法加载控制器:Index_files
+
+[ 2016-04-16T10:43:54+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/index_files/captcha
+ERR: 无法加载控制器:Index_files
+
+[ 2016-04-16T10:44:04+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:44:11+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 7 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:44:26+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T10:44:29+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/index_files/captcha
+ERR: 非法操作:index_files
+
+[ 2016-04-16T10:44:29+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/index_files/captcha
+ERR: 非法操作:index_files
+
+[ 2016-04-16T11:31:00+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Order/add
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_district` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_district` WHERE ( `upid` = 0 )  [ RunTime:0.000000s ]
+
+[ 2016-04-16T11:31:00+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/index_files/captcha
+ERR: 无法加载控制器:Index_files
+
+[ 2016-04-16T11:31:09+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-16T11:31:09+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,65,66) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T11:33:44+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Product/collect?gid=18
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_collect` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_collect` WHERE ( gid = 18 and uid=2 and state = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mi_collect` WHERE ( gid = 18 and uid=2 and state = '0' ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[uid=>2]
+
+[ 2016-04-16T11:33:50+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Product/collect?gid=18
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_collect` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_collect` WHERE ( gid = 18 and uid=2 and state = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mi_collect` WHERE ( gid = 18 and uid=2 and state = '0' ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[uid=>2]
+
+[ 2016-04-16T11:33:53+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Product/collect?gid=18
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_collect` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_collect` WHERE ( gid = 18 and uid=2 and state = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mi_collect` WHERE ( gid = 18 and uid=2 and state = '0' ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[uid=>2]
+
+[ 2016-04-16T11:34:01+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Product/collect?gid=18
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_collect` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_collect` WHERE ( gid = 18 and uid=2 and state = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mi_collect` WHERE ( gid = 18 and uid=2 and state = '0' ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[uid=>2]
+
+[ 2016-04-16T12:09:00+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T12:09:01+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T12:09:08+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/Event/css/css.css
+ERR: 非法操作:css
+
+[ 2016-04-16T12:09:08+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/Event/css/main.css
+ERR: 非法操作:css
+
+[ 2016-04-16T12:09:12+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/Coupun/css/css.css
+ERR: 非法操作:css
+
+[ 2016-04-16T12:09:12+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/Coupun/css/main.css
+ERR: 非法操作:css
+
+[ 2016-04-16T12:19:27+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T12:19:27+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T12:41:30+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T12:41:30+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T12:45:59+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T12:45:59+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T12:59:02+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T12:59:02+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T13:45:39+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T13:45:39+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T13:48:34+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(59,60,61,62,63) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T13:48:34+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T13:48:34+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T16:49:32+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Product/collect?gid=18
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_collect` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_collect` WHERE ( gid = 18 and uid=2 and state = '0' ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'uid' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `mi_collect` WHERE ( gid = 18 and uid=2 and state = '0' ) LIMIT 1  
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid = 18 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 非法数据对象！:[uid=>2]
+
+[ 2016-04-16T17:55:07+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Product/integral
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_integral` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `mi_integral` SET `num`=21 WHERE ( uid=2 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T17:55:12+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Product/integral
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_integral` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T17:55:57+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T17:55:57+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T18:08:39+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Product/integral
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_integral` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T18:12:01+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/product/space
+ERR: 非法操作:space
+
+[ 2016-04-16T18:17:31+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/BeforeCart/doindex?verson=3.0&color=%E8%93%9D%E8%89%B2&gid=6
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] array_key_exists() expects parameter 2 to be array, string given C:\wamp\www\cuteMi\CuteMi\Home\Controller\BeforeCartController.class.php 第 49 行.
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid = 6 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T18:17:38+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Cart/total?total=1299
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T18:17:38+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/order/index_files/captcha
+ERR: 非法操作:index_files
+
+[ 2016-04-16T18:17:39+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/order/index_files/captcha
+ERR: 非法操作:index_files
+
+[ 2016-04-16T18:51:03+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                产品不错,便宜点更好           ',6,2,'程') [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 412 行.
+SQL: SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1  
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 419 行.
+SQL: UPDATE `mi_integral` SET `num`=13 WHERE ( uid= ) [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `mi_integral` SET `num`=13 WHERE ( uid= )
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T18:51:06+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                产品不错,便宜点更好           ',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T18:51:23+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                产品不错,便宜点更好           ',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T18:54:53+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                产品不错,便宜点更好           ',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T18:54:54+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                产品不错,便宜点更好           ',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:02:19+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                 你好           ',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 412 行.
+SQL: SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1  
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 419 行.
+SQL: UPDATE `mi_integral` SET `num`=13 WHERE ( uid= ) [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `mi_integral` SET `num`=13 WHERE ( uid= )
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:08:45+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                      号      ',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=6 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 412 行.
+SQL: SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1  
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 419 行.
+SQL: UPDATE `mi_integral` SET `num`=13 WHERE ( uid= ) [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `mi_integral` SET `num`=13 WHERE ( uid= )
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:09:23+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.015625s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('电视','                            你好啊',7,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=7 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 412 行.
+SQL: SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1  
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 419 行.
+SQL: UPDATE `mi_integral` SET `num`=33 WHERE ( uid= ) [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `mi_integral` SET `num`=33 WHERE ( uid= )
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:09:56+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T19:09:56+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T19:12:54+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('红米2','                            法第三方',4,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=4 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=4 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 412 行.
+SQL: SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1  
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 419 行.
+SQL: UPDATE `mi_integral` SET `num`=7 WHERE ( uid= ) [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+ [ SQL语句 ] : UPDATE `mi_integral` SET `num`=7 WHERE ( uid= )
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:13:10+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T19:13:10+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T19:13:14+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T19:13:14+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T19:13:15+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T19:13:15+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T19:13:17+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T19:13:17+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T19:39:04+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                    给他人跟人        ',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=6 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:39:43+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                    给他人跟人        ',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:39:54+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('电视','                           割发代首个 ',7,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=7 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=7 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:41:27+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                      高度      ',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=6 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:43:25+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('电视','                            割发代首',7,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=7 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=7 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: price C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 412 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:44:01+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('红米2','                            沙发',4,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=4 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=4 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:44:59+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('苏美玲','                            发送',18,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=18 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=18 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:45:03+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('苏美玲','                            发送',18,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=18 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:47:31+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.015625s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                            范德萨',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=6and status = 0 ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'status = 0 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mi_goods` WHERE ( gid=6and status = 0 ) LIMIT 1  
+
+[ 2016-04-16T19:47:35+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                            范德萨',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:52:12+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('电视','                          232432  ',7,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=7 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=7 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:54:17+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.015625s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('红米2','                            方法多个',4,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=4 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=4 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:56:37+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('苏美玲','                            党法',18,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=18 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015625s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=18 ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 414 行.
+SQL: SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:57:50+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:57:50+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.015625s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015625s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:58:48+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,65,66) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:58:49+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T19:58:49+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T20:00:24+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(59,60,61,62,63) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T20:00:25+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(59,60,61,62,63) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015625s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015625s ]
+
+[ 2016-04-16T20:00:25+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,65,66) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T20:03:18+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                      hkjhsf       ',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 415 行.
+SQL: SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1  
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T20:09:20+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('电视','                            324535',7,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=7 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 415 行.
+SQL: SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1  
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 418 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T20:09:42+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('红米2','                            gj',4,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=4 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 415 行.
+SQL: SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1   [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT * FROM `mi_integral` WHERE ( uid= ) LIMIT 1  
+NOTIC: [8] Undefined variable: uid C:\wamp\www\cuteMi\CuteMi\Home\Controller\SpaceController.class.php 第 418 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T20:12:03+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('平板','                            543',6,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=6 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=6 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_integral` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T21:21:43+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('电视','  上相就是人比照片张的难看吗',7,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=7 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015625s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_integral` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `mi_integral` SET `num`=54 WHERE ( uid=2 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T21:22:55+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015625s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T21:23:45+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('红米2','                            shima ',4,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=4 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=4 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_integral` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `mi_integral` SET `num`=61 WHERE ( uid=2 ) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T21:27:17+08:00 ] 127.0.0.1 /cuteMi/index.php/Home/space/pj
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_discuss` [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_discuss` (`gname`,`comment`,`gid`,`uid`,`uname`) VALUES ('苏美玲','                      叶子的离开时风的追求还是树的不挽留呢      ',18,2,'程') [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_order_detail` [ RunTime:0.000000s ]
+SQL: UPDATE `mi_order_detail` SET `eval_status`=1 WHERE ( gid=18 ) [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( gid=18 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `mi_integral` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `mi_integral` WHERE ( uid=2 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: INSERT INTO `mi_integral` (`num`,`uid`) VALUES (1,2) [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-04-16T21:32:34+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:32:34+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:36:57+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:36:57+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:44:37+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:44:37+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:46:54+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:46:54+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:47:31+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:47:31+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:48:31+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:48:31+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:48:41+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T21:48:41+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T22:08:18+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T22:08:18+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T22:09:31+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T22:09:31+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T22:10:09+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T22:10:09+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T22:20:54+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/css.css
+ERR: 无法加载控制器:Css
+
+[ 2016-04-16T22:20:54+08:00 ] 127.0.0.1 /cuteMi/index.php/Admin/css/main.css
+ERR: 无法加载控制器:Css
+

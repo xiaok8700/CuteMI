@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>商品添加</title>
+		<style type='text/css'>
+		td{
+		text-align:center;
+		height:40px;
+		}
+		</style>
+	</head>
+	<body>
+		<form action="__CONTROLLER__/insert" method="post" enctype="multipart/form-data">
+			<table width='500'>
+				<tr>
+					<td>商品分类:</td>
+					<td>
+					<select name='tname' value="">
+					<foreach name='type' item='goo'>
+						<if condition="$goo.pid == 0">
+							<option name='q' disabled=true value=<{$goo.tname}>><{$goo.tname}></option>
+						<else />
+							<option name='q' value=<{$goo.tname}>><{$goo.tname}></option>
+						</if>
+					</foreach>
+					</select>	
+					</td>
+				</tr>
+				<tr>
+					<td>商品名字:</td>
+					<td ><input type="text" name='gname' placeholder="请输入产品名字" value=""></td>
+				</tr>
+				<tr>
+					<td>商品价格:</td>
+					<td><input type="text" name='price' placeholder="请输入商品价格" value=""></td>
+				</tr>
+				<tr>
+					<td>商品内存:</td>
+					<td><input type="text" name='storage' placeholder="请输入产品内存" value=""></td>
+				</tr>
+				<tr>
+					<td>商品版本:</td>
+					<td><input type="text" name='verson' placeholder="版本是多少" value=""></td>
+				</tr>
+				<tr>
+					<td>商品颜色:</td>
+					<td><input type="text" name='color' placeholder="你喜欢什么颜色" value=""></td>
+				</tr>
+				<tr>
+					<td>商品库存:</td>
+					<td><input type="text" name='store' placeholder="有多少库存呢" value=""></td>
+				</tr>
+				<tr>
+					<td>关键字:</td>
+					<td><input type="text" name='keywords' placeholder="请输入关键字" value=""></td>
+				</tr>
+				<!-- <tr>
+					<td>添加时间:</td>
+					<td><input type="text" placeholder="现在是什么时间呢" name='addtime' value=""></td>
+				</tr> -->
+				<tr>
+					<td>商品图片:</td>
+					<td>
+						<input type="file" name='pic'>
+						<!-- <input type="file" name='pic1'>
+						<input type="file" name='pic2'>
+						<input type="file" name='pic3'> -->
+					</td>
+				</tr>
+				<tr>
+					<td><input type='submit' value='提交'></td>
+					<td><input type="reset" value='重置'></td>
+				</tr>
+
+			</table>
+		</form>
+	</body>
+
+
+</html>

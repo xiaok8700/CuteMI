@@ -1,0 +1,74 @@
+<?php
+    /*
+     * 模拟支付接口
+     */
+
+namespace Home\Controller;
+
+use Think\Controller;
+class PayController extends Controller{
+//     public $order;//订单号
+//     //public $table;//需要的表
+//     public $sdk;//支付接口
+//     public $bank;//绑定的银行卡账号
+//     //public $paybank;//银行卡收钱表
+//    public function __construct($order,$sdk="132456789") {
+//        $this->order = $order;
+//       // $this->table = $table;
+//        $this->sdk = $sdk;
+//       // $this->bank = $bank;
+//       // $this->paybank = $paybank;
+//    }
+//    //支付函数
+
+    public function pay(){
+        //此处的  "132456789" 本来该是一个  sdk key 库
+        $sdk ="132456789";
+            $ordernum = I('post.ordernum');
+          //  var_dump($ordernum);
+        if($sdk = "132456789"){
+            //根据订单号和  查出订单中的信息
+            $model = D('order');
+            //事务开始
+            $model->startTrans();
+            $list = $model->where('ordernum='.$ordernum)->find();
+            if($list){
+               $count =  M('user_bank')->where('uid='.$_SESSION['user']['uid'])->find();
+                $data['count'] = $count['count'] - $list['total'] ;
+                if($data['count']<0){
+                    $this->success('您的余额不足 请充值',U('space/index'),1);
+                    exit();
+                }   
+                
+               M('user_bank')->where('uid='.$_SESSION['user']['id'])->data($data)->save();
+               //把收到的前  存到指定的银行卡上
+               $settle['settle_count'] = $list['total'];
+               $settle['settle_time'] = time();
+               $settle['ordernum'] = $ordernum;
+               $settleCount = M('settle')->data($settle)->add();
+//               dump($settleCount);
+//               dump($settle);
+              if($settleCount){
+                  //如果支付成功修改订单状态
+                 $orderData['orderstatus'] = 2;
+                 $order2 = $model->where('ordernum='.$ordernum)->data($orderData)->save();
+                 //dump($order2);exit();
+                 //判断是否支付成功
+                if($order2){
+                    //    事务 提交
+                    $model->commit();
+                    $this->success('支付成功',U('Space/index'),2);
+                }
+                    else{
+                    //事务回滚    
+                     $model->rollback();
+                        $this->error('支付失败','',2);
+                    }
+              }else{$this->error('支付失败 请重新支付','',1);}
+            }else{$this->error('订单号支付失败','',2);}
+        }
+    }
+	
+    //支付成功   待发货
+}
+    

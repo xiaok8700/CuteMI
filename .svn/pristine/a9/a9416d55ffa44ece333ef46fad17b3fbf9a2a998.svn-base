@@ -1,0 +1,32 @@
+<extend name="Space/info"/>
+<block name="main-content">
+
+
+ <div class="span16">
+    <div class="uc-box uc-main-box">
+        <div class="uc-content-box portal-content-box">
+            <div class="box-hd">
+                <h3 class="title">现金账户</h3>
+                <div class="more"></div>
+            </div>
+            <div class="box-bd">
+                <div class="cash-overall clearfix">
+                    <div class="balance"><span class="type">可用余额：<b>0.00</b>元</span><span class="type">冻结余额：<b>0.00</b>元</span></div>
+                    <div class="mobile">已绑定安全手机：<span class="num">158****3670</span> </div>
+                </div>
+                <div id="cashList">
+                    <table class="cash-change-list">
+                                                    <tbody><tr>
+                            <td style="text-align:center; color: #b0b0b0;">没有记录可以显示</td>
+                        </tr>
+                                            </tbody></table>
+                                            </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+
+
+</block>
+<extend name="Space/infofooter" />

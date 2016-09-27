@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>小米Note － 小米手机官网</title>
+<meta name="description" content="小米Note大屏旗舰有女神版和黑色版，前后双曲面玻璃，铝合金金属边框，5.7英寸超高色彩饱和度、超高对比度大屏，小米note使用索尼1300万像素光学防抖相机，旗舰级高通骁龙801处理器，3GB LPDDR3 大内存，支持联通4G、移动4G 双4G网络，配备独立HiFi音乐系统，MIUI 6操作系统。">
+<meta name="keywords" content="小米,小米手机,小米Note,女神版,黑色版">
+<!-- <link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon"> -->
+<!-- <link rel="icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon"> -->
+<link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/overall.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/product-minote-overall.css">
+<!-- <script src="__PUBLIC__/home/js/mstr_002.js" async="" type="text/javascript"></script>
+<script src="__PUBLIC__/home/js/unjcV2.js" async="" type="text/javascript"></script>
+<script src="__PUBLIC__/home/js/mstr.js" async="" type="text/javascript"></script>
+<script src="__PUBLIC__/home/js/jquery.js" async="" type="text/javascript"></script>
+<script src="__PUBLIC__/home/js/xmst.js" async="" type="text/javascript"></script>
+<script src="__PUBLIC__/home/js/xmsg_ti.js"></script> -->
+<script src="__PUBLIC__/home/js/jquery-1.7.2.js"></script>
+</head>
+<body>
+<div class="site-topbar">
+    <div class="container">
+        <div class="topbar-nav">
+            <a >小米网</a><span class="sep">|</span>
+            <a >MIUI</a><span class="sep">|</span>
+            <a >米聊</a><span class="sep">|</span>
+            <a >游戏</a><span class="sep">|</span>
+            <a >多看阅读</a><span class="sep">|</span>
+            <a >云服务</a><span class="sep">|</span>
+            <a >小米网移动版</a><span class="sep">|</span>
+            <a >问题反馈</a><span class="sep">|</span>
+            <a >Select Region</a>
+        </div>
+        
+   
+        <if condition="$user  eq  'open' ">
+                        <div class="topbar-info J_userInfo">
+                            <a  href="<{:U('User/login')}>">登录</a>
+                            <span class="sep">|</span>               
+                            <a  href="<{:U('User/register')}>">注册</a>
+                        </div>
+                        <else/>   
+                           <div class="topbar-info J_userInfo">
+                              <span> 欢迎您 ：<{$user}></span> | &nbsp;
+                              <a href="<{:U('Space/index')}>">个人中心</a>| &nbsp;
+                              <a href="<{:U("Space/allbook")}>">我的订单</a> | &nbsp;<span>
+                              <a href='__URL__/layout'>退出</a></span>
+                          </div>
+        </if>    
+    </div>
+</div>
+<div class="site-header">
+    <div class="container">
+        <div class="header-logo">
+                <a href="__MODULE__/Index/index"><img src="__PUBLIC__/home/images/logo.png"></a>
+        </div>
+        <div class="header-nav">
+            <ul class="nav-list J_navMainList clearfix">
+                <li id="J_navCategory" class="nav-category">
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-f62629f59b009832', 'http://list.mi.com', 'pcpid']);" data-stat-id="f62629f59b009832" class="link-category" href="http://list.mi.com/"><span class="text">全部商品分类</span></a>
+                <div class="site-category"> <ul id="J_categoryList" class="site-category-list clearfix">  <li class="category-item"> <a class="title" href="http://www.mi.com/buyphone/">手机 平板<i class="iconfont"></i></a> <div class="children clearfix children-col-2"><ul class="children-list children-list-col children-list-col-1"><li class="star-goods"> <a class="link" href="http://www.mi.com/minote/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/minote.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/minote.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米Note</span></a> <a class="btn btn-line-primary btn-small btn-buy" href="http://item.mi.com/buyphone/minote">选购</a> </li><li class="star-goods"> <a class="link" href="http://www.mi.com/mi4/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/mi4.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/mi4.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米手机4</span></a> <a class="btn btn-line-primary btn-small btn-buy" href="http://item.mi.com/buyphone/mi4">选购</a> </li><li class="star-goods"> <a class="link" href="http://www.mi.com/hongmi2/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/hongmi2.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/hongmi2.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">红米手机2</span></a> <a class="btn btn-line-primary btn-small btn-buy" href="http://item.mi.com/buyphone/hongmi2">选购</a> </li><li class="star-goods"> <a class="link" href="http://www.mi.com/hongmi2a/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/hongmi2a.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/hongmi2a.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">红米手机2A</span></a> <a class="btn btn-line-primary btn-small btn-buy" href="http://item.mi.com/buyphone/hongmi2a">选购</a> </li><li class="star-goods"> <a class="link" href="http://www.mi.com/note4gds/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/note.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/note.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">红米Note 4G双卡</span></a> <a class="btn btn-line-primary btn-small btn-buy" href="http://item.mi.com/buyphone/note">选购</a> </li><li class="star-goods"> <a class="link" href="http://www.mi.com/mipad/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/mipad.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/mipad.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米平板</span></a> <a class="btn btn-line-primary btn-small btn-buy" href="http://item.mi.com/static/buymipad">选购</a> </li></ul><ul class="children-list children-list-col children-list-col-2"><li> <a class="link" href="http://www.mi.com/buyphone/telcom/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/telcom.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/telcom.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">电信版</span></a>  </li><li> <a class="link" href="http://heyue.mi.com/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/heyue.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/heyue.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">合约机</span></a>  </li><li> <a class="link" href="http://item.mi.com/buyphone/compare"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/compare.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/compare.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">对比手机</span></a>  </li></ul></div> </li>  <li class="category-item"> <a class="title" href="http://www.mi.com/buytv/">电视 盒子<i class="iconfont"></i></a> <div class="children clearfix children-col-2"><ul class="children-list children-list-col children-list-col-1"><li> <a class="link" href="http://www.mi.com/mitv55/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/tv55.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/tv55.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米电视 2 55英寸</span></a>  </li><li> <a class="link" href="http://www.mi.com/mitv/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/tv49.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/tv49.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米电视 2 49英寸</span></a>  </li><li> <a class="link" href="http://www.mi.com/mitv40/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/tv40.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/tv40.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米电视 2 40英寸</span></a>  </li><li> <a class="link" href="http://www.mi.com/mitv48/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/tv48.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/tv48.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米电视 2S 48英寸</span></a>  </li><li> <a class="link" href="http://www.mi.com/hezis/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/hezis.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/hezis.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米盒子</span></a>  </li><li> <a class="link" href="http://www.mi.com/hezimini/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/hezimini.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/hezimini.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米盒子 mini</span></a>  </li></ul><ul class="children-list children-list-col children-list-col-2"><li> <a class="link" href="http://list.mi.com/0-256"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/dianshipeijian.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/dianshipeijian.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米电视配件</span></a>  </li></ul></div> </li>  <li class="category-item"> <a class="title" href="http://www.mi.com/smart/">路由器 智能硬件<i class="iconfont"></i></a> <div class="children clearfix children-col-2"><ul class="children-list children-list-col children-list-col-1"><li> <a class="link" href="http://www.mi.com/miwifi/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/miwifi.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/miwifi.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米路由器</span></a>  </li><li> <a class="link" href="http://www.mi.com/miwifimini/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/miwifimini.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/miwifimini.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米路由器mini</span></a>  </li><li> <a class="link" href="http://item.mi.com/1144100002.html"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/chazuo.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/chazuo.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">智能插座</span></a>  </li><li> <a class="link" href="http://www.mi.com/scale/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/scale.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/scale.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">体重秤</span></a>  </li><li> <a class="link" href="http://list.mi.com/111"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/shouhuan.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/shouhuan.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米手环</span></a>  </li><li> <a class="link" href="http://www.mi.com/xiaoyi/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/xiaoyi.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/xiaoyi.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">摄像机</span></a>  </li></ul><ul class="children-list children-list-col children-list-col-2"><li> <a class="link" href="http://www.mi.com/wifi/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/wifi.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/wifi.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">随身WiFi</span></a>  </li><li> <a class="link" href="http://list.mi.com/116"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/air.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/air.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">净化器与滤芯</span></a>  </li><li> <a class="link" href="http://www.mi.com/yicamera/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/yicamera.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/yicamera.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">运动相机</span></a>  </li><li> <a class="link" href="http://www.mi.com/ihealth/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/ihealth.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/ihealth.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">血压计</span></a>  </li><li> <a class="link" href="http://list.mi.com/26?cfrom=search"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/smart.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/smart.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">全部智能硬件</span></a>  </li></ul></div> </li>  <li class="category-item"> <a class="title" href="http://list.mi.com/11">移动电源 插线板<i class="iconfont"></i></a> <div class="children clearfix children-col-1"> <ul class="children-list clearfix">  <li> <a class="link" href="http://www.mi.com/dianyuan/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/dianyuan.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/dianyuan.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米移动电源</span></a>  </li>  <li> <a class="link" href="http://www.mi.com/powerstrip/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/powerscript.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/powerscript.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米插线板</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/13"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/yidongdianyuan.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/yidongdianyuan.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">品牌移动电源</span></a>  </li>  </ul> </div> </li>  <li class="category-item"> <a class="title" href="http://list.mi.com/17">耳机 音箱<i class="iconfont"></i></a> <div class="children clearfix children-col-1"> <ul class="children-list clearfix">  <li> <a class="link" href="http://www.mi.com/headphone/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/headphone.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/headphone.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米头戴式耳机</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/102"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/huosai.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/huosai.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米活塞耳机</span></a>  </li>  <li> <a class="link" href="http://www.mi.com/bluetooth-headset/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/bluetoothheadset.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/bluetoothheadset.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米蓝牙耳机</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/18"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/erji.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/erji.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">品牌耳机</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/19"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/yinxiang.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/yinxiang.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">音箱</span></a>  </li>  </ul> </div> </li>  <li class="category-item"> <a class="title" href="http://list.mi.com/135">电池 存储卡<i class="iconfont"></i></a> <div class="children clearfix children-col-1"> <ul class="children-list clearfix">  <li> <a class="link" href="http://list.mi.com/14"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/dianchi.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/dianchi.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">电池</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/15"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/chongdian.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/chongdian.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">充电器</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/16"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/xiancai.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/xiancai.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">线材</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/27"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/cunchu.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/cunchu.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">存储卡</span></a>  </li>  </ul> </div> </li>  <li class="category-item"> <a class="title" href="http://list.mi.com/7">保护套 后盖<i class="iconfont"></i></a> <div class="children clearfix children-col-1"> <ul class="children-list clearfix">  <li> <a class="link" href="http://list.mi.com/8"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/baohu.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/baohu.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">保护套/保护壳</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/2"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/hougai.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/hougai.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">后盖</span></a>  </li>  </ul> </div> </li>  <li class="category-item"> <a class="title" href="http://list.mi.com/1">贴膜 其他配件<i class="iconfont"></i></a> <div class="children clearfix children-col-2"><ul class="children-list children-list-col children-list-col-1"><li> <a class="link" href="http://list.mi.com/9"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/tiemo.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/tiemo.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">贴膜</span></a>  </li><li> <a class="link" href="http://search.mi.com/search_%E8%87%AA%E6%8B%8D%E6%9D%86"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/zipaigan.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/zipaigan.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">自拍杆</span></a>  </li><li> <a class="link" href="http://www.mi.com/shb/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/shb.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/shb.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">蓝牙手柄</span></a>  </li><li> <a class="link" href="http://list.mi.com/3"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/tizhi.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/tizhi.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">贴纸</span></a>  </li><li> <a class="link" href="http://list.mi.com/10"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/fangchensai.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/fangchensai.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">防尘塞</span></a>  </li><li> <a class="link" href="http://list.mi.com/5"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/zhijia.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/zhijia.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">手机支架</span></a>  </li></ul><ul class="children-list children-list-col children-list-col-2"><li> <a class="link" href="http://list.mi.com/6"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/raoxian.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/raoxian.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">耳机绕线器</span></a>  </li></ul></div> </li>  <li class="category-item"> <a class="title" href="http://list.mi.com/134">米兔 服装<i class="iconfont"></i></a> <div class="children clearfix children-col-1"> <ul class="children-list clearfix">  <li> <a class="link" href="http://mitu.mi.com/"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/mitu.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/mitu.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">米兔</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/22"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/fuzhuang.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/fuzhuang.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">服装</span></a>  </li>  </ul> </div> </li>  <li class="category-item"> <a class="title" href="http://list.mi.com/20">背包 其他周边<i class="iconfont"></i></a> <div class="children clearfix children-col-1"> <ul class="children-list clearfix">  <li> <a class="link" href="http://list.mi.com/23"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/bag.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/bag.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">背包</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/59"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/shubiaodian.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/shubiaodian.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">小米鼠标垫</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/24"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/zhoubian.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/zhoubian.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">生活周边</span></a>  </li>  <li> <a class="link" href="http://list.mi.com/62"><img class="thumb" src="__PUBLIC__/home/images/placeholder-40.png" data-src="http://c1.mifile.cn/f/i/15/goods/sidebar/wan.jpg?width=40&amp;height=40" srcset="http://c1.mifile.cn/f/i/15/goods/sidebar/wan.jpg?width=80&amp;height=80 2x" alt="" height="40" width="40"><span class="text">酷玩频道</span></a>  </li>  </ul> </div> </li>  </ul></div></li>
+                            <li class="nav-item">
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-a9318c5014b7997f', 'javascript:void(0);', 'pcpid']);" data-stat-id="a9318c5014b7997f" class="link" href="javascript:void(0);"><span class="text">小米手机</span><span class="arrow"></span></a>
+                    <div class="item-children">
+                        <div class="container">
+                            <ul class="children-list clearfix">
+                                                            <li class="first">
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-b893b837fb0582fb', 'http://www.mi.com/minote/', 'pcpid']);" data-stat-id="b893b837fb0582fb" href="http://www.mi.com/minote/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/minote!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/minote!320x220.jpg 2x" alt="小米Note 标准版" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-3ade59207e8159b0', 'http://www.mi.com/minote/', 'pcpid']);" data-stat-id="3ade59207e8159b0" href="http://www.mi.com/minote/">小米Note 标准版</a></div>
+                                    <p class="price">1999元起</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d5bee81133d7028e', 'http://www.mi.com/minote/pro/', 'pcpid']);" data-stat-id="d5bee81133d7028e" href="http://www.mi.com/minote/pro/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/minotepro!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/minotepro!320x220.jpg 2x" alt="小米Note 顶配版" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-03a05041bf4f8c02', 'http://www.mi.com/minote/pro/', 'pcpid']);" data-stat-id="03a05041bf4f8c02" href="http://www.mi.com/minote/pro/">小米Note 顶配版</a></div>
+                                    <p class="price">2999元起</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-5e52f2092bd391f9', 'http://www.mi.com/mi4/', 'pcpid']);" data-stat-id="5e52f2092bd391f9" href="http://www.mi.com/mi4/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/mi4!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/mi4!320x220.jpg 2x" alt="小米手机4" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-ba3ae2c6b8e489b2', 'http://www.mi.com/mi4/', 'pcpid']);" data-stat-id="ba3ae2c6b8e489b2" href="http://www.mi.com/mi4/">小米手机4</a></div>
+                                    <p class="price">1499元起</p>                                                                    </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                </li>
+                                <li class="nav-item">
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-f896375cba89aa73', 'javascript:void(0);', 'pcpid']);" data-stat-id="f896375cba89aa73" class="link" href="javascript:%20void(0);"><span class="text">红米</span><span class="arrow"></span></a>
+                    <div class="item-children">
+                        <div class="container">
+                            <ul class="children-list clearfix">
+                                                            <li class="first">
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-313f0f38f5191754', 'http://www.mi.com/hongmi2a/', 'pcpid']);" data-stat-id="313f0f38f5191754" href="http://www.mi.com/hongmi2a/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/hongmi2a!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/hongmi2a!320x220.jpg 2x" alt="红米手机2A" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-70698750f9a443c5', 'http://www.mi.com/hongmi2a/', 'pcpid']);" data-stat-id="70698750f9a443c5" href="http://www.mi.com/hongmi2a/">红米手机2A</a></div>
+                                    <p class="price">499元</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-ca154a4af5872c10', 'http://www.mi.com/hongmi2/', 'pcpid']);" data-stat-id="ca154a4af5872c10" href="http://www.mi.com/hongmi2/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/hongmi2!160x110.jpg" srcset="__PUBLIC__/home/images/hongmi2!320x220.jpg 2x" alt="红米手机2" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d536809cec8898cf', 'http://www.mi.com/hongmi2/', 'pcpid']);" data-stat-id="d536809cec8898cf" href="http://www.mi.com/hongmi2/">红米手机2</a></div>
+                                    <p class="price">599元起</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-8f7c2404878ed6a0', 'http://www.mi.com/note4gds/', 'pcpid']);" data-stat-id="8f7c2404878ed6a0" href="http://www.mi.com/note4gds/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/note!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/note!320x220.jpg 2x" alt="红米NOTE" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-e6625ee0da378d46', 'http://www.mi.com/note4gds/', 'pcpid']);" data-stat-id="e6625ee0da378d46" href="http://www.mi.com/note4gds/">红米NOTE</a></div>
+                                    <p class="price">699元起</p>                                                                    </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                </li>
+                                <li class="nav-item">
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-18fe842528638923', 'javascript:void(0);', 'pcpid']);" data-stat-id="18fe842528638923" class="link" href="javascript:void(0);"><span class="text">平板</span><span class="arrow"></span></a>
+                    <div class="item-children">
+                        <div class="container">
+                            <ul class="children-list clearfix">
+                                                            <li class="first">
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-2f01f597c8f4c6b5', 'http://www.mi.com/mipad/', 'pcpid']);" data-stat-id="2f01f597c8f4c6b5" href="http://www.mi.com/mipad/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/mipad16!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/mipad16!320x220.jpg 2x" alt="小米平板 16GB" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-b8388813f388c30c', 'http://www.mi.com/mipad/', 'pcpid']);" data-stat-id="b8388813f388c30c" href="http://www.mi.com/mipad/">小米平板 16GB</a></div>
+                                    <p class="price">1299元</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d7af6628c853184a', 'http://www.mi.com/mipad/', 'pcpid']);" data-stat-id="d7af6628c853184a" href="http://www.mi.com/mipad/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/mipad64!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/mipad64!320x220.jpg 2x" alt="小米平板 64GB" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d61c8a8ff257ff7b', 'http://www.mi.com/mipad/', 'pcpid']);" data-stat-id="d61c8a8ff257ff7b" href="http://www.mi.com/mipad/">小米平板 64GB</a></div>
+                                    <p class="price">1499元</p>                                                                    </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                </li>
+                                <li class="nav-item">
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-49492ebb4598e3cf', 'javascript:void(0);', 'pcpid']);" data-stat-id="49492ebb4598e3cf" class="link" href="javascript:void(0);"><span class="text">电视 · 盒子</span><span class="arrow"></span></a>
+                    <div class="item-children">
+                        <div class="container">
+                            <ul class="children-list clearfix">
+                                                            <li class="first">
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-4a7ab7511a9fa5b6', 'http://www.mi.com/mitv40/', 'pcpid']);" data-stat-id="4a7ab7511a9fa5b6" href="http://www.mi.com/mitv40/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/mitv40!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/mitv40!320x220.jpg 2x" alt="小米电视2 40英寸" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-c94182a021280919', 'http://www.mi.com/mitv40/', 'pcpid']);" data-stat-id="c94182a021280919" href="http://www.mi.com/mitv40/">小米电视2 40英寸</a></div>
+                                    <p class="price">1999元</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-c807f2bffd736503', 'http://www.mi.com/mitv48/', 'pcpid']);" data-stat-id="c807f2bffd736503" href="http://www.mi.com/mitv48/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/mitv48!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/mitv48!320x220.jpg 2x" alt="小米电视2S 48英寸" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-f70111d90d944eab', 'http://www.mi.com/mitv48/', 'pcpid']);" data-stat-id="f70111d90d944eab" href="http://www.mi.com/mitv48/">小米电视2S 48英寸</a></div>
+                                    <p class="price">2999元</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-f364de3876e866bf', 'http://www.mi.com/mitv/', 'pcpid']);" data-stat-id="f364de3876e866bf" href="http://www.mi.com/mitv/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/mitv49!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/mitv49!320x220.jpg 2x" alt="小米电视2 49英寸" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-299465b3a99a164a', 'http://www.mi.com/mitv/', 'pcpid']);" data-stat-id="299465b3a99a164a" href="http://www.mi.com/mitv/">小米电视2 49英寸</a></div>
+                                    <p class="price">3399元起</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-57e90414d7ae2f02', 'http://www.mi.com/mitv55/', 'pcpid']);" data-stat-id="57e90414d7ae2f02" href="http://www.mi.com/mitv55/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/mitv55!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/mitv55!320x220.jpg 2x" alt="小米电视2 55英寸" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-03a9432c9fce42ee', 'http://www.mi.com/mitv55/', 'pcpid']);" data-stat-id="03a9432c9fce42ee" href="http://www.mi.com/mitv55/">小米电视2 55英寸</a></div>
+                                    <p class="price">4499元起</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-28d5cdb9fea7414b', 'http://www.mi.com/hezimini/', 'pcpid']);" data-stat-id="28d5cdb9fea7414b" href="http://www.mi.com/hezimini/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/hezimini!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/hezimini!320x220.jpg 2x" alt="小米盒子mini版" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-e281b14bbfdce76c', 'http://www.mi.com/hezimini/', 'pcpid']);" data-stat-id="e281b14bbfdce76c" href="http://www.mi.com/hezimini/">小米盒子mini版</a></div>
+                                    <p class="price">199元</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-1fce78e32a98cc90', 'http://www.mi.com/hezis/', 'pcpid']);" data-stat-id="1fce78e32a98cc90" href="http://www.mi.com/hezis/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/hezis!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/hezis!320x220.jpg 2x" alt="小米盒子 增强版" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-05d68cb47f59e9b7', 'http://www.mi.com/hezis/', 'pcpid']);" data-stat-id="05d68cb47f59e9b7" href="http://www.mi.com/hezis/">小米盒子 增强版</a></div>
+                                    <p class="price">299元</p>                                                                    </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                </li>
+                                <li class="nav-item">
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-b4d066d2f9a3bd16', 'javascript:void(0);', 'pcpid']);" data-stat-id="b4d066d2f9a3bd16" class="link" href="javascript:%20void(0);"><span class="text">路由器</span><span class="arrow"></span></a>
+                    <div class="item-children">
+                        <div class="container">
+                            <ul class="children-list clearfix">
+                                                            <li class="first">
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-850b96f55980cf9e', 'http://www.mi.com/miwifi/', 'pcpid']);" data-stat-id="850b96f55980cf9e" href="http://www.mi.com/miwifi/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/miwifi!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/miwifi!320x220.jpg 2x" alt="全新小米路由器" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-9e9b9a784237a064', 'http://www.mi.com/miwifi/', 'pcpid']);" data-stat-id="9e9b9a784237a064" href="http://www.mi.com/miwifi/">全新小米路由器</a></div>
+                                    <p class="price">699元起</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-c647d6b7c1939616', 'http://www.mi.com/miwifimini/', 'pcpid']);" data-stat-id="c647d6b7c1939616" href="http://www.mi.com/miwifimini/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/miwifimini!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/miwifimini!320x220.jpg 2x" alt="小米路由器 mini" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-94e9ec123d320aa1', 'http://www.mi.com/miwifimini/', 'pcpid']);" data-stat-id="94e9ec123d320aa1" href="http://www.mi.com/miwifimini/">小米路由器 mini</a></div>
+                                    <p class="price">129元</p>                                                                    </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                </li>
+                                <li class="nav-item">
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-9fbb41fbadfac4d7', 'javascript:void(0);', 'pcpid']);" data-stat-id="9fbb41fbadfac4d7" class="link" href="javascript:void(0);"><span class="text">智能硬件</span><span class="arrow"></span></a>
+                    <div class="item-children">
+                        <div class="container">
+                            <ul class="children-list clearfix">
+                                                            <li class="first">
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-cfe01d041e2ebde4', 'http://www.mi.com/scale/', 'pcpid']);" data-stat-id="cfe01d041e2ebde4" href="http://www.mi.com/scale/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/scale!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/scale!320x220.jpg 2x" alt="体重计" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-f05d9f00a48d981f', 'http://www.mi.com/scale/', 'pcpid']);" data-stat-id="f05d9f00a48d981f" href="http://www.mi.com/scale/">体重计</a></div>
+                                    <p class="price">99元</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-75f3e5becff71c67', 'http://www.mi.com/xiaoyi/', 'pcpid']);" data-stat-id="75f3e5becff71c67" href="http://www.mi.com/xiaoyi/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/xiaoyi!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/xiaoyi!320x220.jpg 2x" alt="摄像机" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d254e44359d04f6b', 'http://www.mi.com/xiaoyi/', 'pcpid']);" data-stat-id="d254e44359d04f6b" href="http://www.mi.com/xiaoyi/">摄像机</a></div>
+                                    <p class="price">129元起</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-a30577984f1493fa', 'http://www.mi.com/yicamera/', 'pcpid']);" data-stat-id="a30577984f1493fa" href="http://www.mi.com/yicamera/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/yicamera!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/yicamera!320x220.jpg 2x" alt="运动相机" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-1dc04a16e31a7f32', 'http://www.mi.com/yicamera/', 'pcpid']);" data-stat-id="1dc04a16e31a7f32" href="http://www.mi.com/yicamera/">运动相机</a></div>
+                                    <p class="price">399元起</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-43886ed825c8d5db', 'http://www.mi.com/ihealth/', 'pcpid']);" data-stat-id="43886ed825c8d5db" href="http://www.mi.com/ihealth/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/ihealth!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/ihealth!320x220.jpg 2x" alt="血压计" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-618e8e843bbe97ec', 'http://www.mi.com/ihealth/', 'pcpid']);" data-stat-id="618e8e843bbe97ec" href="http://www.mi.com/ihealth/">血压计</a></div>
+                                    <p class="price">199元</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-32a518f7731d29c1', 'http://item.mi.com/1144100002.html', 'pcpid']);" data-stat-id="32a518f7731d29c1" href="http://item.mi.com/1144100002.html"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/chazuo!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/chazuo!320x220.jpg 2x" alt="智能插座" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-cc023dc669e5f28e', 'http://item.mi.com/1144100002.html', 'pcpid']);" data-stat-id="cc023dc669e5f28e" href="http://item.mi.com/1144100002.html">智能插座</a></div>
+                                    <p class="price">59元</p>                                                                    </li>
+                                                            <li>
+                                    <div class="figure figure-thumb">
+                                        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-bdf23b33a43c181c', 'http://www.mi.com/smart/', 'pcpid']);" data-stat-id="bdf23b33a43c181c" href="http://www.mi.com/smart/"><img src="__PUBLIC__/home/images/placeholder-220110x110.png" data-src="__PUBLIC__/home/images/smart!160x110.jpg" srcset="http://c1.mifile.cn/f/i/15/goods/nav/smart!320x220.jpg 2x" alt="查看全部&lt;br/&gt;智能硬件" height="110" width="160"></a>
+                                    </div>
+                                    <div class="title"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-617ed6eaf71d1e1e', 'http://www.mi.com/smart/', 'pcpid']);" data-stat-id="617ed6eaf71d1e1e" href="http://www.mi.com/smart/">查看全部<br>智能硬件</a></div>
+                                                                                                        </li>
+                                                        </ul>
+                        </div>
+                    </div>
+                </li>
+                                <li class="nav-item">
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-812bdd71021dafe2', 'http://www.mi.com/service', 'pcpid']);" data-stat-id="812bdd71021dafe2" class="link" href="http://www.mi.com/service" target="_blank"><span class="text">服务</span></a>
+                </li>
+                                <li class="nav-item">
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-359ee71e873842fd', 'http://www.xiaomi.cn', 'pcpid']);" data-stat-id="359ee71e873842fd" class="link" href="http://www.xiaomi.cn/" target="_blank"><span class="text">社区</span></a>
+                </li>
+                            </ul>
+        </div>
+        <div class="header-search">
+            <form id="J_searchForm" class="search-form clearfix" action="http://search.mi.com/search" method="get">
+                <label for="search" class="hide">站内搜索</label>
+                <input class="search-text" id="search" name="keyword" autocomplete="off" data-search-config="{'defaultWords':[{&quot;Key&quot;:&quot;智能硬件&quot;,&quot;Rst&quot;:35},{&quot;Key&quot;:&quot;wifi&quot;,&quot;Rst&quot;:12},{&quot;Key&quot;:&quot;自拍杆&quot;,&quot;Rst&quot;:7},{&quot;Key&quot;:&quot;移动电源&quot;,&quot;Rst&quot;:27},{&quot;Key&quot;:&quot;随身风扇&quot;,&quot;Rst&quot;:3},{&quot;Key&quot;:&quot;个性配件&quot;,&quot;Rst&quot;:96},{&quot;Key&quot;:&quot;充电设备&quot;,&quot;Rst&quot;:29},{&quot;Key&quot;:&quot;存储卡&quot;,&quot;Rst&quot;:12},{&quot;Key&quot;:&quot;配件优惠套装&quot;,&quot;Rst&quot;:11}]}" type="search">
+                <input class="search-btn iconfont" value="" type="submit">
+                <div class="search-hot-words">
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-ef5e73f6dad26a99', 'http://search.mi.com/search_%E8%80%B3%E6%9C%BA', 'pcpid']);" data-stat-id="ef5e73f6dad26a99" href="http://search.mi.com/search_%E8%80%B3%E6%9C%BA">耳机</a><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-685482cbfd83e93b', 'http://search.mi.com/search_%E6%8F%92%E7%BA%BF%E6%9D%BF', 'pcpid']);" data-stat-id="685482cbfd83e93b" href="http://search.mi.com/search_%E6%8F%92%E7%BA%BF%E6%9D%BF">插线板</a>                </div>
+            <div id="J_keywordList" class="keyword-list hide"><ul class="result-list"></ul></div></form>
+        </div>
+    </div>
+<div id="J_navMenu" class="header-nav-menu" style="display: none;"><div class="container"></div></div></div>
+<div class="xm-product-box">
+    <div class="hd nav-bar">
+        <div class="container">
+            <div class="title">
+    <h2>小米Note        <small>
+            <span class="sep">|</span>
+                            <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-1758f2239befcf6f', '/minote/pro/', 'pcpid']);" data-stat-id="1758f2239befcf6f" href="http://www.mi.com/minote/pro/">小米Note 顶配版</a>
+                <span class="sep">|</span>
+                <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-79c8fad81c1ec160', '/minote/ns/', 'pcpid']);" data-stat-id="79c8fad81c1ec160" href="http://www.mi.com/minote/ns/">小米Note 女神版</a>
+                    </small>
+    </h2>
+</div>
+<div class="nav">
+    <span class="nav-switch">
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-a8e083bb879be79a', '/minote/', 'pcpid']);" data-stat-id="a8e083bb879be79a" class="tab tab-active" href="http://www.mi.com/minote/">概述</a>
+        <span class="separator">|</span>
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-6ece02697c125003', '/minote/features/', 'pcpid']);" data-stat-id="6ece02697c125003" class="tab" href="http://www.mi.com/minote/features/">功能</a>
+        <span class="separator">|</span>
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-c7aeb08598f7a1dc', '/minote/design/', 'pcpid']);" data-stat-id="c7aeb08598f7a1dc" class="tab" href="http://www.mi.com/minote/design/">设计</a>
+        <span class="separator">|</span>
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-811c84630146fb83', '/minote/camera/', 'pcpid']);" data-stat-id="811c84630146fb83" class="tab" href="http://www.mi.com/minote/camera/">相机</a>
+        <span class="separator">|</span>
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-451df4fcde7cce32', '/minote/hifi/', 'pcpid']);" data-stat-id="451df4fcde7cce32" class="tab" href="http://www.mi.com/minote/hifi/">HiFi</a>
+        <span class="separator">|</span>
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-ad5302bec0333f87', '/minote/miui/', 'pcpid']);" data-stat-id="ad5302bec0333f87" class="tab" href="http://www.mi.com/minote/miui/">MIUI</a>
+        <span class="separator">|</span>
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d6f83e53d5cf3dd2', '/minote/gallery/', 'pcpid']);" data-stat-id="d6f83e53d5cf3dd2" class="tab" href="http://www.mi.com/minote/gallery/">图集</a>
+        <span class="separator">|</span>
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-a7dba02235781b4c', '/minote/specs/', 'pcpid']);" data-stat-id="a7dba02235781b4c" class="tab" href="http://www.mi.com/minote/specs/">参数</a>
+        <span class="separator">|</span>
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-684b039e2693f5f4', '/service/safe/', 'pcpid']);" data-stat-id="684b039e2693f5f4" class="link" href="http://www.mi.com/service/safe/" target="_blank">意外保</a>
+        <span class="separator">|</span>
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-4e6fb4c376d030a5', 'http://bbs.xiaomi.cn/forum/detail/fid/385', 'pcpid']);" data-stat-id="4e6fb4c376d030a5" class="link J_discuzz" href="http://bbs.xiaomi.cn/forum/detail/fid/385" target="_blank">讨论区</a>
+        <span class="separator J_discuzz">|</span>
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-5fc287d0a6bd2a22', 'http://order.mi.com/queue/f2code', 'pcpid']);" data-stat-id="5fc287d0a6bd2a22" class="link J_linkFcode" href="http://order.mi.com/queue/f2code" target="_blank">F码通道</a>
+    </span>
+ 
+
+
+
+
+    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-85963d535f8619a5', 'http://item.mi.com/buyphone/minote', 'pcpid']);" data-stat-id="85963d535f8619a5" class="btn btn-primary btn-small J_productStockStatus" href="__CONTROLLER__/index2/gid/<{$goods.gid}>" target="_blank">立即购买</a>
+</div>        </div>
+    </div>
+
+<div class="bd">
+    <div id="overall" class="minote-overall J_visibleSectionContainer xm-visible-section-container">
+        <div class="section section-intro xm-visible-section" data-offset-fix="630">
+            <div class="container">
+                <div class="content">
+                    <!-- <h2 class="title"><{$sql[0][name]}></h2> -->
+                    <h3 class="subtitle"><{$goods['gname']}></h3>
+                    
+                    <p class="price"><span class="num">双网通版<{$goods['price']}></span>元起<span class="num sep">/</span><strong><span class="num">全网通版<{$goods['price']}></span>元</strong></p>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-4f327b23c7cf2917', 'javascript:void(0);', 'pcpid']);" data-stat-id="4f327b23c7cf2917" class="video J_modalTrigger" href="javascript:%20void(0);" data-video="XODcyMjA1MTQw"><span class="icon-intro icon-intro-video"></span>观看介绍视频</a>
+                </div>
+                <div style="overflow: hidden;" align='center' class="stage intro-slide J_introSlide">
+                    <img  class="one" src="__PUBLIC__/home/images/04.jpg" alt="" height="800" width="1000">
+                    <img  class="one" src="__PUBLIC__/home/images/03.jpg" alt="" height="800" width="1000" style="display:none">
+                    <img  class="one" src="__PUBLIC__/home/images/02.jpg" alt="" height="800" width="1000" style="display:none">
+                    <img  class="one" src="__PUBLIC__/home/images/01.jpg" alt="" height="800" width="1000" style="display:none">
+                </div>
+            </div>
+            
+            <div class="feature-list-container">
+                <ul class="feature-list clearfix">
+                    <li class="left top"><img class="icon-overall icon-overall-02" src="__PUBLIC__/home/images/1.jpg"><{$goods['verson']}></li>
+                    <li class="top"><img class="icon-overall icon-overall-02" src="__PUBLIC__/home/images/2.jpg"><{$goods['system']}></li>
+                    <li class="top"><img class="icon-overall icon-overall-02" src="__PUBLIC__/home/images/3.jpg"><{$goods['screen']}></li>
+                    <li class="top"><img class="icon-overall icon-overall-02" src="__PUBLIC__/home/images/4.jpg">索尼 1300 万像素光学防抖相机</li>
+                    <li class="left bottom"><img class="icon-overall icon-overall-02" src="__PUBLIC__/home/images/7.jpg">独立 HiFi 音乐系统</li>
+                    <li class="bottom"><img class="icon-overall icon-overall-02" src="__PUBLIC__/home/images/8.jpg">6.95mm 超薄机身</li>
+                    <li class="bottom"><img class="icon-overall icon-overall-02" src="__PUBLIC__/home/images/6.jpg">前后双曲面玻璃</li>
+                    <li class="bottom"><img class="icon-overall icon-overall-02" src="__PUBLIC__/home/images/5.jpg"><{$goods['battery']}></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section section-body xm-visible-section" data-offset-fix="630">
+            <div class="container">
+                <div class="content-design">
+                    <h2 class="title">为玻璃赋予生命<br>工艺与手感，更进一步</h2>
+                    <h3 class="subtitle">前后曲面玻璃&nbsp;&nbsp;/&nbsp;&nbsp;铝合金金属边框<br>6.95mm 超薄机身</h3>
+                    <p class="text">为了奉上代表我们科技与工艺水准的杰出之作，工程师经历了复杂而苛刻的设计与
+研发过程。不仅将每一个高性能元器件浓缩在仅有 6.95 
+毫米的超薄机身内，更选择了加工难度大且昂贵，但极具生命力的曲面玻璃作为机身主要材质，并选用铝合金塑造金属边框。经过层层工艺，最终赋予小米Note
+ 明玉般的光芒与极佳的润泽手感。</p>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-895874de22707eb6', 'http://www.mi.com/minote/design/', 'pcpid']);" data-stat-id="895874de22707eb6" class="link" href="http://www.mi.com/minote/design/" style="margin-right: 15px;">标准版设计 &gt;</a>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-01d0967a8f878d81', 'http://hd.mi.com/f/zt/hd/2015031601/index.html', 'pcpid']);" data-stat-id="01d0967a8f878d81" class="link" href="http://hd.mi.com/f/zt/hd/2015031601/index.html" target="_blank" style="margin-right: 15px;">天然竹特别版 &gt;</a>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d911bdab51ec1af4', 'http://www.mi.com/minote/ns/', 'pcpid']);" data-stat-id="d911bdab51ec1af4" class="link" href="http://www.mi.com/minote/ns/" target="_blank" style="margin-right: 15px;">女神版 &gt;</a>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d490630aeb0d776b', 'http://www.mi.com/minote/pro/', 'pcpid']);" data-stat-id="d490630aeb0d776b" class="link" href="http://www.mi.com/minote/pro/" target="_blank">顶配版 &gt;</a>
+                </div>
+                <div class="content-performance">
+                    <h2 class="title">强大性能<br>集顶尖科技于一身</h2>
+                    <p class="text">小米Note 
+的迷人之处不仅在于更大更薄的优雅外观，内部更蕴含了与使用体验息息相关的强劲性能。选用性能强大的旗舰级高通骁龙801 四核 2.5GHz 
+处理器，配备速度极快的 3GB LPDDR3 内存，只为了不断响应你对手机的需求，更痛快地玩大型 3D 
+游戏，看高清电影，在同时处理多项任务时快速切换。</p>
+                    <ul class="feature-list clearfix">
+                        <li class="item-std">
+                            <dl class="clearfix">
+                                <dt>标准版</dt>
+                                <dd class="left">骁龙801<br>处理器</dd>
+                                <dd>3GB<br>LPDDR3</dd>
+                            </dl>
+                        </li>
+                        <li class="item-pro">
+                            <dl class="clearfix">
+                                <dt>顶配版</dt>
+                                <dd class="left">骁龙810<br>处理器</dd>
+                                <dd><{$goods['storage']}><br>LPDDR4</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-2744abe9917bed09', 'http://www.mi.com/minote/features/', 'pcpid']);" data-stat-id="2744abe9917bed09" class="link" href="http://www.mi.com/minote/features/">了解性能 &gt;</a>
+                </div>
+                <img class="product" src="__PUBLIC__/Uploads/<{$goods['pic']}>" alt="" height="500" width="500">
+            </div>
+        </div>
+        <div class="section section-screen xm-visible-section" data-offset-fix="630">
+            <div class="container">
+                <ul class="tab-switch clearfix J_tabSwitch">
+                    <li class="tab tab-active">小米Note 顶配版</li>
+                    <li class="tab">小米Note</li>
+                </ul>
+                <div class="tab-container clearfix">
+                    <div class="tab-content tab-content-pro tab-content-active">
+                        <div class="content">
+                            <h2 class="title">5.7英寸 2K 超高清大屏</h2>
+                            <h3 class="subtitle">与世界一流屏厂 夏普 / JDI 深度定制，36项屏幕专利</h3>
+                            <p class="text">小米Note 顶配版采用 2K 超高清屏幕，分辨率为 
+2560x1440，这已经超过一般 24 英寸电脑显示器的分辨率，是 1080p 分辨率的 1.7 
+倍之多。为了给顶配版选择一块名副其实的顶配屏幕，我们与夏普 / JDI 
+深度研发定制了这块屏幕，并且就连背光、膜材、液晶等原材料全部采用顶级供应商，同时还研发了先进的阳光屏技术、负液晶技术及高色饱技术，配备这些出色的
+顶尖技术，让顶配版这块屏幕几乎成为 5.7 英寸手机屏幕的最高规格。<a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-1096037c2bccef03', 'http://www.mi.com/minote/features/', 'pcpid']);" data-stat-id="1096037c2bccef03" class="link" href="http://www.mi.com/minote/features/">了解屏幕 &gt;</a></p>
+                            <ul class="feature-list clearfix">
+                                <li class="first"><div class="data"><span class="num">2560x1440</span></div>全高清屏幕</li>
+                                <li><div class="data"><span class="num">95%</span>NTSC</div>高色彩饱和度</li>
+                                <li><div class="data"><span class="num">515</span></div>PPI</li>
+                                <li><div class="data"><span class="num">1400:1</span></div>超高对比度</li>
+                            </ul>
+                        </div>
+                        <img class="product" src="__PUBLIC__/home/images/overall-screen.jpg" alt="" height="524" width="1968">
+                    </div>
+                    <div class="tab-content tab-content-std hide">
+                        <div class="content">
+                            <h2 class="title">5.7 英寸 夏普 / JDI 负液晶全高清屏幕</h2>
+                            <h3 class="subtitle">高色彩饱和度 / 1400:1 超高对比度 / 像素级动态对比度调整</h3>
+                            <p class="text">屏幕更大，表现也更出色。小米Note 使用了 5.7 
+英寸 夏普 / JDI 负液晶全高清视网膜屏，将普通屏幕的对比度从 1000:1 提升至 
+1400:1，当你点亮屏幕的一刻，更丰富的色彩表现力与对比度都将给你出乎意料的惊艳感。此外，小米Note 
+上首次采用了“像素级动态对比度调整”技术，将屏幕的每一个像素亮度进行独立控制。现在，即使在刺眼的阳光下，你也可以享受清晰的浏览体验。<a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-1096037c2bccef03', 'http://www.mi.com/minote/features/', 'pcpid']);" data-stat-id="1096037c2bccef03" class="link" href="http://www.mi.com/minote/features/">了解屏幕 &gt;</a>
+                            </p>
+                            <ul class="feature-list clearfix">
+                                <li class="first">
+                                    <div class="data"><span class="num">1080p</span></div>
+                                    全高清屏幕
+                                </li>
+                                <li>
+                                    <div class="data"><span class="num">95%</span>NTSC</div>
+                                    高色彩饱和度
+                                </li>
+                                <li>
+                                    <div class="data"><span class="num">386</span></div>
+                                    PPI
+                                </li>
+                                <li>
+                                    <div class="data"><span class="num">1400:1</span></div>
+                                    超高对比度
+                                </li>
+                            </ul>
+                        </div>
+                        <img class="product" src="__PUBLIC__/home/images/overall-screen_002.jpg" alt="" height="524" width="1956">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-camera xm-visible-section">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">一个好相机<br>让人人都是美好时刻的记录者</h2>
+                    <h3 class="subtitle">索尼 1300 万像素 光学防抖相机<br>前置 2 微米大像素相机 / 飞利浦双色温闪光灯</h3>
+                    <p class="text">每时每刻，都有人用小米手机记录着自己的生活：一顿甜蜜的晚餐、一场说走就走
+的旅行、一个鼓励的微笑……人们如此喜爱相机功能，更使我们以专业相机角度重新设计它。例如，将专业相机具备的光学防抖功能应用于小米Note 
+上，无论是拍摄夜景，还是单手瞬间抓拍，都能捕捉更清晰锐利的照片。不仅如此，新增的双色温闪光灯可以更好还原自然色彩，让你在夜晚也能拍出好照片。前置
+升级为 2 微米大像素相机，单个像素更大，自拍效果更好。还有 36 级智能美颜、HDR 及补光模式，让你以简单的方式，拍出更专业的大作。</p>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-2bc83f585ed14794', 'http://www.mi.com/minote/camera/', 'pcpid']);" data-stat-id="2bc83f585ed14794" class="link" href="http://www.mi.com/minote/camera/">了解相机 &gt;</a>
+                </div>
+            </div>
+        </div>
+        <div class="section section-4g xm-visible-section">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">4G双卡双待</h2>
+<!--                    <h3 class="subtitle">5 模 15 频 双网通吃</h3>-->
+                    <p class="text">小米Note 可选移动 / 联通双网通与移动 / 联通 / 电信全网通2个版本。你可以在如此优越的手机上，同时使用两个号码，无论是工作还是日常私人使用，一部小米Note 就可以满足你所有的沟通需求。</p>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-b27f85ea0a42e309', 'http://www.mi.com/minote/features/', 'pcpid']);" data-stat-id="b27f85ea0a42e309" class="link" href="http://www.mi.com/minote/features/">了解网络 &gt;</a>
+                </div>
+            </div>
+        </div>
+        <div class="section section-hifi xm-visible-section" data-offset-fix="630">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">独立 HiFi 音乐系统</h2>
+                    <h3 class="subtitle">可输出 192kHz / 24bit 录音室级音频标准</h3>
+                    <p class="text">你爱听的流行、摇滚或小清新，在手机上可以有更好的播放效果了！为了让手机有
+突破性的音质，我们从音乐发烧友使用的 HiFi 器材寻找灵感，并将其中专业的 HiFi 声学模块移植到小米Note 
+上。它将每个声音环节妥善处理，让你听到的音乐大为不同：人声更动人，乐器表现力更细腻，低音更浑厚震撼。极小的失真，可以还原音乐录制时的音质标准，让
+你聆听到从未察觉的乐曲细节与现场氛围感。</p>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-7abd63ae9a7579b7', 'http://www.mi.com/minote/hifi/', 'pcpid']);" data-stat-id="7abd63ae9a7579b7" class="link" href="http://www.mi.com/minote/hifi/">了解 HiFi 音乐系统 &gt;</a>
+                </div>
+            </div>
+            <div class="bg"></div>
+        </div>
+        <div class="section section-miui" data-offset-fix="600">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">深受1亿用户<br>喜爱的 MIUI 系统</h2>
+                    <h3 class="subtitle">大屏显示优化 / 单手模式 / 大字体模式</h3>
+                    <p class="text">大屏幕要有大体验！MIUI 针对 5.7 
+英寸大屏特别优化，重新调整界面布局及交互元素，使同样的界面在 5.7 英寸的小米Note 上比 4.7 英寸屏幕多显示约 25% 
+的内容。对于喜欢更大内容的用户，也全新升级系统级大字体模式，并适配第三方应用。你可能有时单手操作手机，为此我们推出便携单手模式，使界面可以模拟更
+小的屏幕尺寸，单手也可以覆盖所有的操作区域。通过这些新功能，你一定会更喜欢小米Note 这块 5.7 英寸的大屏幕。</p>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-68f34327605c7604', 'http://www.mi.com/minote/miui/', 'pcpid']);" data-stat-id="68f34327605c7604" class="link" href="http://www.mi.com/minote/miui/">了解 MIUI 系统 &gt;</a>
+                </div>
+                <div class="stage">
+                    <ul class="feature-list clearfix">
+                        <li class="screenshot-01"><img src="__PUBLIC__/home/images/overall-miui-01.png" alt="" height="930" width="326"></li>
+                        <li class="screenshot-02"><img src="__PUBLIC__/home/images/overall-miui-02.png" alt="" height="930" width="325"></li>
+                        <li class="screenshot-03"><img src="__PUBLIC__/home/images/overall-miui-03.png" alt="" height="930" width="327"></li>
+                        <li class="screenshot-04"><img src="__PUBLIC__/home/images/overall-miui-04.png" alt="" height="930" width="326"></li>
+                        <li class="screenshot-05"><img src="__PUBLIC__/home/images/overall-miui-05.jpg" alt="" height="930" width="240"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section section-pro">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">发烧到底！<br>小米Note 顶配版</h2>
+                    <h3 class="subtitle">Qualcomm® 骁龙™ 810 处理器<br>2K 超清大屏 / 4GB LPDDR4</h3>
+                    <p class="text">小米手机之所以深受手机发烧友喜爱，是因为每一代小米手机都集齐全球顶尖科
+技，让发烧友率先体验新一代手机技术。小米Note 顶配版正是这样一部手机，它配备高通最新八核 64 位性能之王骁龙 810 
+处理器，使用最新一代的 LPDDR 4 手机内存，成为全球最快的手机之一。屏幕分辨率为 2560 x 
+1440，显示效果前所未有的细腻，分辨率超越 24 英寸电脑显示器。如此卓越的性能，自然少不了更新更快的 4G 网络技术 LTE Cat 
+9。这一次，让我们发烧到底！</p>
+                </div>
+            </div>
+        </div>
+        <div class="section section-version">
+            <div class="container">
+                <div class="content">
+                    <h2 class="title">选择更适合你的版本</h2>
+                    <ul class="tab-switch clearfix J_tabSwitch">
+                        <li class="tab tab-active">标准版</li>
+                        <li class="tab">女神版</li>
+                        <li class="tab">顶配版</li>
+                    </ul>
+                    <div class="tab-container">
+                        <div class="tab-content">
+                            <p class="text">标准版有黑色、白色、天然竹三种颜色，分别可选 16GB 或
+ 64GB 高速闪存容量，更大容量可容纳更多照片、电影及音乐。还提供双网通及全网通2种制式版本，双网通版支持移动及联通 4G / 3G / 
+2G网通，全网通版支持移动、联通、电信 4G / 3G / 2G网通。</p>
+                            <img class="product" src="__PUBLIC__/home/images/overall-version-glass.jpg" alt="" height="670" width="800">
+                        </div>
+                        <div class="tab-content hide">
+                            <p class="text">玻璃材质，如初春般的微凉手感。曲面工艺，仿佛女神的玲珑曲线。侧面金属边框喷砂工艺，让触感细腻温润。为如此精致的手机赋予樱花粉，让科技绽放时尚之美。</p>
+                            <img class="product" src="__PUBLIC__/home/images/overall-version-ns.jpg" alt="" height="600">
+                        </div>
+                        <div class="tab-content hide">
+                            <p class="text">小米Note 顶配版几乎采用了目前市面上最高规格的顶级配置，高通骁龙810处理器是目前世界上最快的手机处理器之一，手机领域最新的 LPDDR 4 标准 4GB大内存，5.7英寸 2K 超高清大屏......安兔兔性能测试高达63424分，堪称性能之王。</p>
+                            <img class="product" src="__PUBLIC__/home/images/overall-version-dp.jpg" alt="" height="666" width="534">
+                        </div>
+                    </div>
+                    <ul class="version-list clearfix">
+                        <li>
+                            <div class="version-name">小米Note 标准版 / 女神版</div>
+                            <div class="version-color">黑色、白色、天然竹、粉色可选</div>
+                            <div class="version-price">双网通版： 1999元（16GB） / 2499元（64GB）<br>全网通版： 2099元（16GB）</div>
+                        </li>
+                        <li style="width: 270px;padding-left: 110px;">
+                            <div class="version-name">小米Note 顶配版</div>
+                            <div class="version-color">香槟金色</div>
+                            <div class="version-price">双网通 2999元 | 全网通 3099元</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="section section-next">
+            <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-50b6a64514a90bf5', 'http://www.mi.com/minote/features/', 'pcpid']);" data-stat-id="50b6a64514a90bf5" class="btn-next" href="http://www.mi.com/minote/features/">
+                <span class="content">
+                    <span class="next-title">继续了解 功能 &gt;</span>
+                    <span class="next-detail">双卡双待，1300 万像素光学防抖相机，以及 HiFi 音乐系统，小米Note 不仅是一部手机，更凝聚了全新的顶尖科技。</span>
+                    <img class="next-thumb" src="__PUBLIC__/home/images/overall-next.jpg" alt="" height="300" width="450">
+                </span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div id="J_modalVideo" class="modal modal-video fade hide">
+    <div class="modal-header">
+        <h3><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d9ebfc59390dd848', 'javascript:void(0);', 'pcpid']);" data-stat-id="d9ebfc59390dd848" class="J_videoSwitchTrigger" href="javascript:%20void(0);" data-video="XODcyMjA1MTQw">观看介绍视频</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-7cf22308984b4d69', 'javascript:void(0);', 'pcpid']);" data-stat-id="7cf22308984b4d69" class="J_videoSwitchTrigger" href="javascript:%20void(0);" data-video="XODcyMTc4MTEy">观看外观视频</a></h3>
+        <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-b2460c1b7b1cf44f', '', 'pcpid']);" data-stat-id="b2460c1b7b1cf44f" type="button" data-dismiss="modal" aria-hidden="true" class="close"><i class="iconfont"></i></a>
+        <h3>&nbsp;</h3>
+    </div>
+    <div class="modal-body"></div>
+</div>
+
+</div><div class="site-footer">
+    <div class="container">
+        <div class="footer-service">
+            <ul class="list-service clearfix">
+                            <li><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-6b165acae0a512cf', 'http://www.mi.com/service/exchange#repaire', 'pcpid']);" data-stat-id="6b165acae0a512cf" rel="nofollow" href="http://www.mi.com/service/exchange#repaire" target="_blank"><i class="iconfont"></i>1小时快修服务</a></li>
+                            <li><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-4bcdbd7b49855b21', 'http://www.mi.com/service/exchange#back', 'pcpid']);" data-stat-id="4bcdbd7b49855b21" rel="nofollow" href="http://www.mi.com/service/exchange#back" target="_blank"><i class="iconfont"></i>7天无理由退货</a></li>
+                            <li><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-e801808d1b971db5', 'http://www.mi.com/service/exchange#free', 'pcpid']);" data-stat-id="e801808d1b971db5" rel="nofollow" href="http://www.mi.com/service/exchange#free" target="_blank"><i class="iconfont"></i>15天免费换货</a></li>
+                            <li><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-55d6bb7bcb37832c', 'http://www.mi.com/service/exchange#mail', 'pcpid']);" data-stat-id="55d6bb7bcb37832c" rel="nofollow" href="http://www.mi.com/service/exchange#mail" target="_blank"><i class="iconfont"></i>满150元包邮</a></li>
+                            <li><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-eb10a3b1b392bacf', 'http://www.mi.com/c/service/poststation/', 'pcpid']);" data-stat-id="eb10a3b1b392bacf" rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank"><i class="iconfont"></i>520余家售后网点</a></li>
+                        </ul>
+        </div>
+        <div class="footer-links clearfix">
+            
+            <dl class="col-links col-links-first">
+                <dt>帮助中心</dt>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-e20a1843bdcc6d50', 'http://www.mi.com/service/help_center/guide/', 'pcpid']);" data-stat-id="e20a1843bdcc6d50" rel="nofollow" href="http://www.mi.com/service/help_center/guide/" target="_blank">购物指南</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-cbc83e341928cad2', 'http://www.mi.com/service/help_center/pay/', 'pcpid']);" data-stat-id="cbc83e341928cad2" rel="nofollow" href="http://www.mi.com/service/help_center/pay/" target="_blank">支付方式</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-961c92c727284046', 'http://www.mi.com/service/help_center/delivery/', 'pcpid']);" data-stat-id="961c92c727284046" rel="nofollow" href="http://www.mi.com/service/help_center/delivery/" target="_blank">配送方式</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>服务支持</dt>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-08819f19ea21f3e4', 'http://www.mi.com/service/exchange', 'pcpid']);" data-stat-id="08819f19ea21f3e4" rel="nofollow" href="http://www.mi.com/service/exchange" target="_blank">售后政策</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-5f2408ab3c808aa2', 'http://fuwu.mi.com/', 'pcpid']);" data-stat-id="5f2408ab3c808aa2" rel="nofollow" href="http://fuwu.mi.com/" target="_blank">自助服务</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-18c340c920a278a1', 'http://xiazai.mi.com/', 'pcpid']);" data-stat-id="18c340c920a278a1" rel="nofollow" href="http://xiazai.mi.com/" target="_blank">相关下载</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>小米之家</dt>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-078fe5e483ca402c', 'http://www.mi.com/c/xiaomizhijia/', 'pcpid']);" data-stat-id="078fe5e483ca402c" rel="nofollow" href="http://www.mi.com/c/xiaomizhijia/" target="_blank">小米之家</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-6b28dd256c6ca580', 'http://www.mi.com/c/service/poststation/', 'pcpid']);" data-stat-id="6b28dd256c6ca580" rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank">服务网点</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-ab58b266b5b52950', 'http://service.order.mi.com/mihome/index', 'pcpid']);" data-stat-id="ab58b266b5b52950" rel="nofollow" href="http://service.order.mi.com/mihome/index" target="_blank">预约亲临到店服务</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>关于小米</dt>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-e7dd29b3633d3b9d', 'http://www.mi.com/about', 'pcpid']);" data-stat-id="e7dd29b3633d3b9d" rel="nofollow" href="http://www.mi.com/about" target="_blank">了解小米</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-4307a445f5592adb', 'http://hr.xiaomi.com/', 'pcpid']);" data-stat-id="4307a445f5592adb" rel="nofollow" href="http://hr.xiaomi.com/" target="_blank">加入小米</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-bd03a61dc2a9251e', 'http://www.mi.com/about/contact', 'pcpid']);" data-stat-id="bd03a61dc2a9251e" rel="nofollow" href="http://www.mi.com/about/contact" target="_blank">联系我们</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>关注我们</dt>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-464883aa6e799290', 'http://e.weibo.com/xiaomishouji', 'pcpid']);" data-stat-id="464883aa6e799290" rel="nofollow" href="http://e.weibo.com/xiaomishouji" target="_blank">新浪微博</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-78fdefa9dee561b5', 'http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat', 'pcpid']);" data-stat-id="78fdefa9dee561b5" rel="nofollow" href="http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat" target="_blank">小米部落</a></dd>
+                
+                <dd><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-47539f6570f0da90', '#J_modalWeixin', 'pcpid']);" data-stat-id="47539f6570f0da90" rel="nofollow" href="#J_modalWeixin" data-toggle="modal">官方微信</a></dd>
+                
+            </dl>
+                
+            <div class="col-contact">
+                <p class="phone">400-100-5678</p>
+<p>周一至周日 8:00-18:00<br>（仅收市话费）</p>
+<a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-e71bbbe7c3afda0f', 'http://www.mi.com/service/contact', 'pcpid']);" data-stat-id="e71bbbe7c3afda0f" rel="nofollow" class="btn btn-line-primary btn-small" href="http://www.mi.com/service/contact" target="_blank"><i class="iconfont"></i> 24小时在线客服</a>            </div>
+        </div>
+    </div>
+</div>
+<div class="site-info">
+    <div class="container">
+        <div class="logo ir">小米官网</div>
+        <div class="info-text">
+            <p class="sites"><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-be947df7f4aedaf3', 'http://www.mi.com/index.html', 'pcpid']);" data-stat-id="be947df7f4aedaf3" href="http://www.mi.com/index.html" data-toggle="modal">小米网</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-ed2a0e25c8b0ca2f', 'http://www.miui.com/', 'pcpid']);" data-stat-id="ed2a0e25c8b0ca2f" href="http://www.miui.com/" data-toggle="modal">MIUI</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-826b32c1478a98d5', 'http://www.miliao.com/', 'pcpid']);" data-stat-id="826b32c1478a98d5" href="http://www.miliao.com/" data-toggle="modal">米聊</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-c9d2af1ad828a834', 'http://www.duokan.com/', 'pcpid']);" data-stat-id="c9d2af1ad828a834" href="http://www.duokan.com/" data-toggle="modal">多看书城</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-96f1a8cecc909af2', 'http://www.miwifi.com/', 'pcpid']);" data-stat-id="96f1a8cecc909af2" href="http://www.miwifi.com/" data-toggle="modal">小米路由器</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-4ad42379062eda19', 'http://blog.xiaomi.com/', 'pcpid']);" data-stat-id="4ad42379062eda19" href="http://blog.xiaomi.com/" data-toggle="modal">小米后院</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-dfe0fac59cfb15d9', 'http://xiaomi.tmall.com/', 'pcpid']);" data-stat-id="dfe0fac59cfb15d9" href="http://xiaomi.tmall.com/" data-toggle="modal">小米天猫店</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-c2613d0d3b77ddff', 'http://shop115048570.taobao.com', 'pcpid']);" data-stat-id="c2613d0d3b77ddff" href="http://shop115048570.taobao.com/" data-toggle="modal">小米淘宝直营店</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-2f48f953961c637d', 'http://union.mi.com/', 'pcpid']);" data-stat-id="2f48f953961c637d" href="http://union.mi.com/" data-toggle="modal">小米网盟</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-484969b59fd8d549', 'http://static.mi.com/feedback/', 'pcpid']);" data-stat-id="484969b59fd8d549" href="http://static.mi.com/feedback/" data-toggle="modal">问题反馈</a><span class="sep">|</span><a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-9db137a8e0d5b3dd', '#J_modal-globalSites', 'pcpid']);" data-stat-id="9db137a8e0d5b3dd" href="#J_modal-globalSites" data-toggle="modal">Select Region</a>            </p>
+            <p>©<a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d7577c2c6d9aff60', 'http://www.mi.com/', 'pcpid']);" data-stat-id="d7577c2c6d9aff60" href="http://www.mi.com/" target="_blank" title="mi.com">mi.com</a> 京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号 <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-fc34c079ca0f8423', 'http://c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg', 'pcpid']);" data-stat-id="fc34c079ca0f8423" href="http://c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg" target="_blank">京网文[2014]0059-0009号</a></p>
+        </div>
+        <div class="info-links">
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-3e1533699f264eac', 'https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&amp;ct=df&amp;pa=461082', 'pcpid']);" data-stat-id="3e1533699f264eac" href="https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&amp;ct=df&amp;pa=461082" target="_blank"><img src="__PUBLIC__/home/images/cnnicVerifyseal.png" alt="可信网站"></a>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-9e1604cd6612205c', 'https://search.szfw.org/cert/l/CX20120926001783002010', 'pcpid']);" data-stat-id="9e1604cd6612205c" href="https://search.szfw.org/cert/l/CX20120926001783002010" target="_blank"><img src="__PUBLIC__/home/images/szfwVerifyseal.gif" alt="诚信网站"></a>
+                    <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-b085e50c7ec83104', 'http://www.315online.com.cn/member/315140007.html', 'pcpid']);" data-stat-id="b085e50c7ec83104" href="http://www.315online.com.cn/member/315140007.html" target="_blank"><img src="__PUBLIC__/home/images/save.jpg" alt="网上交易保障中心"></a>
+                </div>
+    </div>
+</div>
+
+<div id="J_modalWeixin" class="modal fade modal-hide modal-weixin" data-width="480" data-height="520">
+        <div class="modal-hd">
+            <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-cfd3189b8a874ba4', '', 'pcpid']);" data-stat-id="cfd3189b8a874ba4" class="close" data-dismiss="modal"><i class="iconfont"></i></a>
+            <h3>小米手机官方微信二维码</h3>
+        </div>
+        <div class="modal-bd">
+            <p style="margin: 0 0 10px;">打开微信，点击右上角的“+”，选择“扫一扫”功能，<br>对准下方二维码即可。</p>
+            <img alt="" src="__PUBLIC__/home/images/qr.png">
+        </div>
+    </div>
+<!-- .modal-weixin END -->
+<div class="modal modal-hide modal-bigtap-queue" id="J_bigtapQueue">
+    <div class="modal-body">
+        <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span>
+        <h3>正在排队，请稍候喔！</h3>
+        <p class="queue-tip">抱歉，目前排队人数较多，导致服务器压力山大，请您耐心排队等待，<br>我们将在稍后告诉您排队结果。</p>
+        <div class="queue-animate">
+            <div id="J_mituWalking" class="mitu-walk"> </div>
+            <div class="animate-mask animate-mask-left"></div>
+            <div class="animate-mask animate-mask-right"></div>
+        </div>
+    </div>
+</div>
+<!-- .xm-dm-queue END -->
+<div id="J_bigtapError" class="modal modal-hide modal-bigtap-error">
+    <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span>
+    <div class="modal-body">
+        <h3>抱歉，网络拥堵无法连接服务器</h3>
+        <p class="error-tip">由于访问人数太多导致服务器压力山大，请您稍后再重试。</p>
+        <p>
+            <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-c148a4197491d5bd', '', 'pcpid']);" data-stat-id="c148a4197491d5bd" class="btn btn-primary" id="J_bigtapRetry">重试</a>
+        </p>
+    </div>
+</div>
+<!-- .xm-dm-error END -->
+<div id="J_modal-globalSites" class="modal fade modal-hide modal-globalSites" data-width="640">
+       <div class="modal-hd">
+            <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d63900908fde14b1', '', 'pcpid']);" data-stat-id="d63900908fde14b1" class="close" data-dismiss="modal"><i class="iconfont"></i></a>
+            <h3>Select Region</h3>
+        </div>
+        <div class="modal-bd">
+            <h3>Welcome to Mi.com</h3>
+            <p class="modal-globalSites-tips">Please select your country or region</p>
+            <p class="modal-globalSites-links clearfix">
+                <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-5983038ffc84af95', 'http://www.mi.com/index.html', 'pcpid']);" data-stat-id="5983038ffc84af95" href="http://www.mi.com/index.html">Mainland China</a>
+                <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d8e4264197de1747', 'http://www.mi.com/hk/', 'pcpid']);" data-stat-id="d8e4264197de1747" href="http://www.mi.com/hk/">Hong Kong</a>
+                <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-e7bd0f4e372c0b29', 'http://www.mi.com/tw/', 'pcpid']);" data-stat-id="e7bd0f4e372c0b29" href="http://www.mi.com/tw/">TaiWan</a>
+                <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-e9c0506f7e4e7161', 'http://www.mi.com/sg/', 'pcpid']);" data-stat-id="e9c0506f7e4e7161" href="http://www.mi.com/sg/">Singapore</a>
+                <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-d6299ad30ec761a8', 'http://www.mi.com/my/', 'pcpid']);" data-stat-id="d6299ad30ec761a8" href="http://www.mi.com/my/">Malaysia</a>
+                <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-22b601cf7b3ada84', 'http://www.mi.com/ph/', 'pcpid']);" data-stat-id="22b601cf7b3ada84" href="http://www.mi.com/ph/">Philippines</a>
+                <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-441d26d4571e10dc', 'http://www.mi.com/in/', 'pcpid']);" data-stat-id="441d26d4571e10dc" href="http://www.mi.com/in/">India</a>
+                <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-88ccf9755c488ec5', 'http://www.mi.com/id/', 'pcpid']);" data-stat-id="88ccf9755c488ec5" href="http://www.mi.com/id/">Indonesia</a>
+                <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-c41d871bf5ddcd95', 'http://br.mi.com/', 'pcpid']);" data-stat-id="c41d871bf5ddcd95" href="http://br.mi.com/">Brasil</a>
+                <a onclick="_msq.push(['trackEvent', '1f81c35c2933fb67-4426c5dac474df5f', 'http://www.mi.com/en/', 'pcpid']);" data-stat-id="4426c5dac474df5f" href="http://www.mi.com/en/">Global Home</a>
+            </p>
+        </div>
+    </div>
+    <script>
+                $(function(){
+
+                    mypic= setInterval(fun,1000);
+
+                    var num=0;
+                    function fun(){    
+                    $('.one').css({display:"none"}).eq(num).css({display:"block",width:"700",height:"700"})
+                    num++;
+                    if(num>3){
+                      num=0;
+                    }
+
+                }
+                })
+
+            </script>
+
+
+
+
+</body></html>

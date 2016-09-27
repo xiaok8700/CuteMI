@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+        <title>填写订单信息</title>
+        <!-- <link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon"> -->
+        <link rel="icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/base.min.css">
+        <script src="__PUBLIC__/home/js/jquery-1.7.2.js"></script>
+         
+        <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/checkout.min.css">
+        <script src='__PUBLIC__/home/js/jquery-1.7.2.js'></script>
+
+        <style>
+            #lean_overlay {
+                position: fixed;
+                z-index:100;
+                top: 0px;
+                left: 0px;
+                height:100%;
+                width:100%;
+                background: #000;
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="site-header site-mini-header">
+            <div class="container">
+                <div class="header-logo">
+                    <a class="logo " href="__MODULE__/index/index" >
+                        <img src="__PUBLIC__/home/images/logo.png">
+                    </a>
+                </div>
+          
+                <div class="topbar-info" id="J_userInfo">   <span>欢迎您：<{$Think.session.username.uname}></span>  <span class="user"><a class="user-name" href="__MODULE__/space/index">个人中心</a></span></div>
+            </div>
+        </div>
+        
+        <div class="page-main">
+            <div class="container">
+                <div class="checkout-box">
+                    <div class="section section-address">
+                        <div class="section-header clearfix">
+                            <h3 class="title">收货地址</h3>
+                            <div class="more">
+                            </div>
+                        </div>
+                        <div class="section-body clearfix" id="J_addressList">
+ <!-----------------------------遍历已有地址开始------------------------------------>                           
+                            <foreach name="add" item="address">
+                            <div class="checked address-item J_addressItem ">
+                                    <!--遍历地址信息-->
+                                    <div class="delete" style='width=10px;height=10px;position:absolute;top:5;right:0;background:gray;font-size:20px'>X
+                                    </div>
+                                    <dl>
+                                        <dt>
+                                        <span class="tag"><{$address.address}></span><br>
+                                        <em class="uname"><{$address.name}></em>
+                                        </dt>
+                                        <dd class="utel">
+                                                        <{$address.mob_phone}> 
+                                        </dd>
+                                        <dd class="uaddress">
+                                            <{$address.is_district}>
+
+                                        </dd>
+                                    </dl>
+
+                              <!--   <div class="actions">
+                                    <input type="radio" name="id" class="xiaomi" value="<{$address.id}>" onclick="update(<{$address.id}>)"> 
+                                </div> -->
+                                 <div class="actions">
+                                    <input type="radio" name="id" class="adresscheck xiaomi" value="<{$address.id}>" data = "<{$address.id}>"> 
+                                </div>
+                            </div>
+                            </foreach> 
+                       
+                           
+ <!-----------------------------遍历已有地址结束------------------------------------>                           
+                                
+ <!-----------------------------跳转添加新地址页面------------------------------------>                           
+                                   
+                            <div class="address-item J_addressItem ">
+                                <!--遍历地址信息-->
+                                <dl>
+
+                                    <dd>
+                                        <a href="__MODULE__/Order/address">添加新地址</a>           
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section section-goods">
+                        <div class="section-header clearfix">
+                            <h3 class="title">商品及优惠券</h3>
+                            <div class="more">
+                                <a href="__MODULE__/cart/index">返回购物车<i class="iconfont"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="section-body">
+ <!-----------------------------商品具体参数------------------------------------>                           
+
+                            <foreach name="shop" item="car">
+                            <ul class="goods-list" id="J_goodsList">
+                                    <li class="clearfix">
+                                        <div class="col col-img">
+                                            <img src="__PUBLIC__/Uploads/<{$car.pic}>" width="30" height="30">
+                                        </div>
+                                        <div class="col col-name">
+                                            <a href="http://item.mi.com/1151100011.html" target="_blank" data-stat-id="35c1cafdce82fa11" onclick="_msq.push([ &amp; #39; trackEvent &amp; #39; , &amp; #39; 50d1f382fadafb8b - 35c1cafdce82fa11 &amp; #39; , &amp; #39; http://item.mi.com/1151100011.html&#39;, &#39;pcpid&#39;]);">
+                                                <{$car.gname}> <{$car.verson}>    <{$car.storage}>  
+                                            </a>
+                                        </div>
+                                        <div class="col col-price">
+                                            <{$car.price}>            
+                                        </div>
+                                        <div class="col col-status">
+
+                                            <{$car.color}> 
+                                        </div>
+                                        <div class="col col-total">
+
+                                            <{$car.buynum}>件
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </foreach>
+                              
+                        </div>
+                    </div>
+                    <form action="__MODULE__/Order/addorder" method="post">
+                        <div class="section section-count clearfix">
+                            <div class="count-actions">
+                                <div class="coupon-trigger" id="J_useCoupon"><i class="iconfont icon-plus"></i>使用优惠券
+                                    <select  id="discount">
+                                        <option value="">——请使用优惠卷——</option>
+                                        <foreach name="coupun" item="coupun">
+                                            <option value="<{$coupun.id}>"><{$coupun.title}></option>
+                                        </foreach>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="money-box" id="J_moneyBox">
+                                <ul>
+                                    <li class="clearfix">
+                                        <label>商品件数：</label>
+                                        <span class="val"><{$count}>种商品</span>
+                                    </li>
+                                    
+                                    <li class="clearfix">
+                                        <label>运费：</label>
+                                        <span class="val"><i id="J_postageVal">0</i>元</span>
+                                    </li>
+
+                                    <li class="clearfix total-price">
+                                        <label>应付总额：</label>
+                                        <span class="val"><em id="J_totalPrice"><{$total}></em>元</span>
+                                    </li>
+
+                                    <li class="clearfix total-price">
+                                        <label>实付总额：</label>
+                                        <span class="val"><em id="actualpay"><{$total}></em>元</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                      
+
+                        <div class="section-bar clearfix">
+                            <div class="fl">
+                                <div class="seleced-address hide" id="J_confirmAddress">
+                                </div>
+                                <div class="big-pro-tip hide J_confirmBigProTip"></div>
+                            </div>
+                            <div class="fr">
+                                <input type="hidden" id = "oid" name="oid" value="">
+                                
+                                <button class="btn btn-primary" id="J_checkoutToPay">去结算</button>
+                            </div>
+                        </div>
+                </form>
+            </div>
+            </div>
+        </div>
+    
+       
+   
+        
+    
+    	
+       
+<include file="http://localhost/CuteMi/index.php/home/product/footer.html" />
+
+<script type="text/JavaScript">
+     $(function(){
+
+            $(".adresscheck").click(function(){
+                var id = $(this).attr("data");
+                $("#oid").val(id);
+            });
+
+
+             //点击删除触发事件
+           $('.delete').click(function(){
+           
+                var del=$(this).parent().children().find('input').val();
+    
+
+                $.ajax({
+                    url:"__MODULE__/Order/delete",     //请求地址
+                    type:"post",             //发送方式
+                    data:{id:del},//请求数据
+                    async:true,             //是否同步
+                    dataType:"json",        //响应数据格式
+                    success:function(data){ //成功回调函数
+                       // console.log(data);
+                       if(data){
+                        location.reload();
+
+                       }
+                    },
+                    error:function(){   //失败回调函数
+                        alert("ajax请求失败！");
+                    }
+                 });
+            });
+
+
+           //使用优惠券时候的价格变化
+            $("#discount").change(function(){
+                  id = $(this).val();
+                 var total = parseInt($("#J_totalPrice").html());
+
+                 // alert(id);
+                 //将数据提交给PHP
+                  $.ajax({
+                        type:"get",
+                        data:"id="+id,
+                        url:"__CONTROLLER__/coupun",
+                        dataType:"text",
+                        success:function(data){
+                           // console.log(data);
+                           var data = parseInt(data);
+                            var num = total-data;
+                            if(num<0){
+                                num = 0;
+                            }
+                            $("#actualpay").html(num);
+                        },
+                     });
+            });
+
+          
+            //点击去结算触发事件
+            $("#J_checkoutToPay").click(function(){
+                 
+                 //判断是否已经选择地址
+                 var check = $(".xiaomi").attr("checked");
+                 if(check == undefined){
+                     alert("请选择地址");
+                     return false;
+                 }
+
+                 var money = $("#actualpay").text();
+                  $.ajax({
+                        type:"get",
+                        data:"money="+money,
+                        url:"__CONTROLLER__/money",
+                        dataType:"text",
+                        success:function(data){
+                          console.log(data);
+
+                        },
+                        async:false,
+                     });
+            });
+             
+     });
+</script>
+
+</body>
+</html>

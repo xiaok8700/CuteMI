@@ -1,0 +1,82 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+header("content-type:text/html;charset=utf-8");
+class CommonController extends Controller {
+
+    public function _initialize(){
+      //echo "#####";
+       if(!$_SESSION['admin_user']['islogin']){
+         $this->error("请先登录!",U("login/index"),3);
+       }
+	   
+		//DUMP($_SESSION);
+		//用户显示列表方法权限判断
+		if(strtolower(CONTROLLER_NAME)=='user' && !in_array(1,$_SESSION["admin_user"]["power"])){
+			//dump($_SESSION["admin_user"]["power"]);
+			$this->error('您没有操作权限',U('Index/right'));
+		}
+		
+		if(strtolower(CONTROLLER_NAME)=='admin' && !in_array(1,$_SESSION["admin_user"]["power"])){
+			//dump($_SESSION["admin_user"]["power"]);
+			$this->error('您没有操作权限',U('Index/right'));
+		}
+		
+		if(strtolower(CONTROLLER_NAME)=='goods' && !in_array(2,$_SESSION["admin_user"]["power"])){
+			
+			$this->error('您没有操作权限',U('Index/right'));
+		}
+		
+		if(strtolower(CONTROLLER_NAME)=='type' && !in_array(2,$_SESSION["admin_user"]["power"])){
+			
+			$this->error('您没有操作权限',U('Index/right'));
+		}
+		
+		if(strtolower(CONTROLLER_NAME)=='attachtype' && !in_array(2,$_SESSION["admin_user"]["power"])){
+			
+			$this->error('您没有操作权限',U('Index/right'));
+		}
+		
+		if(strtolower(CONTROLLER_NAME)=='attach' && !in_array(2,$_SESSION["admin_user"]["power"])){
+			
+			$this->error('您没有操作权限',U('Index/right'));
+		}
+		
+		if(strtolower(CONTROLLER_NAME)=='discuss' && !in_array(2,$_SESSION["admin_user"]["power"])){
+			
+			$this->error('您没有操作权限',U('Index/right'));
+		}
+		
+		if(strtolower(CONTROLLER_NAME)=='order' && !in_array(3,$_SESSION["admin_user"]["power"])){
+			
+			$this->error('您没有操作权限',U('Index/right'));
+		}
+		
+		if(strtolower(CONTROLLER_NAME)=='event' && !in_array(4,$_SESSION["admin_user"]["power"])){
+			
+			$this->error('您没有操作权限',U('Index/right'));
+		} 
+		
+		if(strtolower(CONTROLLER_NAME)=='coupun' && !in_array(4,$_SESSION["admin_user"]["power"])){
+			
+			$this->error('您没有操作权限',U('Index/right'));
+		} 
+		
+		if(strtolower(CONTROLLER_NAME)=='collect' && !in_array(4,$_SESSION["admin_user"]["power"])){
+			
+			$this->error('您没有操作权限',U('Index/right'));
+		} 
+		
+		if(strtolower(CONTROLLER_NAME)=='Integral' && !in_array(4,$_SESSION["admin_user"]["power"])){
+			
+			$this->error('您没有操作权限',U('Index/right'));
+		} 
+		
+		if(strtolower(CONTROLLER_NAME)=='flink' && !in_array(5,$_SESSION["admin_user"]["power"])){
+			
+			$this->error('您没有操作权限',U('Index/right'));
+		}
+    }
+    
+    
+}

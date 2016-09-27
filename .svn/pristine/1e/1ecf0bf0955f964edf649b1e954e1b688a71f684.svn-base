@@ -1,0 +1,13 @@
+<?php
+namespace Home\Model;
+use Think\Model\RelationModel;
+class GoodsModel extends RelationModel{     
+      protected $_link = array(        
+              'collect'=>array(        
+              	'mapping_type'  => self::HAS_ONE,        
+              	'class_name'    => 'collect',        
+              	'foreign_key'   => 'gid',        
+              	'as_fields' => 'state',        
+              	),
+      	);
+  }

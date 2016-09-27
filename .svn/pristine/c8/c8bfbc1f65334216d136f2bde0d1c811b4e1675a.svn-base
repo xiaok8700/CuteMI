@@ -1,0 +1,19 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+class BeforeCartController extends Controller {
+   //首页显示
+    public function index(){
+        
+        $this->display();
+  }
+
+
+    //附件显示
+    public function index2(){
+    	$this->display();
+    }
+
+
+ 
+}

@@ -1,0 +1,42 @@
+<extend name="Space/info"/>
+<block name="main-content">
+
+
+ <div class="span16">
+    <div class="uc-box uc-main-box">
+        <div class="uc-content-box portal-content-box">
+            <div class="box-hd">
+                <h3 class="title">现金账户</h3>
+                <div class="more"></div>
+            </div>
+            <div class="box-bd">
+                <div class="cash-overall clearfix">
+                    <div class="balance">
+						<h2>
+							<img width="70" height="70" src="__PUBLIC__/home/dopasswd/shou.jpg" />
+							<span class="type"><font color="red" size="7">可用现金：&yen;<{$res = M('user_bank')->where($where)->getField('count')}></font></span>
+						</h2>
+					</div>
+                </div>
+					<div>
+						<h2>
+							<a href="__URL__/recharge"><img width="70" height="70" src="__PUBLIC__/home/dopasswd/1.jpg"/></a>
+							<span class="type"><a href="__URL__/recharge" style="font-size:45px;color:orangered">充值</a></span>
+						</h2>
+					</div>
+                <div id="cashList">
+                    <table class="cash-change-list">
+                                                    <tbody><tr>
+                            <td style="text-align:center; color: #b0b0b0;">没有记录可以显示</td>
+                        </tr>
+                                            </tbody></table>
+                                            </div>
+            </div>
+        </div>
+    </div>
+</div>  
+
+
+
+</block>
+<extend name="Space/infofooter" />

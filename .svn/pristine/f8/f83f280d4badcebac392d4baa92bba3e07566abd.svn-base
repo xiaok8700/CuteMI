@@ -1,0 +1,15 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+header("content-type:text/html;charset=utf-8");
+class CommonController extends Controller {
+
+    public function _initialize(){
+      //echo "#####";
+       if(!I("session.islogin")){
+          $this->error("请先登录!",U("login/index"));
+       }
+    }
+    
+    
+}

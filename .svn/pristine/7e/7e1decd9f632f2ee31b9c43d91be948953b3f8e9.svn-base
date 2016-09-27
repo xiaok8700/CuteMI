@@ -1,0 +1,48 @@
+<!doctype html>
+<html>	
+	<head>
+		<title>友链用户列表</title>
+		<meta charset="utf-8">
+		<style>
+			*{
+				list-style-type:none;
+			}
+			h1{
+				text-align:center;
+				color:red;
+			}
+		</style>
+	</head>
+	<body>
+		<table border="1" width="70%" align="center" bordercolor="blue">
+		
+				<h1>友链列表</h1>
+			
+			<tr>
+				<td>友链名</td>
+				<td>友链内容</td>
+				<td>友链状态</td>
+				<td>操作</td>
+			</tr>
+			<!--foreach遍历-->
+			<foreach name="flink" item="val" >    
+			<tr>
+				<td><{$val.name}></td>
+				<td><{$val.href}></td>
+				<td>
+					<span >
+                    <{$val['status']==0?'未上链':''}>  
+                    <{$val['status']==1?'已上链':''}>
+                    <{$val['status']==2?'已下链':''}>
+                	</span>
+           		</td>
+				<td>
+					<a href="__CONTROLLER__/mod/fid/<{$val.fid}>">修改</a>  
+					<a href="__CONTROLLER__/delete/fid/<{$val.fid}>" onclick="return confirm('你真的确定删除吗？')">删除</a>
+					<a href="__CONTROLLER__/add/fid/<{$val.fid}>">添加</a>
+				</td>
+			</tr>
+			</foreach>
+			</table>
+	</body>
+</html>

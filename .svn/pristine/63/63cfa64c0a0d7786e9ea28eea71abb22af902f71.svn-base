@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!-- saved from url=(0093)http://localhost/mishop/index.php/Home/Orders/paying?address_id=4&order_sn=201604101010087246 -->
+<html lang="zh-CN" xml:lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>选择在线支付方式</title>
+<link rel="shortcut icon" href="http://localhost/mishop/Public/Home/Pay/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://localhost/mishop/Public/Home/Pay/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./选择在线支付方式_files/base.min.css">
+
+<link rel="stylesheet" type="text/css" href="./选择在线支付方式_files/pay-confirm.min.css">
+<script type="text/javascript" async="" src="./选择在线支付方式_files/mstr.js">
+</script><script type="text/javascript" async="" src="./选择在线支付方式_files/mstr(1).js"></script>
+<script type="text/javascript" async="" src="./选择在线支付方式_files/mstr(2).js"></script>
+<script type="text/javascript" async="" src="./选择在线支付方式_files/mstr(3).js"></script>
+<script type="text/javascript" async="" src="./选择在线支付方式_files/mstr(4).js"></script>
+<script type="text/javascript" async="" src="./选择在线支付方式_files/unjcV2.js"></script>
+<script type="text/javascript" async="" src="./选择在线支付方式_files/mstr(5).js"></script>
+<script type="text/javascript" async="" src="./选择在线支付方式_files/jquery.statData.min.js"></script>
+<script type="text/javascript" async="" src="./选择在线支付方式_files/xmst.js"></script>
+<script type="text/javascript">
+/*<![CDATA[*/
+var _STAT_HASHNAME="http://my.mi.com/buy/confirm";
+/*]]>*/
+</script></head>
+<body>
+<div class="site-header site-mini-header">
+    <div class="container">
+        <div class="header-logo">
+            <a class="logo " href="http://localhost/mishop/index.php" title="小米官网" data-stat-id="1781d41b6b733f86" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-1781d41b6b733f86&#39;, &#39;http://www.mi.com/index.html&#39;, &#39;pcpid&#39;]);"></a>
+        </div>
+        <div class="header-title" id="J_miniHeaderTitle"><h2>支付订单</h2></div>
+        <div class="topbar-info" id="J_userInfo"><span class="user"><a class="user-name" href="http://my.mi.com/portal" target="_blank" data-stat-id="c469f174155abe00" onclick=""><span class="name"></span><i class="iconfont"></i></a><ul class="user-menu"><li><a href="http://my.mi.com/portal" target="_blank" data-stat-id="281a83d86f7b24f9" onclick="">个人中心</a></li><li><a href="http://order.mi.com/user/comment" target="_blank" data-stat-id="04dda61fe46ba720" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-04dda61fe46ba720&#39;, &#39;http://order.mi.com/user/comment&#39;, &#39;pcpid&#39;]);">评价晒单</a></li><li><a href="http://order.mi.com/user/favorite" target="_blank" data-stat-id="8660c1b13ab1c56b" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-8660c1b13ab1c56b&#39;, &#39;http://order.mi.com/user/favorite&#39;, &#39;pcpid&#39;]);">我的喜欢</a></li><li><a href="http://account.xiaomi.com/" target="_blank" data-stat-id="6c2aba14bc7f649a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6c2aba14bc7f649a&#39;, &#39;http://account.xiaomi.com/&#39;, &#39;pcpid&#39;]);">小米账户</a></li><li><a href="http://order.mi.com/site/logout" data-stat-id="7014141d5b446729" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-7014141d5b446729&#39;, &#39;http://order.mi.com/site/logout&#39;, &#39;pcpid&#39;]);">退出登录</a></li></ul></span><span class="sep">|</span><a class="link link-order" href="http://localhost/mishop/index.php/Home/Space/index.html">我的订单</a></div>
+    </div>
+</div>
+<!-- .site-mini-header END -->
+<script type="text/javascript">
+var _confirmConfig = {
+    order_id:'1150808670004386',
+    safe_tel:'',
+    goods_amount:'78.90'
+};
+</script>
+
+<div class="page-main">
+    <div class="container confirm-box">
+        <form target="_blank" action="http://order.mi.com/buy/confirm?id=1150808670004386#" id="J_payForm" method="post">
+            <div class="section section-order">
+                <div class="order-info clearfix">
+                    <div class="fl">
+                        <h2 class="title">您的订单已提交成功！付款咯～成功付款后，7天发货</h2>
+                        <p class="order-time"></p>
+                        <p class="post-info post-info-hide" id="J_postInfo">
+                                                        收货信息：rew rewq&nbsp;&nbsp;
+                            江苏省 徐州市 新沂市 瓦窑镇;rewrew                                                    </p>
+                    </div>
+                    <div class="fr">
+                        <p class="total">
+                            <span class="money"><em></em></span>
+                        </p>
+                        <a href="javascript:void(0);" class="show-detail" id="J_showDetail" data-stat-id="f6ce11cebe4cd0c7" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-f6ce11cebe4cd0c7&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">订单详情<i class="iconfont"></i></a>
+                    </div>
+                </div>
+                <i class="iconfont icon-right">√</i>
+                <div class="order-detail" style="display: block;">
+                    <ul>
+                        <li class="clearfix">
+                            <div class="label">订单号：</div>
+                            <div class="content">
+                                <span class="order-num">
+                                   201604101010087246                       
+                                </span>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                                                        <div class="label">收货信息：</div>
+                            <div class="content">
+                            rew  rewq&nbsp;&nbsp;
+                            江苏省 徐州市 新沂市 瓦窑镇; rewrew                            </div>
+                                                    </li>
+                        <li class="clearfix">
+                            <div class="label">商品名称：</div>
+                            <div class="content">
+                                小米活塞耳机青春版 黑色<br>小米随身WIFI 白色                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="label">配送时间：</div>
+                            <div class="content">
+                                不限送货时间                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="label">发票信息：</div>
+                            <div class="content">
+                                个人                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <div class="section section-payment">
+                <div class="cash-title" id="J_cashTitle">
+                                        选择以下支付方式付款
+                                    </div>
+
+                <!-- <div class="payment-box">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">最近使用过: </h3>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list J_paymentList">
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="payment-box ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">支付平台</h3>
+                        <span class="desc">（大额支付推荐使用支付宝）</span>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list J_paymentList">
+                           
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="alipay" value="">
+                                <img src="./选择在线支付方式_files/payOnline_zfb.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="unionpay" value="">
+                                <img src="./选择在线支付方式_files/unionpay.png" alt=""></li>
+                            <li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="cft" value="">
+                                <img src="./选择在线支付方式_files/cft.png" alt=""></li><li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="micash" value=""> 
+                                <img src="./选择在线支付方式_files/micash.png" alt=""></li>          
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="payment-box ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">银行借记卡及信用卡</h3>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list payment-list-much J_paymentList">
+                           
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CMB" value="CMB">
+                       
+                            <img src="./选择在线支付方式_files/payOnline_zsyh.png" alt="">
+                          
+                            </li><li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="ICBCB2C" value="ICBCB2C"> 
+                                <img src="./选择在线支付方式_files/payOnline_gsyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CCB" value="CCB"> 
+                                <img src="./选择在线支付方式_files/payOnline_jsyh.png" alt=""></li>
+                            <li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="BOCB2C" value="BOCB2C"> 
+                                <img src="./选择在线支付方式_files/payOnline_zgyh.png" alt=""></li>
+                            <li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="COMM" value="COMM">
+                                <img src="./选择在线支付方式_files/payOnline_jtyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="PSBC-DEBIT" value="PSBC-DEBIT">
+                                <img src="./选择在线支付方式_files/payOnline_youzheng.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="GDB" value="GDB"> 
+                                <img src="./选择在线支付方式_files/payOnline_gfyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="SPDB" value="SPDB">
+                                <img src="./选择在线支付方式_files/payOnline_pufa.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CEBBANK" value="CEBBANK">
+                                <img src="./选择在线支付方式_files/payOnline_gdyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="SPABANK" value="SPABANK">
+                                <img src="./选择在线支付方式_files/payOnline_payh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CIB" value="CIB"> 
+                                <img src="./选择在线支付方式_files/payOnline_xyyh.png" alt=""></li>
+                            <li class="J_bank hide"><input type="radio" name="payOnlineBank" id="CMBC" value="CMBC"> 
+                                <img src="./选择在线支付方式_files/payOnline_msyh.png" alt=""></li><li class="J_bank hide">
+                                <input type="radio" name="payOnlineBank" id="BOB" value="BOB"> <img src="./选择在线支付方式_files/payOnline_bjyh.png" alt=""></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="payment-box payment-box-last ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">快捷支付</h3>
+                        <span class="desc">（支持以下各银行信用卡以及部分银行借记卡）</span>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list  J_paymentList">
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CMB-KQ" value="CMB-KQ"> <img src="./选择在线支付方式_files/payOnline_zsyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="SPABANK-KQ" value="SPABANK-KQ"> <img src="./选择在线支付方式_files/payOnline_payh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CCB-KQ" value="CCB-KQ"> <img src="./选择在线支付方式_files/payOnline_jsyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="ICBCB2C-KQ" value="ICBCB2C-KQ"> <img src="./选择在线支付方式_files/payOnline_gsyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CITIC-KQ" value="CITIC-KQ"> <img src="./选择在线支付方式_files/payOnline_zxyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CEBBANK-KQ" value="CEBBANK-KQ"> <img src="./选择在线支付方式_files/payOnline_gdyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="BOCB2C-KQ" value="BOCB2C-KQ"> <img src="./选择在线支付方式_files/payOnline_zgyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="SRCB-KQ" value="SRCB-KQ"> <img src="./选择在线支付方式_files/payOnline_shncsyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="JSB-KQ" value="JSB-KQ"> <img src="./选择在线支付方式_files/payOnline_jiangsshuyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CMBC-KQ" value="CMBC-KQ"> <img src="./选择在线支付方式_files/payOnline_msyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CIB-KQ" value="CIB-KQ"> <img src="./选择在线支付方式_files/payOnline_xyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="ABC-KQ" value="ABC-KQ"> <img src="./选择在线支付方式_files/payOnline_nyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="SDB-KQ" value="SDB-KQ"> <img src="./选择在线支付方式_files/payOnline_sfyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="HXB-KQ" value="HXB-KQ"> <img src="./选择在线支付方式_files/payOnline_hyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="GDB-KQ" value="GDB-KQ"> <img src="./选择在线支付方式_files/payOnline_gfyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="BOB-KQ" value="BOB-KQ"> <img src="./选择在线支付方式_files/payOnline_bjyh.png" alt=""></li>                        </ul>
+                    </div>
+                </div>
+            </div>
+       </form>
+    </div>
+</div>
+       <form action="http://localhost/mishop/index.php/Home/Pay/pay" method="post">   
+            <input type="hidden" name="order_sn" value="201604101010087246"> 
+          <button>虚拟支付入口</button>
+       
+<div class="modal modal-hide fade modal-alert" id="J_modalAlert">
+    <div class="modal-bd">
+        <div class="text">
+            <h3 id="J_alertMsg"></h3>
+        </div>
+        <div class="actions">
+            <button class="btn btn-primary" data-dismiss="modal">确定</button>
+        </div>
+        <a class="close" data-dismiss="modal" href="javascript: void(0);" data-stat-id="4ed5101f78c9774d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-4ed5101f78c9774d&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i></a>
+    </div>
+</div>        
+<script src="./选择在线支付方式_files/base.min.js"></script>
+<script type="text/javascript" src="./选择在线支付方式_files/payConfirm.min.js"></script>
+	<!--<div id="footer">
+		<div class="header">
+			<div class="header1"><img src="/mishop/Public/Home/images/footer_header.png"></div>
+			<div class="header2"><img src="/mishop/Public/Home/images/fuwu-header-2.jpg"></div>
+		</div>
+		<div class="buttom">
+			<div><img src="/mishop/Public/Home/images/2015-08-11_170038.png"></div>
+
+		</div>
+	</div> -->
+        
+       <!-- <div>
+            <img src="/mishop/Public/Home/images/buttom.png"/>
+        </div>-->
+       
+       <div class="site-footer">
+		<div class="container">
+			<div class="footer-service">
+				<ul class="list-service clearfix">
+					<li>
+						<a rel="nofollow" href="" target="_blank">
+						<i class="iconfont"></i>
+						<strong>1小时快修服务</strong>
+						</a>
+					</li>
+					<li>
+						<a rel="nofollow" href="" target="_blank">
+						<i class="iconfont"></i>
+						<strong>七天无理由退货</strong>
+						</a>
+					</li>
+					<li>
+						<a rel="nofollow" href="" target="_blank">
+						<i class="iconfont"></i>
+						<strong>15天免费换货</strong>
+						</a>
+					</li>
+					<li>
+						<a rel="nofollow" href="" target="_blank">
+						<i class="iconfont"></i>
+						<strong>满150元包邮</strong>
+						</a>
+					</li>
+					<li>
+						<a rel="nofollow" href="" target="_blank">
+						<i class="iconfont"></i>
+						<strong>520余家售后网点</strong>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer-links clearfix">
+				<dl class="col-links col-links-first">
+					<dt>帮助中心</dt>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">购物指南</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">支付方式</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">配送方式</a>
+					</dd>
+				</dl>
+				<dl class="col-links">
+					<dt>服务支持</dt>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">售后政策</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">自助服务</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">相关下载</a>
+					</dd>
+				</dl>
+				<dl class="col-links">
+					<dt>小米之家</dt>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">小米之家</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">服务网点</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">预约亲临到店服务</a>
+					</dd>
+				</dl>
+				<dl class="col-links">
+					<dt>关于小米</dt>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">了解小米</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">加入小米</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">联系我们</a>
+					</dd>
+				</dl>
+				<dl class="col-links">
+					<dt>关注我们</dt>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">新浪微博</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">小米部落</a>
+					</dd>
+					<dd>
+					<a rel="nofollow" href="" target="_blank">官方微信</a>
+					</dd>
+				</dl>
+				<div class="col-contact">
+					<p class="phone">400-100-5678</p>
+					<p>
+					周一至周日 8:00-18:00
+					<br>
+					（仅收市话费）
+					</p>
+					<a rel="nofollow" href="" target="_blank" class="btn btn-primary btn-small">24小时在线客服</a>
+				</div>
+			</div>
+			<div class="footer-info clearfix">
+				<div class="info-text">
+					<p>
+						小米旗下网站：
+						<a href="" target="_blank">小米网</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">MIUI</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">米聊</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">多看书城</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">小米路由器</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">繁體香港</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">繁體台灣</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">English</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">小米后院</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">小米天猫店</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">小米淘宝直营店</a>
+						<span class="sep">|</span>
+						<a href="" target="_blank">小米网盟</a>
+					</p>
+					<p>
+						©
+						<a href="" target="_blank" title="mi.com">mi.com</a>
+						京ICP证110507号 京ICP备10046444号 京公网安备1101080212535号
+						<a href="" target="_blank">京网文[2014]0059-0009号</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+<div id="think_page_trace" style="position: fixed;bottom:0;right:0;font-size:14px;width:100%;z-index: 999999;color: #000;text-align:left;font-family:&#39;微软雅黑&#39;;">
+<div id="think_page_trace_tab" style="display: none;background:white;margin:0;height: 250px;">
+<div id="think_page_trace_tab_tit" style="height:30px;padding: 6px 12px 0;border-bottom:1px solid #ececec;border-top:1px solid #ececec;font-size:16px">
+	    <span style="color: rgb(0, 0, 0); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">基本</span>
+        <span style="color: rgb(153, 153, 153); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">文件</span>
+        <span style="color: rgb(153, 153, 153); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">流程</span>
+        <span style="color: rgb(153, 153, 153); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">错误</span>
+        <span style="color: rgb(153, 153, 153); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">SQL</span>
+        <span style="color: rgb(153, 153, 153); padding-right: 12px; height: 30px; line-height: 30px; display: inline-block; margin-right: 3px; cursor: pointer; font-weight: 700;">调试</span>
+    </div>
+<div id="think_page_trace_tab_cont" style="overflow:auto;height:212px;padding: 0; line-height: 24px">
+		    <div style="display: block;">
+    <ol style="padding: 0; margin:0">
+	<li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">请求信息 : 2016-04-10 10:25:56 HTTP/1.1 GET : /mishop/index.php/Home/Orders/paying?address_id=4&amp;order_sn=201604101010087246</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">运行时间 : 0.0938s ( Load:0.0156s Init:0.0156s Exec:0.0313s Template:0.0313s )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">吞吐率 : 10.66req/s</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">内存开销 : 1,911.09 kb</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">查询信息 : 2 queries 0 writes </li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">文件加载 : 34</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">缓存信息 : 0 gets 0 writes </li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">配置加载 : 124</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">会话信息 : SESSION_ID=vu9dj968fd9sp76iemtm7nl093</li>    </ol>
+    </div>
+        <div style="display: none;">
+    <ol style="padding: 0; margin:0">
+	<li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\index.php ( 1.19 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\ThinkPHP.php ( 4.71 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Think.class.php ( 12.32 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Storage.class.php ( 1.38 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Storage\Driver\File.class.php ( 3.56 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Mode\common.php ( 2.82 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Common\functions.php ( 52.60 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\App\Common\Common\function.php ( 2.33 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Hook.class.php ( 4.02 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\App.class.php ( 13.46 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Dispatcher.class.php ( 15.08 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Route.class.php ( 13.38 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Controller.class.php ( 10.95 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\View.class.php ( 7.96 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\BuildLiteBehavior.class.php ( 3.69 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\ParseTemplateBehavior.class.php ( 3.89 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\ContentReplaceBehavior.class.php ( 1.91 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Conf\convention.php ( 11.18 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\App\Common\Conf\config.php ( 1.59 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Lang\zh-cn.php ( 2.57 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Conf\debug.php ( 1.51 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\App\Home\Conf\config.php ( 0.33 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\ReadHtmlCacheBehavior.class.php ( 5.62 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\App\Home\Controller\OrdersController.class.php ( 9.41 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Model.class.php ( 66.78 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Db.class.php ( 5.69 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php ( 6.96 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Db\Driver.class.php ( 41.26 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Template.class.php ( 28.35 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Template\TagLib\Cx.class.php ( 22.62 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Think\Template\TagLib.class.php ( 9.19 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\App\Runtime\Cache\Home\568d7661e5f8ad9730bc4c70fca599b1.php ( 21.27 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\WriteHtmlCacheBehavior.class.php ( 1.43 KB )</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">C:\wamp\www\mishop\ThinkPHP\Library\Behavior\ShowPageTraceBehavior.class.php ( 5.27 KB )</li>    </ol>
+    </div>
+        <div style="display: none;">
+    <ol style="padding: 0; margin:0">
+	<li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ app_init ] --START--</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ app_init ] --END-- [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ app_begin ] --START--</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ app_begin ] --END-- [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ view_parse ] --START--</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ template_filter ] --START--</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ template_filter ] --END-- [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">Run Behavior\ParseTemplateBehavior [ RunTime:0.015625s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ view_parse ] --END-- [ RunTime:0.015625s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ view_filter ] --START--</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ view_filter ] --END-- [ RunTime:0.000000s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[ app_end ] --START--</li>    </ol>
+    </div>
+        <div style="display: none;">
+    <ol style="padding: 0; margin:0">
+	<li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">[8] Undefined variable: user_list C:\wamp\www\mishop\App\Runtime\Cache\Home\568d7661e5f8ad9730bc4c70fca599b1.php 第 33 行.</li>    </ol>
+    </div>
+        <div style="display: none;">
+    <ol style="padding: 0; margin:0">
+	<li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">SHOW COLUMNS FROM `mi_address` [ RunTime:0.0156s ]</li><li style="border-bottom:1px solid #EEE;font-size:14px;padding:0 12px">SELECT * FROM `mi_address` WHERE `address_id` = 4 LIMIT 1   [ RunTime:0.0000s ]</li>    </ol>
+    </div>
+        <div style="display: none;">
+    <ol style="padding: 0; margin:0">
+	    </ol>
+    </div>
+    </div>
+</div>
+<div id="think_page_trace_close" style="display:none;text-align:right;height:15px;position:absolute;top:10px;right:12px;cursor: pointer;"><img style="vertical-align:top;" src="data:image/gif;base64,R0lGODlhDwAPAJEAAAAAAAMDA////wAAACH/C1hNUCBEYXRhWE1QPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS4wLWMwNjAgNjEuMTM0Nzc3LCAyMDEwLzAyLzEyLTE3OjMyOjAwICAgICAgICAiPiA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPiA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MUQxMjc1MUJCQUJDMTFFMTk0OUVGRjc3QzU4RURFNkEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MUQxMjc1MUNCQUJDMTFFMTk0OUVGRjc3QzU4RURFNkEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDoxRDEyNzUxOUJBQkMxMUUxOTQ5RUZGNzdDNThFREU2QSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoxRDEyNzUxQUJBQkMxMUUxOTQ5RUZGNzdDNThFREU2QSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PgH//v38+/r5+Pf29fTz8vHw7+7t7Ovq6ejn5uXk4+Lh4N/e3dzb2tnY19bV1NPS0dDPzs3My8rJyMfGxcTDwsHAv769vLu6ubi3trW0s7KxsK+urayrqqmop6alpKOioaCfnp2cm5qZmJeWlZSTkpGQj46NjIuKiYiHhoWEg4KBgH9+fXx7enl4d3Z1dHNycXBvbm1sa2ppaGdmZWRjYmFgX15dXFtaWVhXVlVUU1JRUE9OTUxLSklIR0ZFRENCQUA/Pj08Ozo5ODc2NTQzMjEwLy4tLCsqKSgnJiUkIyIhIB8eHRwbGhkYFxYVFBMSERAPDg0MCwoJCAcGBQQDAgEAACH5BAAAAAAALAAAAAAPAA8AAAIdjI6JZqotoJPR1fnsgRR3C2jZl3Ai9aWZZooV+RQAOw=="></div>
+</div>
+<div id="think_page_trace_open" style="height:30px;float:right;text-align: right;overflow:hidden;position:fixed;bottom:0;right:0;color:#000;line-height:30px;cursor:pointer;"><div style="background:#232323;color:#FFF;padding:0 6px;float:right;line-height:30px;font-size:14px">0.0938s </div><img width="30" style="" title="ShowPageTrace" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjVERDVENkZGQjkyNDExRTE5REY3RDQ5RTQ2RTRDQUJCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjVERDVENzAwQjkyNDExRTE5REY3RDQ5RTQ2RTRDQUJCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NURENUQ2RkRCOTI0MTFFMTlERjdENDlFNDZFNENBQkIiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NURENUQ2RkVCOTI0MTFFMTlERjdENDlFNDZFNENBQkIiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5fx6IRAAAMCElEQVR42sxae3BU1Rk/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"></div>
+<script type="text/javascript">
+(function(){
+var tab_tit  = document.getElementById('think_page_trace_tab_tit').getElementsByTagName('span');
+var tab_cont = document.getElementById('think_page_trace_tab_cont').getElementsByTagName('div');
+var open     = document.getElementById('think_page_trace_open');
+var close    = document.getElementById('think_page_trace_close').childNodes[0];
+var trace    = document.getElementById('think_page_trace_tab');
+var cookie   = document.cookie.match(/thinkphp_show_page_trace=(\d\|\d)/);
+var history  = (cookie && typeof cookie[1] != 'undefined' && cookie[1].split('|')) || [0,0];
+open.onclick = function(){
+	trace.style.display = 'block';
+	this.style.display = 'none';
+	close.parentNode.style.display = 'block';
+	history[0] = 1;
+	document.cookie = 'thinkphp_show_page_trace='+history.join('|')
+}
+close.onclick = function(){
+	trace.style.display = 'none';
+this.parentNode.style.display = 'none';
+	open.style.display = 'block';
+	history[0] = 0;
+	document.cookie = 'thinkphp_show_page_trace='+history.join('|')
+}
+for(var i = 0; i < tab_tit.length; i++){
+	tab_tit[i].onclick = (function(i){
+		return function(){
+			for(var j = 0; j < tab_cont.length; j++){
+				tab_cont[j].style.display = 'none';
+				tab_tit[j].style.color = '#999';
+			}
+			tab_cont[i].style.display = 'block';
+			tab_tit[i].style.color = '#000';
+			history[1] = i;
+			document.cookie = 'thinkphp_show_page_trace='+history.join('|')
+		}
+	})(i)
+}
+parseInt(history[0]) && open.click();
+(tab_tit[history[1]] || tab_tit[0]).click();
+})();
+</script>
+</form></body></html>

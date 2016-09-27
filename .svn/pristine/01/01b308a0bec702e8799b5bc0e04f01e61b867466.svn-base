@@ -1,0 +1,5 @@
+<extend name="Space/info"/>
+<block name="main-content">
+<include file="Space/main"/>
+</block>
+

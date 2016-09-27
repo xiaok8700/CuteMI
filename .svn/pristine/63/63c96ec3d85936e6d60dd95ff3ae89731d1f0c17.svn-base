@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html xml:lang="zh-CN" lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>购买小米手机</title>
+<meta name="description" content="小米官网">
+<meta name="keywords" content="小米官网">
+<meta name="viewport" content="width=1226">
+
+<link rel="stylesheet" href="__PUBLIC__/home/css/base.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/phone.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/cart.min.css">
+<script src="__PUBLIC__/home/js/jquery-1.7.2.js"></script>
+<!-- <link rel="stylesheet" href="__PUBLIC__/home/css/my.css">-->
+<!-- <link rel="stylesheet" href="__PUBLIC__/home/css/list.css"> -->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/goods-detail.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/overall.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/product-minote-overall.css">
+
+<style type="text/css">
+    *{
+       margin:0;
+       padding:0;
+       list-style:none;
+    }
+    .nav-child1{
+        width:600px;
+        left:170px;
+        top:80px;
+        height:400px;
+        border-left:1px solid #ccc;
+        border-right:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+        position:absolute;
+        background:white;
+        opacity:0.5;
+        display:none;
+    }
+    
+    .pro{
+        width:120px;
+        height:180px;
+        border:1px solid gray;
+        font-size:16px;
+        text-align:center;
+        margin-top:2;
+        float:left;
+        margin-left:5px;
+        margin-bottom:10px;
+     
+    }
+
+    .nav-item1 a{
+        height:5px;
+    }
+
+     .nav-item a{
+        height:5px;
+    }
+
+    .nav-item a:hover{
+        background:white;
+        color:red;
+
+    }
+
+    #nav a:hover{
+      color:red;
+    }
+
+     #nav1 a:hover{
+      color:red;
+    }
+
+     #nav2 a:hover{
+      color:red;
+    }
+
+    .category-item a:hover{
+       background:gray;
+       font-weight:bold;
+       color:black;
+    }
+    .user-menu li a:hover{
+        color:red;
+    }
+</style>
+</head>
+<body>
+
+<!-------------------------------- 顶部导航 ---------------------------------->
+<div class="site-topbar">
+    <div class="container">
+        <div class="topbar-nav">
+        <a href="__MODULE__/index/index">小米网</a><span class="sep">|</span>
+            <a href="" target="_blank" >MIUI</a><span class="sep">|</span>
+            <a href="" target="_blank" >米聊</a><span class="sep">|</span>
+            <a href="" target="_blank">游戏</a><span class="sep">|</span>
+            <a href="" target="_blank" >多看阅读</a><span class="sep">|</span>
+            <a href="" target="_blank" >小米网移动版</a><span class="sep">|</span>
+            <a href="" target="_blank" >问题反馈</a><span class="sep">|</span>
+        </div>
+        <div class="topbar-cart" id="J_miniCartTrigger">
+            <a class="cart-mini" id="J_miniCartBtn" href="__MODULE__/cart/index" >
+                <i class="iconfont"></i>购物车<span class="cart-mini-num J_cartNum">（<{$num?$num:"0"}>）</span>
+            </a>
+            <div class="cart-menu" id="J_miniCartMenu" >
+              <div class="loading">
+                   <if condition="$Think.session.shopcar eq null">
+                       <div class="loader" background="blue"></div>
+                   <else />
+                       <table style="border:1px solid gray;">
+                      <foreach name="Think.session.shopcar" item="cart">
+                     
+                      <div  style="border:1px solid white;">
+                          <tr  style="border:1px solid gray;">
+                          <div>
+                            <td >
+                               <a href="__MODULE__/cart/index">
+                               <img width="80px" height="80px" src="__PUBLIC__/uploads/<{$cart.pic}>">
+                              </a>
+                            </td>
+                            <td> <{$cart.gname}> </td>
+                            <td> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<{$cart.price}> 元</td>
+                            <td >&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;<{$cart.buynum}> 件&nbsp; &nbsp;</td>
+                          </div>
+                          <tr>
+                      </div>        
+                      </foreach>
+                       </table>   
+                   </if>
+              </div>
+            </div>
+        </div>
+
+        <if condition="$Think.session.username.islogin eq false">
+        <div class="topbar-info" id="J_userInfo">
+            <a class="link" href="__MODULE__/login/index">登录</a><span class="sep">|</span><a class="link" href="__MODULE__/login/register">注册</a>        
+        </div>
+ <!------------------------------- 登陆后的导航栏 ------------------------>
+         <else />
+         <div class="topbar-info" id="J_userInfo">
+            <span class="user">
+                <a class="user-name" href="http://my.mi.com/portal" target="_blank">
+                    <span class="name"><{$Think.session.username.uname}></span>
+                    <i class="iconfont"></i>
+                </a>
+                <ul class="user-menu" style="display: none;">
+                    <li><a href="__MODULE__/space/index" target="_blank">个人中心</a></li>
+                    <li><a href="__MODULE__/space/dis" target="_blank">评价晒单</a></li>
+                    <li><a href="__MODULE__/space/collect" target="_blank">我的喜欢</a></li>
+                    <li><a href="__APP__/Home/Personal/index" target="_blank">小米账户</a></li>
+                    <li><a href="__MODULE__/login/logout">退出登录</a></li>
+                </ul>
+            </span>
+            <span class="sep">|</span>
+            <a class="link link-order" href="__MODULE__/space/allbook" target="_blank">我的订单</a>
+        </div>
+       </if>
+ <!------------------------------- 登陆后的导航栏结束 ------------------------>
+    </div>
+</div>
+
+
+
+
+    <script type="text/javascript">
+        $(function(){
+
+         //二级标题
+            //鼠标移入的时候
+             $(".nav-item1").mouseenter(function(){
+                 var typeid = $(this).attr("typeid");
+                 //console.log(typeid);
+                  $(this).children('div').eq(0).css("display","block").css("opacity","0.9");
+                  $(this).children('div').eq(0).load('__CONTROLLER__/bianli/typeid/'+typeid);
+
+                   //鼠标移出的时候         
+                 $(this).mouseleave(function(){
+                 $(this).children('div').eq(0).css('display', 'none');
+             }); 
+             });   
+
+        
+
+
+        // 点击账号时候触发事件
+         $(".user-name").mouseover(function(){
+             $(".user-menu").css("display","block");
+             //移入子标题时触发事件
+             $(".user-menu").mouseover(function(){
+                $(this).css({display:"block"});
+             });
+
+             // 移出子标题时触发事件
+            $(".user-menu").mouseout(function(){
+                $(this).css("display","none");
+            })
+       });
+        
+
+        // 移出账号时触发事件
+          $(".user-name").mouseout(function(){
+              $(".user-menu").css("display","none"); 
+          });
+        });
+
+          //鼠标移入购物车时候
+          $("#J_miniCartTrigger").mouseover(function(){
+               $("#J_miniCartMenu").css("display","block");
+
+               //鼠标移出购物车时候
+          $(this).mouseout(function(){
+               $("#J_miniCartMenu").css("display","none");
+          })
+
+          });
+          
+
+    </script>
+
+
+
+
+
+
+
+
+

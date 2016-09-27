@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://order.mi.com/buy/confirm?id=1150808670004386 -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta charset="UTF-8">
+    <title>选择在线支付方式</title>
+
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/Pay/base.min.css">
+
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/Pay/pay-confirm.min.css">
+
+</head>
+<body>
+<div class="site-header site-mini-header">
+    <div class="container">
+        <div class="header-logo">
+            <a class="logo " href="__APP__" title="小米官网" ></a>
+        </div>
+        <div class="header-title" id="J_miniHeaderTitle"><h2>支付订单</h2></div>
+        <div class="topbar-info" id="J_userInfo"><span class="user"><a class="user-name" href="#" target="_blank" >
+            <span class="name">         
+
+            </span>
+        <i class="iconfont"></i></a><ul class="user-menu"><li><a href="http://my.mi.com/portal" target="_blank" >个人中心</a></li><li><a href="" target="_blank" >评价晒单</a></li><li><a href="" target="_blank" data-stat-id="8660c1b13ab1c56b" >我的喜欢</a></li><li><a href="http://account.xiaomi.com/" target="_blank" >小米账户</a></li><li><a href="http://order.mi.com/site/logout" >退出登录</a></li></ul></span><span class="sep">|</span><a class="link link-order" href="#    ">我的订单</a></div>
+    </div>
+</div>
+
+
+<div class="page-main">
+    <div class="container confirm-box">
+        <form target="_blank" action="" id="J_payForm" method="post">
+            <div class="section section-order">
+                <div class="order-info clearfix">
+                    <div class="fl">
+                        <h2 class="title">您的订单已提交成功！付款咯～成功付款后，7天发货</h2>
+                        <p class="order-time"></p>
+                        <p class="post-info post-info-hide" id="J_postInfo">
+                                                        收货信息：<{$address.name}> <{$address.mob_phone}>&nbsp;&nbsp;
+                            <{$address.is_district}>;<{$address.address}>                                                    </p>
+                    </div>
+                    <div class="fr">
+                        <p class="total">
+                            <span class="money"><em></em></span>
+                        </p>
+                        <a href="javascript:void(0);" class="show-detail" id="J_showDetail" >订单详情<i class="iconfont"></i></a>
+                    </div>
+                </div>
+                <i class="iconfont icon-right">√</i>
+                <div class="order-detail" style="display: block;">
+                    <ul>
+                        <li class="clearfix">
+                            <div class="label">订单号：</div>
+                            <div class="content">
+                                <span class="order-num">
+                                   <{$or.oid}>                       
+                                </span>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                                                        <div class="label">收货信息:</div>
+                            <div class="content">
+                                <{$or.address}>             收货电话:<{$or.phone}>
+                            </div>
+                                                    </li>
+                        <li class="clearfix">
+                            <foreach name='gname' item='name'>
+                                <div class="label">商品名称：</div>         
+                                <div class="content">
+                                    <{$name}>                       
+                                </div><br>
+                            </foreach>
+                        </li>
+                        
+                        <li class="clearfix">
+                            <div class="label">配送时间：</div>
+                            <div class="content">
+                                不限送货时间                            </div>
+                        </li>
+                        <li class="clearfix">
+                            <div class="label">发票信息：</div>
+                            <div class="content">
+                                个人                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <div class="section section-payment">
+                <div class="cash-title" id="J_cashTitle">
+                                        选择以下支付方式付款
+                                    </div>
+
+                <!-- <div class="payment-box">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">最近使用过: </h3>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list J_paymentList">
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="payment-box ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">支付平台</h3>
+                        <span class="desc">（大额支付推荐使用支付宝）</span>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list J_paymentList">
+                           
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="alipay" value="">
+                                <img src="__PUBLIC__/home/Pay/payOnline_zfb.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="unionpay" value="">
+                                <img src="__PUBLIC__/home/Pay/unionpay.png" alt=""></li>
+                            <li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="cft" value="">
+                                <img src="__PUBLIC__/home/Pay/cft.png" alt=""></li><li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="micash" value=""> 
+                                <img src="__PUBLIC__/home/Pay/micash.png" alt=""></li>          
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="payment-box ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">银行借记卡及信用卡</h3>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list payment-list-much J_paymentList">
+                           
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CMB" value="CMB">
+                       
+                            <img src="__PUBLIC__/home/Pay/payOnline_zsyh.png" alt="">
+                          <form>
+                            </li><li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="ICBCB2C" value="ICBCB2C"> 
+                                <img src="__PUBLIC__/home/Pay/payOnline_gsyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CCB" value="CCB"> 
+                                <img src="__PUBLIC__/home/Pay/payOnline_jsyh.png" alt=""></li>
+                            <li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="BOCB2C" value="BOCB2C"> 
+                                <img src="__PUBLIC__/home/Pay/payOnline_zgyh.png" alt=""></li>
+                            <li class="J_bank">
+                                <input type="radio" name="payOnlineBank" id="COMM" value="COMM">
+                                <img src="__PUBLIC__/home/Pay/payOnline_jtyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="PSBC-DEBIT" value="PSBC-DEBIT">
+                                <img src="__PUBLIC__/home/Pay/payOnline_youzheng.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="GDB" value="GDB"> 
+                                <img src="__PUBLIC__/home/Pay/payOnline_gfyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="SPDB" value="SPDB">
+                                <img src="__PUBLIC__/home/Pay/payOnline_pufa.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CEBBANK" value="CEBBANK">
+                                <img src="__PUBLIC__/home/Pay/payOnline_gdyh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="SPABANK" value="SPABANK">
+                                <img src="__PUBLIC__/home/Pay/payOnline_payh.png" alt=""></li>
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CIB" value="CIB"> 
+                                <img src="__PUBLIC__/home/Pay/payOnline_xyyh.png" alt=""></li>
+                            <li class="J_bank hide"><input type="radio" name="payOnlineBank" id="CMBC" value="CMBC"> 
+                                <img src="__PUBLIC__/home/Pay/payOnline_msyh.png" alt=""></li><li class="J_bank hide">
+                                <input type="radio" name="payOnlineBank" id="BOB" value="BOB"> <img src="__PUBLIC__/home/Pay/payOnline_bjyh.png" alt=""></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="payment-box payment-box-last ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">快捷支付</h3>
+                        <span class="desc">（支持以下各银行信用卡以及部分银行借记卡）</span>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list  J_paymentList">
+                            <li class="J_bank"><input type="radio" name="payOnlineBank" id="CMB-KQ" value="CMB-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_zsyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="SPABANK-KQ" value="SPABANK-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_payh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CCB-KQ" value="CCB-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_jsyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="ICBCB2C-KQ" value="ICBCB2C-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_gsyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CITIC-KQ" value="CITIC-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_zxyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CEBBANK-KQ" value="CEBBANK-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_gdyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="BOCB2C-KQ" value="BOCB2C-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_zgyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="SRCB-KQ" value="SRCB-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_shncsyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="JSB-KQ" value="JSB-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_jiangsshuyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CMBC-KQ" value="CMBC-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_msyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="CIB-KQ" value="CIB-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_xyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="ABC-KQ" value="ABC-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_nyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="SDB-KQ" value="SDB-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_sfyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="HXB-KQ" value="HXB-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_hyyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="GDB-KQ" value="GDB-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_gfyh.png" alt=""></li><li class="J_bank"><input type="radio" name="payOnlineBank" id="BOB-KQ" value="BOB-KQ"> <img src="__PUBLIC__/home/Pay/payOnline_bjyh.png" alt=""></li>                        </ul>
+                    </div>
+                </div>
+            </div>
+       </form>
+    </div>
+</div>
+       <form action="__MODULE__/Pay/pay" method="post">   
+            <input type="hidden" name="ordernum" value="<{$ordernum.ordernum}>"/> 
+          <button>虚拟支付入口</button>
+       <form>
+<div class="modal modal-hide fade modal-alert" id="J_modalAlert">
+    <div class="modal-bd">
+        <div class="text">
+            <h3 id="J_alertMsg"></h3>
+        </div>
+        <div class="actions">
+            <button class="btn btn-primary" data-dismiss="modal">确定</button>
+        </div>
+        <a class="close"  href="javascript: void(0);" ><i class="iconfont"></i></a>
+    </div>
+</div>        
+<!--<script src="__PUBLIC__/home/Pay/base.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/home/Pay/payConfirm.min.js"></script>-->
+<include file="Space/footer" />
+</body>
+</html>

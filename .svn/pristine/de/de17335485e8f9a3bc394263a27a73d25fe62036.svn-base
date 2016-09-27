@@ -1,0 +1,176 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+header('content-type:text/html;charset=utf-8');
+class OrderController extends Controller {
+	//订单选择地址
+    public function index(){
+
+       $address=M('address');
+       $res=$address->where('uid=1')->select();
+       $this->assign('add',$res);
+
+       if($res){
+           // dump($_SESSION);
+          // die;
+        //foreach($_SESSION['shopcar'] as $k=>$v){
+           $arr=$_SESSION['shopcar'];
+            $xiaoji=count($arr);
+           $total=$_SESSION['total'];
+             // dump($arr);
+             // die;
+        // }
+        if(!empty($_SESSION['shopcar'])){
+          $this->assign('shop',$arr);
+           $this->assign('total',$total);
+           $this->assign('count',$xiaoji);
+
+        }
+
+       }
+
+        //优惠券相关操作
+       $uid = $_SESSION["username"]["uid"];
+       $coupun_detail = M("coupun_detail");
+       $res1 = $coupun_detail->where("uid = ".$uid." and status = '0'")->select(); 
+       $this->assign("coupun",$res1);
+
+
+       $this->display();
+
+
+       }
+
+
+  // 添加地址页面
+
+    public function address(){
+      $address=M('address');
+      $res=$address->where('uid=1')->select();
+      $this->assign('addr',$res);
+      
+
+
+      $this->display();
+    }    
+
+  //添加新地址进数据库
+    public function doaddress(){
+      $res = M('district');
+        foreach ($_POST['is_district'] as $v) {
+            $row = $res->find($v);
+            $str2[] = $row['name'];
+        }
+      $do=M('address');
+      $_POST['uid'] = 1;
+      $_POST['is_district'] = implode(' ', $str2);
+
+      $do->create();
+      $list=$do->add();
+      $list ? $this->ajaxReturn($list) : $this->ajaxReturn(0);
+
+
+
+
+    }
+
+    //用户查询地址的详细信息  district
+    public function add() {
+        $data['upid'] = $_POST['upid'] + 0;
+        $address = M('district');
+        $arr = $address->where($data)->select();
+        if ($arr) {
+            $this->ajaxReturn($arr, 'json');
+        }
+    }
+
+    //订单信息插入数据库中
+    public function addorder(){
+      
+      
+      if($_POST){
+        // $_SESSION['post']=$i;
+        // dump($_POST['oid']);
+        $time=date('y/m/d h:i:s',time());
+        $total=$_SESSION['total'];
+        $address=M('address');
+        $a=$address->where('mi_address.id='.$_POST['oid'])->find();
+        $data=array(
+          'uid'=>$a['uid'],
+          'consignee'=> $a['name'],
+          'address' => $a['is_district'].$a['address'],
+          'postcode' => $a['code'],
+          'phone' => $a['mob_phone'],
+          'total' => $total,
+          'addtime' =>$time
+          );
+
+        $order=M('order');
+        $add=$order->data($data)->add();
+        // $_SESSION['oid']=$add;
+        if($add){
+          // $this->redirect('order/pay/oid/{$add}');
+          $this->success('成功',U("Order/pay?oid={$add}"));
+
+        }
+    }
+
+    
+
+
+    }
+    //订单支付成功
+    public function pay(){
+      $oid=$_GET['oid'];
+      // dump($_SESSION);
+      // die;
+      $pay=M('order');
+      $a=$pay->where('oid='.$oid)->find();
+      $address=$a['address'];
+      foreach($_SESSION['shopcar'] as $v){
+        $data=array(
+            'gid' => $v['gid'],
+            'gname' => $v['gname'],
+            'oid' => $oid,
+            'price' => $v['price'],
+            'buynum' => $v['buynum']
+          );
+
+        $detail=M('order_detail');
+        $count=$detail->data($data)->add();
+
+
+
+      };
+      if($count){
+        dump($data);
+        die;
+        $this->display();
+
+      }
+      
+
+    }
+
+    //优惠券处理
+    public function coupun(){
+
+        $id = I("get.id");
+        $coupun_detail = M("coupun_detail");
+        $res = $coupun_detail->where("id = ".$id)->find();
+        //将优惠券金额返回
+        echo $res["num"];
+
+    }
+    
+    //修改优惠券状态
+    // public function modcoupun(){
+    //     $id = I("get.id");
+    //     $coupun_detail = M("coupun_detail");
+    //     $data["status"] = "1";
+    //     $coupun_detail->where("id = ".$id)->data($data)->save();
+        
+
+    // }
+    
+}

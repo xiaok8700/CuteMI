@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://order.mi.com/buy/confirm?id=1160328853078571 -->
+<html lang="zh-CN" xml:lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>选择在线支付方式</title>
+<meta name="viewport" content="width=1226">
+<link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="http://s01.mifile.cn/css/base.min.css?v2016d05">
+<link rel="stylesheet" type="text/css" href="./选择在线支付方式_files/pay-confirm.min.css">
+<script type="text/javascript" async="" src="./选择在线支付方式_files/unjcV2.js"></script><script type="text/javascript" async="" src="./选择在线支付方式_files/mstr.js"></script><script type="text/javascript" async="" src="./选择在线支付方式_files/jquery.statData.min.js"></script><script type="text/javascript" async="" src="./选择在线支付方式_files/xmst.js"></script><script type="text/javascript">
+/*<![CDATA[*/
+var _STAT_HASHNAME="http://my.mi.com/buy/confirm";
+/*]]>*/
+</script></head>
+<body>
+<div class="site-header site-mini-header">
+    <div class="container">
+        <div class="header-logo">
+            <a class="logo " href="http://www.mi.com/index.html" title="小米官网" data-stat-id="ac576a29202325c4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-ac576a29202325c4&#39;, &#39;//www.mi.com/index.html&#39;, &#39;pcpid&#39;]);"></a>
+        </div>
+        <div class="header-title" id="J_miniHeaderTitle"><h2>支付订单</h2></div>
+        <div class="topbar-info" id="J_userInfo"><span class="user"><a class="user-name" href="http://my.mi.com/portal" target="_blank" data-stat-id="a6b1bc186d860417" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-a6b1bc186d860417&#39;, &#39;//my.mi.com/portal&#39;, &#39;pcpid&#39;]);"><span class="name">1061411185</span><i class="iconfont"></i></a><ul class="user-menu"><li><a href="http://my.mi.com/portal" target="_blank" data-stat-id="e0b9e1d1fa8052a2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-e0b9e1d1fa8052a2&#39;, &#39;//my.mi.com/portal&#39;, &#39;pcpid&#39;]);">个人中心</a></li><li><a href="http://order.mi.com/user/comment" target="_blank" data-stat-id="04dda61fe46ba720" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-04dda61fe46ba720&#39;, &#39;http://order.mi.com/user/comment&#39;, &#39;pcpid&#39;]);">评价晒单</a></li><li><a href="http://order.mi.com/user/favorite" target="_blank" data-stat-id="8660c1b13ab1c56b" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-8660c1b13ab1c56b&#39;, &#39;http://order.mi.com/user/favorite&#39;, &#39;pcpid&#39;]);">我的喜欢</a></li><li><a href="http://account.xiaomi.com/" target="_blank" data-stat-id="6c2aba14bc7f649a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6c2aba14bc7f649a&#39;, &#39;http://account.xiaomi.com/&#39;, &#39;pcpid&#39;]);">小米账户</a></li><li><a href="http://order.mi.com/site/logout" data-stat-id="7014141d5b446729" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-7014141d5b446729&#39;, &#39;http://order.mi.com/site/logout&#39;, &#39;pcpid&#39;]);">退出登录</a></li></ul></span><span class="sep">|</span><a class="link link-order" href="http://static.mi.com/order/" target="_blank" data-stat-id="a9e9205e73f0742c" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-a9e9205e73f0742c&#39;, &#39;//static.mi.com/order/&#39;, &#39;pcpid&#39;]);">我的订单</a></div>
+    </div>
+</div>
+<!-- .site-mini-header END -->
+<script type="text/javascript">
+var _confirmConfig = {
+    order_id:'1160328853078571',
+    safe_tel:'',
+    goods_amount:'1594.00'
+};
+</script>
+
+<div class="page-main">
+    <div class="container confirm-box">
+                <form target="_blank" action="http://order.mi.com/buy/confirm?id=1160328853078571#" id="J_payForm" method="post">
+            <div class="section section-order">
+                <div class="order-info clearfix">
+                    <div class="fl">
+                        <h2 class="title">订单提交成功！去付款咯～</h2>
+                        <p class="order-time" id="J_deliverDesc">成功付款后，7天发货</p>
+                        <p class="order-time">请在<span class="pay-time-tip">2小时0分</span>内完成支付, 超时后将取消订单</p>
+                        <p class="post-info" id="J_postInfo">
+                                                        收货信息：大发任务 111****1111 &nbsp;&nbsp;
+                            湖北&nbsp;&nbsp;恩施土家族苗族自治州&nbsp;&nbsp;巴东县&nbsp;&nbsp;问题仍反倒是和官方电话个                                                    </p>
+                    </div>
+                    <div class="fr">
+                        <p class="total">
+                            应付总额：<span class="money"><em>1594.00</em>元</span>
+                        </p>
+                        <a href="javascript:void(0);" class="show-detail" id="J_showDetail" data-stat-id="f6ce11cebe4cd0c7" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-f6ce11cebe4cd0c7&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">订单详情<i class="iconfont"></i></a>
+                    </div>
+                </div>
+                <i class="iconfont icon-right">√</i>
+                <div class="order-detail">
+                    <ul>
+                        <li class="clearfix">
+                            <div class="label">订单号：</div>
+                            <div class="content">
+                                <span class="order-num">
+                                    1160328853078571                                </span>
+                            </div>
+                        </li>
+                        <li class="clearfix">
+                                                        <div class="label">收货信息：</div>
+                            <div class="content">
+                            大发任务 111****1111&nbsp;&nbsp;
+                            湖北&nbsp;&nbsp;恩施土家族苗族自治州&nbsp;&nbsp;巴东县&nbsp;&nbsp;问题仍反倒是和官方电话个                            </div>
+                                                    </li>
+                        <li class="clearfix">
+                            <div class="label">商品名称：</div>
+                            <div class="content">
+                                小米Note HiFi 双网通版 白色 16GB<br>透明超薄软胶保护套 透明<br>必备套装                            </div>
+                        </li>
+                                                <li class="clearfix">
+                            <div class="label">配送时间：</div>
+                            <div class="content">
+                                不限送货时间                            </div>
+                        </li>
+                                                <li class="clearfix">
+                            <div class="label">发票信息：</div>
+                            <div class="content">
+                                个人电子发票                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <div class="section section-payment">
+                <div class="cash-title" id="J_cashTitle">
+                                        选择以下支付方式付款
+                                    </div>
+
+                <!-- <div class="payment-box">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">最近使用过: </h3>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list J_paymentList J_linksign-customize">
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="payment-box ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">支付平台</h3>
+                        <span class="desc">（大额支付推荐使用支付宝）</span>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list J_paymentList J_linksign-customize">
+                                                        <li id="J_alipay" data-stat-id="ecb19ebff89bfe8d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-ecb19ebff89bfe8d&#39;, &#39;&#39;, &#39;pcpid&#39;]);"> <img src="./选择在线支付方式_files/zhifubao_saoma.png" alt="" style="margin-left: 0;"></li>
+                                                        <li class="J_bank" data-stat-id="697962cd4871b27e" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-697962cd4871b27e&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="unionpay" value="unionpay"> <img src="./选择在线支付方式_files/unionpay.png" alt=""></li><li class="J_bank" data-stat-id="f8ac83d702a1fcfd" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-f8ac83d702a1fcfd&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="cft" value="cft"> <img src="./选择在线支付方式_files/cft.png" alt=""></li><li class="J_bank" data-stat-id="c6597ab9a9e0bd00" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-c6597ab9a9e0bd00&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="micash" value="micash"> <img src="./选择在线支付方式_files/micash.png" alt=""></li><li class="J_bank" data-stat-id="a87f620c78db2b2b" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-a87f620c78db2b2b&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="alipay" value="alipay"> <img src="./选择在线支付方式_files/payOnline_zfb.png" alt=""></li>                        </ul>
+                                                <div class="event-desc">
+                                                        <p>支&nbsp;&nbsp;付&nbsp;&nbsp;宝：支付宝扫码支付即可参与赢红包活动，最高300元。</p>
+                                                                                                                <a href="http://www.mi.com/c/payrule/" class="more" target="_blank" data-stat-id="e77b22cecb60b77e" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-e77b22cecb60b77e&#39;, &#39;http://www.mi.com/c/payrule/&#39;, &#39;pcpid&#39;]);">了解更多&gt;</a>
+                        </div>
+                                            </div>
+                </div>
+
+                <div class="payment-box ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">银行借记卡及信用卡</h3>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list payment-list-much J_paymentList J_linksign-customize">
+                            <li class="J_bank" data-stat-id="ab154aed085947cf" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-ab154aed085947cf&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CMB" value="CMB"> <img src="./选择在线支付方式_files/payOnline_zsyh.png" alt=""></li><li class="J_bank" data-stat-id="7998330cbb62eecb" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-7998330cbb62eecb&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="ICBCB2C" value="ICBCB2C"> <img src="./选择在线支付方式_files/payOnline_gsyh.png" alt=""></li><li class="J_bank" data-stat-id="0ca03e76abb984c8" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-0ca03e76abb984c8&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CCB" value="CCB"> <img src="./选择在线支付方式_files/payOnline_jsyh.png" alt=""></li><li class="J_bank" data-stat-id="06de530039da8b38" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-06de530039da8b38&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="ABC" value="ABC"> <img src="./选择在线支付方式_files/payOnline_nyyh.png" alt=""></li><li class="J_bank" data-stat-id="8656db966e93f938" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-8656db966e93f938&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="BOCB2C" value="BOCB2C"> <img src="./选择在线支付方式_files/payOnline_zgyh.png" alt=""></li><li class="J_bank" data-stat-id="248651d06000e2a7" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-248651d06000e2a7&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="COMM" value="COMM"> <img src="./选择在线支付方式_files/payOnline_jtyh.png" alt=""></li><li class="J_bank" data-stat-id="8fa40e5ac268b29e" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-8fa40e5ac268b29e&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="PSBC-DEBIT" value="PSBC-DEBIT"> <img src="./选择在线支付方式_files/payOnline_youzheng.png" alt=""></li><li class="J_bank" data-stat-id="ab2fd7c15b466ad2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-ab2fd7c15b466ad2&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="GDB" value="GDB"> <img src="./选择在线支付方式_files/payOnline_gfyh.png" alt=""></li><li class="J_bank" data-stat-id="a3c47799e97d470d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-a3c47799e97d470d&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="SPDB" value="SPDB"> <img src="./选择在线支付方式_files/payOnline_pufa.png" alt=""></li><li class="J_bank" data-stat-id="56565ba582001f90" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-56565ba582001f90&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CEBBANK" value="CEBBANK"> <img src="./选择在线支付方式_files/payOnline_gdyh.png" alt=""></li><li class="J_bank" data-stat-id="4768ae2336413eb6" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-4768ae2336413eb6&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="SPABANK" value="SPABANK"> <img src="./选择在线支付方式_files/payOnline_payh.png" alt=""></li><li class="J_bank hide" data-stat-id="6eef43a83d87cc0b" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6eef43a83d87cc0b&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CIB" value="CIB"> <img src="./选择在线支付方式_files/payOnline_xyyh.png" alt=""></li><li class="J_bank hide" data-stat-id="c7a05519141a406a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-c7a05519141a406a&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CMBC" value="CMBC"> <img src="./选择在线支付方式_files/payOnline_msyh.png" alt=""></li><li class="J_bank hide" data-stat-id="cf61ac1722da02b2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-cf61ac1722da02b2&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="BOB" value="BOB"> <img src="./选择在线支付方式_files/payOnline_bjyh.png" alt=""></li><li class="J_bank hide" data-stat-id="97f3869e8b59e807" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-97f3869e8b59e807&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CITIC" value="CITIC"> <img src="./选择在线支付方式_files/payOnline_zxyh.png" alt=""></li><li class="J_bank hide" data-stat-id="182a6540a166f721" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-182a6540a166f721&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="SDB" value="SDB"> <img src="./选择在线支付方式_files/payOnline_sfyh.png" alt=""></li><li class="J_bank hide" data-stat-id="0c1fd9edbb2ffdf3" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-0c1fd9edbb2ffdf3&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="SHBANK" value="SHBANK"> <img src="./选择在线支付方式_files/payOnline_shyh.png" alt=""></li><li class="J_bank hide" data-stat-id="e2164be795d58002" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-e2164be795d58002&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="BJRCB" value="BJRCB"> <img src="./选择在线支付方式_files/payOnline_bjnsyh.png" alt=""></li><li class="J_bank hide" data-stat-id="ce440019c46271da" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-ce440019c46271da&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="NBBANK" value="NBBANK"> <img src="./选择在线支付方式_files/payOnline_nbyh.png" alt=""></li><li class="J_bank hide" data-stat-id="fb2ff0b9b59d50a2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-fb2ff0b9b59d50a2&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="HZCBB2C" value="HZCBB2C"> <img src="./选择在线支付方式_files/payOnline_hzyh.png" alt=""></li><li class="J_bank hide" data-stat-id="0205e246484532b1" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-0205e246484532b1&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="SHRCB" value="SHRCB"> <img src="./选择在线支付方式_files/payOnline_shnsyh.png" alt=""></li><li class="J_bank hide" data-stat-id="df10a53afaec338a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-df10a53afaec338a&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="FDB" value="FDB"> <img src="./选择在线支付方式_files/payOnline_fcyh.png" alt=""></li>                            <li class="J_showMore" data-stat-id="825d77d7356ca152" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-825d77d7356ca152&#39;, &#39;&#39;, &#39;pcpid&#39;]);">
+                                <span class="text">查看更多</span>
+                                <span class="text  hide">收起更多</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="payment-box payment-box-last ">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">快捷支付</h3>
+                        <span class="desc">（支持以下各银行信用卡以及部分银行借记卡）</span>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list  J_paymentList J_linksign-customize">
+                            <li class="J_bank" data-stat-id="cf5c79caebd4ce4d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-cf5c79caebd4ce4d&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CMB-KQ" value="CMB-KQ"> <img src="./选择在线支付方式_files/payOnline_zsyh.png" alt=""></li><li class="J_bank" data-stat-id="7659e125813c697e" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-7659e125813c697e&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="SPABANK-KQ" value="SPABANK-KQ"> <img src="./选择在线支付方式_files/payOnline_payh.png" alt=""></li><li class="J_bank" data-stat-id="ac8d246311892220" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-ac8d246311892220&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CCB-KQ" value="CCB-KQ"> <img src="./选择在线支付方式_files/payOnline_jsyh.png" alt=""></li><li class="J_bank" data-stat-id="ee06952bbd4f4d0a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-ee06952bbd4f4d0a&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="ICBCB2C-KQ" value="ICBCB2C-KQ"> <img src="./选择在线支付方式_files/payOnline_gsyh.png" alt=""></li><li class="J_bank" data-stat-id="74411e695cd6624e" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-74411e695cd6624e&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CITIC-KQ" value="CITIC-KQ"> <img src="./选择在线支付方式_files/payOnline_zxyh.png" alt=""></li><li class="J_bank" data-stat-id="6a609f8ffa09ec9d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6a609f8ffa09ec9d&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CEBBANK-KQ" value="CEBBANK-KQ"> <img src="./选择在线支付方式_files/payOnline_gdyh.png" alt=""></li><li class="J_bank" data-stat-id="3f5bfe4137171a90" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-3f5bfe4137171a90&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="BOCB2C-KQ" value="BOCB2C-KQ"> <img src="./选择在线支付方式_files/payOnline_zgyh.png" alt=""></li><li class="J_bank" data-stat-id="b64f8a9b6dd3b75c" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-b64f8a9b6dd3b75c&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="SRCB-KQ" value="SRCB-KQ"> <img src="./选择在线支付方式_files/payOnline_shncsyyh.png" alt=""></li><li class="J_bank" data-stat-id="729ad1d14eee2a2f" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-729ad1d14eee2a2f&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="JSB-KQ" value="JSB-KQ"> <img src="./选择在线支付方式_files/payOnline_jiangsshuyh.png" alt=""></li><li class="J_bank" data-stat-id="9aa4813e4a7fd47c" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-9aa4813e4a7fd47c&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CMBC-KQ" value="CMBC-KQ"> <img src="./选择在线支付方式_files/payOnline_msyh.png" alt=""></li><li class="J_bank" data-stat-id="3420e08efd3d3e67" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-3420e08efd3d3e67&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="CIB-KQ" value="CIB-KQ"> <img src="./选择在线支付方式_files/payOnline_xyyh.png" alt=""></li><li class="J_bank" data-stat-id="61c6b46df23af369" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-61c6b46df23af369&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="ABC-KQ" value="ABC-KQ"> <img src="./选择在线支付方式_files/payOnline_nyyh.png" alt=""></li><li class="J_bank" data-stat-id="b4dc808a450a09da" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-b4dc808a450a09da&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="SDB-KQ" value="SDB-KQ"> <img src="./选择在线支付方式_files/payOnline_sfyh.png" alt=""></li><li class="J_bank" data-stat-id="5c39e922eb18bc68" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-5c39e922eb18bc68&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="HXB-KQ" value="HXB-KQ"> <img src="./选择在线支付方式_files/payOnline_hyyh.png" alt=""></li><li class="J_bank" data-stat-id="adc2b0678ca52fb2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-adc2b0678ca52fb2&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="GDB-KQ" value="GDB-KQ"> <img src="./选择在线支付方式_files/payOnline_gfyh.png" alt=""></li><li class="J_bank" data-stat-id="98be692d1af3737a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-98be692d1af3737a&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input type="radio" name="payOnlineBank" id="BOB-KQ" value="BOB-KQ"> <img src="./选择在线支付方式_files/payOnline_bjyh.png" alt=""></li>                        </ul>
+                    </div>
+                </div>
+            </div>
+                        <div class="section section-installment" id="J_paymentFenqi">
+                <div class="payment-box">
+                    <div class="payment-header clearfix">
+                        <h3 class="title">信用卡分期付款</h3>
+                        <span class="desc">（支持金额在 600~30000元 的订单）</span>
+                    </div>
+                    <div class="payment-body">
+                        <ul class="clearfix payment-list J_paymentList J_linksign-customize J_tabSwitch">
+                            <li class="J_bank fenqi" data-isinstalment="true" data-stat-id="51d1f1c2f3929a84" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-51d1f1c2f3929a84&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input autocomplete="off" type="radio" name="payOnlineBank" id="cmbinstal" value="cmbinstal"> <img src="./选择在线支付方式_files/payOnline_zsyh(1).png" alt=""></li><li class="J_bank fenqi" data-isinstalment="true" data-stat-id="632ea04d66eb9712" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-632ea04d66eb9712&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input autocomplete="off" type="radio" name="payOnlineBank" id="CCB-INSTAL" value="CCB-INSTAL"> <img src="./选择在线支付方式_files/payOnline_jsyh(1).png" alt=""></li><li class="J_bank fenqi" data-isinstalment="true" data-stat-id="7b800eee8de964e2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-7b800eee8de964e2&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input autocomplete="off" type="radio" name="payOnlineBank" id="ICBCB2C-INSTAL" value="ICBCB2C-INSTAL"> <img src="./选择在线支付方式_files/payOnline_gsyh(1).png" alt=""></li><li class="J_bank fenqi" data-isinstalment="true" data-stat-id="70348534b5926f1c" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-70348534b5926f1c&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><input autocomplete="off" type="radio" name="payOnlineBank" id="ABC-INSTAL" value="ABC-INSTAL"> <img src="./选择在线支付方式_files/payOnline_nyyh(1).png" alt=""></li>                        </ul>
+                        <div class="tab-container clearfix isinstalment-box">
+                                                        <div class="tab-content  clearfix">
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>3期 ，每期约 550.46元</h3>
+                                        <p>
+                                           手续费 57.38元，
+                                           共 1651.38元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>3.6%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>57.38元 ≈ 1594.00元 × 3.6%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1651.38元  =  1594.00元（订单应付金额）+  57.38元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>550.46元 = 1651.38元 ÷ 3期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_3" value="3">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                            </div>
+                                </div>
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>6期 ，每期约 278.42元</h3>
+                                        <p>
+                                           手续费 76.51元，
+                                           共 1670.51元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>4.8%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>76.51元 ≈ 1594.00元 × 4.8%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1670.51元  =  1594.00元（订单应付金额）+  76.51元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>278.42元 = 1670.51元 ÷ 6期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_6" value="6">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                            </div>
+                                </div>
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>12期 ，每期约 142.4元</h3>
+                                        <p>
+                                           手续费 114.77元，
+                                           共 1708.77元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>7.2%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>114.77元 ≈ 1594.00元 × 7.2%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1708.77元  =  1594.00元（订单应付金额）+  114.77元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>142.4元 = 1708.77元 ÷ 12期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_12" value="12">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                            </div>
+                                </div>
+                                                            </div>
+                                                        <div class="tab-content  clearfix">
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>3期 ，每期约 539.3元</h3>
+                                        <p>
+                                           手续费 23.91元，
+                                           共 1617.91元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>1.5%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>23.91元 ≈ 1594.00元 × 1.5%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1617.91元  =  1594.00元（订单应付金额）+  23.91元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>539.3元 = 1617.91元 ÷ 3期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_3" value="3">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                            </div>
+                                </div>
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>6期 ，每期约 270.98元</h3>
+                                        <p>
+                                           手续费 31.88元，
+                                           共 1625.88元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>2%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>31.88元 ≈ 1594.00元 × 2%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1625.88元  =  1594.00元（订单应付金额）+  31.88元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>270.98元 = 1625.88元 ÷ 6期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_6" value="6">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                            </div>
+                                </div>
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>12期 ，每期约 138.15元</h3>
+                                        <p>
+                                           手续费 63.76元，
+                                           共 1657.76元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>4%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>63.76元 ≈ 1594.00元 × 4%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1657.76元  =  1594.00元（订单应付金额）+  63.76元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>138.15元 = 1657.76元 ÷ 12期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_12" value="12">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                            </div>
+                                </div>
+                                                            </div>
+                                                        <div class="tab-content  clearfix">
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>3期 ，每期约 537.71元</h3>
+                                        <p>
+                                           手续费 19.13元，
+                                           共 1613.13元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>1.2%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>19.13元 ≈ 1594.00元 × 1.2%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1613.13元  =  1594.00元（订单应付金额）+  19.13元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>537.71元 = 1613.13元 ÷ 3期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_3" value="3">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                            </div>
+                                </div>
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>6期 ，每期约 270.45元</h3>
+                                        <p>
+                                           手续费 28.69元，
+                                           共 1622.69元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>1.8%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>28.69元 ≈ 1594.00元 × 1.8%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1622.69元  =  1594.00元（订单应付金额）+  28.69元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>270.45元 = 1622.69元 ÷ 6期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_6" value="6">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                            </div>
+                                </div>
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>12期 ，每期约 137.62元</h3>
+                                        <p>
+                                           手续费 57.38元，
+                                           共 1651.38元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>3.6%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>57.38元 ≈ 1594.00元 × 3.6%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1651.38元  =  1594.00元（订单应付金额）+  57.38元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>137.62元 = 1651.38元 ÷ 12期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_12" value="12">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                            </div>
+                                </div>
+                                                            </div>
+                                                        <div class="tab-content  clearfix">
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>3期 ，每期约 537.71元</h3>
+                                        <p>
+                                           手续费 19.13元，
+                                           共 1613.13元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>1.2%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>19.13元 ≈ 1594.00元 × 1.2%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1613.13元  =  1594.00元（订单应付金额）+  19.13元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>537.71元 = 1613.13元 ÷ 3期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_3" value="3">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                                    <div style="margin-top:4px;font-size: 12px">
+                                                <span>农行分期暂只支持K宝/K令支付</span>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>6期 ，每期约 271.25元</h3>
+                                        <p>
+                                           手续费 33.47元，
+                                           共 1627.47元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>2.1%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>33.47元 ≈ 1594.00元 × 2.1%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1627.47元  =  1594.00元（订单应付金额）+  33.47元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>271.25元 = 1627.47元 ÷ 6期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_6" value="6">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                                    <div style="margin-top:4px;font-size: 12px">
+                                                <span>农行分期暂只支持K宝/K令支付</span>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                                                <div class="isinstalment-item  clearfix">
+                                    <div class="item-header">
+                                        <h3>12期 ，每期约 138.01元</h3>
+                                        <p>
+                                           手续费 62.17元，
+                                           共 1656.17元
+                                        </p>
+                                    </div>
+                                    <div class="item-body">
+                                        <ul>
+                                            <li class="clearfix">
+                                                <span>手续费率：</span>
+                                                <p>3.9%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>需手续费：</span>
+                                                <p>62.17元 ≈ 1594.00元 × 3.9%</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>实付金额：</span>
+                                                <p>1656.17元  =  1594.00元（订单应付金额）+  62.17元（手续费）</p>
+                                            </li>
+                                            <li class="clearfix">
+                                                <span>每期需付：</span>
+                                                <p>138.01元 = 1656.17元 ÷ 12期</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="item-footer">
+                                        <input type="radio" name="installments" id="installments_cmbinstal_12" value="12">
+                                        <a href="javascript:void(0);" class="btn J_installmentConfirmBtn" data-stat-id="6cba2eb189242213" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6cba2eb189242213&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">选择该分期方式</a>
+                                                                                    <div style="margin-top:4px;font-size: 12px">
+                                                <span>农行分期暂只支持K宝/K令支付</span>
+                                            </div>
+                                                                            </div>
+                                </div>
+                                                            </div>
+                                                    </div>
+                        <div class="isinstalment-desc">
+                            分期付款说明：<br>
+                            每期还款金额是根据你的订单估算得出的金额，实际支付数额请以银行账单为准，银行有权决定是否接受您的分期付款申请。
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    </form>
+    </div>
+</div>
+
+<!--现金账户 提示框-->
+<div class="modal  modal-hide modal-balance-pay" id="J_balancePay">
+    <div class="modal-header">
+        <h3>现金账户安全验证</h3>
+        <span class="close" data-dismiss="modal"><i class="iconfont"></i></span>
+    </div>
+    <div class="modal-body">
+        <p>
+            为了确保您的购物安全<br>
+            已向您当前的联系电话 <span class="num" id="J_cashPayPhone"></span>  发送验证码
+        </p>
+        <div class="form-section">
+            <label class="input-label" for="verifycode">请输入验证码</label>
+            <input class="input-text" type="text" id="verifycode" name="verifycode">
+            <span class="btn btn-block hide" id="J_sendAgain"></span>
+        </div>
+        <div class="tip" id="J_checkCodeTip"></div>
+    </div>
+    <div class="modal-footer">
+         <a class="btn btn-gray" data-dismiss="modal" href="javascript:void(0);" data-stat-id="c893774534c6180e" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-c893774534c6180e&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">取消</a>
+         <a class="btn btn-primary" id="J_checkCodeBtn" href="javascript:void(0);" data-stat-id="aed6a311c6be78e4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-aed6a311c6be78e4&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);">确认</a>
+    </div>
+</div>
+
+<!-- 支付提示框 -->
+<div class="modal fade modal-hide modal-pay-tip" id="J_payTip" aria-hidden="false">
+    <div class="modal-header">
+        <h3>正在支付...</h3>
+        <a class="close" data-dismiss="modal" href="javascript: void(0);" data-stat-id="9158bc031b335ac2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-9158bc031b335ac2&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i></a>
+    </div>
+    <div class="modal-body clearfix">
+        <div class="success">
+            <h4>支付成功了</h4>
+            <p><a href="http://order.mi.com/user/orderView/1160328853078571" data-stat-id="7f10bf733b6fa5aa" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-7f10bf733b6fa5aa&#39;, &#39;http://order.mi.com/user/orderView/1160328853078571&#39;, &#39;pcpid&#39;]);">立即查看订单详情 &gt;</a></p>
+        </div>
+        <div class="fail">
+            <h4>如果支付失败</h4>
+            <p><a href="http://bbs.xiaomi.cn/thread/index/tid/11544653" target="_blank" data-stat-id="32be0169511c71a5" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-32be0169511c71a5&#39;, &#39;http://bbs.xiaomi.cn/thread/index/tid/11544653&#39;, &#39;pcpid&#39;]);">查看支付常见问题 &gt;</a></p>
+        </div>
+    </div>
+</div>
+
+<div class="modal modal-hide fade modal-alert" id="J_modalAlert">
+    <div class="modal-bd">
+        <div class="text">
+            <h3 id="J_alertMsg"></h3>
+        </div>
+        <div class="actions">
+            <button class="btn btn-primary" data-dismiss="modal">确定</button>
+        </div>
+        <a class="close" data-dismiss="modal" href="javascript: void(0);" data-stat-id="4ed5101f78c9774d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-4ed5101f78c9774d&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i></a>
+    </div>
+</div>
+
+<div class="modal modal-hide fade modal-alipay" id="J_modalAlipay">
+    <div class="modal-bd">
+        <div class="loading"><div class="loader"></div></div>
+        <iframe name="alipayQrcodeIframe" scrolling="no" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+    <a class="close" data-dismiss="modal" href="javascript: void(0);" data-stat-id="c556f3fed6708ea5" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-c556f3fed6708ea5&#39;, &#39;javascript:void(0);&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i></a>
+</div>
+
+<div class="deliver-beta hide" id="J_deliverBeta">
+    <p>预计送达时间功能处于测试阶段，若您在下单时已选择“周末送货”或“工作日送货”，则会顺延至您要求的时间，如果发现预计送达时间不准确，期待您的反馈，我们会及时改进。</p>
+    <a href="http://static.mi.com/feedback/" target="_blank" data-stat-id="395cf7a4d2fb285b" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-395cf7a4d2fb285b&#39;, &#39;http://static.mi.com/feedback/&#39;, &#39;pcpid&#39;]);">问题反馈 &gt;</a>
+
+    <i class="arrow arrow-a"></i>
+    <i class="arrow arrow-b"></i>
+</div>        
+<div class="site-footer">
+    <div class="container">
+        <div class="footer-service">
+            <ul class="list-service clearfix">
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#repaire" target="_blank" data-stat-id="da46b3d5586757a4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-da46b3d5586757a4&#39;, &#39;//www.mi.com/service/exchange#repaire&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>1小时快修服务</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#back" target="_blank" data-stat-id="78babcae8a619e26" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-78babcae8a619e26&#39;, &#39;//www.mi.com/service/exchange#back&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>7天无理由退货</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#free" target="_blank" data-stat-id="d1745f68f8d2dad7" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-d1745f68f8d2dad7&#39;, &#39;//www.mi.com/service/exchange#free&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>15天免费换货</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#mail" target="_blank" data-stat-id="f1b5c2451cf73123" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-f1b5c2451cf73123&#39;, &#39;//www.mi.com/service/exchange#mail&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>满150元包邮</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank" data-stat-id="caf836ab93cdfd31" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-caf836ab93cdfd31&#39;, &#39;//www.mi.com/c/service/poststation/&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>520余家售后网点</a></li>
+                        </ul>
+        </div>
+        <div class="footer-links clearfix">
+            
+            <dl class="col-links col-links-first">
+                <dt>帮助中心</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/help_center/guide/" target="_blank" data-stat-id="2458d0d93e3f7386" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-2458d0d93e3f7386&#39;, &#39;//www.mi.com/service/help_center/guide/&#39;, &#39;pcpid&#39;]);">购物指南</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/help_center/pay/" target="_blank" data-stat-id="2109aae4f55e7716" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-2109aae4f55e7716&#39;, &#39;//www.mi.com/service/help_center/pay/&#39;, &#39;pcpid&#39;]);">支付方式</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/help_center/delivery/" target="_blank" data-stat-id="fdf4464071458ade" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-fdf4464071458ade&#39;, &#39;//www.mi.com/service/help_center/delivery/&#39;, &#39;pcpid&#39;]);">配送方式</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>服务支持</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/exchange" target="_blank" data-stat-id="8e282b6f669ba990" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-8e282b6f669ba990&#39;, &#39;//www.mi.com/service/exchange&#39;, &#39;pcpid&#39;]);">售后政策</a></dd>
+                
+                <dd><a rel="nofollow" href="http://fuwu.mi.com/" target="_blank" data-stat-id="5f2408ab3c808aa2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-5f2408ab3c808aa2&#39;, &#39;http://fuwu.mi.com/&#39;, &#39;pcpid&#39;]);">自助服务</a></dd>
+                
+                <dd><a rel="nofollow" href="http://xiazai.mi.com/" target="_blank" data-stat-id="18c340c920a278a1" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-18c340c920a278a1&#39;, &#39;http://xiazai.mi.com/&#39;, &#39;pcpid&#39;]);">相关下载</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>小米之家</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/c/xiaomizhijia/" target="_blank" data-stat-id="b27b566974e4aa67" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-b27b566974e4aa67&#39;, &#39;//www.mi.com/c/xiaomizhijia/&#39;, &#39;pcpid&#39;]);">小米之家</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank" data-stat-id="bdb16d6645c388ac" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-bdb16d6645c388ac&#39;, &#39;//www.mi.com/c/service/poststation/&#39;, &#39;pcpid&#39;]);">服务网点</a></dd>
+                
+                <dd><a rel="nofollow" href="http://service.order.mi.com/mihome/index" target="_blank" data-stat-id="443642eacd664bd9" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-443642eacd664bd9&#39;, &#39;http://service.order.mi.com/mihome/index&#39;, &#39;pcpid&#39;]);">预约服务</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>关于小米</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/about" target="_blank" data-stat-id="f6d386c65b1f4132" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-f6d386c65b1f4132&#39;, &#39;//www.mi.com/about&#39;, &#39;pcpid&#39;]);">了解小米</a></dd>
+                
+                <dd><a rel="nofollow" href="http://hr.xiaomi.com/" target="_blank" data-stat-id="4307a445f5592adb" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-4307a445f5592adb&#39;, &#39;http://hr.xiaomi.com/&#39;, &#39;pcpid&#39;]);">加入小米</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/about/contact" target="_blank" data-stat-id="6842e821365ee45d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6842e821365ee45d&#39;, &#39;//www.mi.com/about/contact&#39;, &#39;pcpid&#39;]);">联系我们</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>关注我们</dt>
+                
+                <dd><a rel="nofollow" href="http://e.weibo.com/xiaomishouji" target="_blank" data-stat-id="464883aa6e799290" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-464883aa6e799290&#39;, &#39;http://e.weibo.com/xiaomishouji&#39;, &#39;pcpid&#39;]);">新浪微博</a></dd>
+                
+                <dd><a rel="nofollow" href="http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat" target="_blank" data-stat-id="78fdefa9dee561b5" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-78fdefa9dee561b5&#39;, &#39;http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat&#39;, &#39;pcpid&#39;]);">小米部落</a></dd>
+                
+                <dd><a rel="nofollow" href="http://order.mi.com/buy/confirm?id=1160328853078571#J_modalWeixin" data-toggle="modal" data-stat-id="47539f6570f0da90" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-47539f6570f0da90&#39;, &#39;#J_modalWeixin&#39;, &#39;pcpid&#39;]);">官方微信</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>特色服务</dt>
+                
+                <dd><a rel="nofollow" href="http://order.mi.com/queue/f2code" target="_blank" data-stat-id="fdc16dd51892a164" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-fdc16dd51892a164&#39;, &#39;//order.mi.com/queue/f2code&#39;, &#39;pcpid&#39;]);">F 码通道</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/mimobile/" target="_blank" data-stat-id="99876c8aaf8ef0a4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-99876c8aaf8ef0a4&#39;, &#39;//www.mi.com/mimobile/&#39;, &#39;pcpid&#39;]);">小米移动</a></dd>
+                
+                <dd><a rel="nofollow" href="http://order.mi.com/misc/checkitem" target="_blank" data-stat-id="b08be6bd51351e1a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-b08be6bd51351e1a&#39;, &#39;//order.mi.com/misc/checkitem&#39;, &#39;pcpid&#39;]);">防伪查询</a></dd>
+                
+            </dl>
+                
+            <div class="col-contact">
+                <p class="phone">400-100-5678</p>
+<p><span class="J_serviceTime-normal" style="
+">周一至周日 8:00-18:00</span>
+<span class="J_serviceTime-holiday" style="display:none;">2月7日至13日服务时间 9:00-18:00</span><br>（仅收市话费）</p>
+<a rel="nofollow" class="btn btn-line-primary btn-small" href="http://www.mi.com/service/contact" target="_blank" data-stat-id="a7642f0a3475d686" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-a7642f0a3475d686&#39;, &#39;//www.mi.com/service/contact&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i> 24小时在线客服</a>            </div>
+        </div>
+    </div>
+</div>
+<div class="site-info">
+    <div class="container">
+        <span class="logo ir">小米官网</span>
+        <div class="info-text">
+            <p>小米旗下网站：<a href="http://www.mi.com/index.html" target="_blank" data-stat-id="4fb589dbb54f257a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-4fb589dbb54f257a&#39;, &#39;//www.mi.com/index.html&#39;, &#39;pcpid&#39;]);">小米网</a><span class="sep">|</span><a href="http://www.miui.com/" target="_blank" data-stat-id="ed2a0e25c8b0ca2f" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-ed2a0e25c8b0ca2f&#39;, &#39;http://www.miui.com/&#39;, &#39;pcpid&#39;]);">MIUI</a><span class="sep">|</span><a href="http://www.miliao.com/" target="_blank" data-stat-id="826b32c1478a98d5" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-826b32c1478a98d5&#39;, &#39;http://www.miliao.com/&#39;, &#39;pcpid&#39;]);">米聊</a><span class="sep">|</span><a href="http://www.duokan.com/" target="_blank" data-stat-id="c9d2af1ad828a834" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-c9d2af1ad828a834&#39;, &#39;http://www.duokan.com/&#39;, &#39;pcpid&#39;]);">多看书城</a><span class="sep">|</span><a href="http://www.miwifi.com/" target="_blank" data-stat-id="96f1a8cecc909af2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-96f1a8cecc909af2&#39;, &#39;http://www.miwifi.com/&#39;, &#39;pcpid&#39;]);">小米路由器</a><span class="sep">|</span><a href="http://call.mi.com/" target="_blank" data-stat-id="347f6dd0d8d9fda3" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-347f6dd0d8d9fda3&#39;, &#39;http://call.mi.com/&#39;, &#39;pcpid&#39;]);">视频电话</a><span class="sep">|</span><a href="http://blog.xiaomi.com/" target="_blank" data-stat-id="4ad42379062eda19" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-4ad42379062eda19&#39;, &#39;http://blog.xiaomi.com/&#39;, &#39;pcpid&#39;]);">小米后院</a><span class="sep">|</span><a href="http://xiaomi.tmall.com/" target="_blank" data-stat-id="dfe0fac59cfb15d9" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-dfe0fac59cfb15d9&#39;, &#39;http://xiaomi.tmall.com/&#39;, &#39;pcpid&#39;]);">小米天猫店</a><span class="sep">|</span><a href="http://shop115048570.taobao.com/" target="_blank" data-stat-id="c2613d0d3b77ddff" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-c2613d0d3b77ddff&#39;, &#39;http://shop115048570.taobao.com&#39;, &#39;pcpid&#39;]);">小米淘宝直营店</a><span class="sep">|</span><a href="http://union.mi.com/" target="_blank" data-stat-id="2f48f953961c637d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-2f48f953961c637d&#39;, &#39;http://union.mi.com/&#39;, &#39;pcpid&#39;]);">小米网盟</a><span class="sep">|</span><a href="http://static.mi.com/feedback/" target="_blank" data-stat-id="6479cd2d041bcf04" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-6479cd2d041bcf04&#39;, &#39;//static.mi.com/feedback/&#39;, &#39;pcpid&#39;]);">问题反馈</a><span class="sep">|</span><a href="http://order.mi.com/buy/confirm?id=1160328853078571#J_modal-globalSites" data-toggle="modal" target="_blank" data-stat-id="9db137a8e0d5b3dd" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-9db137a8e0d5b3dd&#39;, &#39;#J_modal-globalSites&#39;, &#39;pcpid&#39;]);">Select Region</a>            </p>
+            <p>©<a href="http://www.mi.com/" target="_blank" title="mi.com" data-stat-id="836cacd9ca5b75dd" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-836cacd9ca5b75dd&#39;, &#39;//www.mi.com/&#39;, &#39;pcpid&#39;]);">mi.com</a> 京ICP证110507号 京ICP备10046444号 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134" target="_blank" data-stat-id="57efc92272d4336b" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-57efc92272d4336b&#39;, &#39;http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134&#39;, &#39;pcpid&#39;]);">京公网安备11010802020134号 </a><a href="http://c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg" target="_blank" data-stat-id="c5f81675b79eb130" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-c5f81675b79eb130&#39;, &#39;//c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg&#39;, &#39;pcpid&#39;]);">京网文[2014]0059-0009号</a>
+ 违法和不良信息举报电话：185-0130-1238</p>
+        </div>
+        <div class="info-links">
+                    <a href="https://search.szfw.org/cert/l/CX20120926001783002010" target="_blank" data-stat-id="9e1604cd6612205c" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-9e1604cd6612205c&#39;, &#39;https://search.szfw.org/cert/l/CX20120926001783002010&#39;, &#39;pcpid&#39;]);"><img src="./选择在线支付方式_files/v-logo-2.png" alt="诚信网站"></a>
+                    <a href="https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&ct=df&pa=461082" target="_blank" data-stat-id="3e1533699f264eac" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-3e1533699f264eac&#39;, &#39;https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&amp;ct=df&amp;pa=461082&#39;, &#39;pcpid&#39;]);"><img src="./选择在线支付方式_files/v-logo-1.png" alt="可信网站"></a>
+                    <a href="http://www.315online.com.cn/member/315140007.html" target="_blank" data-stat-id="b085e50c7ec83104" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-b085e50c7ec83104&#39;, &#39;http://www.315online.com.cn/member/315140007.html&#39;, &#39;pcpid&#39;]);"><img src="./选择在线支付方式_files/v-logo-3.png" alt="网上交易保障中心"></a>
+        
+        </div>
+    </div>
+    <div class="slogan ir">探索黑科技，小米为发烧而生</div>
+</div>
+
+<div id="J_modalWeixin" class="modal fade modal-hide modal-weixin" data-width="480" data-height="520">
+        <div class="modal-hd">
+            <a class="close" data-dismiss="modal" data-stat-id="cfd3189b8a874ba4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-cfd3189b8a874ba4&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i></a>
+            <h3>小米手机官方微信二维码</h3>
+        </div>
+        <div class="modal-bd">
+            <p style="margin: 0 0 10px;">打开微信，点击右上角的“+”，选择“扫一扫”功能，<br>对准下方二维码即可。</p>
+            <img alt="" src="./选择在线支付方式_files/qr.png" width="375" height="375">
+        </div>
+    </div>
+<!-- .modal-weixin END -->
+<div class="modal modal-hide modal-bigtap-queue" id="J_bigtapQueue">
+    <div class="modal-body">
+        <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span>
+        <h3>正在排队，请稍候喔！</h3>
+        <p class="queue-tip">抱歉，目前排队人数较多，导致服务器压力山大，请您耐心排队等待，<br>我们将在稍后告诉您排队结果。</p>
+        <div class="queue-animate">
+            <div id="J_mituWalking" class="mitu-walk"> </div>
+            <div class="animate-mask animate-mask-left"></div>
+            <div class="animate-mask animate-mask-right"></div>
+        </div>
+    </div>
+</div>
+<!-- .xm-dm-queue END -->
+<div id="J_bigtapError" class="modal modal-hide modal-bigtap-error">
+    <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span>
+    <div class="modal-body">
+        <h3>抱歉，网络拥堵无法连接服务器</h3>
+        <p class="error-tip">由于访问人数太多导致服务器压力山大，请您稍后再重试。</p>
+        <p>
+            <a class="btn btn-primary" id="J_bigtapRetry" data-stat-id="c148a4197491d5bd" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-c148a4197491d5bd&#39;, &#39;&#39;, &#39;pcpid&#39;]);">重试</a>
+        </p>
+    </div>
+</div>
+<!-- .xm-dm-error END -->
+<div id="J_modal-globalSites" class="modal fade modal-hide modal-globalSites" data-width="640">
+       <div class="modal-hd">
+            <a class="close" data-dismiss="modal" data-stat-id="d63900908fde14b1" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-d63900908fde14b1&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i></a>
+            <h3>Select Region</h3>
+        </div>
+        <div class="modal-bd">
+            <h3>Welcome to Mi.com</h3>
+            <p class="modal-globalSites-tips">Please select your country or region</p>
+            <p class="modal-globalSites-links clearfix">
+                <a href="http://www.mi.com/index.html" data-stat-id="51fe807618ae85f4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-51fe807618ae85f4&#39;, &#39;//www.mi.com/index.html&#39;, &#39;pcpid&#39;]);">Mainland China</a>
+                <a href="http://www.mi.com/hk/" data-stat-id="d8e4264197de1747" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-d8e4264197de1747&#39;, &#39;http://www.mi.com/hk/&#39;, &#39;pcpid&#39;]);">Hong Kong</a>
+                <a href="http://www.mi.com/tw/" data-stat-id="e7bd0f4e372c0b29" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-e7bd0f4e372c0b29&#39;, &#39;http://www.mi.com/tw/&#39;, &#39;pcpid&#39;]);">TaiWan</a>
+                <a href="http://www.mi.com/sg/" data-stat-id="e9c0506f7e4e7161" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-e9c0506f7e4e7161&#39;, &#39;http://www.mi.com/sg/&#39;, &#39;pcpid&#39;]);">Singapore</a>
+                <a href="http://www.mi.com/my/" data-stat-id="d6299ad30ec761a8" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-d6299ad30ec761a8&#39;, &#39;http://www.mi.com/my/&#39;, &#39;pcpid&#39;]);">Malaysia</a>
+                <a href="http://www.mi.com/ph/" data-stat-id="22b601cf7b3ada84" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-22b601cf7b3ada84&#39;, &#39;http://www.mi.com/ph/&#39;, &#39;pcpid&#39;]);">Philippines</a>
+                <a href="http://www.mi.com/in/" data-stat-id="441d26d4571e10dc" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-441d26d4571e10dc&#39;, &#39;http://www.mi.com/in/&#39;, &#39;pcpid&#39;]);">India</a>
+                <a href="http://www.mi.com/id/" data-stat-id="88ccf9755c488ec5" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-88ccf9755c488ec5&#39;, &#39;http://www.mi.com/id/&#39;, &#39;pcpid&#39;]);">Indonesia</a>
+                <a href="http://br.mi.com/" data-stat-id="c41d871bf5ddcd95" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-c41d871bf5ddcd95&#39;, &#39;http://br.mi.com/&#39;, &#39;pcpid&#39;]);">Brasil</a>
+                <a href="http://www.mi.com/en/" data-stat-id="4426c5dac474df5f" onclick="_msq.push([&#39;trackEvent&#39;, &#39;192fa45feb8511c1-4426c5dac474df5f&#39;, &#39;http://www.mi.com/en/&#39;, &#39;pcpid&#39;]);">Global Home</a>
+            </p>
+        </div>
+    </div>
+<!-- .modal-globalSites END -->
+
+<script src="./选择在线支付方式_files/base.min.js"></script>
+<script>
+(function() {
+    MI.namespace('GLOBAL_CONFIG');
+    MI.GLOBAL_CONFIG = {
+        orderSite: 'http://order.mi.com',
+        wwwSite: '//www.mi.com',
+        cartSite: '//cart.mi.com',
+        itemSite: '//item.mi.com',
+        assetsSite: '//s01.mifile.cn',
+        listSite: '//list.mi.com',
+        searchSite: '//search.mi.com',
+        mySite: '//my.mi.com',
+        damiaoSite: 'https://tp.hd.mi.com/',
+        damiaoGoodsId:[],
+        logoutUrl: 'http://order.mi.com/site/logout',
+        staticSite: '//static.mi.com',
+        quickLoginUrl: 'https://account.xiaomi.com/pass/static/login.html'
+    };
+    MI.setLoginInfo.orderUrl = MI.GLOBAL_CONFIG.orderSite + '/user/order';
+    MI.setLoginInfo.logoutUrl = MI.GLOBAL_CONFIG.logoutUrl;
+    MI.setLoginInfo.init(MI.GLOBAL_CONFIG);
+    MI.miniCart.init();
+    //MI.updateMiniCart();
+})();
+</script>
+
+<script type="text/javascript" src="./选择在线支付方式_files/payConfirm.min.js"></script>
+
+<script>
+var _msq = _msq || [];
+_msq.push(['setDomainId', 100]);
+_msq.push(['trackPageView']);
+(function() {
+    var ms = document.createElement('script');
+    ms.type = 'text/javascript';
+    ms.async = true;
+    ms.src = '//c1.mifile.cn/f/i/15/stat/js/xmst.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ms, s);
+})();
+</script>
+
+</body></html>

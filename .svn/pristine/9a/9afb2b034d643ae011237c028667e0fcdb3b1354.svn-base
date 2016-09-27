@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<title>附件添加</title>
+		<style type='text/css'>
+		td{
+		text-align:center;
+		height:40px;
+		}
+		</style>
+	</head>
+	<body>
+		<form action="__CONTROLLER__/insert" method="post" enctype="multipart/form-data">
+			<table width='500'>
+				<tr>
+					<td>附件分类:</td>
+					<td>
+					
+						<select  name='attname'  value="">
+						<foreach name='type' item='goo'>
+								<if condition="$goo.pid == 0">
+									<option name='q' disabled=true  value=<{$goo.attname}>><{$goo.attname}></option>
+								<else/>
+									<option name='q'   value=<{$goo.attname}>><{$goo.attname}></option>
+								</if>								
+						</foreach>
+						</select>	
+					
+
+					</if>
+					</td>
+				</tr>
+				<tr>
+					<td>附件名字:</td>
+					<td ><input type="text" name='gname' placeholder="请输入产品名字" value=""></td>
+				</tr>
+				<tr>
+					<td>附件价格:</td>
+					<td><input type="text" name='price' placeholder="请输入附件价格" value="">
+						<!-- <input type='hidden' value="<{$goo.attid}>"> -->
+					</td>
+				</tr>
+				<!-- <tr>
+					<td>附件内存:</td>
+					<td><input type="text" name='storage' placeholder="请输入产品内存" value=""></td>
+				</tr> -->
+				<!-- <tr>
+					<td>附件版本:</td>
+					<td><input type="text" name='verson' placeholder="版本是多少" value=""></td>
+				</tr> -->
+				<tr>
+					<td>附件颜色:</td>
+					<td><input type="text" name='color' placeholder="你喜欢什么颜色" value=""></td>
+				</tr>
+				<tr>
+					<td>附件库存:</td>
+					<td><input type="text" name='store' placeholder="有多少库存呢" value=""></td>
+				</tr>
+				<!-- <tr>
+					<td>关键字:</td>
+					<td><input type="text" name='keywords' placeholder="请输入关键字" value=""></td>
+				</tr> -->
+				<!-- <tr>
+					<td>添加时间:</td>
+					<td><input type="text" placeholder="现在是什么时间呢" name='addtime' value=""></td>
+				</tr> -->
+				<tr>
+					<td>附件图片:</td>
+					<td><input type="file" name='pic' value=""></td>
+					<td><input type="file" name='pic1' value=""></td>
+					<td><input type="file" name='pic2' value=""></td>
+					<td><input type="file" name='pic3' value=""></td>
+
+				</tr>
+				<tr>
+					<td><input type='submit' value='提交'></td>
+					<td><input type="reset" value='重置'></td>
+				</tr>
+
+			</table>
+		</form>
+	</body>
+
+
+</html>

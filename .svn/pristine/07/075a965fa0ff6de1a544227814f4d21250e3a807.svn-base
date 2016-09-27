@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<include file="Space/header" />
+
+<!-- saved from url=(0045)http://order.mi.com/portal?r=23414.1460031691 -->
+<html lang="zh-CN" xml:lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="__PUBLIC__/home/js/unjcV2.js"></script><script type="text/javascript" async="" src="__PUBLIC__/home/js/mstr.js"></script><script type="text/javascript" async="" src="__PUBLIC__/home/js/jquery.statData.min.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>个人中心</title>
+<meta name="viewport" content="width=1226">
+<meta name="description" content="">
+<meta name="keywords" content="小米手机,小米手机官网">
+<link rel="shortcut icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://s01.mifile.cn/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="__PUBLIC__/home/css/base.min.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/main.min.css">
+</head>
+<body>
+
+<div class="page-main user-main">
+    <div class="container">
+        <div class="row">
+            <div class="span4">
+                <div class="uc-box uc-sub-box">
+					<div class="uc-nav-box">
+                        <div class="box-hd">
+                            <h3 class="title">个人中心</h3>
+                        </div>
+                        <div class="box-bd">
+                            <ul class="uc-nav-list">
+                                <li class="active"><a href="__URL__/index">我的个人中心</a></li>
+                                
+                                
+                                <li><a href="__URL__/collect">我的收藏</a></li>
+                          
+                                <li><a href="__URL__/address">收货地址</a></li>
+                            </ul>
+                        </div>
+                    </div>
+				
+                    <div class="uc-nav-box">
+                        <div class="box-hd">
+                            <h3 class="title">订单中心</h3>
+                        </div>
+                        <div class="box-bd">
+                            <ul class="uc-nav-list">
+                                <li><a href="__MODULE__/space/allbook" >我的订单</a></li>
+                               
+                                <li><a href="http://order.mi.com/user/comment?filter=1&r=54960.1460031691">评价晒单</a></li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="uc-nav-box">
+                        <div class="box-hd">
+                            <h3 class="title">账户管理</h3>
+                        </div>
+                        <div class="box-bd">
+                            <ul class="uc-nav-list">
+								<li><a href="__URL__/yen">现金账户</a></li>
+                                <li><a href="__APP__/Home/Personal/index" target="_blank" >个人信息</a></li>
+                                <li><a href="__URL__/dpasswd" target="_blank">修改密码</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<block name="main-content">
+</block>
+      </div>
+    </div>
+</div>
+
+<!-- .modal-globalSites END -->
+
+
+</body></html>

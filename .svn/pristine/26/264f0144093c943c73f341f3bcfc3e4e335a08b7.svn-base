@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)https://account.xiaomi.com/pass/auth/profile/home?userId=909412682 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+        <title>个人信息</title>
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/reset.css">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/layout.css">
+        <link type="text/css" rel="stylesheet" href="__PUBLIC__/home/css/modacctip.css">
+        <script src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+        <script>
+                    $(function(){
+                    $("#editall").toggle(
+                            function(){
+                            $("#editall").html('保存');
+                                    $("#nickname").removeAttr("disabled");
+                                    $("select").removeAttr("disabled");
+                                    // $("#ymd").style.display = "none";
+                                    //$("#fom").style.display = "block";
+                                    $("#ymd").css("display", 'none');
+                                    $("#fom").css("display", 'block');
+                                    //$("#sex").removeAttr('disabled');
+                            },
+                            function(){
+                            var c = $("select").eq(0).val() + $("select").eq(1).val() + $("select").eq(2).val();
+                                    // $("#editall").html(c);
+                                    $.ajax({
+                                    url:'__URL__/update',
+                                            type:'POST',
+                                            data:{nickname:$("#nickname").val(), birth:c, sex:$("input[name='sex']:checked").val()},
+                                            success:function(data){
+                                            if (data == 400){
+                                            alert('修改成功！');
+                                                    window.location.reload()
+                                            } else if (data == 200){
+                                            alert('请求ajax失败！');
+                                            }
+                                            },
+                                            error:function(){},
+                                            timeout:5000
+                                    });
+                                    $("#editall").html('编辑');
+                                    $("#editall").html('保存');
+                                    $("#nickname").attr("disabled");
+                                    $("select").attr("disabled");
+                                    //$("#sex").attr('disabled');
+                            }
+                    );
+                            $("#ava").click(function(){
+                    $("#ava").css("display", "none");
+                            $(".imgwap").css("display", "block");
+                    });
+                    });
+                    function sub(){
+                    $("#ava").css("display", "block");
+                            $(".imgwap").css("display", "none");
+                            window.location.reload();
+                    }
+        </script>
+
+
+        <style type="text/css">
+            /*启用修改头像功能*/
+            .na-img-area:hover .na-edit{
+                display:block;
+                cursor: pointer;
+            }
+            .na-img-area{cursor:default}
+            /*popup的遮层*/
+            .popup_mask{
+                position:fixed;
+                z-index:99;
+                width:100%;
+                height:100%;
+                left:0;
+                top:0;
+                display:none;
+                _position:absolute;
+                _height: 1000px;
+            }
+            .popup_mask .mod_wrap{
+                height: 100%;
+                overflow-y: auto;
+                position: absolute;
+                width: 100%;
+                z-index: 1;
+            }
+            .popup_mask .bkc{
+                position:absolute;
+                width:100%;
+                height:200%;
+                left:0;
+                top:0;
+                background-color:#333;
+                filter: alpha(opacity=70);
+                opacity:0.7;
+            }
+            .popup_mask .mod_acc_tip{
+                display:none;
+                position:absolute;
+                left:50%;
+                margin-left:-206px;
+                top:50%;
+                margin-top:-187px;
+                _top: 500px;
+            }
+            /*剪切图片的水平、垂直居中及模糊*/
+            .clipimg{
+                text-align: left;
+                position: relative;
+            }
+            .clipimg img{
+                max-width:300px;
+                max-height:300px;
+                /*
+                filter: alpha(opacity=70);
+                opacity: .7;
+                */
+                position: absolute;
+            }
+            /*clip部分*/
+            .clipimg .movebox{
+                /*
+                        background-position: 50% 50%;
+                        background-repeat: no-repeat;
+                */
+                border: 1px solid #00aeff;
+            }
+            .uploadimgs{
+                filter: none;
+                opacity: 1;
+            }
+            .clipimg .movebox{
+                width: 98px;
+                height: 98px;
+                z-index:1000;
+                background-image:url(#);
+            }
+            .clipimg .icon_square_rightbot{
+                cursor: se-resize;
+            }
+            /*上传*/
+            #photoUploader .uplodefile{
+                font-size: 45px;
+                *vertical-align: bottom;
+            }
+            ::-webkit-file-upload-button { cursor:pointer; }
+            /*干掉该死的IE6的遮罩问题*/
+            #loadingMask .bkc{
+                _height:2000px;
+            }
+            /*wap*/
+            .bugfix_ie6{ display:block;}	
+
+
+
+        </style>
+    </head>
+    <body class="zh_CN" style="overflow-y: scroll;">
+        <div class="layout bugfix_ie6 dis_none">
+            <div class="n-logo-area clearfix">
+                 <a id="logoutLink" class="fl-r logout" href="__MODULE__/space/index">
+                   &nbsp;&nbsp;  |&nbsp;&nbsp; 返回 
+                </a> 
+                <a id="logoutLink" class="fl-r logout" href="__URL__/layout">
+                    退出
+                </a>
+            </div>
+
+            <!--头像 名字-->
+            <div class="n-account-area-box">
+                <div class="n-account-area clearfix">
+                    <div class="na-info">
+                        <p class="na-name"><{$data.nickname}></p>
+                        <p class="na-num"><{$_SESSION['username']['uid']}></p>
+                    </div>
+                    <div class="na-img-area fl-l">
+                        <div class="na-img-bg-area">
+                            <img src="__ROOT__<{$data.facepic}>" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="layout">
+            <div class="n-main-nav clearfix">
+                <ul>
+                    <li>
+                        <a href="https://account.xiaomi.com/pass/auth/security/home">帐号安全</a>
+                        <em class="n-nav-corner"></em>
+                    </li>
+                    <li class="current">
+                        <a>个人信息</a>
+                        <em class="n-nav-corner"></em>
+                    </li>
+                    <li>
+                        <a href="https://account.xiaomi.com/pass/auth/sns/home">绑定授权</a>
+                        <em class="n-nav-corner"></em>
+                    </li>
+                    <li>
+                        <a href="https://account.xiaomi.com/pass/auth/services/home">小米服务</a>
+                        <em class="n-nav-corner"></em>
+                    </li>
+                </ul>
+            </div>
+            <div class="n-frame device-frame">
+                <div class="uinfo c_b">
+                    <div class="">
+                        <div class="main_l">
+                            <div class="naInfoImgBox t_c">
+                                <div id="ava">
+                                    <div class="na-img-area fl-l">
+                                        <div class="na-img-bg-area">
+                                            <img src="__ROOT__<{$data.facepic}>" />
+                                        </div>
+                                        设置头像
+                                    </div>
+                                </div>
+                                <div class="imgwap" style="display:none">
+                                    <form action="__URL__/upload"  enctype="multipart/form-data" method="post">
+                                        <input type="file" name="picname" />
+                                        <input onclick="sub()" type="submit" value="提交" />
+                                    </form>
+                                </div>
+                            </div>        
+                        </div>
+                        <div class="main_r">
+                            <div class="framedatabox">
+                                <div class="fdata">
+                                    <a class="color4a9 fr" href="" title="编辑" id="editall">编辑</a>
+                                    <h3>基础资料</h3>    
+                                </div>
+                                <div class="fdata lblnickname">
+                                    <p><span>姓名：</span><span class="value">
+                                            <input disabled id="nickname" type="text" name="nickname"	value="<{$data.nickname}>" />
+                                        </span></p>     
+                                </div>
+                                <div class="fdata lblbirthday">
+                                    <p><span>生日：</span> </p> 
+                                    <p id="ymd"> <{$cal.year}>年<{$cal.month}>月<{$cal.day}>日</p>
+                                    <div id="fom" style="display:none">
+                                        <form  name="form1" >
+                                            <select  name=YYYY onchange="YYYYDD(this.value)">
+                                                <option disabled value="" >选择 年</option>
+                                            </select>
+                                            <select  name=MM onchange="MMDD(this.value)">
+                                                <option disabled value="">选择 月</option>
+                                            </select>
+                                            <select  name=DD>
+                                                <option disabled value="">选择 日</option>
+                                            </select>
+                                        </form>	
+                                    </div>
+
+                                </div>
+                                <div class="fdata lblgender">
+                                    <p><span>性别：</span><span class="value">
+
+                                            男<input  id="sex"   type="radio" name="sex" <eq name="data.sex" value="1"> checked </eq> value="1"/>
+                                            女<input id="sex"  type="radio" name="sex" <eq name="data.sex" value="0"> checked </eq> value="0"/>	
+                                        </span></p>     
+                                </div>
+                                <div class="btn_editinfo"><a id="editInfoWap" class="btnadpt bg_normal" href="">编辑基础资料</a></div>
+                            </div>
+                            <div class="framedatabox">
+                                <div class="fdata">
+                                    <h3>高级设置</h3>    
+                                </div>
+                                <div class="fdata click-row">
+                                    <a class="color4a9 fr" target="_blank" href="" >管理</a>              
+                                    <p>
+                                        <span>银行卡</span>					
+                                        <span class="arrow_r"></span>
+                                    </p>     
+                                </div>            
+                                <div class="fdata click-row">
+                                    <a class="color4a9 fr" target="_blank" href="" title="管理" id="switchRegion">修改</a>
+                                    <p>
+                                        <span>帐号地区：  </span>
+                                        <span><em id="region" _code="CN">中国</em><i class="arrow_r"></i></span>
+                                    </p>     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logout_wap">
+                        <a class="btnadpt bg_white" href="#">退出</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="n-footer">
+
+            <div class="faq_link"><a class="a_critical" href="http://static.account.xiaomi.com/html/faq/faqList.html" target="_blank"><em></em>常见问题</a></div>
+
+            <p class="nf-intro"><span>小米公司版权所有-京ICP备10046444-京公网安备1101080212535</span></p>
+            <div class="nf-link-area clearfix">
+                <ul class="lang-select-list">
+                    <li><a href="javascript:void(0)" data-lang="zh_CN" class="current">简体</a>|</li>
+                    <li><a href="javascript:void(0)" data-lang="zh_TW">繁体</a>|</li>
+                    <li><a href="javascript:void(0)" data-lang="en">English</a></li>
+                </ul>
+            </div>
+        </div>
+        <script src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+        <script src="__PUBLIC__/home/js/placeholder.js"></script>
+
+
+        <div class="popup_mask">
+            <div class="bkc"></div>
+
+            <script src="__PUBLIC__/home/js/jquery-1.8.3.min.js"></script>
+            <script src="__PUBLIC__/home/js/oo-min.js"></script>
+            <script src="__PUBLIC__/home/js/l11n.js"></script>
+            <script src="__PUBLIC__/home/js/cookie.js"></script>
+            <script src="__PUBLIC__/home/js/url.js"></script>
+            <script src="__PUBLIC__/home/js/2014.js"></script>
+
+            <script language="JavaScript">
+                                                        <!--
+            function YYYYMMDDstart()
+                                                        {
+                                                        MonHead = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+                                                                //先给年下拉框赋内容
+                                                                var y = new Date().getFullYear();
+                                                                for (var i = (y - 30); i < (y + 30); i++) //以今年为准，前30年，后30年
+                                                                document.form1.YYYY.options.add(new Option(" " + i + " 年", i));
+                                                                //赋月份的下拉框
+                                                                for (var i = 1; i < 13; i++){
+                                                        if (i < 10){
+                                                        i = '0' + i;
+                                                        }
+                                                        document.form1.MM.options.add(new Option(" " + i + " 月", i)); }
+
+                                                        document.form1.YYYY.value = y;
+                                                                document.form1.MM.value = new Date().getMonth() + 1;
+                                                                var n = MonHead[new Date().getMonth()];
+                                                                if (new Date().getMonth() == 1 && IsPinYear(YYYYvalue)) n++;
+                                                                writeDay(n); //赋日期下拉框Author:meizz
+                                                                document.form1.DD.value = new Date().getDate();
+                                                        }
+                                                if (document.attachEvent)
+                                                        window.attachEvent("onload", YYYYMMDDstart);
+                                                        else
+                                                        window.addEventListener('load', YYYYMMDDstart, false);
+                                                        function YYYYDD(str) //年发生变化时日期发生变化(主要是判断闰平年)
+                                                        {
+                                                        var MMvalue = document.form1.MM.options[document.form1.MM.selectedIndex].value;
+                                                                if (MMvalue == ""){ var e = document.form1.DD; optionsClear(e); return; }
+                                                        var n = MonHead[MMvalue - 1];
+                                                                if (MMvalue == 2 && IsPinYear(str)) n++;
+                                                                writeDay(n)
+                                                        }
+                                                function MMDD(str) //月发生变化时日期联动
+                                                {
+                                                var YYYYvalue = document.form1.YYYY.options[document.form1.YYYY.selectedIndex].value;
+                                                        if (YYYYvalue == ""){ var e = document.form1.DD; optionsClear(e); return; }
+                                                var n = MonHead[str - 1];
+                                                        if (str == 2 && IsPinYear(YYYYvalue)) n++;
+                                                        writeDay(n)
+                                                }
+                                                function writeDay(n) //据条件写日期的下拉框
+                                                {
+                                                var e = document.form1.DD; optionsClear(e);
+                                                        for (var i = 1; i < (n + 1); i++){
+                                                if (i < 10){
+                                                i = '0' + i;
+                                                }
+                                                e.options.add(new Option(" " + i + " 日", i)); }
+                                                }
+                                                function IsPinYear(year)//判断是否闰平年
+                                                { return(0 == year % 4 && (year % 100 != 0 || year % 400 == 0)); }
+                                                function optionsClear(e)
+                                                {
+                                                e.options.length = 1;
+                                                }
+-->
+            </script>
+
+
+
+
+            <script>
+
+                                                < style type = "text/css" >
+                                                        /*干掉该死的IE6的遮罩问题*/
+                                                        #loadingMask.bkc{
+                                                        _height:200 % ;
+                                                                }
+                                                < /style>
+                                                        < div id = "img_cache" style = "visibility:hidden;" > < /div>
+
+
+                                                        < /body></html >

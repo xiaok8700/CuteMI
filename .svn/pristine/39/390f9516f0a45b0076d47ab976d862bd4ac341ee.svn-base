@@ -1,0 +1,994 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta charset="utf-8" />
+        <title>小米商城(学习)</title>
+        <meta name="description" content="overview &amp; stats" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+        <link rel="stylesheet" href="/CuteMi/Public/admin/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/CuteMi/Public/admin/assets/font-awesome/4.2.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/CuteMi/Public/admin/assets/fonts/fonts.googleapis.com.css" />
+        <link rel="stylesheet" href="/CuteMi/Public/admin/assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+        <script src="/CuteMi/Public/admin/assets/js/ace-extra.min.js"></script>
+        <script  type="text/javascript"  src="/CuteMi/Public/admin/assets/js/jquery-1.8.3.min.js"></script>
+    </head>
+    <body class="no-skin">
+        <div id="navbar" class="navbar navbar-default">
+    
+            <div class="navbar-container" id="navbar-container">
+                <button type="button" class="navbar-toggle menu-toggler pull-left" id="menu-toggler" data-target="#sidebar">
+                    <span class="sr-only">Toggle sidebar</span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="navbar-header pull-left">
+                    <a href="index.html" class="navbar-brand">
+                        <small>
+                            <i class="fa fa-leaf"></i>
+                            小米商城
+                        </small>
+                    </a>
+                </div>
+
+                <!--头部-->
+                <div class="navbar-buttons navbar-header pull-right" role="navigation">
+                    <ul class="nav ace-nav">
+                       <li class="grey">
+                           <a  class="dropdown-toggle" target="_blank" href="/CuteMi/">
+                               <span class="badge badge-grey">管理首页</span>
+                           </a>
+                       </li>
+
+                        <li class="purple">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <i class="ace-icon fa fa-bell icon-animated-bell"></i>
+                                <span class="badge badge-important">8</span>
+                            </a>
+
+                            <ul class="dropdown-menu-right dropdown-navbar navbar-pink dropdown-menu dropdown-caret dropdown-close">
+                                <li class="dropdown-header">
+                                    <i class="ace-icon fa fa-exclamation-triangle"></i>
+                                    8 Notifications
+                                </li>
+
+
+
+                                <li class="dropdown-footer">
+                                    <a href="#">
+                                        See all notifications
+                                        <i class="ace-icon fa fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="green">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <i class="ace-icon fa fa-envelope icon-animated-vertical"></i>
+                                <span class="badge badge-success">5</span>
+                            </a>
+
+                            <ul class="dropdown-menu-right dropdown-navbar dropdown-menu dropdown-caret dropdown-close">
+                                <li class="dropdown-header">
+                                    <i class="ace-icon fa fa-envelope-o"></i>
+                                    5 Messages
+                                </li>
+
+                                <li class="dropdown-footer">
+                                    <a href="inbox.html">
+                                        See all messages
+                                        <i class="ace-icon fa fa-arrow-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="light-blue">
+                            <a data-toggle="dropdown" href="#" class="dropdown-toggle">
+                                <img src='/CuteMi/Public/<<?php echo ($admin["admin_picname"]); ?>>' width="50" height='45'/>
+                                <span class="user-info">
+                                    <small>欢迎您 </small>
+                                    <<?php echo ($admin['admin_names']); ?>>
+                                </span>
+
+                                <i class="ace-icon fa fa-caret-down"></i>
+                            </a>
+
+                            <ul class="user-menu dropdown-menu-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+                                <li>
+                                    <a href="#">
+                                        <i class="ace-icon fa fa-cog"></i>
+                                        设置
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="profile.html">
+                                        <i class="ace-icon fa fa-user"></i>
+                                        个人信息
+                                    </a>
+                                </li>
+
+                                <li class="divider"></li>
+
+                                <li>
+                                        <a href='<<?php echo U('login/logout');?>>'><i class="ace-icon fa fa-power-off">退出</i></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- /.navbar-container -->
+        </div>
+
+        <div class="main-container" id="main-container">
+            
+            <div id="sidebar" class="sidebar                  responsive">
+              
+
+                <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+                    <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+                        <button class="btn btn-success">
+                            <i class="ace-icon fa fa-signal"></i>
+                        </button>
+
+                        <button class="btn btn-info">
+                            <i class="ace-icon fa fa-pencil"></i>
+                        </button>
+
+                        <button class="btn btn-warning">
+                            <i class="ace-icon fa fa-users"></i>
+                        </button>
+
+                        <button class="btn btn-danger">
+                            <i class="ace-icon fa fa-cogs"></i>
+                        </button>
+                    </div>
+
+                    <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+                        <span class="btn btn-success"></span>
+
+                        <span class="btn btn-info"></span>
+
+                        <span class="btn btn-warning"></span>
+
+                        <span class="btn btn-danger"></span>
+                    </div>
+                </div><!-- /.sidebar-shortcuts -->
+                <!--左侧-->
+                <ul class="nav nav-list">
+                    <li class="active">
+                        <a href="/CuteMi/index.php/Admin">
+                            <i class="menu-icon fa fa-tachometer"></i>
+                            <span class="menu-text"> 控制台 </span>
+                        </a>
+
+                        <b class="arrow"></b>
+                    </li>
+                    <!-- 用户管理 -->
+                    <li id="pow1"  name="pow_p1" style='display:none'>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-desktop"></i>
+                            <span class="menu-text">
+                                用户管理
+                            </span>
+
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    商城用户
+                                    <b class="arrow fa fa-angle-down"></b>
+                                </a>
+
+                                <b class="arrow"></b>
+
+                                <ul class="submenu">
+                                    <li class="">
+                                        <a href="<<?php echo U('User/index');?>>">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            商城用户列表
+                                        </a>
+                                        <b class="arrow"></b>
+                                    </li>
+                                    <li class="">
+                                        <a href="<<?php echo U('User/cel');?>>">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                          回收站
+                                        </a>
+                                        <b class="arrow"></b>
+                                    </li>
+                                </ul>
+                            </li>
+
+
+
+
+                            <li class="">
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    管理员
+                                    <b class="arrow fa fa-angle-down"></b>
+                                </a>
+
+                                <b class="arrow"></b>
+
+                                <ul class="submenu">
+                                    <li class="">
+                                        <a href="<<?php echo U('Admin/index');?>>">
+                                            <i class="menu-icon fa fa-leaf green"></i>
+                                            管理员列表
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                    <li class="">
+                                        <a href="<<?php echo U('Admin/add');?>>">
+                                            <i class="menu-icon fa fa-leaf green"></i>
+                                            添加管理员
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 商品分类-->
+                    <li class="">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-list"></i>
+                            <span class="menu-text"> 商品分类 </span>
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="" >
+                                <a href="<<?php echo U('Type/index');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    分类管理
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+
+                            <li class="">
+                                <a href="<<?php echo U('Type/add');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    添加分类
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+
+                            <li class="">
+                                <a href="<<?php echo U('Type/recycle');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    回收站
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                    </li>
+                   <!--商品附件-->
+                    <li class="">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-list"></i>
+                            <span class="menu-text"> 附件管理 </span>
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="menu-icon fa fa-list"></i>
+                                    <span class="menu-text"> 附件分类 </span>
+                                    <b class="arrow fa fa-angle-down"></b>
+                                </a>
+
+
+                                <ul class="submenu">
+                                    <li class="">
+                                        <a href="<<?php echo U('AccType/index');?>>">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            分类列表
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                     <li class="">
+                                        <a href="<<?php echo U('AccType/add');?>>">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            添加分类
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                      <li class="">
+                                        <a href="<<?php echo U('AccType/recycle');?>>">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            回收站
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                         <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="menu-icon fa fa-list"></i>
+                                    <span class="menu-text"> 附件管理</span>
+                                    <b class="arrow fa fa-angle-down"></b>
+                                </a>
+
+                                <ul class="submenu">
+                                    <li class="">
+                                        <a href="<<?php echo U('Accessory/index');?>>">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            附件列表
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                     <li class="">
+                                        <a href="<<?php echo U('Accessory/append');?>>">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            添加附件
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                    <li class="">
+                                        <a href="<<?php echo U('Accessory/recycle');?>>">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            回收站
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </li>
+                   <!--商品管理-->
+                    <li  id="pow2"  name="pow_p2" style='display:none'>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-pencil-square-o"></i>
+                            <span class="menu-text"> 商品管理 </span>
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Commodity/index');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    商品列表
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+
+                            <li class="">
+                                <a href="<<?php echo U('Commodity/append');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    添加商品
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+
+                            <li>
+                                <a href="<<?php echo U('Goodsdetai/index');?>>">
+                                    <i class="icon-double-angle-right"></i>
+                                    商品详情(性能)编辑
+                                </a>
+                                <b class="arrow"></b>
+                            </li>
+
+                            <li class="">
+                                <a href="<<?php echo U('Commodity/recycle');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    商品回收站
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                    </li>
+                    <li  id="pow3"  name="pow_p3" style='display:none'>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-list"></i>
+                            <span class="menu-text"> 订单管理 </span>
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Order/index');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    订单列表
+                                </a>
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                          <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Order/delivery');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                   等待发货
+                                </a>
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                             <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Order/deliverying');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                   确认收货
+                                </a>
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Order/refund');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    退货/退款
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Order/cancelShow');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    回收站
+                                </a>
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 商品预约-->
+                    <li class="">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-list"></i>
+                            <span class="menu-text"> 商品预约 </span>
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Book/index');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    预约列表
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Book/append');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                  添加预约商品
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--商品评价-->
+                    <li class="">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-list"></i>
+                            <span class="menu-text"> 商品评价 </span>
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Appraise/index');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    评价详情
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <!-- 积分中心-->
+                    <li  id="pow5"  name="pow_p5" style='display:none'>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-list"></i>
+                            <span class="menu-text"> 积分中心 </span>
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Jf/Xq');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    积分规则
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Jf/Index');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    允许使用积分的商品
+                                </a>
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <!--活动中心-->
+                    <li  id="pow4"  name="pow_p4" style='display:none'>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-desktop"></i>
+                            <span class="menu-text">
+                                活动中心
+                            </span>
+
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    优惠卷
+                                    <b class="arrow fa fa-angle-down"></b>
+                                </a>
+
+                                <b class="arrow"></b>
+
+                                <ul class="submenu">
+                                    <li class="">
+                                        <a href="<<?php echo U('discount/index');?>>">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            优惠卷管理
+                                        </a>
+                                        <b class="arrow"></b>
+                                    </li>
+                                    <li class="">
+                                        <a href="<<?php echo U('discount/add');?>>">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            优惠卷添加
+                                        </a>
+                                        <b class="arrow"></b>
+                                    </li>
+                                    <li class="">
+                                        <a href="<<?php echo U('discount/cancel');?>>">
+                                            <i class="menu-icon fa fa-caret-right"></i>
+                                            回收站
+                                        </a>
+                                        <b class="arrow"></b>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    轮播图
+                                    <b class="arrow fa fa-angle-down"></b>
+                                </a>
+
+                                <b class="arrow"></b>
+
+                                <ul class="submenu">
+                                    <li class="">
+                                        <a href="<<?php echo U('Event/index');?>>">
+                                            <i class="menu-icon fa fa-leaf green"></i>
+                                            轮播图管理
+                                        </a>
+                                        <b class="arrow"></b>
+                                    </li>
+                                    <li class="">
+                                        <a href="<<?php echo U('Event/add');?>>">
+                                            <i class="menu-icon fa fa-leaf green"></i>
+                                            轮播添加
+                                        </a>
+                                        <b class="arrow"></b>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> 
+
+                    <!--文章中心-->
+
+                    <li  id="pow6"  name="pow_p6" style='display:none'>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-desktop"></i>
+                            <span class="menu-text">
+                                文章中心
+                            </span>
+
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    公告管理
+                                    <b class="arrow fa fa-angle-down"></b>
+                                </a>
+
+                                <b class="arrow"></b>
+
+                                <ul class="submenu">
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="menu-icon fa fa-leaf green"></i>
+                                            公告列表
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                    <li class="">
+                                        <a href="#">
+                                            <i class="menu-icon fa fa-leaf green"></i>
+                                            添加公告
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="">
+                                <a href="#" class="dropdown-toggle">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    友情链接
+                                    <b class="arrow fa fa-angle-down"></b>
+                                </a>
+
+                                <b class="arrow"></b>
+
+                                <ul class="submenu">
+                                    <li class="">
+                                        <a href="<<?php echo U('Furl/index');?>>">
+                                            <i class="menu-icon fa fa-leaf green"></i>
+                                            友情列表
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                    <li class="">
+                                        <a href="<<?php echo U('Furl/add');?>>">
+                                            <i class="menu-icon fa fa-leaf green"></i>
+                                            链接添加
+                                        </a>
+
+                                        <b class="arrow"></b>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> 
+                    <!--商品收藏-->
+                    <li class="">
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-list"></i>
+                            <span class="menu-text"> 商品收藏 </span>
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Soucang/index');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    收藏列表
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 下载中心-->
+                    <li  id="pow7"  name="pow_p7" style='display:none'>
+                        <a href="#" class="dropdown-toggle">
+                            <i class="menu-icon fa fa-list"></i>
+                            <span class="menu-text"> 下载中心 </span>
+                            <b class="arrow fa fa-angle-down"></b>
+                        </a>
+
+                        <b class="arrow"></b>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Excel/index');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    下载规则
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+
+                        <ul class="submenu">
+                            <li class="">
+                                <a href="<<?php echo U('Excel/index');?>>">
+                                    <i class="menu-icon fa fa-caret-right"></i>
+                                    积分的商品
+                                </a>
+
+                                <b class="arrow"></b>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- /.nav-list -->
+
+
+
+
+                <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
+                    <i class="ace-icon fa fa-angle-double-left" data-icon1="ace-icon fa fa-angle-double-left" data-icon2="ace-icon fa fa-angle-double-right"></i>
+                </div>
+
+                <script type="text/javascript">
+                    try {
+                        ace.settings.check('sidebar', 'collapsed')
+                    } catch (e) {
+                    }
+                </script>
+            </div>
+
+            <div class="main-content">
+                <div class="main-content-inner">
+                   
+
+                    <!-- ======================================================================================================================-->
+                    <div class="page-content">
+                        <div class="ace-settings-container" id="ace-settings-container">
+                            <div class="btn btn-app btn-xs btn-warning ace-settings-btn" id="ace-settings-btn">
+                                <i class="ace-icon fa fa-cog bigger-130"></i>
+                            </div>
+                            <div class="ace-settings-box clearfix" id="ace-settings-box">
+                                <div class="pull-left width-50">
+                                    <div class="ace-settings-item">
+                                        <div class="pull-left">
+                                            <select id="skin-colorpicker" class="hide">
+                                                <option data-skin="no-skin" value="#438EB9">#438EB9</option>
+                                                <option data-skin="skin-1" value="#222A2D">#222A2D</option>
+                                                <option data-skin="skin-2" value="#C6487E">#C6487E</option>
+                                                <option data-skin="skin-3" value="#D0D0D0">#D0D0D0</option>
+                                            </select>
+                                        </div>
+                                        <span>&nbsp; Choose Skin</span>
+                                    </div>
+
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-navbar" />
+                                        <label class="lbl" for="ace-settings-navbar"> Fixed Navbar</label>
+                                    </div>
+
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-sidebar" />
+                                        <label class="lbl" for="ace-settings-sidebar"> Fixed Sidebar</label>
+                                    </div>
+
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-breadcrumbs" />
+                                        <label class="lbl" for="ace-settings-breadcrumbs"> Fixed Breadcrumbs</label>
+                                    </div>
+
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-rtl" />
+                                        <label class="lbl" for="ace-settings-rtl"> Right To Left (rtl)</label>
+                                    </div>
+
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-add-container" />
+                                        <label class="lbl" for="ace-settings-add-container">
+                                            Inside
+                                            <b>.container</b>
+                                        </label>
+                                    </div>
+                                </div><!-- /.pull-left -->
+
+                                <div class="pull-left width-50">
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-hover" />
+                                        <label class="lbl" for="ace-settings-hover"> Submenu on Hover</label>
+                                    </div>
+
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-compact" />
+                                        <label class="lbl" for="ace-settings-compact"> Compact Sidebar</label>
+                                    </div>
+
+                                    <div class="ace-settings-item">
+                                        <input type="checkbox" class="ace ace-checkbox-2" id="ace-settings-highlight" />
+                                        <label class="lbl" for="ace-settings-highlight"> Alt. Active Item</label>
+                                    </div>
+                                </div><!-- /.pull-left -->
+                            </div><!-- /.ace-settings-box -->
+                        </div><!-- /.ace-settings-container -->
+
+                        <!-- =======================================================================================================   -->
+                        
+	<div class="main-content">
+					<div class="breadcrumbs" id="breadcrumbs">
+						<script type="text/javascript">
+							try{ace.settings.check('breadcrumbs' , 'fixed')}catch(e){}
+						</script>
+
+						<div class="nav-search" id="nav-search">
+							<form class="form-search">
+								<span class="input-icon">
+									<input type="text" placeholder="Search ..." class="nav-search-input" id="nav-search-input" autocomplete="off" />
+									<i class="icon-search nav-search-icon"></i>
+								</span>
+							</form>
+						</div><!-- #nav-search -->
+
+				<div class="page-content">
+						<div class="page-header">
+							<h1>
+								商品分类
+								<small>
+									<i class="icon-double-angle-right"></i>
+									添加分类
+								</small>
+							</h1>
+						</div><!-- /.page-header -->
+			</div>
+	</div>
+
+	<center>
+			<h3>添加分类信息</h3>
+			 <form action="/CuteMi/index.php/Admin/Type/create" method="POST">
+				<table width="340" border="0">
+					<input type="hidden" name="pid" value="<<?php echo ($id); ?>>"/>
+					<input type="hidden" name="path" value="<<?php echo ($path); ?>>">
+					<tr>
+						<td align="right">父类别:</td>
+						<td><<?php echo ($name); ?>></td>
+					</tr>
+					<tr>
+						<td align="right">类别名称:</td>
+						<td><input type="text" name="name" value=""></td>
+					</tr>
+					<tr>
+						<td align="right">&nbsp;</td>
+						<td>
+							<input type="submit" value="添加"/><input type="reset" value="重置"/>
+						</td>
+					</tr>
+				</table>
+			</form>
+	</center>
+
+
+                        <!-- ======================================================================================================= -->
+
+                    </div><!-- /.page-content -->
+                </div>
+            </div><!-- /.main-content -->
+
+            <div class="footer">
+                <div class="footer-inner">
+                    <div class="footer-content">
+                        <span class="bigger-120">
+                            <span class="blue bolder">lnamphp</span>
+                            <a href="www.lnampphp.com">四人行 </a> &copy; 2013-2014
+                        </span>
+
+                        &nbsp; &nbsp;
+                        <span class="action-buttons">
+                            <a href="#">
+                                <i class="ace-icon fa fa-twitter-square light-blue bigger-150"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="ace-icon fa fa-facebook-square text-primary bigger-150"></i>
+                            </a>
+
+                            <a href="#">
+                                <i class="ace-icon fa fa-rss-square orange bigger-150"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+                <i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+            </a>
+        </div><!-- /.main-container -->
+
+        <!-- basic scripts -->
+
+        <!--[if !IE]> -->
+        <script src="/CuteMi/Publicjs/jquery.2.1.1.min.js"></script>
+
+        <!-- <![endif]-->
+
+        <!--[if IE]>
+<script src="/CuteMi/Publicjs/jquery.1.11.1.min.js"></script>
+<![endif]-->
+
+        <!--[if !IE]> -->
+        <script type="text/javascript">
+                            window.jQuery || document.write("<script src='/CuteMi/Publicjs/jquery.min.js'>" + "<" + "/script>");
+        </script>
+
+        <!-- <![endif]-->
+
+        <!--[if IE]>
+<script type="text/javascript">
+window.jQuery || document.write("<script src='/CuteMi/Publicjs/jquery1x.min.js'>"+"<"+"/script>");
+</script>
+<![endif]-->
+        <script type="text/javascript">
+            if ('ontouchstart' in document.documentElement)
+                document.write("<script src='/CuteMi/Publicjs/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+        </script>
+        <script src="/CuteMi/Publicjs/bootstrap.min.js"></script>
+
+        <!-- page specific plugin scripts -->
+
+        <!--[if lte IE 8]>
+          <script src="/CuteMi/Publicjs/excanvas.min.js"></script>
+        <![endif]-->
+        <script src="/CuteMi/Publicjs/jquery-ui.custom.min.js"></script>
+        <script src="/CuteMi/Publicjs/jquery.ui.touch-punch.min.js"></script>
+        <script src="/CuteMi/Publicjs/jquery.easypiechart.min.js"></script>
+        <script src="/CuteMi/Publicjs/jquery.sparkline.min.js"></script>
+        <script src="/CuteMi/Publicjs/jquery.flot.min.js"></script>
+        <script src="/CuteMi/Publicjs/jquery.flot.pie.min.js"></script>
+        <script src="/CuteMi/Publicjs/jquery.flot.resize.min.js"></script>
+
+        <!-- ace scripts -->
+        <script src="/CuteMi/Publicjs/ace-elements.min.js"></script>
+        <script src="/CuteMi/Publicjs/ace.min.js"></script>
+
+        <!-- inline scripts related to this page -->

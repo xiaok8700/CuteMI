@@ -1,0 +1,83 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+class OrderController extends CommonController {
+    public function index(){
+       
+       $order = M("order");
+          //分页显示
+        //计算总数据条数'
+       $total =  $order->count();
+       $this->assign("total",$total);
+       // 计算总页数
+       $maxpage = ceil($total/10);
+       $this->assign("maxpage",$maxpage);
+       //计算当前页
+       $no = I("get.no")?I("get.no"):1;
+      
+       //检测当前页
+       if($no<1){
+          $no = 1;
+       }
+       if($no > $maxpage){
+         $no = $maxpage;
+       }
+       $this->assign("no",$no);
+
+       $res = $order->order("addtime desc")->page($no,10)->select();
+       $this->assign("res",$res);
+       $this->display();
+       }
+
+
+
+    public function detail(){
+
+    	$oid = I("get.oid");
+    	//订单详情
+        $order = M("order");
+        $res = $order->where("oid = ".$oid)->find();
+        $this->assign("res",$res);
+
+        //订单明细
+        $orderdetail = M("order_detail");
+        $resdetail = $orderdetail->where("oid = ".$oid)->find();
+        $this->assign("resdetail",$resdetail);
+        //收货人信息
+  
+    	$this->display();
+    }
+
+    //执行的相关处理
+    public function action(){
+    	$oid = I("get.oid");
+    	//订单详情
+        $order = M("order");
+        $res = $order->where("oid = ".$oid)->find();
+        $this->assign("res",$res);
+
+        //订单明细
+        $orderdetail = M("order_detail");
+        $resdetail = $orderdetail->where("oid = ".$oid)->find();
+        $this->assign("resdetail",$resdetail);
+        //收货人信息
+    	$this->display();
+    }
+
+
+    //修改订单状态信息
+    public function mod(){
+    	$oid = I("get.oid");
+    	$data["orderstatus"] = I("get.status");
+        
+        $order = M("order");
+        $res = $order->where("oid = ".$oid)->save($data);
+
+        if($res){
+        	$this->success("订单状态修改成功!",U("index"),3);
+        }else{
+        	$this->error("订单状态修改失败!",U("action"),3);
+        }
+
+    }
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://static.mi.com/cart/ -->
+<html lang="zh-CN" xml:lang="zh-CN">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="__PUBLIC__/home/js/jquery-1.7.2.js"></script>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta charset="UTF-8">
+<title>我的购物车——小米手机官网</title>
+<meta name="viewport" content="width=1226">
+<link rel="stylesheet" href="__PUBLIC__/home/css/base.min.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/cart.min.css">
+<script src="__PUBLIC__/home/js/jquery-1.7.2.js"></script>
+<style type="text/css">
+      *{
+       margin:0;
+       padding:0;
+       list-style:none;
+    }
+      .nav-item a{
+        height:5px;
+        background:gray;
+    }
+     .nav-item a:hover{
+        background:#ccc;
+        opacity:0.7;
+    }
+    .nav-category{
+        text-align:center;
+        background:#ccc;
+    }
+    .user-menu li a:hover{
+        color:red;
+    }
+</style>
+</head>
+<body>
+
+<!-------------------------------- 顶部导航 ---------------------------------->
+<div class="site-topbar">
+    <div class="container">
+        <div class="topbar-nav">
+        <a href="__MODULE__/index/index">小米网</a><span class="sep">|</span>
+            <a href="" target="_blank" >MIUI</a><span class="sep">|</span>
+            <a href="" target="_blank" >米聊</a><span class="sep">|</span>
+            <a href="" target="_blank">游戏</a><span class="sep">|</span>
+            <a href="" target="_blank" >多看阅读</a><span class="sep">|</span>
+            <a href="" target="_blank" >小米网移动版</a><span class="sep">|</span>
+            <a href="" target="_blank" >问题反馈</a><span class="sep">|</span>
+        </div>
+        <div class="topbar-cart" id="J_miniCartTrigger">
+            <a class="cart-mini" id="J_miniCartBtn" href="__MODULE__/cart/index" >
+                <i class="iconfont"></i>购物车<span class="cart-mini-num J_cartNum">（0）</span>
+            </a>
+            <div class="cart-menu" id="J_miniCartMenu" style="background:blue">
+                <div class="loading"><div class="loader"></div></div>
+            </div>
+        </div>
+
+        <if condition="$islogin eq false">
+        <div class="topbar-info" id="J_userInfo">
+            <a class="link" href="__MODULE__/login/index">登录</a><span class="sep">|</span><a class="link" href="__MODULE__/login/register">注册</a>        
+        </div>
+ <!------------------------------- 登陆后的导航栏 ------------------------>
+         <else />
+         <div class="topbar-info" id="J_userInfo">
+            <span class="user">
+                <a class="user-name" href="http://my.mi.com/portal" target="_blank">
+                    <span class="name"><{$uname}></span>
+                    <i class="iconfont"></i>
+                </a>
+                <ul class="user-menu" style="display: none;">
+                    <li><a href="" target="_blank">个人中心</a></li>
+                    <li><a href="" target="_blank">评价晒单</a></li>
+                    <li><a href="" target="_blank">我的喜欢</a></li>
+                    <li><a href="" target="_blank">小米账户</a></li>
+                    <li><a href="__MODULE__/login/logout">退出登录</a></li>
+                </ul>
+            </span>
+            <span class="sep">|</span>
+            <a class="link link-order" href="" target="_blank">我的订单</a>
+        </div>
+       </if>
+ <!------------------------------- 登陆后的导航栏结束 ------------------------>
+    </div>
+</div>
+
+
+<div class="page-main">
+
+    <div class="container">
+<!---------------------------------------------- 空购物车部分 ---------------------------------------------->
+        <if condition="$shopcar eq null">
+        <div class="cart-loading loading" id="J_cartLoading">
+            <div class="loader"></div>
+        </div>
+        <div class="cart-empty " id="J_cartEmpty">
+            <h2>您的购物车还是空的！</h2>
+            <p class="login-desc">登录后将显示您之前加入的商品</p>
+            <a href="http://static.mi.com/cart/#" class="btn btn-primary btn-login" id="J_loginBtn" data-stat-id="7874490dbcbc1e60" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-7874490dbcbc1e60&#39;, &#39;#&#39;, &#39;pcpid&#39;]);">立即登录</a>
+            <a href="__MODULE__/index/index" class="btn btn-primary btn-shoping J_goShoping">马上去购物</a>
+        </div>
+<!---------------------------------------------- 空购物车部分结束 ---------------------------------------------->
+
+         <else />
+        <div id="J_cartBox" class="">       
+<!---------------------------------- 购物车部分 ------------------------------------------>
+            <div class="cart-goods-list">
+                <div class="list-head clearfix">
+                    <div class="col col-check"><i class="iconfont icon-checkbox icon-checkbox-selected" id="J_selectAll"></i>全选
+                       <!--  <button>全选</button> -->
+                    </div>
+                    <div class="col col-img">&nbsp;</div>
+                    <div class="col col-name">商品名称</div>
+                    <div class="col col-price">单价</div>
+                    <div class="col col-num">数量</div>
+                    <div class="col col-total">小计</div>
+                    <div class="col col-action">操作</div>
+                </div>
+                <div class="list-body" id="J_cartListBody">  
+
+
+ <!-------------------------------------购物车商品  ------------------------------>
+                    <foreach name="shopcar" item="shopcar">
+
+                    <div class="item-box"> 
+                        <div class="item-table J_cartGoods"> 
+                            <div class="item-row clearfix"> 
+                                <div class="col col-check">  
+                                    <!-- <i class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox" data-itemid="2150100001_0_buy" data-status="1">√</i> -->  
+                                    <input class="iconfont icon-checkbox icon-checkbox-selected J_itemCheckbox" type="checkbox" name="arr[]">
+                                </div> 
+                                <div class="col col-img">  
+                                    <a href="http://item.mi.com/1150100004.html" target="_blank"> <img alt="" src="__PUBLIC__/Uploads/<{$shopcar['pic']}>" width="80" height="80"> </a>  
+                                </div> 
+                                <div class="col col-name">  
+                                    <div class="tags">   </div>  
+                                    <h3 class="name">  
+                                        <a href="#" target="_blank"> <{$shopcar['gname']}>  <{$shopcar['color']}> <{$shopcar['storage']}> </a>  
+                                    </h3>   
+                                </div> 
+                                <div class="danjia col col-price"> <{$shopcar['price']}> </div> 
+                                <div class="col col-num">  
+                                    <div class="change-goods-num clearfix J_changeGoodsNum">
+                                        <a href="javascript:void(0)" class="J_minus">
+                                            <i class='jian'class="iconfont">-</i>
+                                        </a> 
+                                        <input type="text" class='buynum' name="2150100001_0_buy" value="<{$shopcar['buynum']}>"> 
+                                        <a href="javascript:void(0)" class="J_plus">
+                                            <i class='jia' class="iconfont">+</i>
+                                        </a>  
+                                    </div>  
+                                </div> 
+                                
+                                <div class="xiaoji col col-total"> 
+                                    <p class="pre-info"><{$shopcar["buynum"]*$shopcar["price"]}></p> 
+                                </div> 
+                                <div class="col col-action"> 
+                                    <a id="2150100001_0_buy" href="javascript:void(0);" title="删除" class="del" data="<{$shopcar['gid']}>">
+                                        <i class="iconfont"></i>
+                                    </a> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
+
+                    </foreach>
+<!------------------------------------ 购物车部分结束 ------------------------------>
+</div>
+            <div class="cart-bar clearfix" id="J_cartBar">
+                <div class="section-left">
+                    <a href="__MODULE__/index/index" class="back-shopping J_goShoping">继续购物</a>
+                    <span class="cart-total">共 <i id="J_cartTotalNum"><{$num}></i> 件商品，已选择 <i id="J_selTotalNum">0</i> 件</span>
+                    <span class="cart-coudan hide" id="J_coudanTip">
+                        ，还需 <i id="J_postFreeBalance"></i> 元即可免邮费  <a href="javascript:void(0);" id="J_showCoudan" >立即凑单</a>
+                    </span>
+                </div>
+                <span class="activity-money hide">
+                    活动优惠：减 <i id="J_cartActivityMoney">0</i> 元
+                </span>
+                <span class="total-price">
+                    合计（不含运费）：<em class='total' id="J_cartTotalPrice">0</em>元
+                </span>
+                <a href="__MODULE__/order/index" class="btn btn-a btn btn-primary" id="J_goCheckout" >去结算</a>
+              
+
+                <div class="no-select-tip hide" id="J_noSelectTip">
+                    请勾选需要结算的商品
+                    <i class="arrow arrow-a"></i>
+                    <i class="arrow arrow-b"></i>
+                </div>
+            </div>
+        </div>
+     </if>
+
+
+
+
+
+
+
+
+        <div class="cart-recommend container" id="J_miRecommendBox"><h2 class="xm-recommend-title"><span>买购物车中商品的人还买了</span></h2><div class="xm-recommend"><ul class="row" data-carousel-list="true"> <li class="J_xm-recommend-list span4"> <dl> <dt> <a href="http://item.mi.com/1150300012.html" data-stat-method="1_11" data-stat-index="0" data-stat-text="标准高透贴膜(2片装)" target="_blank" data-stat-pid="stat_购物车.购物车推荐_0_1_11" data-stat-aid="标准高透贴膜(2片装)" data-stat-id="标准高透贴膜(2片装)+stat_购物车.购物车推荐_0_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-标准高透贴膜(2片装)+stat_购物车.购物车推荐_0_1_11&#39;, &#39;//item.mi.com/1150300012.html&#39;, &#39;pcpid&#39;]);"> <img src="__PUBLIC__/home/images/T1ETWTBQhT1RXrhCrK.jpg" srcset="//i1.mifile.cn/a1/T1ETWTBQhT1RXrhCrK.jpg?width=280&amp;height=280 2x" alt="标准高透贴膜(2片装)"> </a> </dt> <dd class="xm-recommend-name"> <a href="http://item.mi.com/1150300012.html" data-stat-method="1_11" data-stat-index="0" data-stat-text="标准高透贴膜(2片装)" target="_blank" data-stat-pid="stat_购物车.购物车推荐_0_1_11" data-stat-aid="标准高透贴膜(2片装)" data-stat-id="标准高透贴膜(2片装)+stat_购物车.购物车推荐_0_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-标准高透贴膜(2片装)+stat_购物车.购物车推荐_0_1_11&#39;, &#39;//item.mi.com/1150300012.html&#39;, &#39;pcpid&#39;]);"> 标准高透贴膜(2片装) </a> </dd> <dd class="xm-recommend-price">19元</dd> <dd class="xm-recommend-tips"> 6.8万人好评  <a href="http://cart.mi.com/cart/add/2150300012-0-1" data-stat-gid="2150300012" data-stat-method="1_11" data-stat-index="0" data-stat-text="标准高透贴膜(2片装)" data-stat-addcart="加购" class="btn btn-small btn-line-primary J_xm-recommend-btn" data-stat-pid="stat_购物车加购.购物车推荐_0_1_11" data-stat-aid="标准高透贴膜(2片装)" data-stat-id="标准高透贴膜(2片装)+stat_购物车加购.购物车推荐_0_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-标准高透贴膜(2片装)+stat_购物车加购.购物车推荐_0_1_11&#39;, &#39;//cart.mi.com/cart/add/2150300012-0-1&#39;, &#39;pcpid&#39;]);">加入购物车</a>  </dd> </dl> </li> <li class="J_xm-recommend-list span4"> <dl> <dt> <a href="http://item.mi.com/1150300006.html" data-stat-method="1_11" data-stat-index="1" data-stat-text="智能唤醒翻盖保护套" target="_blank" data-stat-pid="stat_购物车.购物车推荐_1_1_11" data-stat-aid="智能唤醒翻盖保护套" data-stat-id="智能唤醒翻盖保护套+stat_购物车.购物车推荐_1_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-智能唤醒翻盖保护套+stat_购物车.购物车推荐_1_1_11&#39;, &#39;//item.mi.com/1150300006.html&#39;, &#39;pcpid&#39;]);"> <img src="__PUBLIC__/home/images/T1bPbTBvYT1RXrhCrK.jpg" srcset="//i1.mifile.cn/a1/T1bPbTBvYT1RXrhCrK.jpg?width=280&amp;height=280 2x" alt="智能唤醒翻盖保护套"> </a> </dt> <dd class="xm-recommend-name"> <a href="http://item.mi.com/1150300006.html" data-stat-method="1_11" data-stat-index="1" data-stat-text="智能唤醒翻盖保护套" target="_blank" data-stat-pid="stat_购物车.购物车推荐_1_1_11" data-stat-aid="智能唤醒翻盖保护套" data-stat-id="智能唤醒翻盖保护套+stat_购物车.购物车推荐_1_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-智能唤醒翻盖保护套+stat_购物车.购物车推荐_1_1_11&#39;, &#39;//item.mi.com/1150300006.html&#39;, &#39;pcpid&#39;]);"> 智能唤醒翻盖保护套 </a> </dd> <dd class="xm-recommend-price">49元</dd> <dd class="xm-recommend-tips"> 7万人好评  <a href="http://cart.mi.com/cart/add/2150300006-0-1" data-stat-gid="2150300006" data-stat-method="1_11" data-stat-index="1" data-stat-text="智能唤醒翻盖保护套" data-stat-addcart="加购" class="btn btn-small btn-line-primary J_xm-recommend-btn" data-stat-pid="stat_购物车加购.购物车推荐_1_1_11" data-stat-aid="智能唤醒翻盖保护套" data-stat-id="智能唤醒翻盖保护套+stat_购物车加购.购物车推荐_1_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-智能唤醒翻盖保护套+stat_购物车加购.购物车推荐_1_1_11&#39;, &#39;//cart.mi.com/cart/add/2150300006-0-1&#39;, &#39;pcpid&#39;]);">加入购物车</a>  </dd> </dl> </li> <li class="J_xm-recommend-list span4"> <dl> <dt> <a href="http://item.mi.com/1153000009.html" data-stat-method="1_11" data-stat-index="2" data-stat-text="多彩便携USB线 120cm" target="_blank" data-stat-pid="stat_购物车.购物车推荐_2_1_11" data-stat-aid="多彩便携USB线120cm" data-stat-id="多彩便携USB线120cm+stat_购物车.购物车推荐_2_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-多彩便携USB线120cm+stat_购物车.购物车推荐_2_1_11&#39;, &#39;//item.mi.com/1153000009.html&#39;, &#39;pcpid&#39;]);"> <img src="__PUBLIC__/home/images/T1b.K_Bj_T1RXrhCrK.jpg" srcset="//i1.mifile.cn/a1/T1b.K_Bj_T1RXrhCrK.jpg?width=280&amp;height=280 2x" alt="多彩便携USB线 120cm"> </a> </dt> <dd class="xm-recommend-name"> <a href="http://item.mi.com/1153000009.html" data-stat-method="1_11" data-stat-index="2" data-stat-text="多彩便携USB线 120cm" target="_blank" data-stat-pid="stat_购物车.购物车推荐_2_1_11" data-stat-aid="多彩便携USB线120cm" data-stat-id="多彩便携USB线120cm+stat_购物车.购物车推荐_2_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-多彩便携USB线120cm+stat_购物车.购物车推荐_2_1_11&#39;, &#39;//item.mi.com/1153000009.html&#39;, &#39;pcpid&#39;]);"> 多彩便携USB线 120cm </a> </dd> <dd class="xm-recommend-price">15元</dd> <dd class="xm-recommend-tips"> 4.7万人好评  <a href="http://cart.mi.com/cart/add/2153000001-0-1" data-stat-gid="2153000001" data-stat-method="1_11" data-stat-index="2" data-stat-text="多彩便携USB线 120cm" data-stat-addcart="加购" class="btn btn-small btn-line-primary J_xm-recommend-btn" data-stat-pid="stat_购物车加购.购物车推荐_2_1_11" data-stat-aid="多彩便携USB线120cm" data-stat-id="多彩便携USB线120cm+stat_购物车加购.购物车推荐_2_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-多彩便携USB线120cm+stat_购物车加购.购物车推荐_2_1_11&#39;, &#39;//cart.mi.com/cart/add/2153000001-0-1&#39;, &#39;pcpid&#39;]);">加入购物车</a>  </dd> </dl> </li> <li class="J_xm-recommend-list span4"> <dl>  <dd class="xm-recommend-name"> <a href="http://item.mi.com/1144900003.html" data-stat-method="1_11" data-stat-index="3" data-stat-text="功夫米兔手机支架" target="_blank" data-stat-pid="stat_购物车.购物车推荐_3_1_11" data-stat-aid="功夫米兔手机支架" data-stat-id="功夫米兔手机支架+stat_购物车.购物车推荐_3_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-功夫米兔手机支架+stat_购物车.购物车推荐_3_1_11&#39;, &#39;//item.mi.com/1144900003.html&#39;, &#39;pcpid&#39;]);"> 功夫米兔手机支架 </a> </dd> <dd class="xm-recommend-price">15元</dd> <dd class="xm-recommend-tips"> 1.4万人好评  <a href="http://cart.mi.com/cart/add/2144900003-0-1" data-stat-gid="2144900003" data-stat-method="1_11" data-stat-index="3" data-stat-text="功夫米兔手机支架" data-stat-addcart="加购" class="btn btn-small btn-line-primary J_xm-recommend-btn" data-stat-pid="stat_购物车加购.购物车推荐_3_1_11" data-stat-aid="功夫米兔手机支架" data-stat-id="功夫米兔手机支架+stat_购物车加购.购物车推荐_3_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-功夫米兔手机支架+stat_购物车加购.购物车推荐_3_1_11&#39;, &#39;//cart.mi.com/cart/add/2144900003-0-1&#39;, &#39;pcpid&#39;]);" style="display: none;">加入购物车</a>  </dd> </dl> </li> <li class="J_xm-recommend-list span4"> <dl> <dt> <a href="http://item.mi.com/1151900011.html" data-stat-method="1_11" data-stat-index="4" data-stat-text="小米移动电源10000mAh" target="_blank" data-stat-pid="stat_购物车.购物车推荐_4_1_11" data-stat-aid="小米移动电源10000mAh" data-stat-id="小米移动电源10000mAh+stat_购物车.购物车推荐_4_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米移动电源10000mAh+stat_购物车.购物车推荐_4_1_11&#39;, &#39;//item.mi.com/1151900011.html&#39;, &#39;pcpid&#39;]);"> <img src="__PUBLIC__/home/images/T12HJvByEv1RXrhCrK.jpg" srcset="//i1.mifile.cn/a1/T12HJvByEv1RXrhCrK.jpg?width=280&amp;height=280 2x" alt="小米移动电源10000mAh"> </a> </dt> <dd class="xm-recommend-name"> <a href="http://item.mi.com/1151900011.html" data-stat-method="1_11" data-stat-index="4" data-stat-text="小米移动电源10000mAh" target="_blank" data-stat-pid="stat_购物车.购物车推荐_4_1_11" data-stat-aid="小米移动电源10000mAh" data-stat-id="小米移动电源10000mAh+stat_购物车.购物车推荐_4_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米移动电源10000mAh+stat_购物车.购物车推荐_4_1_11&#39;, &#39;//item.mi.com/1151900011.html&#39;, &#39;pcpid&#39;]);"> 小米移动电源10000mAh </a> </dd> <dd class="xm-recommend-price">79元</dd> <dd class="xm-recommend-tips"> 15.2万人好评  <a href="http://cart.mi.com/cart/add/2151900016-0-1" data-stat-gid="2151900016" data-stat-method="1_11" data-stat-index="4" data-stat-text="小米移动电源10000mAh" data-stat-addcart="加购" class="btn btn-small btn-line-primary J_xm-recommend-btn" data-stat-pid="stat_购物车加购.购物车推荐_4_1_11" data-stat-aid="小米移动电源10000mAh" data-stat-id="小米移动电源10000mAh+stat_购物车加购.购物车推荐_4_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米移动电源10000mAh+stat_购物车加购.购物车推荐_4_1_11&#39;, &#39;//cart.mi.com/cart/add/2151900016-0-1&#39;, &#39;pcpid&#39;]);">加入购物车</a>  </dd> </dl> </li> <li class="J_xm-recommend-list span4"> <dl> <dt> <a href="http://item.mi.com/1153900040.html" data-stat-method="1_11" data-stat-index="5" data-stat-text="小米活塞耳机 标准版" target="_blank" data-stat-pid="stat_购物车.购物车推荐_5_1_11" data-stat-aid="小米活塞耳机标准版" data-stat-id="小米活塞耳机标准版+stat_购物车.购物车推荐_5_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米活塞耳机标准版+stat_购物车.购物车推荐_5_1_11&#39;, &#39;//item.mi.com/1153900040.html&#39;, &#39;pcpid&#39;]);"> <img src="__PUBLIC__/home/images/T1Qjx_BQxT1RXrhCrK.jpg" srcset="//i1.mifile.cn/a1/T1Qjx_BQxT1RXrhCrK.jpg?width=280&amp;height=280 2x" alt="小米活塞耳机 标准版"> </a> </dt> <dd class="xm-recommend-name"> <a href="http://item.mi.com/1153900040.html" data-stat-method="1_11" data-stat-index="5" data-stat-text="小米活塞耳机 标准版" target="_blank" data-stat-pid="stat_购物车.购物车推荐_5_1_11" data-stat-aid="小米活塞耳机标准版" data-stat-id="小米活塞耳机标准版+stat_购物车.购物车推荐_5_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米活塞耳机标准版+stat_购物车.购物车推荐_5_1_11&#39;, &#39;//item.mi.com/1153900040.html&#39;, &#39;pcpid&#39;]);"> 小米活塞耳机 标准版 </a> </dd> <dd class="xm-recommend-price">69元</dd> <dd class="xm-recommend-tips"> 2.3万人好评  <a href="http://cart.mi.com/cart/add/2153900027-0-1" data-stat-gid="2153900027" data-stat-method="1_11" data-stat-index="5" data-stat-text="小米活塞耳机 标准版" data-stat-addcart="加购" class="btn btn-small btn-line-primary J_xm-recommend-btn" data-stat-pid="stat_购物车加购.购物车推荐_5_1_11" data-stat-aid="小米活塞耳机标准版" data-stat-id="小米活塞耳机标准版+stat_购物车加购.购物车推荐_5_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米活塞耳机标准版+stat_购物车加购.购物车推荐_5_1_11&#39;, &#39;//cart.mi.com/cart/add/2153900027-0-1&#39;, &#39;pcpid&#39;]);">加入购物车</a>  </dd> </dl> </li> <li class="J_xm-recommend-list span4"> <dl> <dt> <a href="http://item.mi.com/1152400012.html" data-stat-method="1_11" data-stat-index="6" data-stat-text="小米蓝牙耳机" target="_blank" data-stat-pid="stat_购物车.购物车推荐_6_1_11" data-stat-aid="小米蓝牙耳机" data-stat-id="小米蓝牙耳机+stat_购物车.购物车推荐_6_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米蓝牙耳机+stat_购物车.购物车推荐_6_1_11&#39;, &#39;//item.mi.com/1152400012.html&#39;, &#39;pcpid&#39;]);"> <img src="__PUBLIC__/home/images/T1kQC_BKWT1RXrhCrK.jpg" srcset="//i1.mifile.cn/a1/T1kQC_BKWT1RXrhCrK.jpg?width=280&amp;height=280 2x" alt="小米蓝牙耳机"> </a> </dt> <dd class="xm-recommend-name"> <a href="http://item.mi.com/1152400012.html" data-stat-method="1_11" data-stat-index="6" data-stat-text="小米蓝牙耳机" target="_blank" data-stat-pid="stat_购物车.购物车推荐_6_1_11" data-stat-aid="小米蓝牙耳机" data-stat-id="小米蓝牙耳机+stat_购物车.购物车推荐_6_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米蓝牙耳机+stat_购物车.购物车推荐_6_1_11&#39;, &#39;//item.mi.com/1152400012.html&#39;, &#39;pcpid&#39;]);"> 小米蓝牙耳机 </a> </dd> <dd class="xm-recommend-price">79元</dd> <dd class="xm-recommend-tips"> 6.2万人好评  <a href="http://cart.mi.com/cart/add/2152400007-0-1" data-stat-gid="2152400007" data-stat-method="1_11" data-stat-index="6" data-stat-text="小米蓝牙耳机" data-stat-addcart="加购" class="btn btn-small btn-line-primary J_xm-recommend-btn" data-stat-pid="stat_购物车加购.购物车推荐_6_1_11" data-stat-aid="小米蓝牙耳机" data-stat-id="小米蓝牙耳机+stat_购物车加购.购物车推荐_6_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米蓝牙耳机+stat_购物车加购.购物车推荐_6_1_11&#39;, &#39;//cart.mi.com/cart/add/2152400007-0-1&#39;, &#39;pcpid&#39;]);">加入购物车</a>  </dd> </dl> </li> <li class="J_xm-recommend-list span4"> <dl> <dt> <a href="http://item.mi.com/1144400046.html" data-stat-method="1_11" data-stat-index="7" data-stat-text="小米移动电源16000mAh" target="_blank" data-stat-pid="stat_购物车.购物车推荐_7_1_11" data-stat-aid="小米移动电源16000mAh" data-stat-id="小米移动电源16000mAh+stat_购物车.购物车推荐_7_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米移动电源16000mAh+stat_购物车.购物车推荐_7_1_11&#39;, &#39;//item.mi.com/1144400046.html&#39;, &#39;pcpid&#39;]);"> <img src="__PUBLIC__/home/images/T1pOWvBKET1RXrhCrK.jpg" srcset="//i1.mifile.cn/a1/T1pOWvBKET1RXrhCrK.jpg?width=280&amp;height=280 2x" alt="小米移动电源16000mAh"> </a> </dt> <dd class="xm-recommend-name"> <a href="http://item.mi.com/1144400046.html" data-stat-method="1_11" data-stat-index="7" data-stat-text="小米移动电源16000mAh" target="_blank" data-stat-pid="stat_购物车.购物车推荐_7_1_11" data-stat-aid="小米移动电源16000mAh" data-stat-id="小米移动电源16000mAh+stat_购物车.购物车推荐_7_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米移动电源16000mAh+stat_购物车.购物车推荐_7_1_11&#39;, &#39;//item.mi.com/1144400046.html&#39;, &#39;pcpid&#39;]);"> 小米移动电源16000mAh </a> </dd> <dd class="xm-recommend-price">129元</dd> <dd class="xm-recommend-tips"> 11.1万人好评  <a href="http://cart.mi.com/cart/add/2144400039-0-1" data-stat-gid="2144400039" data-stat-method="1_11" data-stat-index="7" data-stat-text="小米移动电源16000mAh" data-stat-addcart="加购" class="btn btn-small btn-line-primary J_xm-recommend-btn" data-stat-pid="stat_购物车加购.购物车推荐_7_1_11" data-stat-aid="小米移动电源16000mAh" data-stat-id="小米移动电源16000mAh+stat_购物车加购.购物车推荐_7_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米移动电源16000mAh+stat_购物车加购.购物车推荐_7_1_11&#39;, &#39;//cart.mi.com/cart/add/2144400039-0-1&#39;, &#39;pcpid&#39;]);">加入购物车</a>  </dd> </dl> </li> <li class="J_xm-recommend-list span4"> <dl> <dt> <a href="http://item.mi.com/1154500029.html" data-stat-method="1_11" data-stat-index="8" data-stat-text="小米圈铁耳机" target="_blank" data-stat-pid="stat_购物车.购物车推荐_8_1_11" data-stat-aid="小米圈铁耳机" data-stat-id="小米圈铁耳机+stat_购物车.购物车推荐_8_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米圈铁耳机+stat_购物车.购物车推荐_8_1_11&#39;, &#39;//item.mi.com/1154500029.html&#39;, &#39;pcpid&#39;]);"> <img src="__PUBLIC__/home/images/T1HWEjBvDT1RXrhCrK.jpg" srcset="//i1.mifile.cn/a1/T1HWEjBvDT1RXrhCrK.jpg?width=280&amp;height=280 2x" alt="小米圈铁耳机"> </a> </dt> <dd class="xm-recommend-name"> <a href="http://item.mi.com/1154500029.html" data-stat-method="1_11" data-stat-index="8" data-stat-text="小米圈铁耳机" target="_blank" data-stat-pid="stat_购物车.购物车推荐_8_1_11" data-stat-aid="小米圈铁耳机" data-stat-id="小米圈铁耳机+stat_购物车.购物车推荐_8_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米圈铁耳机+stat_购物车.购物车推荐_8_1_11&#39;, &#39;//item.mi.com/1154500029.html&#39;, &#39;pcpid&#39;]);"> 小米圈铁耳机 </a> </dd> <dd class="xm-recommend-price">99元</dd> <dd class="xm-recommend-tips"> 2.3万人好评  <a href="http://cart.mi.com/cart/add/2154500016-0-1" data-stat-gid="2154500016" data-stat-method="1_11" data-stat-index="8" data-stat-text="小米圈铁耳机" data-stat-addcart="加购" class="btn btn-small btn-line-primary J_xm-recommend-btn" data-stat-pid="stat_购物车加购.购物车推荐_8_1_11" data-stat-aid="小米圈铁耳机" data-stat-id="小米圈铁耳机+stat_购物车加购.购物车推荐_8_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米圈铁耳机+stat_购物车加购.购物车推荐_8_1_11&#39;, &#39;//cart.mi.com/cart/add/2154500016-0-1&#39;, &#39;pcpid&#39;]);" style="display: none;">加入购物车</a>  </dd> </dl> </li> <li class="J_xm-recommend-list span4"> <dl> <dt> <a href="http://item.mi.com/1151500038.html" data-stat-method="1_11" data-stat-index="9" data-stat-text="小米自拍杆" target="_blank" data-stat-pid="stat_购物车.购物车推荐_9_1_11" data-stat-aid="小米自拍杆" data-stat-id="小米自拍杆+stat_购物车.购物车推荐_9_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米自拍杆+stat_购物车.购物车推荐_9_1_11&#39;, &#39;//item.mi.com/1151500038.html&#39;, &#39;pcpid&#39;]);"> <img src="__PUBLIC__/home/images/T1DrL_B4CT1RXrhCrK.jpg" srcset="//i1.mifile.cn/a1/T1DrL_B4CT1RXrhCrK.jpg?width=280&amp;height=280 2x" alt="小米自拍杆"> </a> </dt> <dd class="xm-recommend-name"> <a href="http://item.mi.com/1151500038.html" data-stat-method="1_11" data-stat-index="9" data-stat-text="小米自拍杆" target="_blank" data-stat-pid="stat_购物车.购物车推荐_9_1_11" data-stat-aid="小米自拍杆" data-stat-id="小米自拍杆+stat_购物车.购物车推荐_9_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米自拍杆+stat_购物车.购物车推荐_9_1_11&#39;, &#39;//item.mi.com/1151500038.html&#39;, &#39;pcpid&#39;]);"> 小米自拍杆 </a> </dd> <dd class="xm-recommend-price">49元</dd> <dd class="xm-recommend-tips"> 5.8万人好评  <a href="http://cart.mi.com/cart/add/2151500010-0-1" data-stat-gid="2151500010" data-stat-method="1_11" data-stat-index="9" data-stat-text="小米自拍杆" data-stat-addcart="加购" class="btn btn-small btn-line-primary J_xm-recommend-btn" data-stat-pid="stat_购物车加购.购物车推荐_9_1_11" data-stat-aid="小米自拍杆" data-stat-id="小米自拍杆+stat_购物车加购.购物车推荐_9_1_11" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-小米自拍杆+stat_购物车加购.购物车推荐_9_1_11&#39;, &#39;//cart.mi.com/cart/add/2151500010-0-1&#39;, &#39;pcpid&#39;]);">加入购物车</a>  </dd> </dl> </li></ul></div></div>
+    </div>
+</div>
+
+<div class="site-footer">
+    <div class="container">
+        <div class="footer-service">
+            <ul class="list-service clearfix">
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#repaire" target="_blank" data-stat-id="da46b3d5586757a4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-da46b3d5586757a4&#39;, &#39;//www.mi.com/service/exchange#repaire&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>1小时快修服务</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#back" target="_blank" data-stat-id="78babcae8a619e26" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-78babcae8a619e26&#39;, &#39;//www.mi.com/service/exchange#back&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>7天无理由退货</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#free" target="_blank" data-stat-id="d1745f68f8d2dad7" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-d1745f68f8d2dad7&#39;, &#39;//www.mi.com/service/exchange#free&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>15天免费换货</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/service/exchange#mail" target="_blank" data-stat-id="f1b5c2451cf73123" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-f1b5c2451cf73123&#39;, &#39;//www.mi.com/service/exchange#mail&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>满150元包邮</a></li>
+                            <li><a rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank" data-stat-id="caf836ab93cdfd31" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-caf836ab93cdfd31&#39;, &#39;//www.mi.com/c/service/poststation/&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i>520余家售后网点</a></li>
+                        </ul>
+        </div>
+        <div class="footer-links clearfix">
+            
+            <dl class="col-links col-links-first">
+                <dt>帮助中心</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/help_center/guide/" target="_blank" data-stat-id="2458d0d93e3f7386" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-2458d0d93e3f7386&#39;, &#39;//www.mi.com/service/help_center/guide/&#39;, &#39;pcpid&#39;]);">购物指南</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/help_center/pay/" target="_blank" data-stat-id="2109aae4f55e7716" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-2109aae4f55e7716&#39;, &#39;//www.mi.com/service/help_center/pay/&#39;, &#39;pcpid&#39;]);">支付方式</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/help_center/delivery/" target="_blank" data-stat-id="fdf4464071458ade" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-fdf4464071458ade&#39;, &#39;//www.mi.com/service/help_center/delivery/&#39;, &#39;pcpid&#39;]);">配送方式</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>服务支持</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/service/exchange" target="_blank" data-stat-id="8e282b6f669ba990" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-8e282b6f669ba990&#39;, &#39;//www.mi.com/service/exchange&#39;, &#39;pcpid&#39;]);">售后政策</a></dd>
+                
+                <dd><a rel="nofollow" href="http://fuwu.mi.com/" target="_blank" data-stat-id="5f2408ab3c808aa2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-5f2408ab3c808aa2&#39;, &#39;http://fuwu.mi.com/&#39;, &#39;pcpid&#39;]);">自助服务</a></dd>
+                
+                <dd><a rel="nofollow" href="http://xiazai.mi.com/" target="_blank" data-stat-id="18c340c920a278a1" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-18c340c920a278a1&#39;, &#39;http://xiazai.mi.com/&#39;, &#39;pcpid&#39;]);">相关下载</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>小米之家</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/c/xiaomizhijia/" target="_blank" data-stat-id="b27b566974e4aa67" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-b27b566974e4aa67&#39;, &#39;//www.mi.com/c/xiaomizhijia/&#39;, &#39;pcpid&#39;]);">小米之家</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/c/service/poststation/" target="_blank" data-stat-id="bdb16d6645c388ac" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-bdb16d6645c388ac&#39;, &#39;//www.mi.com/c/service/poststation/&#39;, &#39;pcpid&#39;]);">服务网点</a></dd>
+                
+                <dd><a rel="nofollow" href="http://service.order.mi.com/mihome/index" target="_blank" data-stat-id="443642eacd664bd9" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-443642eacd664bd9&#39;, &#39;http://service.order.mi.com/mihome/index&#39;, &#39;pcpid&#39;]);">预约服务</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>关于小米</dt>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/about" target="_blank" data-stat-id="f6d386c65b1f4132" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-f6d386c65b1f4132&#39;, &#39;//www.mi.com/about&#39;, &#39;pcpid&#39;]);">了解小米</a></dd>
+                
+                <dd><a rel="nofollow" href="http://hr.xiaomi.com/" target="_blank" data-stat-id="4307a445f5592adb" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-4307a445f5592adb&#39;, &#39;http://hr.xiaomi.com/&#39;, &#39;pcpid&#39;]);">加入小米</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/about/contact" target="_blank" data-stat-id="6842e821365ee45d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-6842e821365ee45d&#39;, &#39;//www.mi.com/about/contact&#39;, &#39;pcpid&#39;]);">联系我们</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>关注我们</dt>
+                
+                <dd><a rel="nofollow" href="http://e.weibo.com/xiaomishouji" target="_blank" data-stat-id="464883aa6e799290" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-464883aa6e799290&#39;, &#39;http://e.weibo.com/xiaomishouji&#39;, &#39;pcpid&#39;]);">新浪微博</a></dd>
+                
+                <dd><a rel="nofollow" href="http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat" target="_blank" data-stat-id="78fdefa9dee561b5" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-78fdefa9dee561b5&#39;, &#39;http://xiaoqu.qq.com/mobile/share/index.html?url=http%3A%2F%2Fxiaoqu.qq.com%2Fmobile%2Fbarindex.html%3Fwebview%3D1%26type%3D%26source%3Dindex%26_lv%3D25741%26sid%3D%26_wv%3D5123%26_bid%3D128%26%23bid%3D10525%26from%3Dwechat&#39;, &#39;pcpid&#39;]);">小米部落</a></dd>
+                
+                <dd><a rel="nofollow" href="http://static.mi.com/cart/#J_modalWeixin" data-toggle="modal" data-stat-id="47539f6570f0da90" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-47539f6570f0da90&#39;, &#39;#J_modalWeixin&#39;, &#39;pcpid&#39;]);">官方微信</a></dd>
+                
+            </dl>
+                
+            <dl class="col-links ">
+                <dt>特色服务</dt>
+                
+                <dd><a rel="nofollow" href="http://order.mi.com/queue/f2code" target="_blank" data-stat-id="fdc16dd51892a164" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-fdc16dd51892a164&#39;, &#39;//order.mi.com/queue/f2code&#39;, &#39;pcpid&#39;]);">F 码通道</a></dd>
+                
+                <dd><a rel="nofollow" href="http://www.mi.com/mimobile/" target="_blank" data-stat-id="99876c8aaf8ef0a4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-99876c8aaf8ef0a4&#39;, &#39;//www.mi.com/mimobile/&#39;, &#39;pcpid&#39;]);">小米移动</a></dd>
+                
+                <dd><a rel="nofollow" href="http://order.mi.com/misc/checkitem" target="_blank" data-stat-id="b08be6bd51351e1a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-b08be6bd51351e1a&#39;, &#39;//order.mi.com/misc/checkitem&#39;, &#39;pcpid&#39;]);">防伪查询</a></dd>
+                
+            </dl>
+                
+            <div class="col-contact">
+                <p class="phone">400-100-5678</p>
+<p><span class="J_serviceTime-normal" style="
+">周一至周日 8:00-18:00</span>
+<span class="J_serviceTime-holiday" style="display:none;">2月7日至13日服务时间 9:00-18:00</span><br>（仅收市话费）</p>
+<a rel="nofollow" class="btn btn-line-primary btn-small" href="http://www.mi.com/service/contact" target="_blank" data-stat-id="a7642f0a3475d686" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-a7642f0a3475d686&#39;, &#39;//www.mi.com/service/contact&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i> 24小时在线客服</a>            </div>
+        </div>
+    </div>
+</div>
+<div class="site-info">
+    <div class="container">
+        <div class="logo ir">小米官网</div>
+        <div class="info-text">
+            <p class="sites"><a href="http://www.mi.com/index.html" target="_blank" data-stat-id="4fb589dbb54f257a" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-4fb589dbb54f257a&#39;, &#39;//www.mi.com/index.html&#39;, &#39;pcpid&#39;]);">小米网</a><span class="sep">|</span><a href="http://www.miui.com/" target="_blank" data-stat-id="ed2a0e25c8b0ca2f" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-ed2a0e25c8b0ca2f&#39;, &#39;http://www.miui.com/&#39;, &#39;pcpid&#39;]);">MIUI</a><span class="sep">|</span><a href="http://www.miliao.com/" target="_blank" data-stat-id="826b32c1478a98d5" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-826b32c1478a98d5&#39;, &#39;http://www.miliao.com/&#39;, &#39;pcpid&#39;]);">米聊</a><span class="sep">|</span><a href="http://www.duokan.com/" target="_blank" data-stat-id="c9d2af1ad828a834" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-c9d2af1ad828a834&#39;, &#39;http://www.duokan.com/&#39;, &#39;pcpid&#39;]);">多看书城</a><span class="sep">|</span><a href="http://www.miwifi.com/" target="_blank" data-stat-id="96f1a8cecc909af2" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-96f1a8cecc909af2&#39;, &#39;http://www.miwifi.com/&#39;, &#39;pcpid&#39;]);">小米路由器</a><span class="sep">|</span><a href="http://call.mi.com/" target="_blank" data-stat-id="347f6dd0d8d9fda3" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-347f6dd0d8d9fda3&#39;, &#39;http://call.mi.com/&#39;, &#39;pcpid&#39;]);">视频电话</a><span class="sep">|</span><a href="http://blog.xiaomi.com/" target="_blank" data-stat-id="4ad42379062eda19" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-4ad42379062eda19&#39;, &#39;http://blog.xiaomi.com/&#39;, &#39;pcpid&#39;]);">小米后院</a><span class="sep">|</span><a href="http://xiaomi.tmall.com/" target="_blank" data-stat-id="dfe0fac59cfb15d9" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-dfe0fac59cfb15d9&#39;, &#39;http://xiaomi.tmall.com/&#39;, &#39;pcpid&#39;]);">小米天猫店</a><span class="sep">|</span><a href="http://shop115048570.taobao.com/" target="_blank" data-stat-id="c2613d0d3b77ddff" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-c2613d0d3b77ddff&#39;, &#39;http://shop115048570.taobao.com&#39;, &#39;pcpid&#39;]);">小米淘宝直营店</a><span class="sep">|</span><a href="http://union.mi.com/" target="_blank" data-stat-id="2f48f953961c637d" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-2f48f953961c637d&#39;, &#39;http://union.mi.com/&#39;, &#39;pcpid&#39;]);">小米网盟</a><span class="sep">|</span><a href="http://static.mi.com/feedback/" target="_blank" data-stat-id="6479cd2d041bcf04" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-6479cd2d041bcf04&#39;, &#39;//static.mi.com/feedback/&#39;, &#39;pcpid&#39;]);">问题反馈</a><span class="sep">|</span><a href="http://static.mi.com/cart/#J_modal-globalSites" data-toggle="modal" data-stat-id="9db137a8e0d5b3dd" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-9db137a8e0d5b3dd&#39;, &#39;#J_modal-globalSites&#39;, &#39;pcpid&#39;]);">Select Region</a>            </p>
+            <p>©<a href="http://www.mi.com/" target="_blank" title="mi.com" data-stat-id="836cacd9ca5b75dd" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-836cacd9ca5b75dd&#39;, &#39;//www.mi.com/&#39;, &#39;pcpid&#39;]);">mi.com</a> 京ICP证110507号 京ICP备10046444号 <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134" target="_blank" data-stat-id="57efc92272d4336b" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-57efc92272d4336b&#39;, &#39;http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010802020134&#39;, &#39;pcpid&#39;]);">京公网安备11010802020134号 </a><a href="http://c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg" target="_blank" data-stat-id="c5f81675b79eb130" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-c5f81675b79eb130&#39;, &#39;//c1.mifile.cn/f/i/2013/cn/jingwangwen.jpg&#39;, &#39;pcpid&#39;]);">京网文[2014]0059-0009号</a>
+ 违法和不良信息举报电话：185-0130-1238</p>
+        </div>
+        <div class="info-links">
+                    <a href="https://search.szfw.org/cert/l/CX20120926001783002010" target="_blank" data-stat-id="9e1604cd6612205c" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-9e1604cd6612205c&#39;, &#39;https://search.szfw.org/cert/l/CX20120926001783002010&#39;, &#39;pcpid&#39;]);"><img src="__PUBLIC__/home/images/v-logo-2.png" alt="诚信网站"></a>
+                    <a href="https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&ct=df&pa=461082" target="_blank" data-stat-id="3e1533699f264eac" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-3e1533699f264eac&#39;, &#39;https://ss.knet.cn/verifyseal.dll?sn=e12033011010015771301369&amp;ct=df&amp;pa=461082&#39;, &#39;pcpid&#39;]);"><img src="__PUBLIC__/home/images/v-logo-1.png" alt="可信网站"></a>
+                    <a href="http://www.315online.com.cn/member/315140007.html" target="_blank" data-stat-id="b085e50c7ec83104" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-b085e50c7ec83104&#39;, &#39;http://www.315online.com.cn/member/315140007.html&#39;, &#39;pcpid&#39;]);"><img src="__PUBLIC__/home/images/v-logo-3.png" alt="网上交易保障中心"></a>
+                </div>
+    </div>
+    <div class="slogan ir">探索黑科技，小米为发烧而生</div>
+</div>
+<div id="J_modalWeixin" class="modal fade modal-hide modal-weixin" data-width="480" data-height="520">
+        <div class="modal-hd">
+            <a class="close" data-dismiss="modal" data-stat-id="cfd3189b8a874ba4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-cfd3189b8a874ba4&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i></a>
+            <h3>小米手机官方微信二维码</h3>
+        </div>
+        <div class="modal-bd">
+            <p style="margin: 0 0 10px;">打开微信，点击右上角的“+”，选择“扫一扫”功能，<br>对准下方二维码即可。</p>
+            <img alt="" src="__PUBLIC__/home/images/qr.png" width="375" height="375">
+        </div>
+    </div>
+<!-- .modal-weixin END -->
+<div class="modal modal-hide modal-bigtap-queue" id="J_bigtapQueue">
+    <div class="modal-body">
+        <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span>
+        <h3>正在排队，请稍候喔！</h3>
+        <p class="queue-tip">抱歉，目前排队人数较多，导致服务器压力山大，请您耐心排队等待，<br>我们将在稍后告诉您排队结果。</p>
+        <div class="queue-animate">
+            <div id="J_mituWalking" class="mitu-walk"> </div>
+            <div class="animate-mask animate-mask-left"></div>
+            <div class="animate-mask animate-mask-right"></div>
+        </div>
+    </div>
+</div>
+<!-- .xm-dm-queue END -->
+<div id="J_bigtapError" class="modal modal-hide modal-bigtap-error">
+    <span class="close" data-dismiss="modal" aria-hidden="true"><i class="iconfont"></i></span>
+    <div class="modal-body">
+        <h3>抱歉，网络拥堵无法连接服务器</h3>
+        <p class="error-tip">由于访问人数太多导致服务器压力山大，请您稍后再重试。</p>
+        <p>
+            <a class="btn btn-primary" id="J_bigtapRetry" data-stat-id="c148a4197491d5bd" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-c148a4197491d5bd&#39;, &#39;&#39;, &#39;pcpid&#39;]);">重试</a>
+        </p>
+    </div>
+</div>
+<!-- .xm-dm-error END -->
+<div id="J_modal-globalSites" class="modal fade modal-hide modal-globalSites" data-width="640">
+       <div class="modal-hd">
+            <a class="close" data-dismiss="modal" data-stat-id="d63900908fde14b1" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-d63900908fde14b1&#39;, &#39;&#39;, &#39;pcpid&#39;]);"><i class="iconfont"></i></a>
+            <h3>Select Region</h3>
+        </div>
+        <div class="modal-bd">
+            <h3>Welcome to Mi.com</h3>
+            <p class="modal-globalSites-tips">Please select your country or region</p>
+            <p class="modal-globalSites-links clearfix">
+                <a href="http://www.mi.com/index.html" data-stat-id="51fe807618ae85f4" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-51fe807618ae85f4&#39;, &#39;//www.mi.com/index.html&#39;, &#39;pcpid&#39;]);">Mainland China</a>
+                <a href="http://www.mi.com/hk/" data-stat-id="d8e4264197de1747" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-d8e4264197de1747&#39;, &#39;http://www.mi.com/hk/&#39;, &#39;pcpid&#39;]);">Hong Kong</a>
+                <a href="http://www.mi.com/tw/" data-stat-id="e7bd0f4e372c0b29" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-e7bd0f4e372c0b29&#39;, &#39;http://www.mi.com/tw/&#39;, &#39;pcpid&#39;]);">TaiWan</a>
+                <a href="http://www.mi.com/sg/" data-stat-id="e9c0506f7e4e7161" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-e9c0506f7e4e7161&#39;, &#39;http://www.mi.com/sg/&#39;, &#39;pcpid&#39;]);">Singapore</a>
+                <a href="http://www.mi.com/my/" data-stat-id="d6299ad30ec761a8" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-d6299ad30ec761a8&#39;, &#39;http://www.mi.com/my/&#39;, &#39;pcpid&#39;]);">Malaysia</a>
+                <a href="http://www.mi.com/ph/" data-stat-id="22b601cf7b3ada84" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-22b601cf7b3ada84&#39;, &#39;http://www.mi.com/ph/&#39;, &#39;pcpid&#39;]);">Philippines</a>
+                <a href="http://www.mi.com/in/" data-stat-id="441d26d4571e10dc" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-441d26d4571e10dc&#39;, &#39;http://www.mi.com/in/&#39;, &#39;pcpid&#39;]);">India</a>
+                <a href="http://www.mi.com/id/" data-stat-id="88ccf9755c488ec5" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-88ccf9755c488ec5&#39;, &#39;http://www.mi.com/id/&#39;, &#39;pcpid&#39;]);">Indonesia</a>
+                <a href="http://br.mi.com/" data-stat-id="c41d871bf5ddcd95" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-c41d871bf5ddcd95&#39;, &#39;http://br.mi.com/&#39;, &#39;pcpid&#39;]);">Brasil</a>
+                <a href="http://www.mi.com/en/" data-stat-id="4426c5dac474df5f" onclick="_msq.push([&#39;trackEvent&#39;, &#39;08fae3d5cb3abaaf-4426c5dac474df5f&#39;, &#39;http://www.mi.com/en/&#39;, &#39;pcpid&#39;]);">Global Home</a>
+            </p>
+        </div>
+    </div>
+
+  <div class="modal fade modal-hide modal-choose-pro J_modalRaisebuy J_carouselContainer" id="J_choosePro-1632" data-isadd="true"> <div class="modal-header"> <span class="close" data-dismiss="modal"><i class="iconfont"></i></span> <h3>选择产品</h3> </div> <div class="modal-body"> <ul class="clearfix list J_chooseProList ">    <li class="span4" data-gid="2150300006-0-1-1632" data-num="0" data-maxnum="" data-pid="2150300006" data-actid="1632">  <img disabled="" data-src="//i1.mifile.cn/a1/T1bPbTBvYT1RXrhCrK!220x220.jpg" alt="" width="220" height="220"> <p class="g-name">智能唤醒翻盖保护套 黑色</p> <p class="g-price">29元</p> <i class="icon-radio"></i> </li>   <li class="span4" data-gid="2150300007-0-1-1632" data-num="0" data-maxnum="" data-pid="2150300007" data-actid="1632">  <img disabled="" data-src="//i1.mifile.cn/a1/T1CGLTBsVT1RXrhCrK!220x220.jpg" alt="" width="220" height="220"> <p class="g-name">智能唤醒翻盖保护套 白色</p> <p class="g-price">29元</p> <i class="icon-radio"></i> </li>   <li class="span4" data-gid="2150300008-0-1-1632" data-num="0" data-maxnum="" data-pid="2150300008" data-actid="1632">  <img disabled="" data-src="//i1.mifile.cn/a1/T1n2hvByZv1RXrhCrK!220x220.jpg" alt="" width="220" height="220"> <p class="g-name">智能唤醒翻盖保护套 军绿</p> <p class="g-price">29元</p> <i class="icon-radio"></i> </li>   </ul> </div> <div class="modal-footer"> <a href="javascript:void(0);" class="btn btn-gray btn-disable J_chooseProBtn" data-actid="1632" data-type="1">加入购物车</a> </div> </div>  <div class="modal fade modal-hide modal-choose-pro J_modalRaisebuy J_carouselContainer" id="J_choosePro-1747" data-isadd="true"> <div class="modal-header"> <span class="close" data-dismiss="modal"><i class="iconfont"></i></span> <h3>选择产品</h3> </div> <div class="modal-body"> <ul class="clearfix list J_chooseProList  J_carouselList ">    <li class="span4" data-gid="2153000001-0-1-1747" data-num="0" data-maxnum="" data-pid="2153000001" data-actid="1747">  <img disabled="" data-src="//i1.mifile.cn/a1/T1b.K_Bj_T1RXrhCrK!220x220.jpg" alt="" width="220" height="220"> <p class="g-name">多彩便携USB线 120cm 橙色</p> <p class="g-price">9.9元</p> <i class="icon-radio"></i> </li>   <li class="span4" data-gid="2153000002-0-1-1747" data-num="0" data-maxnum="" data-pid="2153000002" data-actid="1747">  <img disabled="" data-src="//i1.mifile.cn/a1/T1YlxjBKbT1RXrhCrK!220x220.jpg" alt="" width="220" height="220"> <p class="g-name">多彩便携USB线 120cm 蓝色</p> <p class="g-price">9.9元</p> <i class="icon-radio"></i> </li>   <li class="span4" data-gid="2153000003-0-1-1747" data-num="0" data-maxnum="" data-pid="2153000003" data-actid="1747">  <img disabled="" data-src="//i1.mifile.cn/a1/T1hgWjBCbT1RXrhCrK!220x220.jpg" alt="" width="220" height="220"> <p class="g-name">多彩便携USB线 120cm 绿色</p> <p class="g-price">9.9元</p> <i class="icon-radio"></i> </li>   <li class="span4" data-gid="2153000004-0-1-1747" data-num="0" data-maxnum="" data-pid="2153000004" data-actid="1747">  <img disabled="" data-src="//i1.mifile.cn/a1/T1uMLjBCKT1RXrhCrK!220x220.jpg" alt="" width="220" height="220"> <p class="g-name">多彩便携USB线 120cm 玫红</p> <p class="g-price">9.9元</p> <i class="icon-radio"></i> </li>   <li class="span4" data-gid="2153200003-0-1-1747" data-num="0" data-maxnum="" data-pid="2153200003" data-actid="1747">  <img disabled="" data-src="//i1.mifile.cn/a1/T1lQZjB4dT1RXrhCrK!220x220.jpg" alt="" width="220" height="220"> <p class="g-name">多彩便携USB线 120cm 灰色</p> <p class="g-price">9.9元</p> <i class="icon-radio"></i> </li>   </ul> </div> <div class="modal-footer"> <a href="javascript:void(0);" class="btn btn-gray btn-disable J_chooseProBtn" data-actid="1747" data-type="1">加入购物车</a> </div> </div>
+<script type="text/javascript">
+    $(function(){
+
+
+        //点击叉号触发事件
+        $(".del").click(function(){
+
+            var gid = $(this).attr("data");
+            var res = confirm("您确认要删除吗?");
+            if(res){
+
+                $.ajax({
+                type:"get",
+                data:"gid="+gid,
+                url:"__CONTROLLER__/del",
+                dataType:"text",
+                success:function(data){
+                    location.reload();
+                },
+             });
+            }
+
+        });
+
+
+
+        //点击 - 号触发的事件           
+        $(".jian").click(function(){
+            // -
+             buynum = $(this).parent().next().val();
+             if(buynum<=1){
+                buynum=2;
+                }        
+             buynum--;
+             $(this).parent().next().val(buynum);
+             
+             //小计
+             price = $(this).parent().parent().parent().prev().html();
+             xiaoji = buynum * price;
+             $(this).parent().parent().parent().next().html(xiaoji);
+
+        
+            //总计
+           var num = $(':checkbox:checked').length;
+            $("#J_selTotalNum").html(num);
+            var total = 0;
+            for (i=0; i < num; i++){
+                var total = (parseInt($(':checkbox:checked').eq(i).parent().parent().children().eq(5).text())) + total;
+            }
+           $('#J_cartTotalPrice').text(total);     
+
+        });
+
+
+        //点击 + 号触发的事件
+        $(".jia").click(function(){
+            //+
+            buynum = $(this).parent().prev().val();
+              if(buynum>=10){
+                buynum=9;
+               }   
+             buynum++;
+             $(this).parent().prev().val(buynum);
+             
+             //小计
+             price = $(this).parent().parent().parent().prev().html();
+             xiaoji = buynum * price;
+             $(this).parent().parent().parent().next().html(xiaoji);
+
+            //总计
+            var num = $(':checkbox:checked').length;
+            $("#J_selTotalNum").html(num);
+            var total = 0;
+            for (i=0; i < num; i++){
+                var total = (parseInt($(':checkbox:checked').eq(i).parent().parent().children().eq(5).text())) + total;
+            }
+           $('#J_cartTotalPrice').text(total);     
+           
+        });
+
+        
+        //点击全选触发事件
+        $("#J_selectAll").click(function(){
+            $(this).html("√");
+            $(":checkbox").attr("checked","true");
+            $("#J_selTotalNum").html("<{$num}>");
+            
+            //总计
+            var num = $(':checkbox:checked').length;
+            $("#J_selTotalNum").html(num);
+            var total = 0;
+            for (i=0; i < num; i++){
+                var total = (parseInt($(':checkbox:checked').eq(i).parent().parent().children().eq(5).text())) + total;
+            }
+           $('#J_cartTotalPrice').text(total);     
+        });
+
+
+        //点击checkbox触发事件统计总价
+        //如果减少数量再次触发此事件即可,点击事件里代码直接复制即可
+        $(":checkbox").click(function(){
+            var num = $(':checkbox:checked').length;
+            $("#J_selTotalNum").html(num);         
+            var total = 0;
+            for (i=0; i < num; i++) {
+                var total = (parseInt($(':checkbox:checked').eq(i).parent().parent().children().eq(5).text())) + total;
+            }
+            $('#J_cartTotalPrice').text(total);                           
+        });
+
+
+        //点击去结算触发事件
+        $("#J_goCheckout").click(function(){
+            var total=$('#J_cartTotalPrice').text();
+            if(total=="0"){
+                alert("请先选择要结算的商品");
+                return false;
+            }else{
+            //console.log(total);
+             $.ajax({
+                type:"get",
+                data:"total="+total,
+                url:"__CONTROLLER__/total",
+                dataType:"text",
+                success:function(data){
+                    
+                },
+                async:false
+             });
+
+         }
+        });
+
+
+        // 点击账号时候触发事件
+         $(".user-name").mouseover(function(){
+             $(".user-menu").css("display","block");
+             //移入子标题时触发事件
+             $(".user-menu").mouseover(function(){
+                $(this).css({display:"block"});
+             });
+
+             // 移出子标题时触发事件
+            $(".user-menu").mouseout(function(){
+                $(this).css("display","none");
+            })
+       });
+        
+
+        // 移出账号时触发事件
+          $(".user-name").mouseout(function(){
+              $(".user-menu").css("display","none"); 
+          });
+
+
+
+});
+</script>
+
+</body></html>

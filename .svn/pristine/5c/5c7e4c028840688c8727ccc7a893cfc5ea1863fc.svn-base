@@ -1,0 +1,184 @@
+<include file="http://localhost/CuteMi/index.php/home/product/header.html" />
+
+
+
+<div class="page-main channel buyphone-channel">
+    <div class="container breadcrumbs"> 
+        <a  href="__MODULE__/index/index">首页</a><span class="sep"> 
+    <div class="container channel-nav">
+    <ul class="clearfix">
+  <!------------------------------ 该类下所有商品名称 -------------------------->
+    <foreach name = "res3" item = "res3">
+        <li>
+            <a  href="__MODULE__/goodsdetail/index?id=<{$res3.gid}>" target="_blank"><{$res3.gname}></a>
+        </li>
+    </foreach>
+  <!------------------------------ 该类下所有商品名称结束 --------------------------> 
+  </ul>
+  </div>
+    <div class="channel-focus"> 
+            <img src="__PUBLIC__/Events/<{$pic0}>" height="460" width="1226" style="display:block">
+            <img src="__PUBLIC__/Events/<{$pic1}>" height="460" width="1226" style="display:none">
+            <img src="__PUBLIC__/Events/<{$pic2}>" height="460" width="1226" style="display:none">
+            <img src="__PUBLIC__/Events/<{$pic3}>" height="460" width="1226" style="display:none">             
+    </div>
+    <div class="container channel-list">
+ <ul class="row clearfix">
+
+
+ <!----------------------------------------- 产品展示 ------------------------------------------>
+        <foreach name = "res2" item = "goods">
+            <li class="span10">
+                <div class="channel-list-img">
+                    <a href="__MODULE__/goodsdetail?gid=<{$goods.gid}>" target="_blank">
+                        <img width="600" height="380" src="__PUBLIC__/Uploads/<{$goods.pic}>" alt="小米手机5">
+                    </a>
+                </div>
+                <div class="channel-list-con clearfix">
+                    <dl class="channel-list-des">
+                        <dt>
+                            <{$goods.gname}> <b><{$goods.price}></b><span>元起</span>
+                        </dt>
+                        <dd>
+                           <{$goods.keywords}>                  
+                        </dd>
+                    </dl>
+                    <p class="channel-list-btn">
+                        <a href="__MODULE__/goodsdetail/?gid=<{$goods.gid}>" class="btn btn-line-primary">立即购买</a>
+                    </p>
+                </div>
+            </li>
+        </foreach>
+<!------------------------------------------- 产品展示结束 ------------------------------------------>               
+        </ul>
+    </div>
+    <div class="channel-tips">
+        <div class="section container">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-877bf67af7470716', '//www.mi.com/service/safe/', 'pcpid']);" data-stat-id="877bf67af7470716" href="http://www.mi.com/service/safe/" target="_blank">
+                <img src="__PUBLIC__/home/images/phone-section-01.png">
+            </a>
+        </div>
+        <div class="section container">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-0661297565d05771', '//www.mi.com/mimobile/', 'pcpid']);" data-stat-id="0661297565d05771" href="http://www.mi.com/mimobile/" target="_blank">
+                <img src="__PUBLIC__/home/images/mi-mobile.jpg" alt="" style="display:block">
+            </a>
+        </div>
+        <div class="section container"> 
+            <img src="__PUBLIC__/home/images/phone-section-02.png">
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-66243771d24bdec7', '//heyue.mi.com/', 'pcpid']);" data-stat-id="66243771d24bdec7" href="http://heyue.mi.com/" target="_blank" style="position:absolute;display:block;width:305px;height:350px;bottom:99px;left:274px;"></a>
+            <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-7d6025c8e251baf8', '//www.mi.com/service/exchange#installment', 'pcpid']);" data-stat-id="7d6025c8e251baf8" href="http://www.mi.com/service/exchange#installment" target="_blank" style="position:absolute;display:block;width:305px;height:350px;bottom:99px;right:274px;"></a>
+        </div>
+        <div class="section container">
+            <img src="__PUBLIC__/home/images/phone-section-04.jpg">
+        </div>
+        <div class="container channel-acces">
+            <dl class="channel-acces-des">
+                <dt>搭配更多智能硬件产品</dt>
+                <dd>
+                    以小米手机为中心，控制智能硬件产品，轻松享受智能生活带来的方便和舒适。<br>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-54b50a3a426a5f63', '//list.mi.com/26', 'pcpid']);" data-stat-id="54b50a3a426a5f63" href="http://list.mi.com/26" target="_blank">查看更多智能硬件产品 <i class="iconfont"></i></a>
+                </dd>
+            </dl>
+            <ul class="channel-acces-list clearfix">
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-9c9b01e5e4843825', '//item.mi.com/1161200006.html', 'pcpid']);" data-stat-id="9c9b01e5e4843825" href="http://item.mi.com/1161200006.html" target="_blank">
+                        <img src="__PUBLIC__/home/images/T1obJvBghv1RXrhCrK220x220.jpg" alt="小米活塞耳机 基础版">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-b8a93380e5317b15', '//item.mi.com/1161200006.html', 'pcpid']);" data-stat-id="b8a93380e5317b15" href="http://item.mi.com/1161200006.html" target="_blank">小米活塞耳机 基础版</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-e872a9440cd383be', '//item.mi.com/1161200006.html', 'pcpid']);" data-stat-id="e872a9440cd383be" href="http://item.mi.com/1161200006.html" target="_blank">新鲜绽放，5 色可选</a></dd>
+                        <dd class="price">29元</dd>
+                    </dl>
+                </li>
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-5da5a84628b49d84', '//www.mi.com/huosai/', 'pcpid']);" data-stat-id="5da5a84628b49d84" href="http://www.mi.com/huosai/" target="_blank">
+                        <img src="__PUBLIC__/home/images/T1o0h_B5VT1RXrhCrK220x220.jpg" alt="小米活塞耳机标准版">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3c9510d2abfb1338', '//www.mi.com/huosai/', 'pcpid']);" data-stat-id="3c9510d2abfb1338" href="http://www.mi.com/huosai/" target="_blank">小米活塞耳机标准版</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-0fc1a0a4fe5f9e9b', '//www.mi.com/huosai/', 'pcpid']);" data-stat-id="0fc1a0a4fe5f9e9b" href="http://www.mi.com/huosai/" target="_blank">音质优化专利，金属复合振膜技术</a></dd>
+                        <dd class="price">69元</dd>
+                    </dl>
+                </li>
+                                <li class="no-border">
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-3dbb273e6e038825', '//www.mi.com/bluetooth-headset/', 'pcpid']);" data-stat-id="3dbb273e6e038825" href="http://www.mi.com/bluetooth-headset/" target="_blank">
+                        <img src="__PUBLIC__/home/images/T190DvB4dv1RXrhCrK220x220.jpg" alt="小米蓝牙耳机">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-579cc1906e2989ef', '//www.mi.com/bluetooth-headset/', 'pcpid']);" data-stat-id="579cc1906e2989ef" href="http://www.mi.com/bluetooth-headset/" target="_blank">小米蓝牙耳机</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-be7f1a94a39e5a0d', '//www.mi.com/bluetooth-headset/', 'pcpid']);" data-stat-id="be7f1a94a39e5a0d" href="http://www.mi.com/bluetooth-headset/" target="_blank">6.5克轻巧，蓝牙4.1高清通话音质</a></dd>
+                        <dd class="price">79元</dd>
+                    </dl>
+                </li>
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-c2832b3faebd3d88', '//item.mi.com/1154300037.html', 'pcpid']);" data-stat-id="c2832b3faebd3d88" href="http://item.mi.com/1154300037.html" target="_blank">
+                        <img src="__PUBLIC__/home/images/T1Tfd_BjAv1RXrhCrK220x220.jpg" alt="小钢炮蓝牙音箱2">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-1ebe14fec6365bfc', '//item.mi.com/1154300037.html', 'pcpid']);" data-stat-id="1ebe14fec6365bfc" href="http://item.mi.com/1154300037.html" target="_blank">小钢炮蓝牙音箱2</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-96081f1f28e9d134', '//item.mi.com/1154300037.html', 'pcpid']);" data-stat-id="96081f1f28e9d134" href="http://item.mi.com/1154300037.html" target="_blank">极简设计，声声动听的桌上艺术品</a></dd>
+                        <dd class="price">129元</dd>
+                    </dl>
+                </li>
+                                <li>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-292860b24c4642e2', '//item.mi.com/1161200012.html', 'pcpid']);" data-stat-id="292860b24c4642e2" href="http://item.mi.com/1161200012.html" target="_blank">
+                        <img src="__PUBLIC__/home/images/T1vFEjBbWT1RXrhCrK220x220.jpg" alt="小米USB充电器（4口）">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-1f8e6bbf8b4ae2e8', '//item.mi.com/1161200012.html', 'pcpid']);" data-stat-id="1f8e6bbf8b4ae2e8" href="http://item.mi.com/1161200012.html" target="_blank">小米USB充电器（4口）</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-5e052e4274cc2259', '//item.mi.com/1161200012.html', 'pcpid']);" data-stat-id="5e052e4274cc2259" href="http://item.mi.com/1161200012.html" target="_blank">4个USB接口，2A快充，轻巧便携</a></dd>
+                        <dd class="price">69元</dd>
+                    </dl>
+                </li>
+                                <li class="no-border">
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-d8a683b32fdf20f4', '//www.mi.com/dianyuan10000/', 'pcpid']);" data-stat-id="d8a683b32fdf20f4" href="http://www.mi.com/dianyuan10000/" target="_blank">
+                        <img src="__PUBLIC__/home/images/T1ggWQBybT1RXrhCrK220x220.jpg" alt="小米移动电源10000mAh">
+                    </a>
+                    <dl>
+                        <dt><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-de7e719f6891f071', '//www.mi.com/dianyuan10000/', 'pcpid']);" data-stat-id="de7e719f6891f071" href="http://www.mi.com/dianyuan10000/" target="_blank">小米移动电源10000mAh</a></dt>
+                        <dd><a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-2b7e9477a7368800', '//www.mi.com/dianyuan10000/', 'pcpid']);" data-stat-id="2b7e9477a7368800" href="http://www.mi.com/dianyuan10000/" target="_blank">高密度进口电芯，仅名片大小</a></dd>
+                        <dd class="price">69元</dd>
+                    </dl>
+                </li>
+                 
+                
+            </ul>
+        </div>
+        <div class="container channel-mihone">
+            <div class="channel-mihone-des">
+                <dl>
+                    <dt>小米之家及官方授权维修网点</dt>
+                    <dd>
+                        欢迎来小米之家解决你遇到的问题，了解最新的小米官方产品最全面的产品信息，还有很多好玩的活动等你来访。<br>
+                        你还可以前往小米授权维修网点解决售后问题，520家网点让服务随时在身边。
+                    </dd>
+                </dl>
+                <p>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-92bb525974bcde0e', '//www.mi.com/c/xiaomizhijia/', 'pcpid']);" data-stat-id="92bb525974bcde0e" href="http://www.mi.com/c/xiaomizhijia/" class="btn btn-large btn-line-primary">小米之家</a>
+                    <a onclick="_msq.push(['trackEvent', '8076ed7ffc35f6db-a684b74699138aae', '//www.mi.com/c/service/poststation/', 'pcpid']);" data-stat-id="a684b74699138aae" href="http://www.mi.com/c/service/poststation/" class="btn btn-large btn-line-primary">官方维修网点</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<include file="http://localhost/CuteMi/index.php/home/product/footer.html" />
+
+<script type="text/JavaScript">
+      $(function(){
+
+
+        //轮播图
+        setInterval(fun,1000);
+        var num=0;
+        function fun(){
+           $(".channel-focus img").css("display","none").eq(num).css("display","block");
+           num++;
+           if(num>3){
+             num=0;
+           }
+       }
+     
+
+      });
+</script>
+</body></html>

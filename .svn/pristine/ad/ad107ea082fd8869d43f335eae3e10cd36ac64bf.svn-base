@@ -1,0 +1,144 @@
+<extend name="Space/info"/>
+<block name="main-content">
+    <style>
+        .info-notice a{
+            font-size:20px;
+        }
+        #add{
+            width:250px; 
+            height:160px;
+            border:3px solid gray;
+            float:left;
+            line-height:160px;
+            text-align:center;
+            margin-top:100px;
+            margin-left:50px;
+        }
+        .now{
+            float:left;
+            margin-left:50px;
+            width:250px;
+            height:160px;
+            border:1px solid gray;
+            margin-top:100px;
+        }
+        #insert{
+            width:250px; 
+            height:160px;
+            border:1px solid gray;
+            float:left;
+            margin-top:100px;
+            margin-left:50px;
+        }
+		.left{
+			margin-left:20px;
+		}
+    </style>
+    <script src="__PUBLIC__/home/jquery-1.8.3.min.js" ></script>
+    <script>
+        $(function() {
+
+            $("#add").click(function() {
+                $("#add").css("display", "none");
+                $("#insert").css("display", "block");
+            });
+            $("#tianjia").click(function() {
+                $("#add").css("display", "block");
+                $("#insert").css("display", "none");
+            });
+            $(".now").find("input").css("border", "none");
+            $("#insert").find("input").css("border", "none");
+
+        })
+    </script>
+
+    <div class="span16">
+        <div class="xm-box uc-box">
+
+            <div id="allbook" class="xm-line-box uc-info-box">
+                <div class="box-bd clearfix">
+                    <!--                <img class="uc-avatar" src="__PUBLIC__/Home/User/Space/photo.jpg" alt="">-->
+                    <div class="uc-info">
+                        <h1 class="uc-welcome"><span class="user-name" style="font-size:30px"><p class="left">收货地址</p></span><a style="font-size:10px" href="#"></a></h1>
+
+                        <div class="uc-info-detail">
+                            <div class="info-notice">
+                                <hr />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- .uc-info-box END -->
+            <foreach name="data" item="vo">
+                <div class="now">
+
+                    <form action="__URL__/update" method="post">
+                        <table width='250' height='160' border='2'>
+                            <input id="hidden" type="hidden"  name="id" value="<{$vo.id}>" />
+                            <tr>
+                                <td><input  type="text" name="name" value="<{$vo.name}>"></td>
+                            </tr>
+                            <tr>
+                                <td><input  type="text" name="tel_phone" value="<{$vo.tel_phone}>"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" name="is_default" value="<{$vo.is_default}>"></td>
+
+                            </tr>
+                            <tr>
+                                <td><input  type="text" name="address" value="<{$vo.address}>"> </td>
+                            </tr>
+                            <tr>
+                                <td>  <input  type="text" name="code" value="<{$vo.code}>"></td>
+                            </tr>
+                            <tr>
+                                <td align="center" >
+                                    <input id="submit" type="submit" value="修改" >
+                                    <a href="__URL__/del?uid=<{$vo.id}>">删除 </a>
+                                    <input type="reset" value="重置" >
+                                </td>
+                            </tr>
+                        </table>
+
+                    </form>
+                </div>
+
+            </foreach>
+
+            <div id="add">添加新地址</div>
+
+            <div id="insert" style="display:none">
+
+                <form action="__URL__/insert" method="post">
+                    <table width='250' height='160' border='2'>
+                        <tr>
+                            <td><input  type="text" name="name" value="" placeholder="收货人"></td>
+                        </tr>
+                        <tr>
+                            <td><input  type="text" name="tel_phone" value="" placeholder="联系电话"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="is_default" value="" placeholder="地址"></td>
+
+                        </tr>
+                        <tr>
+                            <td><input  type="text" name="address" value="" placeholder="详细地址"> </td>
+                        </tr>
+                        <tr>
+                            <td>  <input  type="text" name="code" value="" placeholder="邮编"></td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <input id="tianjia" type="submit" value="添加" >
+                                <input type="reset" value="重置" >
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div>
+</block>
+<extend name="Space/infofooter" />

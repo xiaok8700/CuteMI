@@ -1,0 +1,14 @@
+<!doctype html>
+<html>
+	<head>	
+		<title>查找用户操作</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+		<h1>请输入要查询的用户ID或者用户名</h1>
+		<form method="get" action="__CONTROLLER__/mod">
+		<input type="text" name="ad_id" value="" />
+		<input type="submit"  value="请输入用户信息" />
+		</form>
+	</body>
+</html>
