@@ -1,0 +1,168 @@
+<link href="__PUBLIC__/admin/images/skin.css" rel="stylesheet" type="text/css" />
+<script src="__PUBLIC__/home/js/jquery-1.7.2.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" /><style type="text/css">
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #EEF2FB;
+}
+#div1{
+    width:200px;
+    height:200px;
+    border:1px solid gray;
+    margin-top:20px;
+    margin-left:20px;
+    float:left;
+  
+}
+#div2{
+    width:600px;
+    height:200px;
+    border:1px solid gray;
+    margin-top:20px;
+    margin-left:100px;
+    float:left
+   
+}
+#div3{
+  width:100%;
+  height:200px;
+  text-align:center;
+  line-height:200px;
+  /*font:bold 50px "宋体";*/
+  font-weight:bold;
+  font-family:"宋体";
+  font-size:50px;
+}
+</style>
+<body>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="17" valign="top" background="__PUBLIC__/admin/images/mail_leftbg.gif"><img src="__PUBLIC__/admin/images/left-top-right.gif" width="17" height="29" /></td>
+    <td valign="top" background="__PUBLIC__/admin/images/content-bg.gif">
+      <table width="100%" height="31" border="0" cellpadding="0" cellspacing="0" class="left_topbg" id="table2">
+      <tr>
+        <td height="31"><div class="titlebt">欢迎界面</div></td>
+      </tr>
+    </table>
+  </td>
+  <td width="16" valign="top" background="images/mail_rightbg.gif"><img src="__PUBLIC__/admin/images/nav-right-bg.gif" width="16" height="29" /></td>
+  </tr>
+   
+</table> 
+     <div id="div3">
+         欢迎光临CUTEMI的网站管理后台
+     </div>
+     <div id="div2">
+         
+         <table align="center"  cellpadding="5" cellspacing="5">      
+              <br/><br/>
+             <caption style="font-weight:bold">管理员信息</caption>
+
+             <tr>         
+                   <td>管理员 : </td>
+                   <td> <{$Think.session.admin_user.ad_name}> </td>                   
+             </tr>
+             <tr>     
+                   <td>管理员角色 : </td>
+                   <if condition="$Think.session.admin_user.ad_ur eq 1">
+                     <td>用户管理员</td>
+                   <elseif condition="$Think.session.admin_user.ad_ur eq 2"/>
+                      <td>商品管理员</td>
+                   <elseif condition="$Think.session.admin_user.ad_ur eq 3"/>
+                      <td>订单管理员</td>
+                   <else />
+                      <td>超级管理员</td>
+                   </if>                          
+             </tr>           
+              <tr>              
+                   <td>本次登录IP : </td>
+                   <td> <{$ip}> </td>                                 
+             </tr>
+             <tr>             
+                   <td >当前日期时间 : </td>
+                   <td id="time">  </td>                             
+             </tr>
+         </table>
+     </div>
+     <!-- 只有超级管理员才有管理网站开关的权限 -->
+     <if condition="$Think.session.admin_user.ad_ur eq 4">
+     <div id="div1">
+        <table align="center" cellpadding="10" cellspacing="10">
+             <tr>
+                <th colspan="2">网站管理</th>
+             </tr>
+             <tr>
+                <td>
+                   <input type="radio" name="is_open" value="1"> 开
+                </td>
+                <td>
+                   <input type="radio" name="is_open" value="2"> 关
+                </td>
+             </tr>
+             <tr>
+                <td colspan="2"><button id="btn1">确定</button></td>
+             </tr>
+               <tr>
+                <td>状态 : </td>
+                <td class="open"><{$status==1?"开启":"关闭"}></td>
+              </tr>
+        </table>
+    </div>
+    <else />
+       <div id="div1">
+          <table align="center" cellpadding="10" cellspacing="10">
+             <tr>
+                <th colspan="2">网站管理</th>
+             </tr>
+             <tr>
+                <td>&nbsp;&nbsp;只有超级管理员才有此操作权限...</td>
+             </tr>
+          </table>
+       </div>
+    </if>
+   
+    <script type="text/javascript">
+        $(function(){
+             //点击确定时触发的事件
+              $("#btn1").click(function(){
+                 //获取被选中的单选框
+                 var is_open = $(":radio:checked").val();
+                  // alert(is_open);
+                  //将数据提交给PHP
+              $.ajax({
+                    type:"get",
+                    data:"is_open="+is_open,
+                    url:"__CONTROLLER__/is_open",
+                    dataType:"text",
+                    success:function(data){
+                  
+                       if(data==1){
+                          $(".open").html("开启");
+                          alert("网站开启成功!");
+
+                       }else{
+                          $(".open").html("关闭");
+                          alert("网站关闭成功!");
+                       }
+                    },
+                 });
+
+              })
+
+              //获取当前时间
+              setInterval(fun,100);
+
+              function fun(){
+                 var ob=new Date();
+                 var time = ob.toLocaleString();
+                 $("#time").html(time);
+              }
+            
+        })
+    </script>
+
+</body>

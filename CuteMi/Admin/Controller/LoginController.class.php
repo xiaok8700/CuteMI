@@ -1,0 +1,98 @@
+<?php
+namespace Admin\Controller;
+use Think\Controller;
+header("content-type:text/html;charset=utf-8");
+class LoginController extends Controller {
+
+    //登陆主页面
+    public function index(){
+
+       $this->display();
+    }
+    
+    //检查登陆
+    public function checkLogin(){
+
+        $ad_name = I("post.ad_name");
+        $ad_pwd5 = I("post.ad_pwd");
+        $ad_pwd = md5($ad_pwd5);
+        $ad_code = I("post.code");
+        
+        $data["ad_name"] = $ad_name;
+        $data["ad_pwd"] = $ad_pwd;      
+        //验证验证码
+        $verify = new \Think\Verify();  
+        if(!$verify->check($ad_code)){
+           $this->error("验证码错误!","index",3);
+        }else{
+          $admin_user = M("admin_user");
+          $res = $admin_user->where($data)->find();
+		  //dump($res);
+        
+		if($res){
+			//读取用户的所有权限信息
+			$role = M('role');//实例化角色表的Model类
+			//读取role表中所有的角色的权限
+			$allpower = $role->field('rp')->where('rid in ('.$res['ad_ur'].')')->select();
+			//将获取的角色的权限进行合并操作
+			foreach($allpower as $value){
+				//dump($value['rp']);
+				//字符串连接
+				$powers.=$value['rp'].',';
+			}
+			//移除右侧的,
+			$powers = rtrim($powers,',');
+			//将权限字符串变成数组
+			$powerArr = explode(',',$powers);
+			//dump($powerArr);
+			//将权限ID写入SESSION
+			$_SESSION["admin_user"]["power"] = $powerArr;
+            $ad_id = $res["ad_id"];
+            $ad_logintime = $res["ad_logintime"];
+            $ad_num = $res["ad_num"];
+            $ad_loginip = $res["ad_loginip"];
+            $_SESSION["admin_user"]["islogin"] = true;
+            $_SESSION["admin_user"]["ad_name"] = $res["ad_name"];
+            $_SESSION["admin_user"]["ad_pwd"] = $res["ad_pwd"];
+            $_SESSION["admin_user"]["ad_id"] = $ad_id;
+            $_SESSION["admin_user"]["ad_logintime"] = $ad_logintime;
+            $_SESSION["admin_user"]["ad_num"] = $ad_num;
+            $_SESSION["admin_user"]["ad_loginip"] = $ad_loginip;
+            $_SESSION["admin_user"]["ad_ur"] = $res["ad_ur"];
+            $this->success("登陆成功",U("index/index"),3);
+          }else{
+            $this->success("登录失败","index",3);
+          }
+      }
+    }
+
+    //生成验证码方法
+    public function showCode(){
+        $Verify = new \Think\Verify();
+        $Verify->fontSize = 16;
+        $Verify->length   = 3;
+        $Verify->imageW   = "90px";
+        $Verify->imageH = "40px";
+        $Verify->useNoise = false;
+        $Verify->useCurve = false;
+        ob_clean();
+        $Verify->entry();
+    }
+
+    //退出
+    public function logout(){
+        //销毁SESSION;
+        $_SESSION["admin_user"]=array();
+        setCookie($_COOKIE["admin_user"]['isLogin'],null,time(),'/');
+        setCookie($_COOKIE["admin_user"]['ad_name'],null,time(),'/');
+        setCookie($_COOKIE["admin_user"]['ad_pwd'],null,time(),'/');
+        setCookie($_COOKIE["admin_user"]['ad_logintime'],null,time(),'/');
+        setCookie($_COOKIE["admin_user"]['ad_num'],null,time(),'/');
+        setCookie($_COOKIE["admin_user"]['ad_loginip'],null,time(),'/');
+        setCookie($_COOKIE["admin_user"]['ad_id'],null,time(),'/');
+        // session_destroy();
+        //跳转会登录页面
+        $this->success('退出中......',U('Login/index'),3);
+    }
+        
+}

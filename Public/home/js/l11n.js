@@ -1,0 +1,1 @@
+OO("com.mi.utils.L11N",function(b){var a=b.$class({},{statics:{getResource:(function(){var c={};return function(d,e){var f=document.getElementById("l11n-node");if(!e&&c.hasOwnProperty(d)){return c[d]}if(f){return c[d]=f.getAttribute("_l11n-"+d)||""}return c[d]=""}})()}});return a});

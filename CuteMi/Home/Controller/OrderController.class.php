@@ -1,0 +1,137 @@
+<?php
+namespace Home\Controller;
+use Think\Controller;
+header('content-type:text/html;charset=utf-8');
+class OrderController extends CommonController {
+	//订单选择地址
+    public function index(){
+
+      $uid = $_SESSION['username']['uid'];
+      $address = M('address');
+      $res = $address->where('uid='.$uid)->select();
+      $this->assign('add',$res);
+      if($res){
+        $arr = $_SESSION['shopcar'];
+        $xiaoji = count($arr);
+        $total = $_SESSION['total'];
+         
+      if(!empty($_SESSION['shopcar'])){
+        $this->assign('shop',$arr);
+        $this->assign('total',$total);
+        $this->assign('count',$xiaoji);
+
+      }
+      // dump($_SESSION);
+      }
+      //优惠券相关操作
+      $uid = $_SESSION["username"]["uid"];
+      $coupun_detail = M("coupun_detail");
+      $res1 = $coupun_detail->where("uid = ".$uid." and status = '0'")->select(); 
+      $this->assign("coupun",$res1);
+      $this->display();
+      }
+
+    // 添加地址页面
+    public function address(){
+
+      $address = M('address');
+      $uid = $_SESSION['username']['uid'];
+      $res = $address->where('uid='.$uid)->select();
+      $this->assign('addr',$res);
+      $this->display();
+    }    
+
+    //添加新地址进数据库
+    public function doaddress(){
+
+      $res = M('district');
+        foreach ($_POST['is_district'] as $v) {
+            $row = $res->find($v);
+            $str2[] = $row['name'];
+        }
+      $do = M('address');
+      $_POST['uid'] = $_SESSION['username']['uid'];
+      $_POST['is_district'] = implode(' ', $str2);
+      // dump($_POST); 
+      $do->create();
+      $list = $do->add();
+      $list ? $this->ajaxReturn($list) : $this->ajaxReturn(0);
+    }
+
+    //用户查询地址的详细信息  district
+    public function add() {
+
+      $data['upid'] = $_POST['upid'] + 0;
+      $address = M('district');
+      $arr = $address->where($data)->select();
+        if ($arr) {
+          $this->ajaxReturn($arr, 'json');
+      }
+    }
+
+    //删除地址信息
+    public function delete(){
+
+      $id = $_POST['id'];
+      $address = M('address');
+      $res = $address->where('id='.$id)->delete();
+        if($res){
+          echo 1;
+
+      }
+    }
+
+    //订单信息插入数据库中
+    public function addorder(){
+      // dump($_SESSION);
+      // die;
+      if($_POST){
+        $time = date('y/m/d h:i:s',time());
+        $total = $_SESSION['total'];
+        $money = $_SESSION['money'];
+        $address = M('address');
+        $a = $address->where('mi_address.id='.$_POST['oid'])->find();
+        $data = array(
+          'uid' => $a['uid'],
+          'consignee' => $a['name'],
+          'address' => $a['is_district'].$a['address'],
+          'postcode' => $a['code'],
+          'phone' => $a['mob_phone'],
+          'total' => $total,
+          'ordernum' => $money,
+          'addtime' => $time
+          );
+
+        $order = M('order');
+        $add = $order->data($data)->add();
+        if($add){
+          $this->success("下单成功!",U("Pay/index?oid={$add}"));
+        }
+    }
+    }
+   
+    //订单管理
+    public function allbook(){
+
+      $this->display();
+
+    }
+
+    //优惠券处理
+    public function coupun(){
+
+      $id = I("get.id");
+      $_SESSION["coupun_id"] = $id;
+      $coupun_detail = M("coupun_detail");
+      $res = $coupun_detail->where("id = ".$id)->find();
+      //将优惠券金额返回
+      echo $res["num"];
+    }
+
+    //将实际支付金额放入session中
+    public function money(){
+
+       $_SESSION["money"] = I("get.money");
+    
+    } 
+}

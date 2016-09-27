@@ -1,0 +1,45 @@
+<extend name="Space/info"/>
+<block name="main-content">
+<script src="__PUBLIC__/home/js/jquery-1.7.2.js"></script>
+
+
+	<div class="yi span16">
+    <div class="uc-box uc-main-box">
+        <div class="uc-content-box">
+            <div class="box-hd">
+                <h1 class="title">商品评价</h1>
+                <div class="more clearfix">
+                    <ul class="filter-list J_addrType">
+                        <li class="first"><a href="__MODULE__/space/udis">待评价商品</a></li>
+                        <li class="active"><a href="__MODULE__/space/dis">已评价商品</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box-bd">
+                            <div class="xm-goods-list-wrap">
+                    <ul class="xm-goods-list clearfix">
+                        <foreach name="dis" item="res">
+                        <li class="xm-goods-item">
+                            <div class="figure figure-img"><a onclick="_msq.push(['trackEvent', '815ce971591f749c-3e8b62bed296da0e', '//item.mi.com/1134900475.html', 'pcpid']);" data-stat-id="3e8b62bed296da0e" href="http://item.mi.com/1134900475.html" target="_blank"><img src="__PUBLIC__/Uploads/<{$res.pic}>"></a></div>
+                            <h3 class="title"><a onclick="_msq.push(['trackEvent', '815ce971591f749c-668211b64dda6653', '//item.mi.com/1134900475.html', 'pcpid']);" data-stat-id="668211b64dda6653" href="http://item.mi.com/1134900475.html"><{$res.gname}></a></h3>
+                                <p class="price"><{$res.price}>元</p>
+                                
+                            <div class="actions">
+                                                            <a  class="btn btn-primary btn-small"  href="__MODULE__/space/discuss?gid=<{$res.gid}>">查看评价详情</a>
+                                                        </div>
+                        </li>
+                    </foreach>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+</block>
+<extend name="Space/infofooter" />

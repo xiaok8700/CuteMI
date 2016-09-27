@@ -1,0 +1,74 @@
+<?php
+
+namespace Home\Controller;
+use Think\Controller;
+class PersonalController extends CommonController {
+
+    public function index() {
+		//dump($_SESSION);
+		//die;
+        $uid['uid'] = $_SESSION['username']['uid'];
+        $data = M('user_detail')->where($uid)->find();
+        $data ? $this->assign('data', $data) : 0;
+        $cal['year'] = substr($data['birth'], 0, 4);
+        $cal['month'] = substr($data['birth'], 4, 2);
+        $cal['day'] = substr($data['birth'], -2);
+        $this->assign('cal', $cal);
+        $this->display('Space/personal');
+    }
+
+    public function update() {
+		//dump($_SESSION);
+		//die;
+        $add = M('user_detail');
+        $data['nickname'] = I('post.nickname');
+        $data['sex'] = I('post.sex');
+        $data['birth'] = I('post.birth');
+        $where['uid'] = $_SESSION['username']['uid'];
+        $res = $add->where($where)->data($data)->save();
+        if ($res) {
+            $msg = 400;
+        } else {
+            $msg = 200;
+        }
+        $this->ajaxReturn($msg);
+    }
+
+    public function upload() {
+        // dump($_FILES);
+        $upload = new \Think\Upload(); // 实例化上传类
+        $upload->maxSize = 3145728; // 设置附件上传大小
+        $upload->exts = array('jpg', 'gif', 'png', 'jpeg'); // 设置附件上传类型
+        $upload->rootPath = './Public/'; // 设置文件上传保存的根路径  
+        $upload->savePath = 'home/Facepic/Uploads/'; // 设置附件上传目录
+        $info = $upload->upload();
+        if (!$info) {// 上传错误提示错误信息
+            return false;
+        } else {// 上传成功 获取上传文件信息
+            //return $info;
+            $picname = $info['picname']['savename'];
+            //生成缩略图
+            $add['facepic'] = './Public/' . $info['picname']['savepath'] . 's_' . $picname;
+            $where['uid'] = $_SESSION['username']['uid'];
+            $yes = M('user_detail')->where($where)->find();
+            @unlink($yes['facepic']);
+            $image = new \Think\Image();
+            $image->open('./Public/' . $info['picname']['savepath'] . '/' . $picname);
+            // 按照原图的比例生成两个缩略图并保存
+            //$image->thumb(300, 300)->save('./Public/'.$info['picname']['savepath'].'/'.'m_'.$picname);
+            $image->thumb(150, 250)->save('./Public/' . $info['picname']['savepath'] . '/' . 's_' . $picname);
+            @unlink('./Public/' . $info['picname']['savepath'] . '/' . $picname);
+            $data = M('user_detail');
+            $add['facepic'] = './Public/' . $info['picname']['savepath'] . 's_' . $picname;
+
+            $data->where($where)->data($add)->save();
+            $this->index();
+        }
+    }
+
+    public function layout(){
+        
+        unset($_SESSION['user']);
+        $this->success("exit",U("Index/index"));
+    }
+}

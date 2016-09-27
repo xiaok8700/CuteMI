@@ -1,0 +1,53 @@
+<div class="span16">
+    <div class="uc-box uc-main-box">
+        <div class="uc-content-box portal-content-box">
+            <div class="box-bd">
+                                <div class="portal-main clearfix">
+                    <div class="user-card">
+                        <h2 class="username"><{$_SESSION['username']['uname']}></h2>
+                        <p class="tip">晚上好</p>
+                        <!-- <a class="link" href="__APP__/Home/Personal/index" target="_blank">修改个人信息 &gt;</a> -->
+                        <!-- <img class="avatar" src="__PUBLIC__/home/images/photo.jpg" width="150" height="150" alt="<{$_SESSION['username']['uname']}>">  -->
+						<img class="avatar" src='<eq name="facepic">__PUBLIC__/home/images/photo.jpg<else/>__ROOT__/<{$facepic}></eq>' width="120" height="120" alt="<{$_SESSION['username']['uid']}>"/> 
+                    </div>
+                    <div class="user-actions">
+                        <ul class="action-list">
+                            <li>账户安全：<span class="level level-3">较高</span></li>
+                                                      <!--   <li>绑定手机：<span class="tel">158********70</span></li>
+                                                        
+                                                        <li>绑定邮箱：<span class="tel">25*******9@q*.com</span></li> -->
+														
+						<span class="icon-common icon-safe-open"></span><a href="https://account.xiaomi.com/pass/userInfo" target="_blank">绑定邮箱</a><span class="sep">|</span>
+                        <span class="icon-common icon-safe-closed"></span> <a href="https://account.xiaomi.com/pass/userInfo" target="_blank">绑定手机</a>
+						 <a class="link" href="__APP__/Home/Personal/index" target="_blank"><p>修改个人信息 &gt;</p></a>
+                                                    </ul>
+                    </div>
+                </div>
+                <div class="portal-sub">
+                    <ul class="info-list clearfix">
+                        <li>
+                            <h3>待支付的订单：<span></span></h3>
+                            <a href="__MODULE__/space/nobuy">查看待支付订单<i class="num">(<{$nobuy}>)</i></a>
+                            <img src="__PUBLIC__/home/images/portal-icon-1.png" alt="">
+                        </li>
+                        <li>
+                            <h3>待收货的订单：<span></span></h3>
+                            <a href="__MODULE__/space/nogot">查看待收货订单<i class="num">(<{$no}>)</i></a>
+                            <img src="__PUBLIC__/home/images/portal-icon-2.png" alt="">
+                        </li>
+                        <li>
+                            <h3>待评价商品数：<span></span></h3>
+                            <a href="__MODULE__/space/udis">查看待评价商品<i class="num">(<{$p}>)</i></a>
+                            <img src="__PUBLIC__/home/images/portal-icon-3.png" alt="">
+                        </li>
+                        <li>
+                            <h3>我的收藏</span></h3>
+                            <a href="__CONTROLLER__/collect">查看收藏商品<i class="num">(<{$num}>)</i></a>
+                            <img src="__PUBLIC__/home/images/portal-icon-4.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

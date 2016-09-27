@@ -1,0 +1,561 @@
+[ 2016-05-09T14:08:47+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-05-09T17:09:07+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-05-09T17:25:25+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-05-09T17:25:27+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-05-09T17:25:28+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-05-09T17:25:29+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-05-09T17:25:30+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-05-09T17:25:45+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-05-09T17:27:13+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-05-09T17:27:13+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-05-09T17:27:13+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php
+ERR: Access denied for user 'root'@'localhost' (using password: NO)
+
+[ 2016-05-09T17:39:30+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Admin/index.php
+ERR: 无法加载控制器:Index.php
+
+[ 2016-05-09T17:41:41+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Admin/index.php
+ERR: 无法加载控制器:Index.php
+
+[ 2016-05-09T17:45:34+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001459s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.004939s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.009156s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000461s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.005583s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000612s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000082s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058265s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000352s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000581s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000623s ]
+
+[ 2016-05-09T17:45:34+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000959s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005216s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.007983s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000304s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.013453s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004583s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000364s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000065s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010138s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000448s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000743s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2016-05-09T17:45:34+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002215s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.007488s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000801s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.004133s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000415s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.011443s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000334s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000433s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010543s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010661s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000564s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000626s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001426s ]
+
+[ 2016-05-09T17:45:35+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000750s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.007597s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.005620s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.001149s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.008545s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000362s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000256s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000482s ]
+
+[ 2016-05-09T17:45:43+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/login/js/jquery-1.8.3.min.js
+ERR: 非法操作:js
+
+[ 2016-05-09T17:45:43+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/login/js/placeholder.js
+ERR: 非法操作:js
+
+[ 2016-05-09T17:45:43+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/login/tick
+ERR: 非法操作:tick
+
+[ 2016-05-09T17:45:46+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003752s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.007530s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000214s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.008247s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.000375s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.009143s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(60,61,62,63,77) )  [ RunTime:0.000524s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000054s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000147s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012145s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012230s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000559s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000822s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000876s ]
+
+[ 2016-05-09T17:45:47+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.008690s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.006625s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.006726s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000358s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000078s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018884s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018948s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000641s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000939s ]
+
+[ 2016-05-09T17:45:48+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/login/js/placeholder.js
+ERR: 非法操作:js
+
+[ 2016-05-09T17:45:48+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/login/js/jquery-1.8.3.min.js
+ERR: 非法操作:js
+
+[ 2016-05-09T17:45:48+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/login/tick
+ERR: 非法操作:tick
+
+[ 2016-05-09T17:45:56+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001302s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.004461s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.013381s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000384s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.004884s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000387s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009863s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009924s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000282s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000499s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2016-05-09T17:45:57+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000760s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001097s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.009451s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.008040s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.008871s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000316s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000064s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000177s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008651s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008716s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000319s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2016-05-09T17:47:17+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000527s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000863s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.010797s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.006603s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000320s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.015944s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000739s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012708s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000492s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000535s ]
+
+[ 2016-05-09T17:49:18+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.004453s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000257s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.003745s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000249s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.003988s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000300s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008128s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000422s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000688s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000732s ]
+
+[ 2016-05-09T17:49:19+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002023s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002648s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.008515s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.008860s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.010293s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,66) )  [ RunTime:0.000315s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009818s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000815s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000873s ]
+
+[ 2016-05-09T17:49:20+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/53
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000522s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000836s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.004116s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.004850s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 53 )  [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.007692s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(60,61,62,63,77) )  [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000210s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012555s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012742s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000461s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000668s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000715s ]
+
+[ 2016-05-09T17:49:21+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001665s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002191s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.010362s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000323s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.005191s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.006046s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,66) )  [ RunTime:0.000565s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000290s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000722s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000711s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000763s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000869s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000917s ]
+
+[ 2016-05-09T17:49:21+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000835s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.005642s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.001504s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.005576s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.000535s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.009309s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.000555s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000058s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000144s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009292s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009389s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000383s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001327s ]
+
+[ 2016-05-09T17:49:21+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001377s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.004184s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.003002s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.007343s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.000411s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.005776s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000626s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013918s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000834s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006182s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006291s ]
+
+[ 2016-05-09T17:49:39+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/58
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005103s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.009748s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000468s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.008280s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 58 )  [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.014736s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(75,73,74) )  [ RunTime:0.000717s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000197s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010869s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010942s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000417s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002780s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003014s ]
+
+[ 2016-05-09T17:49:39+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/57
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002308s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.010206s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000419s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.010574s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 57 )  [ RunTime:0.002281s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.005853s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(69,70,71) )  [ RunTime:0.003742s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000136s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009185s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001769s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003030s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003205s ]
+
+[ 2016-05-09T17:49:39+08:00 ] 127.0.0.1 /xiaok/CuteMi/index.php/Home/Index/bianli/typeid/56
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001122s ]
+NOTIC: [2] session_start(): Cannot send session cache limiter - headers already sent (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Common\functions.php 第 1168 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\CuteMi\Home\Controller\CommonController.class.php 第 4 行.
+SQL: SHOW COLUMNS FROM `mi_close` [ RunTime:0.004312s ]
+SQL: SELECT * FROM `mi_close` WHERE ( close_id = '1' ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SHOW COLUMNS FROM `mi_type` [ RunTime:0.006243s ]
+SQL: SELECT * FROM `mi_type` WHERE ( pid = 56 )  [ RunTime:0.000560s ]
+SQL: SHOW COLUMNS FROM `mi_goods` [ RunTime:0.005264s ]
+SQL: SELECT * FROM `mi_goods` WHERE ( typeid in(68,67,64,66) )  [ RunTime:0.000377s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000029s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000202s ]
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 91 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 92 行.
+NOTIC: [2] Cannot modify header information - headers already sent by (output started at H:\WWW\www\xiaok\CuteMi\ThinkPHP\Conf\convention.php:1) H:\WWW\www\xiaok\CuteMi\ThinkPHP\Library\Think\View.class.php 第 93 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000417s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000449s ]
+
